@@ -1,1 +1,4 @@
-{}
+{
+  "autoPairBrackets": true,
+  "smartIndentList": false
+}
