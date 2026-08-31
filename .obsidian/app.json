@@ -1,4 +1,6 @@
 {
   "autoPairBrackets": true,
-  "smartIndentList": false
+  "smartIndentList": false,
+  "useMarkdownLinks": true,
+  "newLinkFormat": "relative"
 }
