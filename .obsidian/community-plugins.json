@@ -4,5 +4,9 @@
   "table-editor-obsidian",
   "obsidian-custom-attachment-location",
   "obsidian-git",
-  "mobile-pinch-zoom"
+  "mobile-pinch-zoom",
+  "ctrl-scroll-zoom",
+  "advanced-rename-and-delete-handler",
+  "editor-width-slider",
+  "obsidian-image-toolkit"
 ]
