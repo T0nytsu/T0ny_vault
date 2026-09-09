@@ -7,7 +7,7 @@
   "shouldDeleteConflictingAttachments": false,
   "shouldHandleDeletions": false,
   "shouldHandleRenames": true,
-  "shouldRenameAttachmentFiles": true,
+  "shouldRenameAttachmentFiles": false,
   "shouldRenameAttachmentFolder": true,
   "shouldRescueSharedAttachments": false,
   "shouldUpdateFileNameAliases": true,
