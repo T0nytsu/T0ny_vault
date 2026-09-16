@@ -9,4 +9,4 @@
 
 
 ## 連上社團虛擬機
-`ss雌studentXX@chal.nahuit.com -p 20100`
+`ssh studentXX@chal.nchuit.com -p 20100`
