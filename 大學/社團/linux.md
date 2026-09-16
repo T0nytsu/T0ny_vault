@@ -9,5 +9,8 @@
 
 
 
+
+
+
 ## 連上社團虛擬機
 `ssh studentXX@chal.nchuit.com -p 20100`
