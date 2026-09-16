@@ -14,3 +14,4 @@
 
 ## 連上社團虛擬機
 `ssh studentXX@chal.nchuit.com -p 20100`
+連線後若斷連可以
