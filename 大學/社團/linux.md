@@ -7,7 +7,7 @@
 | **touch** file_name | 新增檔案   |
 | **pwd**             | 顯示目前路徑 |
 | **cat** file_name   | 讀取檔案內容 |
-| **file** file_name  |        |
+| **file** file_name  | 獨檔案類型  |
 
 
 
