@@ -1,0 +1,274 @@
+# Linear Algebra §1.1–1.2 Reference Solutions
+
+Sep 28, 2026 · @T0ny
+
+Worked solutions for the 22 highlighted exercises: §1.1 #21, 23, 30, 35, 37–42 (pp. 16–17) and §1.2 #4, 7, 9, 11, 13, 14, 17, 26, 27, 31, 33, 40 (pp. 31–32). Nothing was marked on p. 33. Vectors are written as \[a, b, c\]; every numeric answer was re-checked by substitution.
+
+## §1.1 Exercises 21, 23, 30 — finding c
+
+Two nonzero vectors are parallel when one is a scalar multiple of the other. A vector is in a span when it is a linear combination of the spanning vectors.
+
+### Exercise 21
+
+**Answer: c = −1.**
+
+Set \[c, −3\] = t\[2, 6\]. The second component gives −3 = 6t, so t = −1/2. Then c = 2t = −1.
+
+Check: \[−1, −3\] = (−1/2)\[2, 6\].
+
+### Exercise 23
+
+**Answer: c = −2/5.**
+
+Set \[c, −c, 4\] = t\[−2, 2, 20\]. The third component gives 4 = 20t, so t = 1/5. Then c = −2t = −2/5, and the second component −c = 2t = 2/5 agrees.
+
+Check: \[−2/5, 2/5, 4\] = (1/5)\[−2, 2, 20\].
+
+### Exercise 30
+
+**Answer: every real number c works.**
+
+We need scalars r, s, t with r\[1, −1, 1\] + s\[0, 1, −3\] + t\[0, 0, 1\] = \[c, −2c, c\]. Comparing components:
+
+```latex
+\begin{aligned} r &= c \\ -r + s &= -2c \\ r - 3s + t &= c \end{aligned}
+```
+
+Solve top to bottom: r = c, then s = −2c + r = −c, then t = c − r + 3s = −3c. The system is triangular, so it has a solution for every c:
+
+```latex
+\begin{bmatrix} c \\ -2c \\ c \end{bmatrix} = c\begin{bmatrix} 1 \\ -1 \\ 1 \end{bmatrix} - c\begin{bmatrix} 0 \\ 1 \\ -3 \end{bmatrix} - 3c\begin{bmatrix} 0 \\ 0 \\ 1 \end{bmatrix}
+```
+
+Check: \[c, −c − c, c + 3c − 3c\] = \[c, −2c, c\].
+
+## §1.1 Exercises 35, 37, 38 — systems and vector equations
+
+In a column-vector equation, each variable multiplies the column of its coefficients. Reading row by row turns it back into a linear system.
+
+### Exercise 35
+
+Collect the coefficients of x, y and z into columns:
+
+```latex
+x\begin{bmatrix} 3 \\ 1 \\ 2 \end{bmatrix} + y\begin{bmatrix} -2 \\ -1 \\ 1 \end{bmatrix} + z\begin{bmatrix} 4 \\ -3 \\ -5 \end{bmatrix} = \begin{bmatrix} 10 \\ 0 \\ -3 \end{bmatrix}
+```
+
+### Exercise 37
+
+**(a) Linear system.** Match the first, second and third components on both sides. The minus sign in front of r\[4, −3, 2\] flips the signs of that vector's entries.
+
+```latex
+\begin{array}{rcrcrcrcr} -3p & & & - & 4r & + & 6s & = & 8 \\ 4p & - & 2q & + & 3r & & & = & -3 \\ 6p & + & 5q & - & 2r & + & 7s & = & 1 \end{array}
+```
+
+**(b) Column-vector equation.**
+
+```latex
+p\begin{bmatrix} -3 \\ 4 \\ 6 \end{bmatrix} + q\begin{bmatrix} 0 \\ -2 \\ 5 \end{bmatrix} + r\begin{bmatrix} -4 \\ 3 \\ -2 \end{bmatrix} + s\begin{bmatrix} 6 \\ 0 \\ 7 \end{bmatrix} = \begin{bmatrix} 8 \\ -3 \\ 1 \end{bmatrix}
+```
+
+Keeping the original form, − r\[4, −3, 2\] written as a column, is equally correct.
+
+### Exercise 38
+
+Read the equation one row at a time:
+
+```latex
+\begin{array}{rcrcrcr} -2r_1 & + & 5r_2 & + & 16r_3 & = & 5 \\ 3r_1 & + & 13r_2 & & & = & -8 \\ & & -4r_2 & - & 9r_3 & = & 11 \end{array}
+```
+
+## §1.1 Exercise 39 — True or False
+
+**Answers: a F, b T, c F, d F, e T, f F, g T, h F, i F, j T.**
+
+| Part | Answer | Reason or counterexample |
+| --- | --- | --- |
+| a | False | Vectors in Rⁿ with large n are useful, e.g. a list of n measurements or prices is a vector in Rⁿ. |
+| b | True | An n-tuple can be read as the point with those coordinates or as the arrow from the origin to that point. |
+| c | False | Addition of n-tuples is defined componentwise, so points can be added the same way; only the picture differs. |
+| d | False | The arrow from the tip of a to the tip of b represents b − a, because a + (b − a) = b. |
+| e | True | Same reason as (d): going from a's tip to b's tip adds b − a. |
+| f | False | \[1, 0\] and \[2, 0\] are nonzero but parallel; their span is only the x-axis. |
+| g | True | Two nonparallel vectors in R² point in different directions, and every vector in the plane is a combination of them. |
+| h | False | \[1, 0, 0\], \[0, 1, 0\], \[1, 1, 0\] are nonzero and pairwise nonparallel, yet all lie in the xy-plane, so \[0, 0, 1\] is not in their span. |
+| i | False | \[1, 0\], \[0, 1\], \[1, 1\] span R² with k = 3. The correct statement is k ≥ 2. |
+| j | True | One vector spans at most a line and two vectors span at most a plane through the origin, so spanning R³ needs k ≥ 3. |
+
+## §1.1 Exercises 40, 41, 42 — proofs
+
+Every property in Theorem 1.1 follows by working one component at a time and using the matching rule for real numbers. Throughout, let u = \[u₁, …, uₙ\], v = \[v₁, …, vₙ\], w = \[w₁, …, wₙ\] be in Rⁿ and let r, s be scalars. Note that the book prints a stray “42.” beside the parts of #41; parts a–c (S1, S3, S4) belong to #41.
+
+### Exercise 40a — A1: (u + v) + w = u + (v + w)
+
+```latex
+\begin{aligned} (\mathbf{u}+\mathbf{v})+\mathbf{w} &= [u_1+v_1, \dots, u_n+v_n] + [w_1, \dots, w_n] \\ &= [(u_1+v_1)+w_1, \dots, (u_n+v_n)+w_n] \\ &= [u_1+(v_1+w_1), \dots, u_n+(v_n+w_n)] \quad \text{(addition in } \mathbb{R} \text{ is associative)} \\ &= [u_1, \dots, u_n] + [v_1+w_1, \dots, v_n+w_n] \\ &= \mathbf{u}+(\mathbf{v}+\mathbf{w}) \end{aligned}
+```
+
+### Exercise 40b — A3: 0 + v = v
+
+```latex
+\mathbf{0}+\mathbf{v} = [0+v_1, \dots, 0+v_n] = [v_1, \dots, v_n] = \mathbf{v}
+```
+
+The middle step uses 0 + a = a for every real number a.
+
+### Exercise 40c — A4: v + (−v) = 0
+
+By definition −v = \[−v₁, …, −vₙ\]. Then:
+
+```latex
+\mathbf{v}+(-\mathbf{v}) = [v_1+(-v_1), \dots, v_n+(-v_n)] = [0, \dots, 0] = \mathbf{0}
+```
+
+### Exercise 41a — S1: r(v + w) = rv + rw
+
+```latex
+\begin{aligned} r(\mathbf{v}+\mathbf{w}) &= r[v_1+w_1, \dots, v_n+w_n] \\ &= [r(v_1+w_1), \dots, r(v_n+w_n)] \\ &= [rv_1+rw_1, \dots, rv_n+rw_n] \quad \text{(distributive law in } \mathbb{R}) \\ &= [rv_1, \dots, rv_n] + [rw_1, \dots, rw_n] \\ &= r\mathbf{v}+r\mathbf{w} \end{aligned}
+```
+
+### Exercise 41b — S3: r(sv) = (rs)v
+
+```latex
+r(s\mathbf{v}) = r[sv_1, \dots, sv_n] = [r(sv_1), \dots, r(sv_n)] = [(rs)v_1, \dots, (rs)v_n] = (rs)\mathbf{v}
+```
+
+The third step uses associativity of multiplication in R.
+
+### Exercise 41c — S4: 1v = v
+
+```latex
+1\mathbf{v} = [1 \cdot v_1, \dots, 1 \cdot v_n] = [v_1, \dots, v_n] = \mathbf{v}
+```
+
+### Exercise 42 — the system always has a solution
+
+**Claim:** for any b₁, b₂ in R, the system r − 2s = b₁, 3r + 5s = b₂ is solved by:
+
+```latex
+r = \frac{5b_1 + 2b_2}{11}, \qquad s = \frac{b_2 - 3b_1}{11}
+```
+
+**Derivation.** The first equation gives r = b₁ + 2s. Substituting into the second: 3(b₁ + 2s) + 5s = b₂, so 11s = b₂ − 3b₁ and s = (b₂ − 3b₁)/11. Then r = b₁ + 2s = (5b₁ + 2b₂)/11.
+
+**Check by substitution:**
+
+```latex
+\begin{aligned} r - 2s &= \frac{5b_1 + 2b_2 - 2b_2 + 6b_1}{11} = \frac{11b_1}{11} = b_1 \\ 3r + 5s &= \frac{15b_1 + 6b_2 + 5b_2 - 15b_1}{11} = \frac{11b_2}{11} = b_2 \end{aligned}
+```
+
+The formulas only divide by 11, which is never zero, so they give a solution for every choice of b₁ and b₂. Geometrically, \[1, 3\] and \[−2, 5\] are not parallel, so they span all of R².
+
+## §1.2 Exercises 4, 7, 9, 11, 13, 14, 17 — norm and dot product
+
+Given u = \[−1, 3, 4\], v = \[2, 1, −1\], w = \[−2, −1, 3\]. Two values used repeatedly: ‖u‖ = √(1 + 9 + 16) = √26 and ‖w‖ = √(4 + 1 + 9) = √14.
+
+| Exercise | Asked for | Answer |
+| --- | --- | --- |
+| 4 | ‖v − 2u‖ | √122 ≈ 11.05 |
+| 7 | Unit vector along u | \[−1/√26, 3/√26, 4/√26\] |
+| 9 | u · v | −3 |
+| 11 | (u + v) · w | 3 |
+| 13 | Angle between u and w | arccos(11/√364) ≈ 54.8° |
+| 14 | x with \[x, −3, 5\] ⟂ u | x = 11 |
+| 17 | Nonzero vector ⟂ u and w | \[13, −5, 7\] (or any nonzero multiple) |
+
+### Exercise 4
+
+v − 2u = \[2 + 2, 1 − 6, −1 − 8\] = \[4, −5, −9\], so ‖v − 2u‖ = √(16 + 25 + 81) = √122 ≈ 11.05.
+
+### Exercise 7
+
+Divide u by its length √26:
+
+```latex
+\frac{\mathbf{u}}{\|\mathbf{u}\|} = \frac{1}{\sqrt{26}}[-1, 3, 4] = \left[-\frac{1}{\sqrt{26}}, \frac{3}{\sqrt{26}}, \frac{4}{\sqrt{26}}\right] \approx [-0.196, 0.588, 0.784]
+```
+
+It has length 1 and points the same way as u because 1/√26 > 0.
+
+### Exercise 9
+
+u · v = (−1)(2) + (3)(1) + (4)(−1) = −2 + 3 − 4 = −3.
+
+### Exercise 11
+
+u + v = \[1, 4, 3\], so (u + v) · w = (1)(−2) + (4)(−1) + (3)(3) = −2 − 4 + 9 = 3.
+
+Check with the distributive law: u · w + v · w = 11 + (−8) = 3.
+
+### Exercise 13
+
+u · w = (−1)(−2) + (3)(−1) + (4)(3) = 2 − 3 + 12 = 11.
+
+```latex
+\cos\theta = \frac{\mathbf{u}\cdot\mathbf{w}}{\|\mathbf{u}\|\,\|\mathbf{w}\|} = \frac{11}{\sqrt{26}\,\sqrt{14}} = \frac{11}{\sqrt{364}} \approx 0.5766 \quad\Longrightarrow\quad \theta = \arccos\frac{11}{\sqrt{364}} \approx 54.8^\circ \approx 0.956 \text{ rad}
+```
+
+### Exercise 14
+
+Perpendicular means the dot product is 0: \[x, −3, 5\] · \[−1, 3, 4\] = −x − 9 + 20 = 11 − x = 0, so x = 11.
+
+### Exercise 17
+
+We need \[x, y, z\] with dot product 0 against both u and w:
+
+```latex
+\begin{aligned} -x + 3y + 4z &= 0 \\ -2x - y + 3z &= 0 \end{aligned}
+```
+
+The first equation gives x = 3y + 4z. Substituting into the second: −2(3y + 4z) − y + 3z = −7y − 5z = 0, so y = −5z/7. Choosing z = 7 gives y = −5 and x = −15 + 28 = 13.
+
+**Answer: \[13, −5, 7\].** Check: u · \[13, −5, 7\] = −13 − 15 + 28 = 0 and w · \[13, −5, 7\] = −26 + 5 + 21 = 0.
+
+## §1.2 Exercises 26, 27, 31, 33 — classifying and distance
+
+To classify a pair, first check whether one vector is a scalar multiple of the other (parallel), then whether the dot product is 0 (perpendicular).
+
+### Exercise 26
+
+**Answer: neither.**
+
+&#91;−2, −1\] · \[5, 2\] = −10 − 2 = −12 ≠ 0, so they are not perpendicular. For \[5, 2\] = t\[−2, −1\], the first component needs t = −5/2 but the second needs t = −2, so they are not parallel.
+
+### Exercise 27
+
+**Answer: parallel, opposite directions.**
+
+&#91;−9, −6, −3\] = −3\[3, 2, 1\]. The scalar is negative, so the vectors point in opposite directions.
+
+### Exercise 31
+
+Defining the distance between points v and w as ‖v − w‖ is reasonable for three reasons:
+
+1. **It measures the segment between the points.** Drawn as an arrow, v − w goes from the point w to the point v (tip-to-tip, §1.1 #39e). Its length is the length of that segment.
+2. **It matches the familiar formula.** Written out, it is the Pythagorean distance formula, which is what we already use in R² and R³; the definition just extends it to n coordinates.
+
+```latex
+\|\mathbf{v}-\mathbf{w}\| = \sqrt{(v_1-w_1)^2 + (v_2-w_2)^2 + \cdots + (v_n-w_n)^2}
+```
+
+3. **It behaves like a distance.** It is never negative, it is 0 only when the points coincide, it is symmetric because ‖v − w‖ = ‖w − v‖, and it satisfies the triangle inequality.
+
+### Exercise 33
+
+**Answer: √33 ≈ 5.745.**
+
+(4, 1, −2) − (2, −1, 3) = \[2, 2, −5\], so the distance is √(4 + 4 + 25) = √33.
+
+## §1.2 Exercise 40 — True or False
+
+**Answers: a T, b T, c F, d F, e T, f F, g T, h F, i F, j F.**
+
+| Part | Answer | Reason or counterexample |
+| --- | --- | --- |
+| a | True | If v ≠ 0, some component vᵢ ≠ 0, so ‖v‖² ≥ vᵢ² > 0. |
+| b | True | ‖0‖ = 0, so a vector with nonzero magnitude cannot be 0. |
+| c | False | Take w = −v with v ≠ 0: ‖v + w‖ = 0, smaller than ‖v‖. |
+| d | False | There are two: v/‖v‖ and −v/‖v‖. |
+| e | True | Exactly ±v/‖v‖; any unit vector tv needs \|t\| = 1/‖v‖. |
+| f | False | In R³ the unit vectors perpendicular to \[0, 0, 1\] form a whole circle, e.g. \[cos t, sin t, 0\] for every t. It holds only in R². |
+| g | True | cos θ = (v · w)/(‖v‖‖w‖) with a positive denominator, and for 0° ≤ θ ≤ 180°, cos θ > 0 exactly when θ < 90°. |
+| h | False | v · v = ‖v‖², the square of the magnitude. Example: \[2, 0\] · \[2, 0\] = 4, but ‖\[2, 0\]‖ = 2. |
+| i | False | ‖rv‖ = \|r\| ‖v‖. With r = −1 and v ≠ 0, ‖−v‖ = ‖v‖, not −‖v‖. |
+| j | False | v = \[1, 0\] and w = \[0, 1\] both have magnitude 1, but ‖v − w‖ = ‖\[1, −1\]‖ = √2. |
