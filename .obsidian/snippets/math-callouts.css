@@ -1,0 +1,9 @@
+/* Math Notes Style Guide v2.1: colors and icons for the custom callouts.
+   Save as <vault>/.obsidian/snippets/math-callouts.css, then turn it on in
+   Settings → Appearance → CSS snippets (設定 → 外觀 → CSS 片段). */
+.callout[data-callout="definition"] { --callout-color: 124, 77, 255;  --callout-icon: lucide-book-open; }
+.callout[data-callout="theorem"]    { --callout-color: 124, 77, 255;  --callout-icon: lucide-sigma; }
+.callout[data-callout="proof"]      { --callout-color: 120, 144, 156; --callout-icon: lucide-check; }
+.callout[data-callout="solution"]   { --callout-color: 164, 192, 255; --callout-icon: lucide-pencil; }
+.callout[data-callout="attempt"]    { --callout-color: 255, 145, 0;   --callout-icon: lucide-user; }
+.callout[data-callout="example"]    { --callout-color: 164, 192, 255; --callout-icon: lucide-list; }
