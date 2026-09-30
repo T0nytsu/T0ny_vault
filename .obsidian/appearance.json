@@ -1,3 +1,6 @@
 {
-  "cssTheme": "Primary"
+  "cssTheme": "Primary",
+  "enabledCssSnippets": [
+    "math-callouts"
+  ]
 }
