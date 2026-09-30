@@ -1,4 +1,6 @@
 {
   "cssTheme": "Primary",
-  "theme": "obsidian"
+  "enabledCssSnippets": [
+    "math-callouts"
+  ]
 }
