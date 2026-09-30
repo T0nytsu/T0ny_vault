@@ -10,7 +10,7 @@ created: 2026-09-30
 > In board order: properties of [[Invertible Matrix|inverses]] and Theorem 1.10; §1.4 Solving systems of linear equations: [[Linear System|linear systems]] and $Ax = b$, the [[Augmented Matrix|augmented matrix]], the three [[Elementary Row Operation|elementary row operations]], [[Elementary Matrix|row-elementary matrices]] and Theorem 1.8, [[Row Equivalence|row equivalence]], [[Row-Echelon Form|row-echelon form]], [[Reduced Row-Echelon Form|reduced row-echelon form]], and [[Gaussian Elimination|Gaussian elimination]].
 
 > [!note] Notation
-> - Yellow is the teacher's yellow chalk, in the theme's yellow: $\textcolor{rgb(var(--color-yellow-rgb))}{\text{yellow writing}}$, and a $\bbox[border-bottom:2px solid rgb(var(--color-yellow-rgb))]{\text{yellow underline}}$, a $\bbox[2px,border:2px solid rgb(var(--color-yellow-rgb))]{\text{yellow box}}$, or a circle $\textcolor{rgb(var(--color-yellow-rgb))}{\enclose{circle}{\textcolor{var(--text-normal)}{1}}}$ around writing in white chalk. Plain underlines and boxes are white chalk. The staircase lines he draws under pivots cannot be drawn here.
+> - $\textcolor{darkgoldenrod}{\text{Gold}}$ is the teacher's yellow chalk: what he wrote, underlined or boxed in yellow. Plain underlines and boxes are white chalk. Staircase lines and circles cannot be drawn here; pivots he circled or marked in yellow are shown in gold.
 > - $\shortparallel$ written under or over an expression means "equals", as on the board.
 > - Vectors are not bold ($x$, $b$), and $A_{(i)}$ is the $i$th row of $A$.
 > - $r_{ij}(A)$, $r_{i}^{s}(A)$, $r_{ij}^{s}(A)$ are the three elementary row operations and $R_{ij}$, $R_{i}^{s}$, $R_{ij}^{s}$ the matching row-elementary matrices. A superscript is the scalar $s$, not a power: $R_{2}^{-1}$ multiplies row 2 by $-1$.
@@ -23,10 +23,10 @@ created: 2026-09-30
 > \begin{aligned}
 > &\underline{A \text{ is invertible}},\ \ k \in \mathbb{N},\ \ \alpha \in \mathbb{R} \setminus \{0\} \\
 > &\text{Then } A^{-1},\ A^{k},\ \alpha A,\ A^{T} \text{ are invertible} \\[4pt]
-> &\qquad (1)\ \ (A^{-1})^{-1} = \underline{\ \ \textcolor{rgb(var(--color-yellow-rgb))}{A}\ \ } \\
-> &\qquad (2)\ \ (A^{k})^{-1} = \underline{\ \ \textcolor{rgb(var(--color-yellow-rgb))}{(A^{-1})^{k}}\ \ } \\
-> &\qquad (3)\ \ (\alpha A)^{-1} = \underline{\ \ \textcolor{rgb(var(--color-yellow-rgb))}{\tfrac{1}{\alpha}A^{-1}}\ \ } \\
-> &\qquad (4)\ \ (A^{T})^{-1} = \underline{\ \ \textcolor{rgb(var(--color-yellow-rgb))}{(A^{-1})^{T}}\ \ }
+> &\qquad (1)\ \ (A^{-1})^{-1} = \underline{\ \ \textcolor{darkgoldenrod}{A}\ \ } \\
+> &\qquad (2)\ \ (A^{k})^{-1} = \underline{\ \ \textcolor{darkgoldenrod}{(A^{-1})^{k}}\ \ } \\
+> &\qquad (3)\ \ (\alpha A)^{-1} = \underline{\ \ \textcolor{darkgoldenrod}{\tfrac{1}{\alpha}A^{-1}}\ \ } \\
+> &\qquad (4)\ \ (A^{T})^{-1} = \underline{\ \ \textcolor{darkgoldenrod}{(A^{-1})^{T}}\ \ }
 > \end{aligned}
 > $$
 > Answers (3) and (4): ==(?)==
@@ -37,8 +37,8 @@ created: 2026-09-30
 > &\because A \text{ is invertible,} \\
 > &\therefore \exists\, A^{-1}\ \underline{\text{s.t. } A^{-1}A = AA^{-1} = I}. \\[6pt]
 > &(1)\ \ \text{by definition, } (A^{-1})^{-1} = A. \\[6pt]
-> &(2)\ \ \bbox[border-bottom:2px solid rgb(var(--color-yellow-rgb))]{(A^{-1})^{k}}\,A^{k} = \rlap{\underbrace{\phantom{A^{-1}A^{-1}\cdots\,A^{-1}}}_{k \text{ times}}}A^{-1}A^{-1}\cdots\,\overset{I}{\overset{\shortparallel}{\bbox[2px,border:2px solid rgb(var(--color-yellow-rgb))]{A^{-1}\,A}}}\,A\cdots A\llap{\underbrace{\phantom{A\,A\cdots A}}_{k \text{ times}}} = I. \\[6pt]
-> &\qquad \text{Similarly, } A^{k}\,\bbox[border-bottom:2px solid rgb(var(--color-yellow-rgb))]{(A^{-1})^{k}} = I. \\
+> &(2)\ \ \textcolor{darkgoldenrod}{\underline{(A^{-1})^{k}}}\,A^{k} = \rlap{\underbrace{\phantom{A^{-1}A^{-1}\cdots\,A^{-1}}}_{k \text{ times}}}A^{-1}A^{-1}\cdots\,\overset{I}{\overset{\shortparallel}{\textcolor{darkgoldenrod}{\boxed{A^{-1}\,A}}}}\,A\cdots A\llap{\underbrace{\phantom{A\,A\cdots A}}_{k \text{ times}}} = I. \\[6pt]
+> &\qquad \text{Similarly, } A^{k}\,\textcolor{darkgoldenrod}{\underline{(A^{-1})^{k}}} = I. \\
 > &\qquad \implies (A^{k})^{-1} = (A^{-1})^{k}. \qquad \blacksquare
 > \end{aligned}
 > $$
@@ -47,7 +47,7 @@ created: 2026-09-30
 
 > [!theorem] Theorem 1.10
 > $A, B$ is invertible, $n \times n$ matrices.
-> Then $AB$ is invertible, and $\bbox[border-bottom:2px solid rgb(var(--color-yellow-rgb))]{(AB)}^{-1} = B^{-1}A^{-1}$.
+> Then $AB$ is invertible, and $\textcolor{darkgoldenrod}{\underline{(AB)}}^{-1} = B^{-1}A^{-1}$.
 
 > [!proof]- Proof
 > $$
@@ -65,7 +65,7 @@ created: 2026-09-30
 > $$
 > \begin{array}{ll}
 > (AB)^{T} = B^{T}A^{T}, & (A+B)^{T} = A^{T} + B^{T} \\[8pt]
-> (AB)^{-1} = B^{-1}A^{-1}, & \underset{\textcolor{rgb(var(--color-yellow-rgb))}{\text{does not necessarily hold}}}{\bbox[border-bottom:2px solid rgb(var(--color-yellow-rgb))]{(A+B)^{-1} = A^{-1} + B^{-1}}}
+> (AB)^{-1} = B^{-1}A^{-1}, & \underset{\textcolor{darkgoldenrod}{\text{does not necessarily hold}}}{\textcolor{darkgoldenrod}{\underline{(A+B)^{-1} = A^{-1} + B^{-1}}}}
 > \end{array}
 > $$
 
@@ -166,8 +166,8 @@ $$
 > For a linear system, one of the following is true.
 > $$
 > \begin{array}{l}
-> \left.\begin{array}{ll} \text{(a)} & \text{It has exactly one solution} \\ \text{(b)} & \text{has infinitely many solutions} \end{array}\right. \textcolor{rgb(var(--color-yellow-rgb))}{\left.\vphantom{\begin{array}{l} \text{(a)} \\ \text{(b)} \end{array}}\right]\ \text{consistent}} \\
-> \begin{array}{ll} \text{(c)} & \text{has no solution.} \end{array}\ \textcolor{rgb(var(--color-yellow-rgb))}{\text{— inconsistent}}
+> \left.\begin{array}{ll} \text{(a)} & \text{It has exactly one solution} \\ \text{(b)} & \text{has infinitely many solutions} \end{array}\right. \textcolor{darkgoldenrod}{\left.\vphantom{\begin{array}{l} \text{(a)} \\ \text{(b)} \end{array}}\right]\ \text{consistent}} \\
+> \begin{array}{ll} \text{(c)} & \text{has no solution.} \end{array}\ \textcolor{darkgoldenrod}{\text{— inconsistent}}
 > \end{array}
 > $$
 
@@ -242,9 +242,9 @@ $$
 > [!proof]- Proof
 > $$
 > \begin{aligned}
-> &(1)\ \ \bbox[border-bottom:2px solid rgb(var(--color-yellow-rgb))]{R_{ij}}\,R_{ij} = I = R_{ij}R_{ij} \\[4pt]
-> &(2)\ \ \bbox[border-bottom:2px solid rgb(var(--color-yellow-rgb))]{R_{i}^{1/s}}\,\underline{R_{i}^{s}} = I = \underline{R_{i}^{s}}\,\underline{R_{i}^{1/s}} \\[4pt]
-> &(3)\ \ \bbox[border-bottom:2px solid rgb(var(--color-yellow-rgb))]{R_{ij}^{-s}}\,R_{ij}^{s} = \underline{I} = R_{ij}^{s}\,\bbox[border-bottom:2px solid rgb(var(--color-yellow-rgb))]{R_{ij}^{-s}} \qquad \blacksquare
+> &(1)\ \ \textcolor{darkgoldenrod}{\underline{R_{ij}}}\,R_{ij} = I = R_{ij}R_{ij} \\[4pt]
+> &(2)\ \ \textcolor{darkgoldenrod}{\underline{R_{i}^{1/s}}}\,\underline{R_{i}^{s}} = I = \underline{R_{i}^{s}}\,\underline{R_{i}^{1/s}} \\[4pt]
+> &(3)\ \ \textcolor{darkgoldenrod}{\underline{R_{ij}^{-s}}}\,R_{ij}^{s} = \underline{I} = R_{ij}^{s}\,\textcolor{darkgoldenrod}{\underline{R_{ij}^{-s}}} \qquad \blacksquare
 > \end{aligned}
 > $$
 
@@ -278,7 +278,7 @@ $$
 > [!note] Note
 > $$
 > \begin{aligned}
-> \bbox[border-bottom:2px solid rgb(var(--color-yellow-rgb))]{A \overset{r}{\sim} B} \implies\ &\exists\, E_1, \cdots, E_k : \text{row-elementary matrices} \\
+> \textcolor{darkgoldenrod}{\underline{A \overset{r}{\sim} B}} \implies\ &\exists\, E_1, \cdots, E_k : \text{row-elementary matrices} \\
 > &\text{s.t. } \underline{E_kE_{k-1}\cdots E_2E_1}\,A = B \\
 > &\because E_i : \text{invertible} \\
 > &\therefore \underset{\substack{\shortparallel \\ \textstyle P}}{\underline{E_kE_{k-1}\cdots E_3E_2E_1}} : \text{invertible} \\[4pt]
@@ -286,7 +286,7 @@ $$
 > \end{aligned}
 > $$
 > $$
-> \textcolor{rgb(var(--color-yellow-rgb))}{(\Leftarrow)}
+> \textcolor{darkgoldenrod}{(\Leftarrow)}
 > $$
 
 ## Row-Echelon Form
@@ -301,27 +301,27 @@ $$
 > [!example] Example
 > Determine which of the matrices are in row-echelon form.
 > $$
-> \underset{\textstyle\textcolor{rgb(var(--color-yellow-rgb))}{\text{✗}}}{A = \begin{bmatrix} 1 & 3 & 2 \\ 0 & 0 & 0 \\ 0 & 0 & 1 \end{bmatrix}}, \quad \underset{\textstyle\textcolor{rgb(var(--color-yellow-rgb))}{\text{✗}}}{B = \begin{bmatrix} 2 & 4 & 0 \\ 1 & 3 & 2 \\ 0 & 0 & 0 \end{bmatrix}}, \quad \underset{\textstyle\textcolor{rgb(var(--color-yellow-rgb))}{\text{✓}}}{C = \begin{bmatrix} 0 & \textcolor{rgb(var(--color-yellow-rgb))}{\enclose{circle}{\textcolor{var(--text-normal)}{-1}}} & 2 \\ 0 & 0 & \textcolor{rgb(var(--color-yellow-rgb))}{\enclose{circle}{\textcolor{var(--text-normal)}{3}}} \\ 0 & 0 & 0 \\ 0 & 0 & 0 \end{bmatrix}}, \quad \underset{\textstyle\textcolor{rgb(var(--color-yellow-rgb))}{\text{✓}}}{D = \begin{bmatrix} 1 & 3 & 2 & 5 \\ 0 & 0 & 1 & 3 \\ 0 & 0 & 0 & 1 \\ 0 & 0 & 0 & 0 \end{bmatrix}}
+> \underset{\textstyle\textcolor{darkgoldenrod}{\text{✗}}}{A = \begin{bmatrix} 1 & 3 & 2 \\ 0 & 0 & 0 \\ 0 & 0 & 1 \end{bmatrix}}, \quad \underset{\textstyle\textcolor{darkgoldenrod}{\text{✗}}}{B = \begin{bmatrix} 2 & 4 & 0 \\ 1 & 3 & 2 \\ 0 & 0 & 0 \end{bmatrix}}, \quad \underset{\textstyle\textcolor{darkgoldenrod}{\text{✓}}}{C = \begin{bmatrix} 0 & \textcolor{darkgoldenrod}{-1} & 2 \\ 0 & 0 & \textcolor{darkgoldenrod}{3} \\ 0 & 0 & 0 \\ 0 & 0 & 0 \end{bmatrix}}, \quad \underset{\textstyle\textcolor{darkgoldenrod}{\text{✓}}}{D = \begin{bmatrix} \textcolor{darkgoldenrod}{1} & 3 & 2 & 5 \\ 0 & 0 & \textcolor{darkgoldenrod}{1} & 3 \\ 0 & 0 & 0 & \textcolor{darkgoldenrod}{1} \\ 0 & 0 & 0 & 0 \end{bmatrix}}
 > $$
 
 > [!solution]- Solution
 > $$
-> \textcolor{rgb(var(--color-yellow-rgb))}{\begin{array}{l} C,\ \ \text{pivots: } {-1},\ 3 \\ D,\ \ \text{pivots: } 1,\ 1,\ 1 \end{array}}
+> \textcolor{darkgoldenrod}{\begin{array}{l} C,\ \ \text{pivots: } {-1},\ 3 \\ D,\ \ \text{pivots: } 1,\ 1,\ 1 \end{array}}
 > $$
 
 ## Reduced Row-Echelon Form
 
 > [!definition] Definition
-> A matrix is in $\bbox[2px,border:2px solid rgb(var(--color-yellow-rgb))]{\text{reduced}}$ row-echelon form if
-> - (a) $\bbox[border-bottom:2px solid rgb(var(--color-yellow-rgb))]{\text{It is row-echelon}}$
-> - (b) each $\bbox[border-bottom:2px solid rgb(var(--color-yellow-rgb))]{\text{pivot}}$ is equal to $\bbox[border-bottom:2px solid rgb(var(--color-yellow-rgb))]{\ \ 1\ \ }$ and each column which contains the pivot of some row has all its other entries $0$.
+> A matrix is in $\textcolor{darkgoldenrod}{\boxed{\text{reduced}}}$ row-echelon form if
+> - (a) $\textcolor{darkgoldenrod}{\underline{\text{It is row-echelon}}}$
+> - (b) each $\textcolor{darkgoldenrod}{\underline{\text{pivot}}}$ is equal to $\textcolor{darkgoldenrod}{\underline{1}}$ and each column which contains the pivot of some row has all its other entries $0$.
 
 > [!example] Example
 > $$
 > \begin{array}{lll}
-> \begin{bmatrix} \textcolor{rgb(var(--color-yellow-rgb))}{\enclose{circle}{\textcolor{var(--text-normal)}{1}}} & 0 & 5 & 0 \\ 0 & \textcolor{rgb(var(--color-yellow-rgb))}{\enclose{circle}{\textcolor{var(--text-normal)}{1}}} & 0 & 0 \\ 0 & 0 & 0 & \textcolor{rgb(var(--color-yellow-rgb))}{\enclose{circle}{\textcolor{var(--text-normal)}{1}}} \end{bmatrix} \text{✓}\,\textcolor{rgb(var(--color-yellow-rgb))}{\text{✓}} & \begin{bmatrix} \textcolor{rgb(var(--color-yellow-rgb))}{\enclose{circle}{\textcolor{var(--text-normal)}{1}}} & 0 & 0 & 0 \\ 0 & \textcolor{rgb(var(--color-yellow-rgb))}{\enclose{circle}{\textcolor{var(--text-normal)}{1}}} & \bbox[border-bottom:2px solid rgb(var(--color-yellow-rgb))]{-1} & 0 \\ 0 & 0 & \textcolor{rgb(var(--color-yellow-rgb))}{\enclose{circle}{\textcolor{var(--text-normal)}{1}}} & 0 \end{bmatrix} \text{✓}\,\textcolor{rgb(var(--color-yellow-rgb))}{\text{✗}} & \\[12pt]
-> \begin{bmatrix} 0 & 2 & 1 \\ 1 & 0 & -3 \\ 0 & 0 & 0 \end{bmatrix} \text{✗}\,\textcolor{rgb(var(--color-yellow-rgb))}{\text{✗}} & \begin{bmatrix} 1 & \textcolor{rgb(var(--color-yellow-rgb))}{\enclose{circle}{\textcolor{var(--text-normal)}{2}}} & \textcolor{rgb(var(--color-yellow-rgb))}{\enclose{circle}{\textcolor{var(--text-normal)}{-1}}} & 4 \\ 0 & 1 & 0 & 3 \\ 0 & 0 & 1 & -2 \end{bmatrix} \text{✓}\,\textcolor{rgb(var(--color-yellow-rgb))}{\text{✗}} & \begin{array}{l} \text{row-echelon} \\ \textcolor{rgb(var(--color-yellow-rgb))}{\text{reduced row-echelon}} \end{array} \\[12pt]
-> \begin{bmatrix} 1 & 2 & -3 & 4 \\ 0 & 2 & 1 & -1 \\ 0 & 0 & 1 & -3 \end{bmatrix} \text{✓}\,\textcolor{rgb(var(--color-yellow-rgb))}{\text{✗}} & \begin{bmatrix} 0 & \textcolor{rgb(var(--color-yellow-rgb))}{\enclose{circle}{\textcolor{var(--text-normal)}{1}}} & 0 & 5 \\ 0 & 0 & \textcolor{rgb(var(--color-yellow-rgb))}{\enclose{circle}{\textcolor{var(--text-normal)}{1}}} & 3 \\ 0 & 0 & 0 & 0 \end{bmatrix} \text{✓}\,\textcolor{rgb(var(--color-yellow-rgb))}{\text{✓}} &
+> \begin{bmatrix} \textcolor{darkgoldenrod}{1} & 0 & 5 & 0 \\ 0 & \textcolor{darkgoldenrod}{1} & 0 & 0 \\ 0 & 0 & 0 & \textcolor{darkgoldenrod}{1} \end{bmatrix} \text{✓}\,\textcolor{darkgoldenrod}{\text{✓}} & \begin{bmatrix} \textcolor{darkgoldenrod}{1} & 0 & 0 & 0 \\ 0 & \textcolor{darkgoldenrod}{1} & \textcolor{darkgoldenrod}{\underline{-1}} & 0 \\ 0 & 0 & \textcolor{darkgoldenrod}{1} & 0 \end{bmatrix} \text{✓}\,\textcolor{darkgoldenrod}{\text{✗}} & \\[12pt]
+> \begin{bmatrix} 0 & 2 & 1 \\ 1 & 0 & -3 \\ 0 & 0 & 0 \end{bmatrix} \text{✗}\,\textcolor{darkgoldenrod}{\text{✗}} & \begin{bmatrix} 1 & \textcolor{darkgoldenrod}{2} & \textcolor{darkgoldenrod}{-1} & 4 \\ 0 & 1 & 0 & 3 \\ 0 & 0 & 1 & -2 \end{bmatrix} \text{✓}\,\textcolor{darkgoldenrod}{\text{✗}} & \begin{array}{l} \text{row-echelon} \\ \textcolor{darkgoldenrod}{\text{reduced row-echelon}} \end{array} \\[12pt]
+> \begin{bmatrix} 1 & 2 & -3 & 4 \\ 0 & 2 & 1 & -1 \\ 0 & 0 & 1 & -3 \end{bmatrix} \text{✓}\,\textcolor{darkgoldenrod}{\text{✗}} & \begin{bmatrix} 0 & \textcolor{darkgoldenrod}{1} & 0 & 5 \\ 0 & 0 & \textcolor{darkgoldenrod}{1} & 3 \\ 0 & 0 & 0 & 0 \end{bmatrix} \text{✓}\,\textcolor{darkgoldenrod}{\text{✓}} &
 > \end{array}
 > $$
 
@@ -340,7 +340,7 @@ $$
 
 > [!solution]- Solution
 > $$
-> \begin{bmatrix} \textcolor{rgb(var(--color-yellow-rgb))}{\enclose{circle}{\textcolor{var(--text-normal)}{2}}} & -4 & 2 & -2 \\ 2 & -4 & 3 & -4 \\ 4 & -8 & 3 & -2 \\ 0 & 0 & -1 & 2 \end{bmatrix}\!\begin{matrix} \vphantom{0} \\ \hookleftarrow{\times}(-1) \\ \hookleftarrow{\times}(-2) \\ \vphantom{0} \end{matrix} \overset{r}{\sim} \begin{bmatrix} \textcolor{rgb(var(--color-yellow-rgb))}{\enclose{circle}{\textcolor{var(--text-normal)}{2}}} & -4 & 2 & -2 \\ 0 & 0 & \textcolor{rgb(var(--color-yellow-rgb))}{\enclose{circle}{\textcolor{var(--text-normal)}{1}}} & -2 \\ 0 & 0 & -1 & 2 \\ 0 & 0 & -1 & 2 \end{bmatrix}\!\begin{matrix} \vphantom{0} \\ \vphantom{0} \\ \hookleftarrow{\times}1 \\ \hookleftarrow{\times}1 \end{matrix} \overset{r}{\sim} \underset{\substack{\shortparallel \\ \textstyle H}}{\underline{\begin{bmatrix} 2 & -4 & 2 & -2 \\ 0 & 0 & 1 & -2 \\ 0 & 0 & 0 & 0 \\ 0 & 0 & 0 & 0 \end{bmatrix}}}
+> \begin{bmatrix} \textcolor{darkgoldenrod}{2} & -4 & 2 & -2 \\ 2 & -4 & 3 & -4 \\ 4 & -8 & 3 & -2 \\ 0 & 0 & -1 & 2 \end{bmatrix}\!\begin{matrix} \vphantom{0} \\ \hookleftarrow{\times}(-1) \\ \hookleftarrow{\times}(-2) \\ \vphantom{0} \end{matrix} \overset{r}{\sim} \begin{bmatrix} \textcolor{darkgoldenrod}{2} & -4 & 2 & -2 \\ 0 & 0 & \textcolor{darkgoldenrod}{1} & -2 \\ 0 & 0 & -1 & 2 \\ 0 & 0 & -1 & 2 \end{bmatrix}\!\begin{matrix} \vphantom{0} \\ \vphantom{0} \\ \hookleftarrow{\times}1 \\ \hookleftarrow{\times}1 \end{matrix} \overset{r}{\sim} \underset{\substack{\shortparallel \\ \textstyle H}}{\underline{\begin{bmatrix} \textcolor{darkgoldenrod}{2} & -4 & 2 & -2 \\ 0 & 0 & \textcolor{darkgoldenrod}{1} & -2 \\ 0 & 0 & 0 & 0 \\ 0 & 0 & 0 & 0 \end{bmatrix}}}
 > $$
 > $$
 > \boxed{R_{24}^{1}R_{23}^{1}R_{13}^{-2}R_{12}^{-1}}\,A = H
