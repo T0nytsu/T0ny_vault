@@ -1,0 +1,20 @@
+/* Math notes: color of the teacher's yellow chalk, separately for light and dark mode.
+   With the Style Settings plugin: Settings → Style Settings → Math notes (color pickers).
+   Without it: edit the R, G, B numbers below. */
+/* @settings
+name: Math notes
+id: math-notes
+settings:
+    -
+        id: math-chalk-yellow
+        title: Yellow chalk
+        description: The teacher's yellow chalk in lecture notes (math only)
+        type: variable-themed-color
+        format: rgb-values
+        opacity: false
+        default-light: '#BF8A00'
+        default-dark: '#F9CF51'
+*/
+body.theme-light { --math-chalk-yellow: 222, 159, 13; }
+body.theme-dark  { --math-chalk-yellow: 249, 207, 81; }
+mjx-container { --color-yellow-rgb: var(--math-chalk-yellow); }

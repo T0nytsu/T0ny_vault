@@ -1,6 +1,7 @@
 {
   "cssTheme": "Primary",
   "enabledCssSnippets": [
-    "math-callouts"
+    "math-callouts",
+    "math-chalk-yellow"
   ]
 }
