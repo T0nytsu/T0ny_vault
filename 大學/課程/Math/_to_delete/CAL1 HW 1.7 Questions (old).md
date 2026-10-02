@@ -10,8 +10,6 @@ solutions: "[[CAL1 HW 1.7 Solutions]]"
 ---
 > [!info] Coverage
 > ST §1.7: 3, 13, 15, 17, 19, 21, 23, 25, 27, 29, 31, 41, 43. These are the exercises whose numbers are highlighted in the scan. ST is Stewart, *Calculus*.
->
-> Additional exercises, not assigned: 11, 24, 28, 32, 36, 37, 38, 39, 40, 42. They are at the bottom of this note and cover types of problems that the assigned exercises leave out.
 
 ## ST §1.7 The Precise Definition of a Limit
 
@@ -89,57 +87,3 @@ $$
 
 ### ST 1.7.43
 Prove that $\displaystyle \lim_{x \to -1^{-}} \frac{5}{(x + 1)^3} = -\infty$.
-
-## ST §1.7 Additional Exercises
-
-### ST 1.7.11
-A machinist is required to manufacture a circular metal disk with area $1000 \text{ cm}^2$.
-- (a) What radius produces such a disk?
-- (b) If the machinist is allowed an error tolerance of $\pm 5 \text{ cm}^2$ in the area of the disk, how close to the ideal radius in part (a) must the machinist control the radius?
-- (c) In terms of the $\varepsilon$, $\delta$ definition of $\lim_{x \to a} f(x) = L$, what is $x$? What is $f(x)$? What is $a$? What is $L$? What value of $\varepsilon$ is given? What is the corresponding value of $\delta$?
-
-### ST 1.7.24
-**19–32** Prove the statement using the $\varepsilon$, $\delta$ definition of a limit.
-$$
-\lim_{x \to a} c = c
-$$
-
-### ST 1.7.28
-**19–32** Prove the statement using the $\varepsilon$, $\delta$ definition of a limit.
-$$
-\lim_{x \to -6^{+}} \sqrt[8]{6 + x} = 0
-$$
-
-### ST 1.7.32
-**19–32** Prove the statement using the $\varepsilon$, $\delta$ definition of a limit.
-$$
-\lim_{x \to 2} x^3 = 8
-$$
-
-### ST 1.7.36
-Prove that $\displaystyle \lim_{x \to 2} \frac{1}{x} = \frac{1}{2}$.
-
-### ST 1.7.37
-Prove that $\displaystyle \lim_{x \to a} \sqrt{x} = \sqrt{a}$ if $a > 0$.
-$$
-\left[\textit{Hint: } \text{Use } \left\lvert \sqrt{x} - \sqrt{a} \right\rvert = \frac{\lvert x - a \rvert}{\sqrt{x} + \sqrt{a}}.\right]
-$$
-
-### ST 1.7.38
-If $H$ is the Heaviside function defined in Section 1.5, prove, using Definition 2, that $\lim_{t \to 0} H(t)$ does not exist. [*Hint:* Use an indirect proof as follows. Suppose that the limit is $L$. Take $\varepsilon = \tfrac{1}{2}$ in the definition of a limit and try to arrive at a contradiction.]
-
-### ST 1.7.39
-If the function $f$ is defined by
-$$
-f(x) = \begin{cases} 0 & \text{if } x \text{ is rational} \\ 1 & \text{if } x \text{ is irrational} \end{cases}
-$$
-prove that $\lim_{x \to 0} f(x)$ does not exist.
-
-### ST 1.7.40
-By comparing Definitions 2, 3, and 4, prove Theorem 1.6.1:
-$$
-\lim_{x \to a} f(x) = L \qquad \text{if and only if} \qquad \lim_{x \to a^{-}} f(x) = L = \lim_{x \to a^{+}} f(x)
-$$
-
-### ST 1.7.42
-Prove, using Definition 6, that $\displaystyle \lim_{x \to -3} \frac{1}{(x + 3)^4} = \infty$.
