@@ -11,8 +11,8 @@ created: 2026-10-02
 
 ## Topic Tags
 
-| Tag | Covers |
-| --- | --- |
+| Tag      | Covers                                                                              |
+| -------- | ----------------------------------------------------------------------------------- |
 | `limits` | Limits of functions and the precise ($\varepsilon$, $\delta$) definition of a limit |
 
 ## Homework
