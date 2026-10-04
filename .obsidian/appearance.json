@@ -3,5 +3,6 @@
   "enabledCssSnippets": [
     "math-callouts",
     "math-chalk-yellow"
-  ]
+  ],
+  "showRibbon": true
 }
