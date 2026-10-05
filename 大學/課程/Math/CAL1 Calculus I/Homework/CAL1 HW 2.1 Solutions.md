@@ -10,27 +10,27 @@ questions: "[[CAL1 HW 2.1 Questions]]"
 ---
 ## Answer Key
 
-| Exercise | Answer |
-| --- | --- |
-| [[CAL1 HW 2.1 Questions#ST 2.1.5\|ST 2.1.5]] | $m = 7$; $y = 7x - 17$ |
-| [[CAL1 HW 2.1 Questions#ST 2.1.7\|ST 2.1.7]] | $m = -5$; $y = -5x + 6$ |
-| [[CAL1 HW 2.1 Questions#ST 2.1.17\|ST 2.1.17]] | $g'(0) < 0 < g'(4) < g'(2) < g'(-2)$ |
-| [[CAL1 HW 2.1 Questions#ST 2.1.21\|ST 2.1.21]] | $f'(3) = \tfrac{5}{9}$ |
-| [[CAL1 HW 2.1 Questions#ST 2.1.23\|ST 2.1.23]] | $f'(a) = 4a - 5$ |
-| [[CAL1 HW 2.1 Questions#ST 2.1.25\|ST 2.1.25]] | $f'(a) = -\dfrac{2a}{(a^2 + 1)^2}$ |
-| [[CAL1 HW 2.1 Questions#ST 2.1.27\|ST 2.1.27]] | $y = -\tfrac{1}{2}x + 3$ |
-| [[CAL1 HW 2.1 Questions#ST 2.1.29\|ST 2.1.29]] | $f'(1) = 3$; $y = 3x - 1$ |
-| [[CAL1 HW 2.1 Questions#ST 2.1.33\|ST 2.1.33]] | $f(2) = 3$, $f'(2) = 4$ |
-| [[CAL1 HW 2.1 Questions#ST 2.1.35\|ST 2.1.35]] | velocity $32$ m/s, speed $32$ m/s |
-| [[CAL1 HW 2.1 Questions#ST 2.1.39\|ST 2.1.39]] | Graph (one possible $f$) |
-| [[CAL1 HW 2.1 Questions#ST 2.1.41\|ST 2.1.41]] | Graph (one possible $g$) |
-| [[CAL1 HW 2.1 Questions#ST 2.1.43\|ST 2.1.43]] | $f(x) = \sqrt{x}$, $a = 9$ |
-| [[CAL1 HW 2.1 Questions#ST 2.1.45\|ST 2.1.45]] | $f(x) = x^6$, $a = 2$ |
-| [[CAL1 HW 2.1 Questions#ST 2.1.47\|ST 2.1.47]] | $f(x) = \tan x$, $a = \tfrac{\pi}{4}$ |
-| [[CAL1 HW 2.1 Questions#ST 2.1.49\|ST 2.1.49]] | (a) (i) $20.25$ dollars/unit, (ii) $20.05$ dollars/unit; (b) $20$ dollars/unit |
+| Exercise                                       | Answer                                                                                                                                    |
+| ---------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------- |
+| [[CAL1 HW 2.1 Questions#ST 2.1.5\|ST 2.1.5]]   | $m = 7$; $y = 7x - 17$                                                                                                                    |
+| [[CAL1 HW 2.1 Questions#ST 2.1.7\|ST 2.1.7]]   | $m = -5$; $y = -5x + 6$                                                                                                                   |
+| [[CAL1 HW 2.1 Questions#ST 2.1.17\|ST 2.1.17]] | $g'(0) < 0 < g'(4) < g'(2) < g'(-2)$                                                                                                      |
+| [[CAL1 HW 2.1 Questions#ST 2.1.21\|ST 2.1.21]] | $f'(3) = \tfrac{5}{9}$                                                                                                                    |
+| [[CAL1 HW 2.1 Questions#ST 2.1.23\|ST 2.1.23]] | $f'(a) = 4a - 5$                                                                                                                          |
+| [[CAL1 HW 2.1 Questions#ST 2.1.25\|ST 2.1.25]] | $f'(a) = -\dfrac{2a}{(a^2 + 1)^2}$                                                                                                        |
+| [[CAL1 HW 2.1 Questions#ST 2.1.27\|ST 2.1.27]] | $y = -\tfrac{1}{2}x + 3$                                                                                                                  |
+| [[CAL1 HW 2.1 Questions#ST 2.1.29\|ST 2.1.29]] | $f'(1) = 3$; $y = 3x - 1$                                                                                                                 |
+| [[CAL1 HW 2.1 Questions#ST 2.1.33\|ST 2.1.33]] | $f(2) = 3$, $f'(2) = 4$                                                                                                                   |
+| [[CAL1 HW 2.1 Questions#ST 2.1.35\|ST 2.1.35]] | velocity $32$ m/s, speed $32$ m/s                                                                                                         |
+| [[CAL1 HW 2.1 Questions#ST 2.1.39\|ST 2.1.39]] | Graph (one possible $f$)                                                                                                                  |
+| [[CAL1 HW 2.1 Questions#ST 2.1.41\|ST 2.1.41]] | Graph (one possible $g$)                                                                                                                  |
+| [[CAL1 HW 2.1 Questions#ST 2.1.43\|ST 2.1.43]] | $f(x) = \sqrt{x}$, $a = 9$                                                                                                                |
+| [[CAL1 HW 2.1 Questions#ST 2.1.45\|ST 2.1.45]] | $f(x) = x^6$, $a = 2$                                                                                                                     |
+| [[CAL1 HW 2.1 Questions#ST 2.1.47\|ST 2.1.47]] | $f(x) = \tan x$, $a = \tfrac{\pi}{4}$                                                                                                     |
+| [[CAL1 HW 2.1 Questions#ST 2.1.49\|ST 2.1.49]] | (a) (i) $20.25$ dollars/unit, (ii) $20.05$ dollars/unit; (b) $20$ dollars/unit                                                            |
 | [[CAL1 HW 2.1 Questions#ST 2.1.53\|ST 2.1.53]] | (a) the rate of change of the oxygen solubility with respect to the water temperature, in (mg/L)/°C; (b) $S'(16) \approx -0.25$ (mg/L)/°C |
-| [[CAL1 HW 2.1 Questions#ST 2.1.57\|ST 2.1.57]] | $f'(0)$ does not exist |
-| [[CAL1 HW 2.1 Questions#ST 2.1.58\|ST 2.1.58]] | $f'(0)$ exists, $f'(0) = 0$ |
+| [[CAL1 HW 2.1 Questions#ST 2.1.57\|ST 2.1.57]] | $f'(0)$ does not exist                                                                                                                    |
+| [[CAL1 HW 2.1 Questions#ST 2.1.58\|ST 2.1.58]] | $f'(0)$ exists, $f'(0) = 0$                                                                                                               |
 
 Additional exercises, not assigned:
 
