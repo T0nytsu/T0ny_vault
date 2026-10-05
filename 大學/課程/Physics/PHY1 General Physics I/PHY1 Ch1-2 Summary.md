@@ -1,5 +1,3 @@
-%% unit-summary v1.1 · Wolfson, Essential University Physics 4e (Global Edition), Vol. 1, Ch. 1–2, pp. 17–49 · 2026-10-05 · draft; the physics rules are defaults until T0ny's own summary calibrates them %%
-
 # Chapter 1 Doing Physics
 
 ## 1.1 Realms of Physics
