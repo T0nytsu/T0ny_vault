@@ -49,20 +49,29 @@ created: 2026-10-02
 | `continuity` | Continuity, kinds of discontinuity, and the Intermediate Value Theorem              |
 | `derivatives` | Tangent lines, velocities, the derivative at a number, and rates of change         |
 
+## Quizzes and Exams
+
+- [[CAL1 Quiz 01]], score 10/12
+
 ## Homework
 
 - [[CAL1 HW 1.7 Questions]] and [[CAL1 HW 1.7 Solutions]]
 - [[CAL1 HW 1.8 Questions]] and [[CAL1 HW 1.8 Solutions]]
 - [[CAL1 HW 2.1 Questions]] and [[CAL1 HW 2.1 Solutions]]
+- [[CAL1 HW 2.2 Questions]] and [[CAL1 HW 2.2 Solutions]]
 
 ## Concepts
 
 - [[Continuity]]
 - [[Derivative]]
+- [[Differentiable Function]]
 - [[Discontinuity]]
+- [[Higher Derivatives]]
 - [[Infinite Limit]]
 - [[Intermediate Value Theorem]]
+- [[One-Sided Derivative]]
 - [[One-Sided Limit]]
 - [[Precise Definition of a Limit]]
 - [[Squeeze Theorem]]
 - [[Tangent Line]]
+- [[Vertical Tangent Line]]
