@@ -49,6 +49,7 @@ created: 2026-09-30
 
 - [[LA1 Quiz 01]], 2026-09-15, score 5/10
 - [[LA1 Quiz 02]], score 4/10
+- [[LA1 Quiz 03]], 2026-09-29, score 10/10
 
 ## Homework
 
