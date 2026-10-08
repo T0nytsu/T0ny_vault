@@ -44,6 +44,7 @@ created: 2026-09-30
 ## Lectures
 
 - [[LA1 Lecture 2026-09-29]]
+- [[LA1 Lecture 2026-10-06]]
 
 ## Quizzes and Exams
 
@@ -65,6 +66,7 @@ created: 2026-09-30
 - [[Elementary Column Operation]]
 - [[Elementary Matrix]]
 - [[Elementary Row Operation]]
+- [[Gauss-Jordan Elimination]]
 - [[Gaussian Elimination]]
 - [[Idempotent Matrix]]
 - [[Invertible Matrix]]
@@ -73,6 +75,7 @@ created: 2026-09-30
 - [[Norm]]
 - [[Orthogonal Vectors]]
 - [[Parallel Vectors]]
+- [[Rank]]
 - [[Reduced Row-Echelon Form]]
 - [[Row Equivalence]]
 - [[Row-Echelon Form]]
