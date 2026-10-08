@@ -68,6 +68,7 @@ created: 2026-09-30
 - [[Elementary Row Operation]]
 - [[Gauss-Jordan Elimination]]
 - [[Gaussian Elimination]]
+- [[Homogeneous System]]
 - [[Idempotent Matrix]]
 - [[Invertible Matrix]]
 - [[Linear Combination]]
