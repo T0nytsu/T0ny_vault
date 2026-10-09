@@ -57,6 +57,7 @@ created: 2026-09-30
 - [[LA1 HW 1.1 1.2 Questions]] and [[LA1 HW 1.1 1.2 Solutions]]
 - [[LA1 HW 1.3 1.5 Questions]] and [[LA1 HW 1.3 1.5 Solutions]]
 - [[LA1 HW 1.4 1.5 Questions]] and [[LA1 HW 1.4 1.5 Solutions]]
+- [[LA1 HW 1.4 Questions]] and [[LA1 HW 1.4 Solutions]]
 
 ## Concepts
 
