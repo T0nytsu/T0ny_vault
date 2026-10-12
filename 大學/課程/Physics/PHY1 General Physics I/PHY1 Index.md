@@ -8,6 +8,7 @@ created: 2026-10-05
 ---
 > [!info] Course
 > General Physics I, semester 115-1. Textbook: Wolfson, *Essential University Physics*, 4th ed., Global Edition, Vol. 1 (EUP).
+> Midterm coverage: through EUP Ch. 8.
 
 ## Topic Tags
 
