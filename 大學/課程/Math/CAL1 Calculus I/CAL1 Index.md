@@ -52,6 +52,7 @@ created: 2026-10-02
 ## Quizzes and Exams
 
 - [[CAL1 Quiz 01]], score 10/12
+- [[CAL1 Midterm 1]], score 97/100
 
 ## Homework
 
@@ -69,6 +70,8 @@ created: 2026-10-02
 - [[Higher Derivatives]]
 - [[Infinite Limit]]
 - [[Intermediate Value Theorem]]
+- [[Limit Laws]]
+- [[Limit of a Function]]
 - [[One-Sided Derivative]]
 - [[One-Sided Limit]]
 - [[Precise Definition of a Limit]]
