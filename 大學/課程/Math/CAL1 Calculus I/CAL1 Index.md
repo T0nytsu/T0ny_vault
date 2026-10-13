@@ -1,12 +1,16 @@
 ---
-course: [CAL1]
-semester: "115-1"
-chapter: []
-tags: [calculus, index]
-aliases: [微積分一]
+course:
+  - CAL1
+semester: 115-1
+chapter:
+tags:
+  - calculus
+  - index
+aliases:
+  - 微積分一
 source: []
 created: 2026-10-02
-format: "math-notes 2.3"
+format: math-notes 2.3
 ---
 > [!info] Course
 > Calculus I, semester 115-1. Main text: Stewart, *Calculus* (ST).

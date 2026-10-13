@@ -1,14 +1,12 @@
-# Math Overview: every note and attachment of the Math folder (Math Notes Style Guide v2.3).
-# Views: Notes (grouped by semester), Needs review, Not on the current format, Attachments (Used by 0 = orphan).
 filters:
   and:
     - file.inFolder(this.file.folder)
     - not:
-        - 'file.path.contains("/_to_delete/")'
+        - file.path.contains("/_to_delete/")
 formulas:
-  type: 'tags.filter(["lecture", "quiz", "exam", "homework", "concept", "index"].contains(value)).join(", ")'
-  used_by: 'file.backlinks.length'
-  size_kb: '(file.size / 1024).round(0)'
+  type: tags.filter(["lecture", "quiz", "exam", "homework", "concept", "index"].contains(value)).join(", ")
+  used_by: file.backlinks.length
+  size_kb: (file.size / 1024).round(0)
 properties:
   file.name:
     displayName: Name
@@ -23,7 +21,7 @@ views:
     name: Notes
     filters:
       and:
-        - 'file.ext == "md"'
+        - file.ext == "md"
     groupBy:
       property: semester
       direction: DESC
@@ -42,7 +40,7 @@ views:
     name: Needs review
     filters:
       and:
-        - 'file.hasTag("needs-review")'
+        - file.hasTag("needs-review")
     order:
       - file.name
       - course
@@ -51,8 +49,8 @@ views:
     name: Not on the current format
     filters:
       and:
-        - 'file.ext == "md"'
-        - 'format != "math-notes 2.3"'
+        - file.ext == "md"
+        - format != "math-notes 2.3"
     order:
       - file.name
       - file.folder
@@ -61,8 +59,8 @@ views:
     name: Attachments
     filters:
       and:
-        - 'file.ext != "md"'
-        - 'file.ext != "base"'
+        - file.ext != "md"
+        - file.ext != "base"
     groupBy:
       property: file.folder
       direction: ASC
