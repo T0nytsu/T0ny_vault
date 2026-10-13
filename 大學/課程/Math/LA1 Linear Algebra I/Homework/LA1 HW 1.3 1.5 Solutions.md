@@ -1,11 +1,14 @@
 ---
 course: [LA1]
+semester: "115-1"
 chapter: ["1.3", "1.5"]
 tags: [linear-algebra, homework, solutions, matrix-algebra, matrix-inverse]
 source:
   - "Own solutions; computations checked with sympy"
 created: 2026-09-29
 questions: "[[LA1 HW 1.3 1.5 Questions]]"
+up: "[[LA1 Index]]"
+format: "math-notes 2.3"
 ---
 ## Answer Key
 

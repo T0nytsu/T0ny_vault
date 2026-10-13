@@ -1,11 +1,14 @@
 ---
 course: [LA1]
+semester: "115-1"
 chapter: ["1.3"]
 tags: [linear-algebra, quiz, matrix-algebra]
 source:
   - "LA1 Quiz #2 (115-1), graded scan"
 created: 2026-09-30
 score: "4/10"
+up: "[[LA1 Index]]"
+format: "math-notes 2.3"
 ---
 > [!abstract] Result: 4/10
 > - Q1 True or False: 4/5. Item (c) was wrong.

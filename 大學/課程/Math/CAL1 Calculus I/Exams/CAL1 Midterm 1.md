@@ -1,5 +1,6 @@
 ---
 course: [CAL1]
+semester: "115-1"
 chapter: ["1.5", "1.6", "1.7", "1.8", "2.1", "2.2"]
 tags: [calculus, exam, limits, continuity, derivatives]
 source:
@@ -14,6 +15,8 @@ source:
   - "[[CAL1 Midterm 1 p8.jpg]]"
 created: 2026-10-12
 score: "97/100"
+up: "[[CAL1 Index]]"
+format: "math-notes 2.3"
 ---
 > [!abstract] Result: 97/100
 > - Q1 True or False: 10/10.
@@ -82,7 +85,7 @@ score: "97/100"
 > [!question]
 > (5 points) The figure shows the graphs of $f$, $f'$, and $f''$. Which choice correctly identifies the curves?
 >
-> ![[CAL1 Midterm 1 fig 2b.png|420]]
+> ![Q2 (b) figure|420](../Attachments/CAL1%20Midterm%201%20fig%202b.png)
 >
 > - A. $f = c,\ f' = b,\ f'' = a$
 > - B. $f = a,\ f' = b,\ f'' = c$

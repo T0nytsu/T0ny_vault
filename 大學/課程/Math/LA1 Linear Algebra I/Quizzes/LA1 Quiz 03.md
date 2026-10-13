@@ -1,5 +1,6 @@
 ---
 course: [LA1]
+semester: "115-1"
 chapter: ["1.3"]
 tags: [linear-algebra, quiz, matrix-algebra]
 source:
@@ -7,6 +8,8 @@ source:
   - "[[LA1 Quiz 03 p1.jpg]]"
 created: 2026-10-06
 score: "10/10"
+up: "[[LA1 Index]]"
+format: "math-notes 2.3"
 ---
 > [!abstract] Result: 10/10
 > - Q1 Proof: 5/5.

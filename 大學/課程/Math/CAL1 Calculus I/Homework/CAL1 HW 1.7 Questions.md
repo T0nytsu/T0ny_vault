@@ -1,5 +1,6 @@
 ---
 course: [CAL1]
+semester: "115-1"
 chapter: ["1.7"]
 tags: [calculus, homework, questions, limits]
 source:
@@ -7,6 +8,8 @@ source:
   - "The graph of Exercise 3 is redrawn from the scan"
 created: 2026-10-02
 solutions: "[[CAL1 HW 1.7 Solutions]]"
+up: "[[CAL1 Index]]"
+format: "math-notes 2.3"
 ---
 > [!info] Coverage
 > ST §1.7: 3, 13, 15, 17, 19, 21, 23, 25, 27, 29, 31, 41, 43. These are the exercises whose numbers are highlighted in the scan. ST is Stewart, *Calculus*.
@@ -21,7 +24,7 @@ $$
 \text{if} \quad \lvert x - 4 \rvert < \delta \quad \text{then} \quad \lvert \sqrt{x} - 2 \rvert < 0.4
 $$
 
-![[CAL1 HW 1.7 Questions fig 3.svg|380]]
+![ST 1.7.3 figure|380](../Attachments/CAL1%20HW%201.7%20Questions%20fig%203.svg)
 
 ### ST 1.7.13
 - (a) Find a number $\delta$ such that if $\lvert x - 2 \rvert < \delta$, then $\lvert 4x - 8 \rvert < \varepsilon$, where $\varepsilon = 0.1$.

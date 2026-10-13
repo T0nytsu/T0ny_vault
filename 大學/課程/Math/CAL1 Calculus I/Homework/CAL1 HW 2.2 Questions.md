@@ -1,5 +1,6 @@
 ---
 course: [CAL1]
+semester: "115-1"
 chapter: ["2.2"]
 tags: [calculus, homework, questions, derivatives]
 source:
@@ -7,6 +8,8 @@ source:
   - "The graphs of Exercises 3, 39, 41, 45 and 47 are redrawn from the scan"
 created: 2026-10-05
 solutions: "[[CAL1 HW 2.2 Solutions]]"
+up: "[[CAL1 Index]]"
+format: "math-notes 2.3"
 ---
 > [!info] Coverage
 > ST §2.2: 3, 19, 23, 27, 39, 41, 45, 47, 55, 57, 59, 63. These are the exercises assigned for Section 2.2. ST is Stewart, *Calculus*.
@@ -18,7 +21,7 @@ solutions: "[[CAL1 HW 2.2 Solutions]]"
 ### ST 2.2.3
 Match the graph of each function in (a)–(d) with the graph of its derivative in I–IV. Give reasons for your choices.
 
-![[CAL1 HW 2.2 Questions fig 3.png|440]]
+![ST 2.2.3 figure|440](../Attachments/CAL1%20HW%202.2%20Questions%20fig%203.png)
 
 ### ST 2.2.19
 **19–30** Find the derivative of the function using the definition of derivative. State the domain of the function and the domain of its derivative.
@@ -41,22 +44,22 @@ $$
 ### ST 2.2.39
 **39–42** The graph of $f$ is given. State, with reasons, the numbers at which $f$ is *not* differentiable.
 
-![[CAL1 HW 2.2 Questions fig 39.png|440]]
+![ST 2.2.39 figure|440](../Attachments/CAL1%20HW%202.2%20Questions%20fig%2039.png)
 
 ### ST 2.2.41
 **39–42** The graph of $f$ is given. State, with reasons, the numbers at which $f$ is *not* differentiable.
 
-![[CAL1 HW 2.2 Questions fig 41.png|440]]
+![ST 2.2.41 figure|440](../Attachments/CAL1%20HW%202.2%20Questions%20fig%2041.png)
 
 ### ST 2.2.45
 **45–46** The graphs of a function $f$ and its derivative $f'$ are shown. Which is bigger, $f'(-1)$ or $f''(1)$?
 
-![[CAL1 HW 2.2 Questions fig 45.png|400]]
+![ST 2.2.45 figure|400](../Attachments/CAL1%20HW%202.2%20Questions%20fig%2045.png)
 
 ### ST 2.2.47
 The figure shows the graphs of $f$, $f'$, and $f''$. Identify each curve, and explain your choices.
 
-![[CAL1 HW 2.2 Questions fig 47.png|440]]
+![ST 2.2.47 figure|440](../Attachments/CAL1%20HW%202.2%20Questions%20fig%2047.png)
 
 ### ST 2.2.55
 Let $f(x) = \sqrt[3]{x}$.

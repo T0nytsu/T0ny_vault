@@ -1,11 +1,14 @@
 ---
 course: [LA1]
+semester: "115-1"
 chapter: ["1.1", "1.2"]
 tags: [linear-algebra, quiz, vectors]
 source:
   - "LA1 Quiz #1 (115-1), 2026-09-15, graded scan"
 created: 2026-09-30
 score: "5/10"
+up: "[[LA1 Index]]"
+format: "math-notes 2.3"
 ---
 > [!abstract] Result: 5/10
 > - Q1 True or False: 5/5.

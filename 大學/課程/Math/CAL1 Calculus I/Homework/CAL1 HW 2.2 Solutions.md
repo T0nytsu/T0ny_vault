@@ -1,5 +1,6 @@
 ---
 course: [CAL1]
+semester: "115-1"
 chapter: ["2.2"]
 tags: [calculus, homework, solutions, derivatives]
 source:
@@ -7,6 +8,8 @@ source:
   - "Stewart, Calculus, §2.2, pp. 120-128, scanned PDF (definitions and equation numbers)"
 created: 2026-10-05
 questions: "[[CAL1 HW 2.2 Questions]]"
+up: "[[CAL1 Index]]"
+format: "math-notes 2.3"
 ---
 ## Answer Key
 
@@ -69,7 +72,7 @@ Question: [[CAL1 HW 2.2 Questions#ST 2.2.3|ST 2.2.3]]
 > &3 \text{ horizontal tangents} \implies f' = 0 \text{ at } 3 \text{ numbers} \implies \text{III}
 > \end{aligned}
 > $$
-> ![[CAL1 HW 2.2 Solutions fig 3.png|640]]
+> ![ST 2.2.3 figure|640](../Attachments/CAL1%20HW%202.2%20Solutions%20fig%203.png)
 >
 > \# Read only two things from the graph of $f$: where the tangent is horizontal (there $f'$ crosses the $x$-axis) and where $f$ goes up or down (the sign of $f'$). The height of $f$ does not matter. The fastest way to match is to count the horizontal tangents: 2, 0, 1, 3.
 
@@ -138,7 +141,7 @@ Question: [[CAL1 HW 2.2 Questions#ST 2.2.39|ST 2.2.39]]
 > &0:\ f \text{ is not continuous at } 0 \text{ (jump)} \implies f \text{ is not differentiable at } 0.
 > \end{aligned}
 > $$
-> ![[CAL1 HW 2.2 Solutions fig 39.png|440]]
+> ![ST 2.2.39 figure|440](../Attachments/CAL1%20HW%202.2%20Solutions%20fig%2039.png)
 >
 > \# Look for the three pictures: corner, discontinuity, vertical tangent. Near $x = 2.3$ the curve is steep but it is still smooth, so it is not on the list. At a corner the slope from the left and the slope from the right are different numbers.
 
@@ -153,7 +156,7 @@ Question: [[CAL1 HW 2.2 Questions#ST 2.2.41|ST 2.2.41]]
 > &5:\ \text{the graph has a vertical tangent line at } x = 5.
 > \end{aligned}
 > $$
-> ![[CAL1 HW 2.2 Solutions fig 41.png|440]]
+> ![ST 2.2.41 figure|440](../Attachments/CAL1%20HW%202.2%20Solutions%20fig%2041.png)
 >
 > \# At $x = 5$ the function is continuous and the curve is smooth, but the tangent lines become steeper and steeper, $\lim_{x \to 5} \lvert f'(x) \rvert = \infty$, so the slope is not a number. The minimum near $x = 4$ is a horizontal tangent, where $f' = 0$; that is differentiable.
 
@@ -169,7 +172,7 @@ Question: [[CAL1 HW 2.2 Questions#ST 2.2.45|ST 2.2.45]]
 > &\text{Hence } f''(1) > f'(-1).
 > \end{aligned}
 > $$
-> ![[CAL1 HW 2.2 Solutions fig 45.png|420]]
+> ![ST 2.2.45 figure|420](../Attachments/CAL1%20HW%202.2%20Solutions%20fig%2045.png)
 >
 > \# First decide which curve is which, then read a **height** for $f'(-1)$ and a **slope** for $f''(1)$. Only the signs are needed. Check on $f$: at $-1$ the graph of $f$ is going down, so $f'(-1) < 0$.
 
@@ -189,7 +192,7 @@ Question: [[CAL1 HW 2.2 Questions#ST 2.2.47|ST 2.2.47]]
 > &\text{Hence } a = f,\ b = f',\ c = f''.
 > \end{aligned}
 > $$
-> ![[CAL1 HW 2.2 Solutions fig 47.png|440]]
+> ![ST 2.2.47 figure|440](../Attachments/CAL1%20HW%202.2%20Solutions%20fig%2047.png)
 >
 > \# The test for "$q$ is the derivative of $p$": wherever $p$ has a horizontal tangent, $q$ must be $0$, and $q$ must be positive where $p$ goes up. To exclude the other orders quickly: $c$ has a minimum where $a$ and $b$ are not $0$, so neither is $c'$, and $c$ must be the last one.
 
@@ -248,7 +251,7 @@ Question: [[CAL1 HW 2.2 Questions#ST 2.2.57|ST 2.2.57]]
 > $$
 > f'(x) = \begin{cases} 1 & \text{if } x > 6 \\ -1 & \text{if } x < 6 \end{cases}
 > $$
-> ![[CAL1 HW 2.2 Solutions fig 57.png|400]]
+> ![ST 2.2.57 figure|400](../Attachments/CAL1%20HW%202.2%20Solutions%20fig%2057.png)
 >
 > \# The graph of $\lvert x - 6 \rvert$ is the graph of $\lvert x \rvert$ shifted $6$ to the right, so the corner is at $6$. For $x > 6$, $h$ is taken so small that $x + h > 6$ too, and then $\lvert x + h - 6 \rvert = x + h - 6$; the same for $x < 6$. The graph of $f'$ has open dots at $x = 6$ because $f'(6)$ does not exist.
 
@@ -258,7 +261,7 @@ Question: [[CAL1 HW 2.2 Questions#ST 2.2.59|ST 2.2.59]]
 > [!solution] Solution
 > **(a)** $f(x) = x\lvert x \rvert = \begin{cases} x^2 & \text{if } x \ge 0 \\ -x^2 & \text{if } x < 0 \end{cases}$
 >
-> ![[CAL1 HW 2.2 Solutions fig 59.png|340]]
+> ![ST 2.2.59 figure|340](../Attachments/CAL1%20HW%202.2%20Solutions%20fig%2059.png)
 >
 > **(b)**
 > $$
@@ -295,7 +298,7 @@ Question: [[CAL1 HW 2.2 Questions#ST 2.2.63|ST 2.2.63]]
 > $$
 > **(b)**
 >
-> ![[CAL1 HW 2.2 Solutions fig 63.png|460]]
+> ![ST 2.2.63 figure|460](../Attachments/CAL1%20HW%202.2%20Solutions%20fig%2063.png)
 >
 > **(c)**
 > $$
@@ -391,7 +394,7 @@ Question: [[CAL1 HW 2.2 Questions#ST 2.2.58|ST 2.2.58]]
 > $$
 > Hence $f$ is not differentiable at the integers, and $f'(x) = 0$ if $x$ is not an integer.
 >
-> ![[CAL1 HW 2.2 Solutions fig 58.png|400]]
+> ![ST 2.2.58 figure|400](../Attachments/CAL1%20HW%202.2%20Solutions%20fig%2058.png)
 >
 > \# The graph of $[\![ x ]\!]$ is a staircase: flat pieces (slope $0$) with a jump at every integer. The graph of $f'$ is the $x$-axis with an open dot at every integer. Not continuous $\implies$ not differentiable is the fastest reason; no difference quotient is needed at $n$.
 

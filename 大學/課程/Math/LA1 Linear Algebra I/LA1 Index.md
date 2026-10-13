@@ -1,10 +1,12 @@
 ---
 course: [LA1]
+semester: "115-1"
 chapter: []
 tags: [linear-algebra, index]
 aliases: [線性代數一]
 source: []
 created: 2026-09-30
+format: "math-notes 2.3"
 ---
 > [!info] Course
 > Linear Algebra I, semester 115-1. Main text: Fraleigh & Beauregard, *Linear Algebra*, 3rd edition (FB). Supplementary: Friedberg, Insel & Spence, *Linear Algebra*, 4th edition (FIS).

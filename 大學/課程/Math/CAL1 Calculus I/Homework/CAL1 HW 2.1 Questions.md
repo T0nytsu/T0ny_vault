@@ -1,5 +1,6 @@
 ---
 course: [CAL1]
+semester: "115-1"
 chapter: ["2.1"]
 tags: [calculus, homework, questions, derivatives]
 source:
@@ -7,6 +8,8 @@ source:
   - "The graphs of Exercises 17 and 53 are redrawn from the scan"
 created: 2026-10-05
 solutions: "[[CAL1 HW 2.1 Solutions]]"
+up: "[[CAL1 Index]]"
+format: "math-notes 2.3"
 ---
 > [!info] Coverage
 > ST §2.1: 5, 7, 17, 21, 23, 25, 27, 29, 33, 35, 39, 41, 43, 45, 47, 49, 53, 57, 58. These are the exercises assigned for Section 2.1. ST is Stewart, *Calculus*.
@@ -33,7 +36,7 @@ $$
 0 \qquad g'(-2) \qquad g'(0) \qquad g'(2) \qquad g'(4)
 $$
 
-![[CAL1 HW 2.1 Questions fig 17.png|480]]
+![ST 2.1.17 figure|480](../Attachments/CAL1%20HW%202.1%20Questions%20fig%2017.png)
 
 ### ST 2.1.21
 **21–22** Use Equation 5 to find $f'(a)$ at the given number $a$.
@@ -104,7 +107,7 @@ The quantity of oxygen that can dissolve in water depends on the temperature of 
 - (a) What is the meaning of the derivative $S'(T)$? What are its units?
 - (b) Estimate the value of $S'(16)$ and interpret it.
 
-![[CAL1 HW 2.1 Questions fig 53.png|420]]
+![ST 2.1.53 figure|420](../Attachments/CAL1%20HW%202.1%20Questions%20fig%2053.png)
 
 *Source:* C. Kupchella et al., *Environmental Science: Living Within the System of Nature*, 2d ed. (Boston: Allyn and Bacon, 1989).
 

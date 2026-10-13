@@ -1,5 +1,6 @@
 ---
 course: [CAL1]
+semester: "115-1"
 chapter: ["2.1"]
 tags: [calculus, homework, solutions, derivatives]
 source:
@@ -7,6 +8,8 @@ source:
   - "Stewart, Calculus, §2.1, pp. 108-116, scanned PDF (definitions and equation numbers)"
 created: 2026-10-05
 questions: "[[CAL1 HW 2.1 Questions]]"
+up: "[[CAL1 Index]]"
+format: "math-notes 2.3"
 ---
 ## Answer Key
 
@@ -111,7 +114,7 @@ Question: [[CAL1 HW 2.1 Questions#ST 2.1.17|ST 2.1.17]]
 > &\implies g'(4) < g'(2) < g'(-2).
 > \end{aligned}
 > $$
-> ![[CAL1 HW 2.1 Solutions fig 17.png|480]]
+> ![ST 2.1.17 figure|480](../Attachments/CAL1%20HW%202.1%20Solutions%20fig%2017.png)
 >
 > \# No formula is needed, only the signs and the steepness of the four tangent lines. $g'(0)$ is the only negative number, so it goes to the left of $0$.
 
@@ -237,7 +240,7 @@ Question: [[CAL1 HW 2.1 Questions#ST 2.1.35|ST 2.1.35]]
 Question: [[CAL1 HW 2.1 Questions#ST 2.1.39|ST 2.1.39]]
 
 > [!solution] Solution
-> ![[CAL1 HW 2.1 Solutions fig 39.png|420]]
+> ![ST 2.1.39 figure|420](../Attachments/CAL1%20HW%202.1%20Solutions%20fig%2039.png)
 > $$
 > \begin{aligned}
 > &f(0) = 0: && \text{the graph passes through the origin.} \\
@@ -253,7 +256,7 @@ Question: [[CAL1 HW 2.1 Questions#ST 2.1.39|ST 2.1.39]]
 Question: [[CAL1 HW 2.1 Questions#ST 2.1.41|ST 2.1.41]]
 
 > [!solution] Solution
-> ![[CAL1 HW 2.1 Solutions fig 41.png|460]]
+> ![ST 2.1.41 figure|460](../Attachments/CAL1%20HW%202.1%20Solutions%20fig%2041.png)
 > $$
 > \begin{aligned}
 > &\text{continuous on } (-5, 5): && \text{one unbroken curve, drawn only for } {-5} < x < 5. \\
@@ -343,7 +346,7 @@ Question: [[CAL1 HW 2.1 Questions#ST 2.1.53|ST 2.1.53]]
 > $$
 > When the water temperature is $16$ °C, the oxygen solubility is decreasing at a rate of about $0.25$ (mg/L)/°C as the temperature rises.
 >
-> ![[CAL1 HW 2.1 Solutions fig 53.png|420]]
+> ![ST 2.1.53 figure|420](../Attachments/CAL1%20HW%202.1%20Solutions%20fig%2053.png)
 >
 > \# An estimate from a graph: draw the tangent line at $T = 16$, read two points on that line, and compute its slope. Any value near $-0.25$ is fine. A second way: the average of the two secant slopes next to $16$, about $\tfrac{1}{2}(-0.26 - 0.21) \approx -0.23$, with $S(8) \approx 12.3$, $S(16) \approx 10.2$, $S(24) \approx 8.6$ read from the graph. The sign is negative because $S$ decreases.
 

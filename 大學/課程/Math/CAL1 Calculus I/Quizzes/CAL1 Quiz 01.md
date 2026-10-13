@@ -1,5 +1,6 @@
 ---
 course: [CAL1]
+semester: "115-1"
 chapter: ["1.5", "1.6"]
 tags: [calculus, quiz, limits, needs-review]
 source:
@@ -7,6 +8,8 @@ source:
   - "[[CAL1 Quiz 01 p1.jpg]]"
 created: 2026-10-05
 score: "10/12"
+up: "[[CAL1 Index]]"
+format: "math-notes 2.3"
 ---
 > [!abstract] Result: 10/12
 > - Q1 Short-Answer Questions: 1/3. Items (b) and (c) have the wrong sign.

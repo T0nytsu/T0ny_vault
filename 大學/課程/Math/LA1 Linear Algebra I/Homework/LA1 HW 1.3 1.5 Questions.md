@@ -1,5 +1,6 @@
 ---
 course: [LA1]
+semester: "115-1"
 chapter: ["1.3", "1.5"]
 tags: [linear-algebra, homework, questions, matrix-algebra, matrix-inverse]
 source:
@@ -7,6 +8,8 @@ source:
   - "FIS §1.3 exercises p. 20 and §2.3 exercises p. 97, photos"
 created: 2026-09-29
 solutions: "[[LA1 HW 1.3 1.5 Solutions]]"
+up: "[[LA1 Index]]"
+format: "math-notes 2.3"
 ---
 > [!info] Coverage
 > FB §1.3: 20, 22, 24, 37, 40, 41, 44. FB §1.5: 9, 16, 17, 18, 19, 33. FIS §1.3: 2 (a)(d)(h), 6, 7. FIS §2.3: 13.

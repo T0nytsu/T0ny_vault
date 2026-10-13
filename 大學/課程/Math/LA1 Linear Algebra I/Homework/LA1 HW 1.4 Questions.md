@@ -1,11 +1,14 @@
 ---
 course: [LA1]
+semester: "115-1"
 chapter: ["1.4"]
 tags: [linear-algebra, homework, questions, linear-systems]
 source:
   - "FB §1.4 exercises pp. 68-71, scanned PDF"
 created: 2026-10-09
 solutions: "[[LA1 HW 1.4 Solutions]]"
+up: "[[LA1 Index]]"
+format: "math-notes 2.3"
 ---
 > [!info] Coverage
 > FB §1.4: 5, 9, 13, 18, 21, 25, 27, 29, 35, 38, 40. FB is Fraleigh & Beauregard, *Linear Algebra*.

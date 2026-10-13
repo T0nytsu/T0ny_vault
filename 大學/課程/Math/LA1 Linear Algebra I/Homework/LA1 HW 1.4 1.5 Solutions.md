@@ -1,5 +1,6 @@
 ---
 course: [LA1]
+semester: "115-1"
 chapter: ["1.4", "1.5"]
 tags: [linear-algebra, homework, solutions, linear-systems, matrix-inverse]
 source:
@@ -7,6 +8,8 @@ source:
   - "Nicholson exercises: own solutions"
 created: 2026-10-05
 questions: "[[LA1 HW 1.4 1.5 Questions]]"
+up: "[[LA1 Index]]"
+format: "math-notes 2.3"
 ---
 ## Answer Key
 

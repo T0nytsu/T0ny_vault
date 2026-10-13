@@ -1,11 +1,14 @@
 ---
 course: [CAL1]
+semester: "115-1"
 chapter: ["1.7"]
 tags: [calculus, homework, solutions, limits]
 source:
   - "Own solutions; computations checked with sympy"
 created: 2026-10-02
 questions: "[[CAL1 HW 1.7 Questions]]"
+up: "[[CAL1 Index]]"
+format: "math-notes 2.3"
 ---
 ## Answer Key
 
@@ -79,7 +82,7 @@ Question: [[CAL1 HW 1.7 Questions#ST 1.7.3|ST 1.7.3]]
 > $$
 > In the figure, the strip $\lvert x - 4 \rvert < 1.44$ is shaded. Above it, the curve stays between the lines $y = 1.6$ and $y = 2.4$.
 >
-> ![[CAL1 HW 1.7 Solutions fig 3.svg|380]]
+> ![ST 1.7.3 figure|380](../Attachments/CAL1%20HW%201.7%20Solutions%20fig%203.svg)
 >
 > **Answer.** $\delta = 1.44$, or any smaller positive number. A larger $\delta$ does not work: if $\delta > 1.44$, then $x = 2.56$ satisfies $\lvert x - 4 \rvert < \delta$, but $\lvert \sqrt{2.56} - 2 \rvert = 0.4$.
 
@@ -113,7 +116,7 @@ Question: [[CAL1 HW 1.7 Questions#ST 1.7.15|ST 1.7.15]]
 >
 > **Diagram.** The line $y = \tfrac{1}{2}x - 1$ meets the horizontal lines $y = 1 - \varepsilon$ and $y = 1 + \varepsilon$ at $x = 4 - 2\varepsilon$ and $x = 4 + 2\varepsilon$. With $\delta = 2\varepsilon$, for every $x$ between $4 - \delta$ and $4 + \delta$ the point of the line above $x$ lies between the heights $1 - \varepsilon$ and $1 + \varepsilon$.
 >
-> ![[CAL1 HW 1.7 Solutions fig 15.svg|400]]
+> ![ST 1.7.15 figure|400](../Attachments/CAL1%20HW%201.7%20Solutions%20fig%2015.svg)
 
 > [!proof] Proof
 > Given $\varepsilon > 0$, choose $\delta = 2\varepsilon$; then $\delta > 0$. If $0 < \lvert x - 4 \rvert < \delta$, then
@@ -143,7 +146,7 @@ Question: [[CAL1 HW 1.7 Questions#ST 1.7.17|ST 1.7.17]]
 >
 > **Diagram.** The line $y = -2x + 1$ falls from left to right, so it meets $y = 5 + \varepsilon$ at $x = -2 - \tfrac{\varepsilon}{2}$ and $y = 5 - \varepsilon$ at $x = -2 + \tfrac{\varepsilon}{2}$. With $\delta = \tfrac{\varepsilon}{2}$, for every $x$ between $-2 - \delta$ and $-2 + \delta$ the point of the line above $x$ lies between the heights $5 - \varepsilon$ and $5 + \varepsilon$.
 >
-> ![[CAL1 HW 1.7 Solutions fig 17.svg|400]]
+> ![ST 1.7.17 figure|400](../Attachments/CAL1%20HW%201.7%20Solutions%20fig%2017.svg)
 
 > [!proof] Proof
 > Given $\varepsilon > 0$, choose $\delta = \tfrac{\varepsilon}{2}$; then $\delta > 0$. If $0 < \lvert x - (-2) \rvert < \delta$, that is, $0 < \lvert x + 2 \rvert < \delta$, then

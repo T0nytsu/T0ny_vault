@@ -1,11 +1,14 @@
 ---
 course: [CAL1]
+semester: "115-1"
 chapter: ["1.8"]
 tags: [calculus, homework, solutions, continuity]
 source:
   - "Own solutions; computations checked with sympy"
 created: 2026-10-04
 questions: "[[CAL1 HW 1.8 Questions]]"
+up: "[[CAL1 Index]]"
+format: "math-notes 2.3"
 ---
 ## Answer Key
 
@@ -85,7 +88,7 @@ Question: [[CAL1 HW 1.8 Questions#ST 1.8.3|ST 1.8.3]]
 >
 > \# $-4$: removable. $\pm 2$: jump. $4$: infinite. At $0$ the graph has a corner but no break, so $f$ is continuous at $0$.
 >
-> ![[CAL1 HW 1.8 Solutions fig 3.png|480]]
+> ![ST 1.8.3 figure|480](../Attachments/CAL1%20HW%201.8%20Solutions%20fig%203.png)
 
 ### ST 1.8.13
 Question: [[CAL1 HW 1.8 Questions#ST 1.8.13|ST 1.8.13]]
@@ -116,7 +119,7 @@ Question: [[CAL1 HW 1.8 Questions#ST 1.8.19|ST 1.8.19]]
 > &\text{Hence } f \text{ is discontinuous at } a = -2.
 > \end{aligned}
 > $$
-> ![[CAL1 HW 1.8 Solutions fig 19.png|380]]
+> ![ST 1.8.19 figure|380](../Attachments/CAL1%20HW%201.8%20Solutions%20fig%2019.png)
 >
 > \# Infinite discontinuity. A second reason, even shorter: $f(-2)$ is not defined. The graph is $y = \tfrac{1}{x}$ shifted $2$ units to the left: asymptotes $x = -2$ and $y = 0$, $y$-intercept $\tfrac{1}{2}$.
 
@@ -131,7 +134,7 @@ Question: [[CAL1 HW 1.8 Questions#ST 1.8.21|ST 1.8.21]]
 > &\text{Hence } f \text{ is discontinuous at } a = 1.
 > \end{aligned}
 > $$
-> ![[CAL1 HW 1.8 Solutions fig 21.png|420]]
+> ![ST 1.8.21 figure|420](../Attachments/CAL1%20HW%201.8%20Solutions%20fig%2021.png)
 >
 > \# Jump discontinuity. The first line shows where $0$ and $1$ come from: each side uses its own formula. $\lim_{x \to 1^{+}} f(x) = 1 = f(1)$, so $f$ is continuous from the right at $1$: the solid dot is on the right branch.
 
@@ -146,7 +149,7 @@ Question: [[CAL1 HW 1.8 Questions#ST 1.8.23|ST 1.8.23]]
 > &\text{Since } \lim_{x \to 0} f(x) = 1 \ne 0 = f(0),\ f \text{ is discontinuous at } a = 0.
 > \end{aligned}
 > $$
-> ![[CAL1 HW 1.8 Solutions fig 23.png|420]]
+> ![ST 1.8.23 figure|420](../Attachments/CAL1%20HW%201.8%20Solutions%20fig%2023.png)
 >
 > \# Removable discontinuity: $f(0) = 1$ would make $f$ continuous at $0$. Exercises 19, 21 and 23 show three ways the definition of continuity fails: $f(a)$ is not defined and the limit is infinite; the one-sided limits differ; the limit exists but is not $f(a)$.
 
@@ -309,7 +312,7 @@ Question: [[CAL1 HW 1.8 Questions#ST 1.8.45|ST 1.8.45]]
 > &\implies f \text{ is continuous from the left at } 1.
 > \end{aligned}
 > $$
-> ![[CAL1 HW 1.8 Solutions fig 45.png|420]]
+> ![ST 1.8.45 figure|420](../Attachments/CAL1%20HW%201.8%20Solutions%20fig%2045.png)
 >
 > \# Both are jump discontinuities. On the graph, the solid dot at each jump is on the side from which $f$ is continuous.
 

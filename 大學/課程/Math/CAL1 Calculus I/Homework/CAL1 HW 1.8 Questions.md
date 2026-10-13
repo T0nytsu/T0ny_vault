@@ -1,5 +1,6 @@
 ---
 course: [CAL1]
+semester: "115-1"
 chapter: ["1.8"]
 tags: [calculus, homework, questions, continuity]
 source:
@@ -7,6 +8,8 @@ source:
   - "The graph of Exercise 3 is redrawn from the scan"
 created: 2026-10-04
 solutions: "[[CAL1 HW 1.8 Solutions]]"
+up: "[[CAL1 Index]]"
+format: "math-notes 2.3"
 ---
 > [!info] Coverage
 > ST §1.8: 3, 13, 19, 21, 23, 25, 27, 29, 31, 35, 41, 45, 47, 49, 55. These are the exercises assigned for Section 1.8. ST is Stewart, *Calculus*.
@@ -19,7 +22,7 @@ solutions: "[[CAL1 HW 1.8 Solutions]]"
 - (a) From the given graph of $f$, state the numbers at which $f$ is discontinuous and explain why.
 - (b) For each of the numbers stated in part (a), determine whether $f$ is continuous from the right, or from the left, or neither.
 
-![[CAL1 HW 1.8 Questions fig 3.png|480]]
+![ST 1.8.3 figure|480](../Attachments/CAL1%20HW%201.8%20Questions%20fig%203.png)
 
 ### ST 1.8.13
 **13–16** Use the definition of continuity and the properties of limits to show that the function is continuous at the given number $a$.

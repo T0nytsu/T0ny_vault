@@ -1,5 +1,6 @@
 ---
 course: [LA1]
+semester: "115-1"
 chapter: ["1.4", "1.5"]
 tags: [linear-algebra, quiz, matrix-inverse]
 source:
@@ -7,6 +8,8 @@ source:
   - "[[LA1 Quiz 04 p1.jpg]]"
 created: 2026-10-13
 score: "10/10"
+up: "[[LA1 Index]]"
+format: "math-notes 2.3"
 ---
 > [!abstract] Result: 10/10
 > - Q1 True or False: 5/5. Properties of [[Invertible Matrix|inverses]] and [[Elementary Matrix|elementary matrices]].

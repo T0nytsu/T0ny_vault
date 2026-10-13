@@ -1,11 +1,14 @@
 ---
 course: [LA1]
+semester: "115-1"
 chapter: ["1.4"]
 tags: [linear-algebra, homework, solutions, linear-systems]
 source:
   - "Own solutions; computations checked with sympy"
 created: 2026-10-09
 questions: "[[LA1 HW 1.4 Questions]]"
+up: "[[LA1 Index]]"
+format: "math-notes 2.3"
 ---
 ## Answer Key
 

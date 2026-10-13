@@ -1,10 +1,12 @@
 ---
 course: [CAL1]
+semester: "115-1"
 chapter: []
 tags: [calculus, index]
 aliases: [微積分一]
 source: []
 created: 2026-10-02
+format: "math-notes 2.3"
 ---
 > [!info] Course
 > Calculus I, semester 115-1. Main text: Stewart, *Calculus* (ST).
@@ -60,6 +62,15 @@ created: 2026-10-02
 - [[CAL1 HW 1.8 Questions]] and [[CAL1 HW 1.8 Solutions]]
 - [[CAL1 HW 2.1 Questions]] and [[CAL1 HW 2.1 Solutions]]
 - [[CAL1 HW 2.2 Questions]] and [[CAL1 HW 2.2 Solutions]]
+
+## Assigned Exercises
+
+Stewart, *Calculus*, Chapter 1:
+
+- **Section 1.5**: 5, 7, 9, 11, 15, 17, 27, 29, 31, 35, 37
+- **Section 1.6**: 1, 5, 7, 11, 13, 15, 17, 19, 21, 23, 25, 27, 29, 31, 33, 39, 41, 43, 45, 47, 49, 51, 53, 55, 59, 65, 67
+- **Section 1.7**: 3, 13, 15, 17, 19, 21, 23, 25, 27, 29, 31, 41, 43
+- **Section 1.8**: 3, 13, 19, 21, 23, 25, 27, 29, 31, 35, 41, 45, 47, 49, 55
 
 ## Concepts
 

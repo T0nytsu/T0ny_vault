@@ -1,5 +1,6 @@
 ---
 course: [LA1]
+semester: "115-1"
 chapter: ["1.4", "1.5"]
 tags: [linear-algebra, homework, questions, linear-systems, matrix-inverse]
 source:
@@ -7,6 +8,8 @@ source:
   - "Nicholson, Linear Algebra with Applications (open edition, CC BY-NC-SA), exercises of §1.2, §2.4, §2.5, from the LibreTexts edition"
 created: 2026-10-05
 solutions: "[[LA1 HW 1.4 1.5 Solutions]]"
+up: "[[LA1 Index]]"
+format: "math-notes 2.3"
 ---
 > [!info] Coverage
 > FB §1.4: 3, 5, 42, 44, 45, 49, 52, 53, 54, 55. FB §1.5: 23, 24, 25, 36, 37, 38. FB is Fraleigh & Beauregard, *Linear Algebra*.
