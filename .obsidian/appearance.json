@@ -4,5 +4,6 @@
     "math-callouts",
     "math-chalk-yellow"
   ],
-  "showRibbon": true
+  "showRibbon": true,
+  "theme": "moonstone"
 }
