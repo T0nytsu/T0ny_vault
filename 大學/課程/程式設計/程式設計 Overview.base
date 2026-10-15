@@ -1,0 +1,74 @@
+# 程式設計 Overview: every note and attachment of the 程式設計 folder (obsidian-global, format "global 1.0").
+# Views: Notes (grouped by semester), Needs review, Not on the current format, Attachments (Used by 0 = orphan).
+filters:
+  and:
+    - file.inFolder(this.file.folder)
+    - not:
+        - 'file.path.contains("/_to_delete/")'
+formulas:
+  type: 'tags.filter(["lecture", "quiz", "exam", "homework", "concept", "index"].contains(value)).join(", ")'
+  used_by: 'file.backlinks.length'
+  size_kb: '(file.size / 1024).round(0)'
+properties:
+  file.name:
+    displayName: Name
+  formula.type:
+    displayName: Type
+  formula.used_by:
+    displayName: Used by
+  formula.size_kb:
+    displayName: Size (KB)
+views:
+  - type: table
+    name: Notes
+    filters:
+      and:
+        - 'file.ext == "md"'
+    groupBy:
+      property: semester
+      direction: DESC
+    order:
+      - file.name
+      - course
+      - formula.type
+      - created
+      - score
+      - format
+    sort:
+      - property: file.name
+        direction: ASC
+  - type: table
+    name: Needs review
+    filters:
+      and:
+        - 'file.hasTag("needs-review")'
+    order:
+      - file.name
+      - course
+      - created
+  - type: table
+    name: Not on the current format
+    filters:
+      and:
+        - 'file.ext == "md"'
+        - 'format != "global 1.0"'
+    order:
+      - file.name
+      - file.folder
+      - format
+  - type: table
+    name: Attachments
+    filters:
+      and:
+        - 'file.ext != "md"'
+        - 'file.ext != "base"'
+    groupBy:
+      property: file.folder
+      direction: ASC
+    order:
+      - file.name
+      - formula.used_by
+      - formula.size_kb
+    sort:
+      - property: formula.used_by
+        direction: ASC
