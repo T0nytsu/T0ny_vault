@@ -114,3 +114,6 @@ format: "global 1.0"
 - [[PROG1 Midterm 考古題]]：兩份舊版期中考（年份不明、Fall 2021）的題目與 Python 驗證過的解答
 
 %% 課程網頁上的連結（Slides、ClassNotes、ClassroomPack、slido、影片）沒有跟著文字貼過來；需要的話把網址補進「課程進度」表或清單。W1–W8 的主題取自 Deck 1–5 的封面標題。 %%
+
+## 課程內容網站
+https://sites.google.com/email.nchu.edu.tw/mlcourse/computer-programming
