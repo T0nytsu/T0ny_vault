@@ -41,7 +41,7 @@ format: "global 1.0"
 >
 > Today is about building a mental model: how a human problem becomes an executable and verifiable program.
 
-> [!note] 核心觀念
+  > [!note] 核心觀念
 > 程式設計不是「把語法打進電腦」。程式設計是把一個人的問題，變成電腦可以精確執行、我們可以檢查，而且可以持續修改與分享的解法。
 
 **This is not a syntax-first Python course.** Programming in the AI era starts from problems, not commands.
