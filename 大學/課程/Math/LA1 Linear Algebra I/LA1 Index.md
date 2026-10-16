@@ -62,6 +62,10 @@ format: "math-notes 2.3"
 - [[LA1 HW 1.4 1.5 Questions]] and [[LA1 HW 1.4 1.5 Solutions]]
 - [[LA1 HW 1.4 Questions]] and [[LA1 HW 1.4 Solutions]]
 
+## Summaries
+
+- [[LA1 Thm 1.2 Map.canvas]]
+
 ## Concepts
 
 - [[Augmented Matrix]]
