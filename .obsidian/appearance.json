@@ -2,7 +2,8 @@
   "cssTheme": "Primary",
   "enabledCssSnippets": [
     "math-callouts",
-    "math-chalk-yellow"
+    "math-chalk-yellow",
+    "canvas-colors-fix"
   ],
   "showRibbon": true,
   "theme": "moonstone"
