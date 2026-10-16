@@ -14,3 +14,12 @@ body.theme-dark.theme-dark {
   --canvas-color-5: rgb(var(--color-blue-rgb));
   --canvas-color-6: rgb(var(--color-purple-rgb));
 }
+
+/* Edge labels: Obsidian draws them at --font-ui-large times --zoom-multiplier,
+   so they grow relative to the cards as you zoom out. A fixed size makes them
+   zoom together with the card text and stay a little smaller than it. */
+body .canvas-path-label {
+  font-size: var(--font-ui-small);
+  padding: 2px 6px;
+  max-width: 17em;
+}
