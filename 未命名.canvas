@@ -1,7 +1,7 @@
 {
 	"nodes":[
 		{"id":"837035987f200de2","type":"text","text":"第一","x":-86,"y":-23,"width":250,"height":60},
-		{"id":"0b50a1f6a834ca62","type":"text","text":"第二","x":39,"y":100,"width":250,"height":60}
+		{"id":"0b50a1f6a834ca62","type":"text","text":"第二","x":260,"y":120,"width":250,"height":60}
 	],
 	"edges":[]
 }
