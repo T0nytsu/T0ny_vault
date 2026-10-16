@@ -64,7 +64,7 @@ format: "math-notes 2.3"
 
 ## Summaries
 
-- [[LA1 Thm 1.2 Map.canvas]]
+- [[LA1 1.5 Thm 1.2 Map.canvas]]
 
 ## Concepts
 
