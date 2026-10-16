@@ -1,205 +1,26 @@
 {
-	"nodes": [
-		{
-			"id": "thm-1-2",
-			"type": "text",
-			"text": "**Thm 1.2** $A : n \\times n$, the following conditions are equivalent.\nLA1 §1.5 Inverse of matrices (Part II)",
-			"x": -720,
-			"y": -360,
-			"width": 480,
-			"height": 120,
-			"color": "6"
-		},
-		{
-			"id": "legend",
-			"type": "text",
-			"text": "**How to read the arrows**\n- Red →: the board proves this direction; the other direction follows by going around the arrows.\n- Green ⟷: the board proves both directions.\n- $H$: the reduced row-echelon form of $A$.",
-			"x": 520,
-			"y": -400,
-			"width": 480,
-			"height": 200
-		},
-		{
-			"id": "c8",
-			"type": "text",
-			"text": "**(8)** $\\operatorname{rank}(A) = n$",
-			"x": -120,
-			"y": -330,
-			"width": 240,
-			"height": 60
-		},
-		{
-			"id": "c1",
-			"type": "text",
-			"text": "**(1)** $A$ is invertible",
-			"x": -600,
-			"y": -30,
-			"width": 240,
-			"height": 60
-		},
-		{
-			"id": "c2",
-			"type": "text",
-			"text": "**(2)** $\\forall\\, b \\in \\mathbb{R}^{n \\times 1}$, $Ax = b$ has a unique solution",
-			"x": -170,
-			"y": -50,
-			"width": 340,
-			"height": 100
-		},
-		{
-			"id": "c7",
-			"type": "text",
-			"text": "**(7)** $\\forall\\, b \\in \\mathbb{R}^{n \\times 1}$, $Ax = b$ has a solution",
-			"x": 360,
-			"y": -50,
-			"width": 320,
-			"height": 100
-		},
-		{
-			"id": "c6",
-			"type": "text",
-			"text": "**(6)** The span of the column vectors of $A$ is $\\mathbb{R}^{n \\times 1}$",
-			"x": 920,
-			"y": -50,
-			"width": 320,
-			"height": 100
-		},
-		{
-			"id": "c3",
-			"type": "text",
-			"text": "**(3)** $Ax = 0$ has only the trivial solution $x = 0$",
-			"x": -160,
-			"y": 240,
-			"width": 320,
-			"height": 100
-		},
-		{
-			"id": "c4",
-			"type": "text",
-			"text": "**(4)** $A \\overset{r}{\\sim} I$",
-			"x": -100,
-			"y": 550,
-			"width": 200,
-			"height": 60
-		},
-		{
-			"id": "c5",
-			"type": "text",
-			"text": "**(5)** $A$ can be expressed as a product of row-elementary matrices",
-			"x": -650,
-			"y": 530,
-			"width": 340,
-			"height": 100
-		},
-		{
-			"id": "gaps",
-			"type": "text",
-			"text": "**Steps the board skips**\n- (1)⇒(2): also $A(A^{-1}b) = (AA^{-1})b = b$, so a solution exists.\n- (2)⇒(3): $0$ is a solution and the solution is unique, so $x = 0$ is the only one.\n- (3)⇒(4), (7)⇒(4): $H$ is $n \\times n$ and $H \\ne I$ ⇒ the last row of $H$ is $0$.\n- (7)⇒(4): $PA = H$ with $P$ invertible; choose $b = P^{-1}e_n$, then $c = e_n$.\n- (8)⇒(2): $\\operatorname{rank}(A) = n$ ⇒ $\\operatorname{rank}([A \\mid b]) = n$ for every $b$.",
-			"x": 520,
-			"y": 490,
-			"width": 600,
-			"height": 300
-		}
+	"nodes":[
+		{"id":"thm-1-2","type":"text","text":"**Thm 1.2** $A : n \\times n$, the following conditions are equivalent.\nLA1 §1.5 Inverse of matrices (Part II)","x":-720,"y":-360,"width":480,"height":120,"color":"6"},
+		{"id":"legend","type":"text","text":"**How to read the arrows**\n- Red →: the board proves this direction; the other direction follows by going around the arrows.\n- Green ⟷: the board proves both directions.\n- $H$: the reduced row-echelon form of $A$.","x":520,"y":-400,"width":480,"height":200},
+		{"id":"c8","type":"text","text":"**(8)** $\\operatorname{rank}(A) = n$","x":-120,"y":-330,"width":240,"height":60},
+		{"id":"c1","type":"text","text":"**(1)** $A$ is invertible","x":-600,"y":-30,"width":240,"height":60},
+		{"id":"c2","type":"text","text":"**(2)** $\\forall\\, b \\in \\mathbb{R}^{n \\times 1}$, $Ax = b$ has a unique solution","x":-170,"y":-50,"width":340,"height":100},
+		{"id":"c7","type":"text","text":"**(7)** $\\forall\\, b \\in \\mathbb{R}^{n \\times 1}$, $Ax = b$ has a solution","x":360,"y":-50,"width":320,"height":100},
+		{"id":"c6","type":"text","text":"**(6)** The span of the column vectors of $A$ is $\\mathbb{R}^{n \\times 1}$","x":920,"y":-50,"width":320,"height":100},
+		{"id":"c3","type":"text","text":"**(3)** $Ax = 0$ has only the trivial solution $x = 0$","x":-160,"y":240,"width":320,"height":100},
+		{"id":"c4","type":"text","text":"**(4)** $A \\overset{r}{\\sim} I$","x":-100,"y":550,"width":200,"height":60},
+		{"id":"c5","type":"text","text":"**(5)** $A$ can be expressed as a product of row-elementary matrices","x":-650,"y":530,"width":340,"height":100},
+		{"id":"gaps","type":"text","text":"**Steps the board skips**\n- (1)⇒(2): also $A(A^{-1}b) = (AA^{-1})b = b$, so a solution exists.\n- (2)⇒(3): $0$ is a solution and the solution is unique, so $x = 0$ is the only one.\n- (3)⇒(4), (7)⇒(4): $H$ is $n \\times n$ and $H \\ne I$ ⇒ the last row of $H$ is $0$.\n- (7)⇒(4): $PA = H$ with $P$ invertible; choose $b = P^{-1}e_n$, then $c = e_n$.\n- (8)⇒(2): $\\operatorname{rank}(A) = n$ ⇒ $\\operatorname{rank}([A \\mid b]) = n$ for every $b$.","x":520,"y":490,"width":600,"height":300}
 	],
-	"edges": [
-		{
-			"id": "e-1-2",
-			"fromNode": "c1",
-			"fromSide": "right",
-			"toNode": "c2",
-			"toSide": "left",
-			"fromEnd": "none",
-			"toEnd": "arrow",
-			"color": "1",
-			"label": "x = A⁻¹b"
-		},
-		{
-			"id": "e-2-3",
-			"fromNode": "c2",
-			"fromSide": "bottom",
-			"toNode": "c3",
-			"toSide": "top",
-			"fromEnd": "none",
-			"toEnd": "arrow",
-			"color": "1",
-			"label": "let b = 0"
-		},
-		{
-			"id": "e-3-4",
-			"fromNode": "c3",
-			"fromSide": "bottom",
-			"toNode": "c4",
-			"toSide": "top",
-			"fromEnd": "none",
-			"toEnd": "arrow",
-			"color": "1",
-			"label": "H ≠ I ⇒ infinitely many (→←)"
-		},
-		{
-			"id": "e-4-5",
-			"fromNode": "c4",
-			"fromSide": "left",
-			"toNode": "c5",
-			"toSide": "right",
-			"fromEnd": "none",
-			"toEnd": "arrow",
-			"color": "1",
-			"label": "E_k⋯E_1 A = I"
-		},
-		{
-			"id": "e-5-1",
-			"fromNode": "c5",
-			"fromSide": "top",
-			"toNode": "c1",
-			"toSide": "bottom",
-			"fromEnd": "none",
-			"toEnd": "arrow",
-			"color": "1",
-			"label": "product of invertible matrices"
-		},
-		{
-			"id": "e-2-7",
-			"fromNode": "c2",
-			"fromSide": "right",
-			"toNode": "c7",
-			"toSide": "left",
-			"fromEnd": "none",
-			"toEnd": "arrow",
-			"color": "1",
-			"label": "unique ⇒ exists"
-		},
-		{
-			"id": "e-7-6",
-			"fromNode": "c7",
-			"fromSide": "right",
-			"toNode": "c6",
-			"toSide": "left",
-			"fromEnd": "arrow",
-			"toEnd": "arrow",
-			"color": "4",
-			"label": "Ax = combination of columns"
-		},
-		{
-			"id": "e-7-4",
-			"fromNode": "c7",
-			"fromSide": "bottom",
-			"toNode": "c4",
-			"toSide": "right",
-			"fromEnd": "none",
-			"toEnd": "arrow",
-			"color": "1",
-			"label": "H ≠ I ⇒ choose b (→←)"
-		},
-		{
-			"id": "e-2-8",
-			"fromNode": "c2",
-			"fromSide": "top",
-			"toNode": "c8",
-			"toSide": "bottom",
-			"fromEnd": "arrow",
-			"toEnd": "arrow",
-			"color": "4",
-			"label": "rank(A) = rank([A|b]) = n"
-		}
+	"edges":[
+		{"id":"e-1-2","fromNode":"c1","fromSide":"right","toNode":"c2","toSide":"left","fromEnd":"none","toEnd":"arrow","color":"1","label":"x = A⁻¹b"},
+		{"id":"e-2-3","fromNode":"c2","fromSide":"bottom","toNode":"c3","toSide":"top","fromEnd":"none","toEnd":"arrow","color":"1","label":"let b = 0"},
+		{"id":"e-3-4","fromNode":"c3","fromSide":"bottom","toNode":"c4","toSide":"top","fromEnd":"none","toEnd":"arrow","color":"1","label":"H ≠ I ⇒ infinitely many (→←)"},
+		{"id":"e-4-5","fromNode":"c4","fromSide":"left","toNode":"c5","toSide":"right","fromEnd":"none","toEnd":"arrow","color":"1","label":"E_k⋯E_1 A = I"},
+		{"id":"e-5-1","fromNode":"c5","fromSide":"top","toNode":"c1","toSide":"bottom","fromEnd":"none","toEnd":"arrow","color":"1","label":"product of invertible matrices"},
+		{"id":"e-2-7","fromNode":"c2","fromSide":"right","toNode":"c7","toSide":"left","fromEnd":"none","toEnd":"arrow","color":"1","label":"unique ⇒ exists"},
+		{"id":"e-7-6","fromNode":"c7","fromSide":"right","toNode":"c6","toSide":"left","fromEnd":"arrow","toEnd":"arrow","color":"4","label":"Ax = combination of columns"},
+		{"id":"e-7-4","fromNode":"c7","fromSide":"bottom","toNode":"c4","toSide":"right","fromEnd":"none","toEnd":"arrow","color":"1","label":"H ≠ I ⇒ choose b (→←)"},
+		{"id":"e-2-8","fromNode":"c2","fromSide":"top","toNode":"c8","toSide":"bottom","fromEnd":"arrow","toEnd":"arrow","color":"4","label":"rank(A) = rank([A|b]) = n"}
 	]
 }
