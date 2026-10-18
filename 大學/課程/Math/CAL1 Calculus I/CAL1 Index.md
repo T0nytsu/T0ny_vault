@@ -2,7 +2,7 @@
 course:
   - CAL1
 semester: 115-1
-chapter:
+chapter: []
 tags:
   - calculus
   - index
@@ -66,6 +66,9 @@ format: math-notes 2.3
 - [[CAL1 HW 1.8 Questions]] and [[CAL1 HW 1.8 Solutions]]
 - [[CAL1 HW 2.1 Questions]] and [[CAL1 HW 2.1 Solutions]]
 - [[CAL1 HW 2.2 Questions]] and [[CAL1 HW 2.2 Solutions]]
+- [[CAL1 HW 2.3 Questions]] and [[CAL1 HW 2.3 Solutions]]
+- [[CAL1 HW 2.4 Questions]] and [[CAL1 HW 2.4 Solutions]]
+- [[CAL1 HW 2.5 Questions]] and [[CAL1 HW 2.5 Solutions]]
 
 ## Assigned Exercises
 
@@ -88,8 +91,10 @@ Stewart, *Calculus*, Chapter 2:
 
 ## Concepts
 
+- [[Chain Rule]]
 - [[Continuity]]
 - [[Derivative]]
+- [[Derivatives of Trigonometric Functions]]
 - [[Differentiable Function]]
 - [[Discontinuity]]
 - [[Higher Derivatives]]
@@ -97,9 +102,14 @@ Stewart, *Calculus*, Chapter 2:
 - [[Intermediate Value Theorem]]
 - [[Limit Laws]]
 - [[Limit of a Function]]
+- [[Normal Line]]
 - [[One-Sided Derivative]]
 - [[One-Sided Limit]]
+- [[Power Rule]]
 - [[Precise Definition of a Limit]]
+- [[Product Rule]]
+- [[Quotient Rule]]
+- [[Special Trigonometric Limits]]
 - [[Squeeze Theorem]]
 - [[Tangent Line]]
 - [[Vertical Tangent Line]]
