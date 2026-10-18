@@ -4,4 +4,4 @@ Write the reference solutions for the marked homework questions(The marked quest
 Search on Internet at find if there are any other question in the same range of this worth to write? Add it at the bottom of the question and reference solution file.
 
 avarge usage:
-57%-> (Opus 5.5 Extra)
+57%-> 71%(Opus 5.5 Extra)(三個)
