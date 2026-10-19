@@ -58,6 +58,7 @@ format: math-notes 2.3
 ## Quizzes and Exams
 
 - [[CAL1 Quiz 01]], score 10/12
+- [[CAL1 Quiz 02]], score 12/12
 - [[CAL1 Midterm 1]], score 97/100
 
 ## Homework
