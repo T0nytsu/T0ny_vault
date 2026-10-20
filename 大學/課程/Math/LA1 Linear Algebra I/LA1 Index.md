@@ -61,10 +61,17 @@ format: "math-notes 2.3"
 - [[LA1 HW 1.3 1.5 Questions]] and [[LA1 HW 1.3 1.5 Solutions]]
 - [[LA1 HW 1.4 1.5 Questions]] and [[LA1 HW 1.4 1.5 Solutions]]
 - [[LA1 HW 1.4 Questions]] and [[LA1 HW 1.4 Solutions]]
+- [[LA1 HW 1.5 Questions]] and [[LA1 HW 1.5 Solutions]]
 
 ## Summaries
 
 - [[LA1 1.5 Thm 1.2 Map.canvas]]
+- [[LA1 1.5 Summary]]
+
+## Assigned Exercises
+
+Fraleigh & Beauregard, _Linear Algebra_, Chapter 1:
+- **section 1.5**: 11, 12, 13, 21, 22, 27, 29
 
 ## Concepts
 
