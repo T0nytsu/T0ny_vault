@@ -54,6 +54,7 @@ format: "math-notes 2.3"
 - [[LA1 Quiz 02]], 2026-09-22, score 4/10
 - [[LA1 Quiz 03]], 2026-09-29, score 10/10
 - [[LA1 Quiz 04]], 2026-10-06, score 10/10
+- [[LA1 Quiz 05]], score 10/10
 
 ## Homework
 
