@@ -1,4 +1,4 @@
-%% unit-summary v1.3 · Wolfson, Essential University Physics 4e (Global Edition), Vol. 1, Ch. 9, pp. 166–190; outside exams from KSU and SIU · 2026-10-21 %%
+%% unit-summary v1.4 · Wolfson, Essential University Physics 4e (Global Edition), Vol. 1, Ch. 9, pp. 166–190; outside exams from KSU and SIU · 2026-10-21 %%
 
 # Chapter 9 Systems of Particles — a system moves like one particle at its center of mass; momentum (force × time, as energy is force × distance) is conserved when no net external force acts
 
@@ -302,18 +302,19 @@ $$
 判斷順序
 
 ```mermaid
-flowchart TD
-  Q{"問質心的位置？"} -->|是| D{"質點還是連續分布？"}
-  D -->|質點、幾塊形狀| T1["題型 1：(9.2)"]
-  D -->|連續| T2["題型 2：(9.4)"]
-  Q -->|否| E{"外力合力為零，或碰撞時間短到可忽略？"}
+flowchart LR
+  Q(["問質心？"]) -->|質點、幾塊形狀| T1["題型 1：(9.2)"]
+  Q -->|連續| T2["題型 2：(9.4)"]
+  Q -->|否| E(["外力合力 ≈ 0？"])
+  E -->|是，從靜止問位移| T3["題型 3：質心不動"]
+  E -->|是，爆炸、反衝| T4["題型 4、5；能量 6"]
+  E -->|是，黏在一起| T8["題型 8；接後續過程 9"]
+  E -->|是，彈性| T10["一維 10、11；二維 12"]
   E -->|否| T7["題型 7：衝量 J = Δp"]
-  E -->|是| R{"從靜止開始、問位移？"}
-  R -->|是| T3["題型 3：質心不動"]
-  R -->|否| C{"哪一種？"}
-  C -->|爆炸、反衝| T4["題型 4、5；能量用題型 6"]
-  C -->|黏在一起| T8["題型 8；前後還有過程：題型 9"]
-  C -->|彈性| T10["一維：題型 10、11；二維：題型 12"]
+  classDef ask fill:#fdf6e3,stroke:#b58900,color:#3b3b3b
+  classDef type fill:#eef3fb,stroke:#7c93c3,color:#2b2b2b
+  class Q,E ask
+  class T1,T2,T3,T4,T8,T10,T7 type
 ```
 
 ## 課本例題
