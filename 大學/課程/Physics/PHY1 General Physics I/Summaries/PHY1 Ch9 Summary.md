@@ -3,21 +3,16 @@
 # Chapter 9 Systems of Particles — a system moves like one particle at its center of mass; momentum (force × time, as energy is force × distance) is conserved when no net external force acts
 
 ```mermaid
-flowchart TD
-  N3["Newton's 3rd law"] --> IC["internal forces cancel in pairs"]
-  IC --> CM["F net ext = M a cm (9.3)"]
-  CM --> P["P = M v cm (9.5) ⇒ F net ext = dP/dt (9.6)"]
-  P --> PC["F net ext = 0 ⇒ P constant (9.7)"]
-  P --> KS["K = K cm + K int (9.9)"]
-  PC --> COL["collision: brief, intense ⇒ P conserved"]
-  COL --> TI["totally inelastic: stick together, P only (9.11)"]
-  COL --> EL["elastic: P and K (9.12), (9.13)"]
-  EL --> OD["1D: relative velocity reverses (9.14) ⇒ (9.15)"]
+flowchart LR
+  A["internal forces cancel (3rd law)"] --> B["F ext = M a cm = dP/dt (9.3), (9.6)"]
+  B --> C["F ext = 0 ⇒ P constant (9.7)"]
+  C --> D["stick together: P only (9.11)"]
+  C --> E["elastic: P and K (9.12)–(9.15)"]
 ```
 
 ## 9.1 Center of Mass
 
-圖：多質點系統，系統邊界內畫成對的內力、邊界外畫外力；標 mᵢ、r⃗ᵢ、F⃗ext
+圖：多質點系統，系統邊界內畫成對的內力、邊界外畫外力；標 $m_{i}$、$\vec{r}_{i}$、$\vec{F}_{\mathrm{ext}}$
 
 Derivation, Newton's second law for each particle:
 
@@ -48,7 +43,7 @@ for its overall motion the system acts as if all its mass were at the center of 
 
 ### Continuous Distributions of Matter
 
-圖：連續物體中的一塊質量元素與從原點畫的位置向量；三角形機翼取寬 dx 的垂直細條；標 dm、r⃗、dx、h = (w/L)x
+圖：連續物體中的一塊質量元素與從原點畫的位置向量；三角形機翼取寬 $dx$ 的垂直細條；標 $dm$、$\vec{r}$、$dx$、$h = (w/L)x$
 
 $$
 \vec{r}_{\mathrm{cm}} = \lim_{\Delta m_{i} \to 0}\frac{\sum \Delta m_{i}\vec{r}_{i}}{M} = \frac{\int \vec{r}\,dm}{M} \quad (9.4)
@@ -80,7 +75,7 @@ center of mass of continuous matter: three integrals, one per component, over th
 | zero | $\vec{v}_{\mathrm{cm}}$ constant |
 | zero, system at rest | the CM stays put |
 
-圖：無摩擦軌道上的車廂與大象，畫走之前、之後兩張，質心位置是一條不動的虛線；標 m_J、m_c、x_Ji、x_Jf、x_ci、x_cf
+圖：無摩擦軌道上的車廂與大象，畫走之前、之後兩張，質心位置是一條不動的虛線；標 $m_{\mathrm{J}}$、$m_{\mathrm{c}}$、$x_{\mathrm{Ji}}$、$x_{\mathrm{Jf}}$、$x_{\mathrm{ci}}$、$x_{\mathrm{cf}}$
 
 $x_{\mathrm{cm\,i}} = x_{\mathrm{cm\,f}}$ ⇒ $\sum m_{i}\Delta x_{i} = 0$, with displacements relative to the ground
 
@@ -119,7 +114,7 @@ $$
 > - a vector law: a component of $\vec{P}$ is constant when the external force has no component along it (derived from (9.6)), e.g. horizontal momentum on frictionless ice
 > - holds for any number of particles, from nuclei to galaxies, even where Newtonian physics fails
 
-圖：⁵Li 沿 +x 前進後衰變，α 在 x 軸上方、質子在下方，畫出 p⃗_Li = p⃗_α + p⃗_p 的向量三角形；標 p⃗_Li、p⃗_α、p⃗_p、φ
+圖：$\mathrm{^{5}Li}$ 沿 $+x$ 前進後衰變，$\alpha$ 在 $x$ 軸上方、質子在下方，畫出 $\vec{p}_{\mathrm{Li}} = \vec{p}_{\alpha} + \vec{p}_{\mathrm{p}}$ 的向量三角形；標 $\vec{p}_{\mathrm{Li}}$、$\vec{p}_{\alpha}$、$\vec{p}_{\mathrm{p}}$、$\varphi$
 
 > - internal or external depends on the system you choose; choose one with no net external force (Example 9.5, Conceptual Example 9.1)
 > - a system starting at rest keeps $\vec{P} = \vec{0}$: everything ends at rest after an internal toss and catch, and while the thrown part is in flight the rest moves the opposite way (Conceptual Example 9.1)
@@ -129,7 +124,7 @@ $$
 
 ## 9.3 Kinetic Energy of a System
 
-圖：一個質點的速度拆成質心速度與相對質心的速度（向量相加）；標 v⃗ᵢ、v⃗_cm、v⃗ᵢ,rel
+圖：一個質點的速度拆成質心速度與相對質心的速度（向量相加）；標 $\vec{v}_{i}$、$\vec{v}_{\mathrm{cm}}$、$\vec{v}_{i\,\mathrm{rel}}$
 
 $\vec{v}_{i} = \vec{v}_{\mathrm{cm}} + \vec{v}_{i\,\mathrm{rel}}$ ⇒
 
@@ -159,7 +154,7 @@ $$
 
 unit $\mathrm{N \cdot s} = \mathrm{kg \cdot m/s}$
 
-圖：碰撞時的 F–t 曲線（尖峰），疊一個同面積的矩形；標 J（曲線下面積）、F̄（矩形高）、Δt（矩形寬）
+圖：碰撞時的 $F$–$t$ 曲線（尖峰），疊一個同面積的矩形；標 $J$（曲線下面積）、$\bar{F}$（矩形高）、$\Delta t$（矩形寬）
 
 > - impulse = area under the $F$–$t$ curve; $\bar{F}$ = height of the rectangle with the same area
 > - the same impulse: a large force for a short time or a small force for a long time
@@ -176,7 +171,7 @@ unit $\mathrm{N \cdot s} = \mathrm{kg \cdot m/s}$
 
 ## 9.5 Totally Inelastic Collisions
 
-圖：兩物體碰撞前各自的速度，碰撞後黏在一起前進；標 m₁、v⃗₁、m₂、v⃗₂、m₁ + m₂、v⃗_f
+圖：兩物體碰撞前各自的速度，碰撞後黏在一起前進；標 $m_{1}$、$\vec{v}_{1}$、$m_{2}$、$\vec{v}_{2}$、$m_{1} + m_{2}$、$\vec{v}_{\mathrm{f}}$
 
 $$
 m_{1}\vec{v}_{1} + m_{2}\vec{v}_{2} = (m_{1} + m_{2})\vec{v}_{\mathrm{f}} \qquad \text{(totally inelastic collision)} \quad (9.11)
@@ -189,7 +184,7 @@ only momentum is conserved; one final velocity; given four of $m_{1}$, $\vec{v}_
 
 ### The Ballistic Pendulum
 
-圖：子彈水平射入用繩懸吊的木塊，木塊連子彈擺到最高點；標 m、v、M、V、h
+圖：子彈水平射入用繩懸吊的木塊，木塊連子彈擺到最高點；標 $m$、$v$、$M$、$V$、$h$
 
 | stage | momentum | mechanical energy |
 | --- | --- | --- |
@@ -216,7 +211,7 @@ $$
 
 ### Elastic Collisions in One Dimension
 
-圖：一維正面碰撞的前後兩張，畫出正方向（v 是分量，可正可負）；標 m₁、m₂、v₁ᵢ、v₂ᵢ、v₁f、v₂f
+圖：一維正面碰撞的前後兩張，畫出正方向（$v$ 是分量，可正可負）；標 $m_{1}$、$m_{2}$、$v_{\mathrm{1i}}$、$v_{\mathrm{2i}}$、$v_{\mathrm{1f}}$、$v_{\mathrm{2f}}$
 
 $m_{1}v_{\mathrm{1i}} + m_{2}v_{\mathrm{2i}} = m_{1}v_{\mathrm{1f}} + m_{2}v_{\mathrm{2f}}$ (9.12a) ⇒ $m_{1}(v_{\mathrm{1i}} - v_{\mathrm{1f}}) = m_{2}(v_{\mathrm{2f}} - v_{\mathrm{2i}})$ (9.12b)
 
@@ -260,14 +255,14 @@ $$
 
 ### Elastic Collisions in Two Dimensions
 
-圖：入射球沿 x 軸撞靜止的球，碰撞後兩球各沿一個方向飛出；標 v⃗₁ᵢ、v⃗₁f、v⃗₂f、θ、撞擊參數 b
+圖：入射球沿 $x$ 軸撞靜止的球，碰撞後兩球各沿一個方向飛出；標 $\vec{v}_{\mathrm{1i}}$、$\vec{v}_{\mathrm{1f}}$、$\vec{v}_{\mathrm{2f}}$、$\theta$、撞擊參數 $b$
 
 > - impact parameter $b$: the distance between the lines of motion of the two centers; it sets the direction of the collision forces (Fig. 9.18)
 > - equal masses, one at rest, not head-on ⇒ final velocities perpendicular (Example 9.11, Problem 76): square $\vec{v}_{\mathrm{1i}} = \vec{v}_{\mathrm{1f}} + \vec{v}_{\mathrm{2f}}$ with the dot product and compare with $v_{\mathrm{1i}}^{2} = v_{\mathrm{1f}}^{2} + v_{\mathrm{2f}}^{2}$
 
 ### The Center-of-Mass Frame
 
-圖：質心座標系中兩動量等大反向地接近，碰撞後仍等大反向、轉了一個角度；標 p⃗₁ᵢ、p⃗₂ᵢ、p⃗₁f、p⃗₂f、θ
+圖：質心座標系中兩動量等大反向地接近，碰撞後仍等大反向、轉了一個角度；標 $\vec{p}_{\mathrm{1i}}$、$\vec{p}_{\mathrm{2i}}$、$\vec{p}_{\mathrm{1f}}$、$\vec{p}_{\mathrm{2f}}$、$\theta$
 
 | | lab frame, $m_{2}$ at rest | CM frame |
 | --- | --- | --- |
@@ -312,7 +307,7 @@ flowchart TD
   D -->|質點、幾塊形狀| T1["題型 1：(9.2)"]
   D -->|連續| T2["題型 2：(9.4)"]
   Q -->|否| E{"外力合力為零，或碰撞時間短到可忽略？"}
-  E -->|否| T7["題型 7：J = Δp = F̄ Δt"]
+  E -->|否| T7["題型 7：衝量 J = Δp"]
   E -->|是| R{"從靜止開始、問位移？"}
   R -->|是| T3["題型 3：質心不動"]
   R -->|否| C{"哪一種？"}
