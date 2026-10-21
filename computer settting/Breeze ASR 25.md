@@ -1,6 +1,5 @@
 1.開啟 power shell
 2.
-
 ```
 cd E:\breeze-asr
 ```
@@ -10,10 +9,21 @@ cd E:\breeze-asr
 .\.venv\Scripts\Activate.ps1
 ```
 
+4.
+```
+python transcribe.py "錄音檔路徑"
+```
 
 
+python transcribe.py "錄音檔路徑"
 
+```powershell
+python transcribe.py "E:\錄音\微積分 第3週.m4a"
+```
 
+```powershell
+python transcribe.py "E:\錄音\10_21"
+```
 
 
 
