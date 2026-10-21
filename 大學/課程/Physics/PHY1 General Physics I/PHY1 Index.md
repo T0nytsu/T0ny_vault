@@ -22,7 +22,6 @@ created: 2026-10-05
 - [[PHY1 HW Ch01 Questions]] and [[PHY1 HW Ch01 Solutions]]: EUP Ch. 1 Doing Physics
 - [[PHY1 HW Ch02 Questions]] and [[PHY1 HW Ch02 Solutions]]: EUP Ch. 2 Motion in a Straight Line
 
-
 ## Textbook
 - Ch01 18-32
 - Ch02 33- 50
