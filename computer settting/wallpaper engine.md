@@ -85,3 +85,20 @@
 | CEF devtools | Open Devtools |
 
 
+# 新增第二裝置(laptop)
+
+將PC中的檔案
+`...\Steam\steamapps\workshop\content\431960`
+放到
+```
+myprojects\
+  ├ 1234567890\project.json …
+  └ 2345678901\project.json …
+```
+裡面
+
+然後將
+...\Steam\steamapps\workshop\content\431960  
+\Steam\steamapps\workshop\downloads\431960  
+\Steam\steamapps\workshop\temp\431960
+改成唯獨
