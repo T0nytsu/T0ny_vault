@@ -71,8 +71,10 @@ format: "math-notes 2.3"
 
 ## Assigned Exercises
 
-Fraleigh & Beauregard, _Linear Algebra_, Chapter 1:
+Fraleigh & Beauregard, _Linear Algebra_ :
 - **section 1.5**: 11, 12, 13, 21, 22, 27, 29
+- **section 4.1**: 6, 12, 13, 21, 23, 25
+- **section 10.2**: 4, 5, 6, 7
 
 ## Concepts
 
