@@ -42,6 +42,7 @@ format: "math-notes 2.3"
 | `matrix-algebra` | Matrix operations and the transpose |
 | `matrix-inverse` | Inverses and elementary matrices |
 | `linear-systems` | Linear systems and row reduction |
+| `determinants` | Determinants, the cross product, areas and volumes |
 
 ## Lectures
 
@@ -63,6 +64,7 @@ format: "math-notes 2.3"
 - [[LA1 HW 1.4 1.5 Questions]] and [[LA1 HW 1.4 1.5 Solutions]]
 - [[LA1 HW 1.4 Questions]] and [[LA1 HW 1.4 Solutions]]
 - [[LA1 HW 1.5 Questions]] and [[LA1 HW 1.5 Solutions]]
+- [[LA1 HW 4.1 10.2 Questions]] and [[LA1 HW 4.1 10.2 Solutions]]
 
 ## Summaries
 
@@ -79,6 +81,8 @@ Fraleigh & Beauregard, _Linear Algebra_ :
 ## Concepts
 
 - [[Augmented Matrix]]
+- [[Cross Product]]
+- [[Determinant]]
 - [[Diagonal Matrix]]
 - [[Dot Product]]
 - [[Elementary Column Operation]]
@@ -91,6 +95,7 @@ Fraleigh & Beauregard, _Linear Algebra_ :
 - [[Invertible Matrix]]
 - [[Linear Combination]]
 - [[Linear System]]
+- [[LU-Factorization]]
 - [[Norm]]
 - [[Orthogonal Vectors]]
 - [[Parallel Vectors]]
