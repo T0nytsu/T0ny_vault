@@ -28,6 +28,7 @@ created: 2026-10-05
 
 - [[PHY1 Ch1-2 Summary]]: EUP Ch. 1 and 2
 - [[PHY1 Ch9 Summary]]: EUP Ch. 9 Systems of Particles
+- [[PHY1 Ch9 中文課本]]: EUP Ch. 9 Systems of Particles, condensed Chinese translation
 
 ## Textbook
 - Ch01 18-32
