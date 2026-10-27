@@ -16,17 +16,20 @@ created: 2026-10-05
 | --- | --- |
 | `measurement` | Units, unit conversion, scientific notation, significant figures, estimation (EUP Ch. 1) |
 | `kinematics` | Position, velocity, acceleration; constant acceleration and free fall (EUP Ch. 2 and 3) |
+| `energy` | Potential energy, conservation of mechanical energy, friction and internal energy, potential-energy curves (EUP Ch. 7) |
 | `momentum` | Center of mass, momentum, impulse, collisions (EUP Ch. 9) |
 
 ## Homework
 
 - [[PHY1 HW Ch01 Questions]] and [[PHY1 HW Ch01 Solutions]]: EUP Ch. 1 Doing Physics
 - [[PHY1 HW Ch02 Questions]] and [[PHY1 HW Ch02 Solutions]]: EUP Ch. 2 Motion in a Straight Line
+- [[PHY1 HW Ch07 Questions]] and [[PHY1 HW Ch07 Solutions]]: EUP Ch. 7 Conservation of Energy
 - [[PHY1 HW Ch09 Questions]] and [[PHY1 HW Ch09 Solutions]]: EUP Ch. 9 Systems of Particles
 
 ## Summaries
 
 - [[PHY1 Ch1-2 Summary]]: EUP Ch. 1 and 2
+- [[PHY1 Ch7 中文課本]]: EUP Ch. 7 Conservation of Energy, condensed Chinese translation
 - [[PHY1 Ch9 Summary]]: EUP Ch. 9 Systems of Particles
 - [[PHY1 Ch9 中文課本]]: EUP Ch. 9 Systems of Particles, condensed Chinese translation
 
