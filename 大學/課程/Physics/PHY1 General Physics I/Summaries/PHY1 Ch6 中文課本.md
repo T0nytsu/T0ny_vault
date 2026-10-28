@@ -52,7 +52,7 @@ up: "[[PHY1 Index]]"
 > [!info] Application：氣候模型
 > 圖 6.2 的架構也是真實模型的架構，從生物到核電廠到地球氣候都用。氣候科學家把地球加大氣當成系統：地表與大氣之間的紅外輻射、上升的暖空氣與水氣是系統內的能量流；入射陽光、反射陽光、射出的紅外線是穿過系統邊界的能量交換。Ch. 16 會看到進出的能量流要平衡，氣候才會穩定。
 >
-> ![EUP Application Climate Modeling|420](../Attachments/PHY1%20Ch06%20Application%20Climate%20Modeling.png)
+> ![EUP Application Climate Modeling|300](../Attachments/PHY1%20Ch06%20Application%20Climate%20Modeling.png)
 
 本章的系統多半就是單一物體，所以「物體」和「系統」混用。Ch. 7 的系統至少有兩個交互作用的物體，Ch. 9 是多質點系統，那時就要仔細區分系統內外。
 
@@ -68,7 +68,7 @@ up: "[[PHY1 Index]]"
 > $F_{x}$ 是力沿物體運動方向的分量，$\Delta x$ 是物體的位移。
 
 - $\vec{F}$ 不必是淨力：問「你拖箱子作了多少功」時，$\vec{F}$ 是你施的力，$W$ 是你作的功。
-- 功的 SI 單位是 $\mathrm{N \cdot m}$，叫**焦耳**（joule，J），紀念 19 世紀英國物理學家（兼釀酒師）James Joule。
+- 功的 SI 單位是 $\mathrm{N \cdot m}$，叫**焦耳**（joule，J）。
 - 「位移」指的是**施力點**的位移。剛體的施力點位移等於物體位移；彈簧、人體、多粒子系統等會變形的系統則不一定等於整個系統的位移。
 
 圖 6.3 三種情況：推車的人，力和位移同方向，$W = F\Delta x$；拉行李的人，力斜向上，只有水平分量作功，$W = F_{x}\Delta x$；端著托盤等速走的服務生，力垂直、位移水平，力沒有沿運動方向的分量，**不作功**。
@@ -82,7 +82,6 @@ up: "[[PHY1 Index]]"
 | 同方向，或有分量沿運動方向 | $W > 0$ |
 | 垂直 | $W = 0$ |
 | 有分量和運動方向相反 | $W < 0$ |
-
 ![EUP Figure 6.4|520](../Attachments/PHY1%20Ch06%20Fig%206.4.png)
 
 > [!example] Example 6.1　計算功：推車
