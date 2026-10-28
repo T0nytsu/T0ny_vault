@@ -9,7 +9,7 @@ created: 2026-10-27
 up: "[[PHY1 Index]]"
 ---
 > [!info] Chapter 9　質點系統（Systems of Particles）
-> Wolfson, *Essential University Physics*, 4th ed., Global Edition, Vol. 1, pp. 166–190 的中文精簡版：保留定義、定律、推導、例題、GOT IT? 與習題，刪掉重複和鋪陳的敘述。式號、圖號、題號都照課本；GOT IT 9.1 和習題用到的圖附在題目下，其他的圖請翻課本對應的圖號。
+> Wolfson, *Essential University Physics*, 4th ed., Global Edition, Vol. 1, pp. 166–190 的中文精簡版：保留定義、定律、推導、例題、GOT IT? 與習題，刪掉重複和鋪陳的敘述。式號、圖號、題號都照課本；課本的圖都附在對應的段落、例題或習題下（含 Application 與本章摘要的圖）；章首照片在掃描檔裡缺漏，沒有收；本章摘要 Applications 的圖是圖 9.17 重畫，也沒有重複收。
 
 ## 學習目標
 
@@ -73,12 +73,14 @@ $$
 > [!example] Example 9.1　一維質心：舉重
 > 槓鈴兩端是 $50\ \mathrm{kg}$ 與 $80\ \mathrm{kg}$ 的重物，桿長 $1.5\ \mathrm{m}$、質量不計。求質心。
 
-> [!solution] 解
+> [!solution] 答案
 > 原點放在 $50$-kg 重物：$x_{1} = 0$，$x_{2} = 1.5\ \mathrm{m}$。
 > $$
 > x_{\mathrm{cm}} = \frac{m_{1}x_{1} + m_{2}x_{2}}{m_{1} + m_{2}} = \frac{m_{2}x_{2}}{m_{1} + m_{2}} = \frac{(80\ \mathrm{kg})(1.5\ \mathrm{m})}{50\ \mathrm{kg} + 80\ \mathrm{kg}} = 0.92\ \mathrm{m}
 > $$
 > 質心靠近較重的一端；兩重物相等時在正中間。
+>
+> ![EUP Figure 9.1|360](../Attachments/PHY1%20Ch09%20Fig%209.1.png)
 
 > [!tip] 選原點
 > 原點放在一個質點上，$\sum m_{i}x_{i}$ 就少一項。原點只影響計算方不方便，不影響質心的實際位置（Exercise 12 以槓鈴中心為原點重做本題）。
@@ -86,12 +88,14 @@ $$
 > [!example] Example 9.2　二維質心：太空站
 > 三個模組排成正三角形，以長 $L$、質量不計的支架相連；兩個模組質量 $m$，另一個 $2m$（圖 9.2）。求質心。
 
-> [!solution] 解
+> [!solution] 答案
 > 原點放在 $2m$，$y$ 軸向下。由左到右：$x_{1} = -L\sin 30^{\circ} = -\tfrac{1}{2}L$，$y_{1} = L\cos 30^{\circ} = \tfrac{\sqrt{3}}{2}L$；$x_{2} = y_{2} = 0$；$x_{3} = \tfrac{1}{2}L$，$y_{3} = y_{1}$。
 > $$
 > x_{\mathrm{cm}} = \frac{mx_{1} + mx_{3}}{4m} = 0, \qquad y_{\mathrm{cm}} = \frac{my_{1} + my_{3}}{4m} = \frac{2my_{1}}{4m} = \frac{\sqrt{3}}{4}L \approx 0.43L
 > $$
 > 分子只剩兩項，但 $2m$ 仍在分母的 $M = 4m$ 裡。高 $h = L\cos 30^{\circ} = \tfrac{\sqrt{3}}{2}L$，質心正好在高的一半：頂端 $2m$，底部 $m + m = 2m$。
+>
+> ![EUP Figure 9.2|360](../Attachments/PHY1%20Ch09%20Fig%209.2.png)
 
 > [!tip] 利用對稱
 > $x_{\mathrm{cm}} = 0$ 不是巧合：三角形對平分它的鉛直線對稱，質量在兩側平均分布。能用對稱就用，可以省很多計算。
@@ -99,6 +103,8 @@ $$
 ### 連續物質
 
 把連續物體切成**質量元素**（mass element）$\Delta m_{i}$，位置 $\vec{r}_{i}$（圖 9.3，原點任意），代入 (9.2)；令元素無限小，和就變成積分：
+
+![EUP Figure 9.3|320](../Attachments/PHY1%20Ch09%20Fig%209.3.png)
 
 > [!definition] 連續物體的質心
 > $$
@@ -112,7 +118,7 @@ $$
 > [!example] Example 9.3　連續物體：機翼
 > 超音速機翼是長 $L$、寬 $w$、厚度不計的等腰三角形，質量 $M$ 均勻分布。質心在哪？
 
-> [!solution] 解
+> [!solution] 答案
 > 原點在機翼頂點，$x$ 軸沿對稱軸，所以 $y_{\mathrm{cm}} = 0$，只要算 $x_{\mathrm{cm}} = \left(\int x\,dm\right)/M$。取寬 $dx$ 的鉛直細條（圖 9.4）：高 $h = (w/L)x$，面積 $dA = h\,dx = (w/L)x\,dx$。細條質量占總質量的比例，等於它的面積占總面積 $A = \tfrac{1}{2}wL$ 的比例：
 > $$
 > \frac{dm}{M} = \frac{dA}{A} = \frac{(w/L)x\,dx}{\tfrac{1}{2}wL} = \frac{2x\,dx}{L^{2}} \implies dm = \frac{2Mx\,dx}{L^{2}}
@@ -121,6 +127,8 @@ $$
 > x_{\mathrm{cm}} = \frac{1}{M}\int_{0}^{L}x\left(\frac{2Mx}{L^{2}}\,dx\right) = \frac{2}{L^{2}}\int_{0}^{L}x^{2}\,dx = \frac{2}{L^{2}}\cdot\frac{L^{3}}{3} = \frac{2}{3}L
 > $$
 > 質心偏向機翼後方：那裡比較寬，質量比較多。
+>
+> ![EUP Figure 9.4|300](../Attachments/PHY1%20Ch09%20Fig%209.4.png)
 
 > [!tip] Tactics 9.1　設定積分
 > $\int x\,dm$ 裡的 $x$ 和 $dm$ 看似無關，其實有關。步驟：
@@ -133,10 +141,14 @@ $$
 
 複雜物體可以先求各部分的質心，再把各部分當成位於自己質心的質點（圖 9.5：飛機 = 機翼 + 機身）。質心不一定在物體內（圖 9.6 半圓形線）。跳高選手就利用這點：手腳垂在橫桿兩側，身體全部過桿，質心卻可以從桿下通過（圖 9.7）。
 
+![EUP Figure 9.5|280](../Attachments/PHY1%20Ch09%20Fig%209.5.png)
+
+![EUP Figure 9.7|420](../Attachments/PHY1%20Ch09%20Fig%209.7.png)
+
 > [!question] GOT IT? 9.1
 > 粗線彎成半圓（圖 9.6），對稱軸上由上而下標了 A、B、C 三點。哪一點是質心？
 >
-> ![EUP Figure 9.6|400](../Attachments/PHY1%20Ch09%20Fig%209.6.png)
+> ![EUP Figure 9.6|300](../Attachments/PHY1%20Ch09%20Fig%209.6.png)
 
 > [!solution]- 答案
 > A，最上面的點。想像穿過線的水平細條：越高的細條包含越多的線，所以質心靠近頂端。最下面的點是完整圓的質心。
@@ -152,7 +164,7 @@ $$
 > [!example] Example 9.4　質心運動：馬戲團列車
 > 大象 Jumbo（$4.8\ \mathrm{t}$）站在一節靜止於無摩擦水平軌道上的 $15$-t 車廂一端（t 是公噸，$1000\ \mathrm{kg}$）。Jumbo 往車廂另一端走 $19\ \mathrm{m}$。車廂移動多遠？
 
-> [!solution] 解
+> [!solution] 答案
 > 系統是 Jumbo 加車廂，水平方向沒有外力，所以質心不動：$x_{\mathrm{cm\,i}} = x_{\mathrm{cm\,f}}$。座標系固定在地面，原點在車廂中心的初始位置（$x_{\mathrm{ci}} = 0$；車廂對稱，質心在中心）。$19\ \mathrm{m}$ 是相對車廂走的，所以 $x_{\mathrm{Jf}} = x_{\mathrm{Ji}} + 19\ \mathrm{m} + x_{\mathrm{cf}}$（車廂往左時 $x_{\mathrm{cf}}$ 自己會是負的）：
 > $$
 > \frac{m_{\mathrm{J}}x_{\mathrm{Ji}}}{M} = \frac{m_{\mathrm{J}}(x_{\mathrm{Ji}} + 19\ \mathrm{m} + x_{\mathrm{cf}}) + m_{\mathrm{c}}x_{\mathrm{cf}}}{M}
@@ -162,6 +174,8 @@ $$
 > x_{\mathrm{cf}} = -\frac{(19\ \mathrm{m})m_{\mathrm{J}}}{m_{\mathrm{J}} + m_{\mathrm{c}}} = -\frac{(19\ \mathrm{m})(4.8\ \mathrm{t})}{4.8\ \mathrm{t} + 15\ \mathrm{t}} = -4.6\ \mathrm{m}
 > $$
 > 車廂往左 $4.6\ \mathrm{m}$；Jumbo 對地走了 $19\ \mathrm{m} - 4.6\ \mathrm{m} = 14.4\ \mathrm{m}$。質量只以比值出現，不必換成 kg。
+>
+> ![EUP Figure 9.8|440](../Attachments/PHY1%20Ch09%20Fig%209.8.png)
 
 ## 9.2 動量
 
@@ -213,8 +227,10 @@ $$
 >
 > **Making the Connection**：背包在空中時，獨木舟的速率是多少？
 
-> [!solution] 解
+> [!solution] 答案
 > 系統（Jess、Nick、獨木舟、背包）沒有淨外力，動量守恆。一開始全部靜止，動量為零，所以 Nick 接住後仍為零。這時四者彼此相對靜止，總動量為零只可能是它們都對水靜止：速率 $0$。動量守恆直接連結初、末狀態，不必知道中間發生什麼。
+>
+> ![EUP Figure 9.9|420](../Attachments/PHY1%20Ch09%20Fig%209.9.png)
 >
 > **Making the Connection**：總動量仍為零，背包動量加上兩人和獨木舟（共同速度 $v_{\mathrm{k}}$）的動量：
 > $$
@@ -224,11 +240,13 @@ $$
 > v_{\mathrm{k}} = -\frac{m_{\mathrm{p}}v_{\mathrm{p}}}{m_{\mathrm{J}} + m_{\mathrm{N}} + m_{\mathrm{k}}} = -\frac{(17\ \mathrm{kg})(3.1\ \mathrm{m/s})}{53\ \mathrm{kg} + 72\ \mathrm{kg} + 26\ \mathrm{kg}} = -0.35\ \mathrm{m/s}
 > $$
 > 負號：與背包反向。獨木舟和兩人比背包重得多，所以速率小。
+>
+> ![EUP Figure 9.10|420](../Attachments/PHY1%20Ch09%20Fig%209.10.png)
 
 > [!example] Example 9.5　動量守恆：放射性衰變
 > 以 $1.6\ \mathrm{Mm/s}$ 運動的鋰-5 核（${}^{5}\mathrm{Li}$）衰變成質子（${}^{1}\mathrm{H}$，p）和 $\alpha$ 粒子（${}^{4}\mathrm{He}$）。上標是核子總數，也就是以原子質量單位 u 計的近似質量。$\alpha$ 以 $1.4\ \mathrm{Mm/s}$、與 ${}^{5}\mathrm{Li}$ 原速度夾 $33^{\circ}$ 飛出。質子速度的大小和方向？
 
-> [!solution] 解
+> [!solution] 答案
 > 和上例不同：總動量不為零，而且是二維。$x$ 軸沿 $\vec{v}_{\mathrm{Li}}$，(9.7) 成為 $m_{\mathrm{Li}}\vec{v}_{\mathrm{Li}} = m_{\mathrm{p}}\vec{v}_{\mathrm{p}} + m_{\alpha}\vec{v}_{\alpha}$，分量：
 > $$
 > x:\ m_{\mathrm{Li}}v_{\mathrm{Li}} = m_{\mathrm{p}}v_{\mathrm{p}x} + m_{\alpha}v_{\alpha x}, \qquad y:\ 0 = m_{\mathrm{p}}v_{\mathrm{p}y} + m_{\alpha}v_{\alpha y}
@@ -246,13 +264,17 @@ $$
 > v_{\mathrm{p}} = \sqrt{v_{\mathrm{p}x}^{2} + v_{\mathrm{p}y}^{2}} = 4.5\ \mathrm{Mm/s}, \qquad \theta = \tan^{-1}\frac{v_{\mathrm{p}y}}{v_{\mathrm{p}x}} = -43^{\circ}
 > $$
 > $\theta$ 為負：質子往下偏。兩個產物動量的 $y$ 分量等大反向（總動量本來就沒有 $y$ 分量），$x$ 分量加起來等於鋰核的動量（圖 9.12）。質量只以比值出現，可以直接用 u。
+>
+> ![EUP Figure 9.11|400](../Attachments/PHY1%20Ch09%20Fig%209.11.png)
+>
+> ![EUP Figure 9.12|380](../Attachments/PHY1%20Ch09%20Fig%209.12.png)
 
 系統的動量只在沒有外力時守恆；一個力算內力還是外力，取決於你怎麼選系統。上面兩例選了不受外力的系統，才能用動量守恆。有時選受外力的系統比較方便，這時系統動量的變化率等於外力，$d\vec{P}/dt = \vec{F}$。
 
 > [!example] Example 9.6　動量的變化：救火
 > 消防員把水柱對準燃燒建築的窗戶，想打破窗戶讓水進到火場。水管每秒送出 $45\ \mathrm{kg}$ 的水，水以 $32\ \mathrm{m/s}$ 水平打到窗上，之後垂直落下。水對窗戶的水平力多大？
 
-> [!solution] 解
+> [!solution] 答案
 > 系統選水，它受窗戶的外力。每公斤水打到窗上失去 $32\ \mathrm{kg \cdot m/s}$ 的動量，每秒 $45\ \mathrm{kg}$，所以水失去動量的速率
 > $$
 > \frac{dP}{dt} = (45\ \mathrm{kg/s})(32\ \mathrm{m/s}) = 1400\ \mathrm{kg \cdot m/s^2}
@@ -267,6 +289,8 @@ $$
 
 > [!info] Application：火箭
 > 太空中沒有東西讓輪子或螺旋槳推。沒有外力時總動量不變：排氣帶走動量，火箭得到等大反向的動量。火箭動量的變化率就是作用在它上面的力，工程上叫**推力**（thrust）：排出質量的速率 $dM/dt$ 乘排氣速度 $v_{\mathrm{ex}}$，$F = v_{\mathrm{ex}}\,dM/dt$（和 Example 9.6 的水柱一樣）。火箭必須帶著要排出的質量，所以排氣速度高的火箭最有效率、需要的燃料較少。真正推動火箭的是引擎室裡的熱氣推引擎室前壁；火箭不推外界任何東西，所以在真空中照樣能運作。（Problem 83 定量分析火箭推進。）
+>
+> ![EUP Application Rockets|240](../Attachments/PHY1%20Ch09%20Application%20Rockets.png)
 
 ## 9.3 系統的動能
 
@@ -325,6 +349,8 @@ $$
 
 > [!info] Application：撞擊測試
 > 汽車工程師用撞擊測試評估車輛安全：測試車撞固定障礙物時，感測器量測快速變化的力。$F$–$t$ 曲線下的面積是衝量；高為平均力 $\bar{F}$ 的矩形面積和它相同。除了車上的力感測器，假人身上的加速度計也量測頭部等部位的最大加速度，以評估可能的傷害。
+>
+> ![EUP Application Crash Tests|320](../Attachments/PHY1%20Ch09%20Application%20Crash%20Tests.png)
 
 ### 碰撞中的能量
 
@@ -349,17 +375,19 @@ $$
 > [!example] Example 9.7　非彈性碰撞：冰球
 > 冰球隊長（物理系學生）想量冰球的速率。她在小保麗龍箱裡裝沙，總質量 $6.4\ \mathrm{kg}$，靜置在無摩擦的冰上。$160$-g 的冰球撞上箱子，嵌進保麗龍裡，箱子以 $1.2\ \mathrm{m/s}$ 滑走。冰球的速率？
 
-> [!solution] 解
+> [!solution] 答案
 > 系統：冰球加箱子。碰撞前只有冰球在動，碰撞後只有一個共同速度，所以兩個運動同方向，是一維問題。(9.11) 成為 $m_{\mathrm{p}}v_{\mathrm{p}} = (m_{\mathrm{p}} + m_{\mathrm{c}})v_{\mathrm{c}}$：
 > $$
 > v_{\mathrm{p}} = \frac{(m_{\mathrm{p}} + m_{\mathrm{c}})v_{\mathrm{c}}}{m_{\mathrm{p}}} = \frac{(0.16\ \mathrm{kg} + 6.4\ \mathrm{kg})(1.2\ \mathrm{m/s})}{0.16\ \mathrm{kg}} = 49\ \mathrm{m/s}
 > $$
 > 冰球質量小，要很大的速率才帶得了和重得多的箱子一樣的動量。這類方法常用來測難以直接量的速率。
+>
+> ![EUP Figure 9.13|420](../Attachments/PHY1%20Ch09%20Fig%209.13.png)
 
 > [!example] Example 9.8　動量守恆：核融合
 > 兩個氘核（${}^{2}\mathrm{H}$）結合成氦（${}^{4}\mathrm{He}$）。原本一個氘核以 $3.5\ \mathrm{Mm/s}$ 運動，另一個以 $1.8\ \mathrm{Mm/s}$、與第一個的速度夾 $64^{\circ}$。求氦核的速率和方向。
 
-> [!solution] 解
+> [!solution] 答案
 > 兩個物體原本都在動且方向不同，是二維。$x$ 軸沿 $\vec{v}_{1}$（圖 9.14）：$v_{1x} = 3.5\ \mathrm{Mm/s}$，$v_{1y} = 0$；$v_{2x} = (1.8\ \mathrm{Mm/s})(\cos 64^{\circ}) = 0.789\ \mathrm{Mm/s}$，$v_{2y} = (1.8\ \mathrm{Mm/s})(\sin 64^{\circ}) = 1.62\ \mathrm{Mm/s}$。由 (9.11)，$\vec{v}_{\mathrm{f}} = (m_{1}\vec{v}_{1} + m_{2}\vec{v}_{2})/(m_{1} + m_{2})$：
 > $$
 > \begin{aligned}
@@ -371,11 +399,13 @@ $$
 > v_{\mathrm{f}} = \sqrt{v_{\mathrm{f}x}^{2} + v_{\mathrm{f}y}^{2}} = 2.3\ \mathrm{Mm/s}, \qquad \theta = \tan^{-1}\frac{v_{\mathrm{f}y}}{v_{\mathrm{f}x}} = 21^{\circ}
 > $$
 > 兩個入射粒子質量相同，速度和動量成正比；總初動量大多是水平的，所以 $21^{\circ}$ 合理。總動量集中在一個較重的粒子上，末速率和初速率差不多。
+>
+> ![EUP Figure 9.14|380](../Attachments/PHY1%20Ch09%20Fig%209.14.png)
 
 > [!example] Example 9.9　彈道擺
 > **彈道擺**（ballistic pendulum）用來量子彈等高速物體的速率：用垂直的繩吊著質量 $M$ 的木塊（圖 9.15）。質量 $m$ 的子彈射入並嵌在木塊中，木塊擺上鉛直高度 $h$。求子彈的速率。
 
-> [!solution] 解
+> [!solution] 答案
 > 分成兩個事件。
 > 1. 子彈射入：一維完全非彈性碰撞，動量守恆、機械能不守恆。由 (9.11)，$mv = (m + M)V$（$V$ 是碰撞剛結束時木塊連子彈的速率），所以 $V = mv/(m + M)$。
 > 2. 木塊擺上：繩張力和重力是外力，動量不守恆；但重力是保守力、張力不作功，所以機械能守恆。位能零點取在木塊的初始位置，最高點瞬間靜止：$\tfrac{1}{2}(m + M)V^{2} = (m + M)gh$。
@@ -385,6 +415,8 @@ $$
 > \frac{1}{2}\left(\frac{mv}{m + M}\right)^{2} = gh \implies v = \left(\frac{m + M}{m}\right)\sqrt{2gh}
 > $$
 > 子彈質量越小，速率要越大才帶得了同樣的動量（分母只有 $m$）。$v$ 隨 $\sqrt{h}$ 而不是 $h$ 增加：轉成上升位能的動能和速率的平方成正比。
+>
+> ![EUP Figure 9.15|380](../Attachments/PHY1%20Ch09%20Fig%209.15.png)
 
 > [!question] GOT IT? 9.6
 > 下列哪些是完全非彈性碰撞？(a) 兩個等質量物體以不同速率相向，正面相撞後黏在一起，合體繼續運動；(b) 兩個等質量物體以相同速率相向，正面相撞後黏在一起，合體靜止；(c) 兩個等質量物體以相同速率相向，正面相撞後反彈，速率比原來小。
@@ -409,6 +441,8 @@ $$
 ### 一維彈性碰撞
 
 正面碰撞時，內力沿著入射運動的直線，之後的運動也在同一直線上（圖 9.16a）；不是正面碰撞時內力不在這條線上，運動就變成二維（圖 9.16b）。一維時 (9.12) 只剩一個分量；$v$ 是速度分量，可正可負：
+
+![EUP Figure 9.16|300](../Attachments/PHY1%20Ch09%20Fig%209.16.png)
 
 $$
 m_{1}v_{\mathrm{1i}} + m_{2}v_{\mathrm{2i}} = m_{1}v_{\mathrm{1f}} + m_{2}v_{\mathrm{2f}} \qquad (9.12\mathrm{a})
@@ -457,6 +491,8 @@ $$
 
 設 $v_{\mathrm{2i}} = 0$。這其實不算特例：總可以換到 $m_{2}$ 原本靜止的參考座標系。三種情況（圖 9.17）：
 
+![EUP Figure 9.17|300](../Attachments/PHY1%20Ch09%20Fig%209.17.png)
+
 **Case 1：$m_{1} \ll m_{2}$**（乒乓球撞保齡球，或任何物體與完全剛性的面彈性碰撞）。(9.15) 中忽略 $m_{1}$：
 
 $$
@@ -484,7 +520,7 @@ $$
 > [!example] Example 9.10　彈性碰撞：核工程
 > 核反應爐中的**緩和劑**（moderator）使核分裂釋出的中子減速，讓它們比較容易引發新的分裂，維持連鎖反應。一種加拿大的反應爐以**重水**（heavy water）當緩和劑：一般的氫原子換成氘，氘核由一個質子和一個中子組成，質量約 $2\ \mathrm{u}$，中子約 $1\ \mathrm{u}$。中子與靜止的氘核正面彈性碰撞時，中子的動能有多少比例轉給氘核？
 
-> [!solution] 解
+> [!solution] 答案
 > 正面碰撞，一維；只問動能比例，有質量就夠。中子是粒子 1，$v_{\mathrm{2i}} = 0$，由 (9.15b)，$v_{\mathrm{2f}} = 2m_{1}v_{\mathrm{1i}}/(m_{1} + m_{2})$：
 > $$
 > K_{2} = \frac{1}{2}m_{2}\left(\frac{2m_{1}v_{1}}{m_{1} + m_{2}}\right)^{2} = \frac{2m_{2}m_{1}^{2}v_{1}^{2}}{(m_{1} + m_{2})^{2}}, \qquad K_{1} = \tfrac{1}{2}m_{1}v_{1}^{2}
@@ -506,10 +542,12 @@ $$
 
 需要完整的向量動量守恆 (9.12) 加上能量守恆 (9.13)，但這些方程式本身資訊不夠。簡單的宏觀物體可以由**撞擊參數**（impact parameter）$b$ 補上：它衡量碰撞偏離正面多少，是兩球心運動直線之間的距離，決定撞擊點，從而決定碰撞力的方向（圖 9.18）。更常見的情況（尤其原子與原子核的交互作用）是由碰撞後的量測補上：例如已知質量和初速度時，知道一個粒子碰撞後的運動方向就夠了。
 
+![EUP Figure 9.18|600](../Attachments/PHY1%20Ch09%20Fig%209.18.png)
+
 > [!example] Example 9.11　二維彈性碰撞：槌球
 > 槌球撞一顆靜止、等質量的球。碰撞是彈性的，入射球偏離原方向 $30^{\circ}$。另一顆球往哪個方向？
 
-> [!solution] 解
+> [!solution] 答案
 > 只問方向，速度大小不重要。質量相等，從兩式中消去，$v_{\mathrm{2i}} = 0$：動量 $\vec{v}_{\mathrm{1i}} = \vec{v}_{\mathrm{1f}} + \vec{v}_{\mathrm{2f}}$，能量 $v_{\mathrm{1i}}^{2} = v_{\mathrm{1f}}^{2} + v_{\mathrm{2f}}^{2}$。不寫分量，而把動量式和自己作內積：會出現速度平方，能和能量式合併，而且內積帶有角度（圖 9.19，$\vec{v}_{\mathrm{1f}}$ 和 $\vec{v}_{\mathrm{2f}}$ 夾 $\theta + 30^{\circ}$；$\vec{A} \cdot \vec{A} = A^{2}$）：
 > $$
 > v_{\mathrm{1i}}^{2} = (\vec{v}_{\mathrm{1f}} + \vec{v}_{\mathrm{2f}}) \cdot (\vec{v}_{\mathrm{1f}} + \vec{v}_{\mathrm{2f}}) = v_{\mathrm{1f}}^{2} + v_{\mathrm{2f}}^{2} + 2v_{\mathrm{1f}}v_{\mathrm{2f}}\cos(\theta + 30^{\circ})
@@ -517,20 +555,28 @@ $$
 > 減去能量式：$2v_{\mathrm{1f}}v_{\mathrm{2f}}\cos(\theta + 30^{\circ}) = 0$。兩個末速率都不是零，所以 $\cos(\theta + 30^{\circ}) = 0$，$\theta + 30^{\circ} = 90^{\circ}$，$\theta = 60^{\circ}$。
 >
 > 兩球以直角分開不是巧合：等質量、一個原本靜止的二維彈性碰撞都是如此（Problem 76 證明）。
+>
+> ![EUP Figure 9.19|400](../Attachments/PHY1%20Ch09%20Fig%209.19.png)
 
 ### 質心座標系
 
 在隨碰撞粒子質心運動的參考座標系中，總動量為零；碰撞只涉及內力，不影響質心，所以碰撞後總動量仍為零。因此初動量、末動量各是一對等大反向的向量（圖 9.20）。彈性碰撞中，能量守恆還要求末動量的大小等於初動量的大小，所以一個角度（圖 9.20 的 $\theta$）就完全描述了碰撞。
+
+![EUP Figure 9.20|360](../Attachments/PHY1%20Ch09%20Fig%209.20.png)
 
 常常先轉到質心座標系分析，再把動量和速度轉回原本的「實驗室」（lab）座標系。高能物理學家常這樣做：基本粒子之間的力在碰撞粒子的質心座標系中描述得最簡單，但在某些實驗中（較輕的粒子撞上重原子核或靜止的靶），物理學家和他們的加速器並不在質心座標系。
 
 > [!example] Conceptual Example 9.2　在質心座標系中
 > 圖 9.21 是兩個等質量物體在質心座標系中碰撞的初、末速度：$m_{1}$ 從左、$m_{2}$ 從右沿水平線接近，碰撞後 $m_{2}$ 往上、$m_{1}$ 往下。在 $m_{2}$ 原本靜止的座標系中，對應的圖長什麼樣？
 >
+> ![EUP Figure 9.21|260](../Attachments/PHY1%20Ch09%20Fig%209.21.png)
+>
 > **Making the Connection**：圖 9.20 改成等質量，若 $\theta = 70^{\circ}$，在一個物體原本靜止的座標系中，類似圖 9.19 的那些角度是多少？
 
-> [!solution] 解
+> [!solution] 答案
 > 質量相等，動量和速度向量成正比，所以圖 9.21 確實是質心座標系中的碰撞。要換到 $m_{2}$ 原本靜止的座標系，每個速度都加上 $-\vec{v}_{\mathrm{2i}}$：$\vec{v}_{\mathrm{1i}}$ 變成兩倍長；每個末速度都加上一個等長且垂直的向量，所以兩個末速度都變成質心座標系中的 $\sqrt{2}$ 倍長、指向 $45^{\circ}$（圖 9.22）。這和 Example 9.11（兩末速度垂直）一致，對稱性也和質心座標系的對稱一致。
+>
+> ![EUP Figure 9.22|300](../Attachments/PHY1%20Ch09%20Fig%209.22.png)
 >
 > **Making the Connection**：質心座標系中總動量為零，兩個等質量物體以相同速率 $v$ 相向；碰撞後速度仍等大反向，而且為了守恆動能，速率仍是 $v$，就像圖 9.20。所有向量加上向右的 $\vec{v}$，$m_{1}$ 碰撞後的速度分量是 $v_{1x} = v\cos\theta + v$、$v_{1y} = -v\sin\theta$（負號代表圖中向下），角度為
 > $$
@@ -542,6 +588,10 @@ $$
 
 > [!abstract] Big Idea
 > 多質點系統的行為很簡單，不依賴內部結構或運動的細節：系統對外力的反應，就像位於**質心**的一個質點。淨外力為零時，質心不加速，系統總動量守恆。碰撞短暫而強烈，動量守恆在碰撞中是很好的近似，可以連結碰撞前後的運動。背後是牛頓第三定律：內力成對抵消，所以質心滿足牛頓第二定律。
+>
+> ![EUP Summary Big Idea|300](../Attachments/PHY1%20Ch09%20Summary%20Big%20Idea.png)
+>
+> ![EUP Summary Third Law|520](../Attachments/PHY1%20Ch09%20Summary%20Third%20Law.png)
 
 | 概念 | 式子 | 說明 |
 | --- | --- | --- |
@@ -558,9 +608,11 @@ $$
 | 一維彈性碰撞 | $v_{\mathrm{1i}} - v_{\mathrm{2i}} = v_{\mathrm{2f}} - v_{\mathrm{1f}}$ (9.14) | 相對速率不變、方向反轉；末速度見 (9.15) |
 | 能量轉移 | $K_{2}/K_{1} = 4m_{1}m_{2}/(m_{1} + m_{2})^{2}$ (9.16) | 一維、$m_{2}$ 原本靜止；等質量時為 $1$ |
 
-**一維碰撞（$m_{2}$ 原本靜止）**：$m_{1} < m_{2}$ 時 $m_{1}$ 反向；$m_{1} = m_{2}$ 時 $m_{1}$ 停下；$m_{1} > m_{2}$ 時 $m_{1}$ 同方向繼續。
+![EUP Summary Inelastic Collision|260](../Attachments/PHY1%20Ch09%20Summary%20Inelastic%20Collision.png)
 
-**火箭**：把物質以高速向後排出，由動量守恆得到向前的動量；推進不需要和外界任何物質交互作用，所以火箭在太空中也能運作。
+![EUP Summary Elastic Collision|400](../Attachments/PHY1%20Ch09%20Summary%20Elastic%20Collision.png)
+
+**應用**：一維彈性碰撞、一個物體原本靜止時，結果取決於質量比：$m_{1} < m_{2}$ 時 $m_{1}$ 反向，$m_{1} = m_{2}$ 時 $m_{1}$ 停下，$m_{1} > m_{2}$ 時 $m_{1}$ 同方向繼續（圖 9.17）。火箭把物質以高速向後排出，由動量守恆得到向前的動量；推進不需要和外界任何物質交互作用，所以火箭在太空中也能運作。
 
 ## 習題
 
@@ -570,6 +622,9 @@ $$
 
 1. 舉出三個質心在物體外面的家用物品。
 2. 實心球的質心在球心。把球切成兩半，兩個半球都圓頂朝上疊起來（圖 9.23），質心在兩者的接觸點嗎？若不是，大約在哪？說明。
+
+   ![EUP Figure 9.23|200](../Attachments/PHY1%20Ch09%20Fig%209.23.png)
+
 3. 一組撞球被母球撞擊前後的總動量相同。其中一顆撞到球桌邊之後還相同嗎？說明。
 4. 運液體的油罐車為什麼通常有隔板（分成幾個小隔間，隔板上有孔讓液體流通）？
 5. 好獵人為什麼開槍時總把槍緊抵在肩上？
@@ -646,6 +701,9 @@ $$
 - **45.** 半球形的碗靜止在無摩擦檯面上。老鼠從正上方掉到碗緣，爬到碗底。碗沿檯面移動了碗直徑的 $\tfrac{1}{10}$。老鼠和碗的質量比？
 - **46.** 切片用的彈簧槍把空心針射入組織。$8.6$-g 的針在組織中 $86\ \mathrm{ms}$ 停下，組織的阻力 $39\ \mathrm{mN}$。(a) 組織給的衝量？(b) 針刺入多深？
 - **47.** 求高 $h$、底半徑 $R$、密度 $\rho$ 的均勻實心圓錐的質心（圖 9.25）。（提示：對厚 $dy$ 的圓盤質量元素積分。）
+
+  ![EUP Figure 9.25|260](../Attachments/PHY1%20Ch09%20Fig%209.25.png)
+
 - **48.** 靜止的爆竹炸成兩塊。第一塊 $14\ \mathrm{g}$，以 $43\ \mathrm{m/s}$ 沿 $+x$；第二塊以 $30\ \mathrm{m/s}$ 運動。求第二塊的質量和運動方向。
 - **49.** $11{,}000$-kg 的貨車靠在鐵軌末端的彈簧緩衝器上，$k = 0.32\ \mathrm{MN/m}$。$9400$-kg、以 $8.5\ \mathrm{m/s}$ 運動的貨車撞上並連結。求 (a) 彈簧的最大壓縮量、(b) 兩車一起被彈回時的速率。
 - **50.** 結冰路面上，$1200$-kg 汽車以 $50\ \mathrm{km/h}$ 撞上同方向以 $35\ \mathrm{km/h}$ 運動的 $4400$-kg 卡車；不久又被以 $65\ \mathrm{km/h}$ 超速的 $1500$-kg 汽車從後面撞上，三車黏在一起。求殘骸的速率。
@@ -707,6 +765,8 @@ $$
 | 最大高度 ($\mathrm{m}$) | $22$ | $13$ | $19$ | $51$ | $23$ |
 
 - **93.**（CH）質量 $M$ 的木塊以 $v_{0}$ 在無摩擦面上運動，朝靜止的質量 $nM$ 木塊前進，$n \ge 1$；左端是剛性牆（圖 9.29）。兩木塊之間、左木塊與牆之間的碰撞都是彈性、一維的。(a) 證明 $n \le 3$ 時兩木塊只碰撞一次；(b) 證明 $n = 4$ 時碰撞兩次；(c) $n = 10$ 時碰撞幾次？末速率是多少？
+
+  ![EUP Figure 9.29|360](../Attachments/PHY1%20Ch09%20Fig%209.29.png)
 
 ### Passage Problems
 
