@@ -17,6 +17,7 @@ created: 2026-10-05
 | `measurement` | Units, unit conversion, scientific notation, significant figures, estimation (EUP Ch. 1) |
 | `kinematics` | Position, velocity, acceleration; constant acceleration and free fall (EUP Ch. 2 and 3) |
 | `energy` | Work, kinetic energy, power (EUP Ch. 6); potential energy, conservation of mechanical energy, friction and internal energy, potential-energy curves (EUP Ch. 7) |
+| `gravitation` | Universal gravitation, circular orbits, gravitational potential energy, escape speed, gravitational field (EUP Ch. 8) |
 | `momentum` | Center of mass, momentum, impulse, collisions (EUP Ch. 9) |
 
 ## Homework
@@ -25,6 +26,7 @@ created: 2026-10-05
 - [[PHY1 HW Ch02 Questions]] and [[PHY1 HW Ch02 Solutions]]: EUP Ch. 2 Motion in a Straight Line
 - [[PHY1 HW Ch06 Questions]] and [[PHY1 HW Ch06 Solutions]]: EUP Ch. 6 Energy, Work, and Power
 - [[PHY1 HW Ch07 Questions]] and [[PHY1 HW Ch07 Solutions]]: EUP Ch. 7 Conservation of Energy
+- [[PHY1 HW Ch08 Questions]] and [[PHY1 HW Ch08 Solutions]]: EUP Ch. 8 Gravity
 - [[PHY1 HW Ch09 Questions]] and [[PHY1 HW Ch09 Solutions]]: EUP Ch. 9 Systems of Particles
 
 ## Summaries
@@ -32,6 +34,7 @@ created: 2026-10-05
 - [[PHY1 Ch1-2 Summary]]: EUP Ch. 1 and 2
 - [[PHY1 Ch6 中文課本]]: EUP Ch. 6 Energy, Work, and Power, condensed Chinese translation
 - [[PHY1 Ch7 中文課本]]: EUP Ch. 7 Conservation of Energy, condensed Chinese translation
+- [[PHY1 Ch8 中文課本]]: EUP Ch. 8 Gravity, condensed Chinese translation
 - [[PHY1 Ch9 Summary]]: EUP Ch. 9 Systems of Particles
 - [[PHY1 Ch9 中文課本]]: EUP Ch. 9 Systems of Particles, condensed Chinese translation
 
