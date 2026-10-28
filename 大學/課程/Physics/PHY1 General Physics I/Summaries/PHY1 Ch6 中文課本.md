@@ -9,7 +9,7 @@ created: 2026-10-27
 up: "[[PHY1 Index]]"
 ---
 > [!info] Chapter 6　能量、功與功率（Energy, Work, and Power）
-> Wolfson, *Essential University Physics*, 4th ed., Global Edition, Vol. 1, pp. 110–128 的中文精簡版：保留定義、定律、推導、例題、GOT IT? 與習題，刪掉重複和鋪陳的敘述。式號、圖號、題號都照課本；習題用到的圖（6.16、6.17、6.18、6.20）附在題目下，其他的圖請翻課本對應的圖號。
+> Wolfson, *Essential University Physics*, 4th ed., Global Edition, Vol. 1, pp. 110–128 的中文精簡版：保留定義、定律、推導、例題、GOT IT? 與習題，刪掉重複和鋪陳的敘述。式號、圖號、題號都照課本；課本的圖都附在對應的段落、例題或習題下（含 Application 與本章摘要的圖）；章首照片在掃描檔裡缺漏，沒有收。
 
 ## 學習目標
 
@@ -24,6 +24,8 @@ up: "[[PHY1 Index]]"
 - LO 6.7 區分能量與功率。
 
 滑雪者從均勻斜坡頂由靜止滑下（圖 6.1a），用牛頓第二定律求出等加速度就能算出坡底的速率。但斜坡坡度一直變（圖 6.1b）時加速度也一直變，等加速度公式不能用，直接解運動很困難。本章引入**功**（work）與**能量**（energy），可以繞過牛頓定律的細節來分析這類力與加速度會變的運動。能量也是宇宙的基本要素，和物質一樣真實；到 Ch. 33 會看到能量和物質由 $E = mc^{2}$ 連結，是同一種「實體」的兩面。
+
+![EUP Figure 6.1|170](../Attachments/PHY1%20Ch06%20Fig%206.1.png)
 
 > [!question] 開章問題
 > 騎單車上山的人對抗重力作功。這個功和選哪條路線有關嗎？
@@ -45,8 +47,12 @@ up: "[[PHY1 Index]]"
 - 能量可以在系統內轉換形式；沒有流入、流出時，系統的總能量不變。
 - 能量可以以力學能、熱或電磁能的形式流入或流出系統。
 
+![EUP Figure 6.2|560](../Attachments/PHY1%20Ch06%20Fig%206.2.png)
+
 > [!info] Application：氣候模型
 > 圖 6.2 的架構也是真實模型的架構，從生物到核電廠到地球氣候都用。氣候科學家把地球加大氣當成系統：地表與大氣之間的紅外輻射、上升的暖空氣與水氣是系統內的能量流；入射陽光、反射陽光、射出的紅外線是穿過系統邊界的能量交換。Ch. 16 會看到進出的能量流要平衡，氣候才會穩定。
+>
+> ![EUP Application Climate Modeling|420](../Attachments/PHY1%20Ch06%20Application%20Climate%20Modeling.png)
 
 本章的系統多半就是單一物體，所以「物體」和「系統」混用。Ch. 7 的系統至少有兩個交互作用的物體，Ch. 9 是多質點系統，那時就要仔細區分系統內外。
 
@@ -67,6 +73,8 @@ up: "[[PHY1 Index]]"
 
 圖 6.3 三種情況：推車的人，力和位移同方向，$W = F\Delta x$；拉行李的人，力斜向上，只有水平分量作功，$W = F_{x}\Delta x$；端著托盤等速走的服務生，力垂直、位移水平，力沒有沿運動方向的分量，**不作功**。
 
+![EUP Figure 6.3|640](../Attachments/PHY1%20Ch06%20Fig%206.3.png)
+
 功可正可負（圖 6.4）：
 
 | 力和運動的方向 | 功 |
@@ -75,10 +83,12 @@ up: "[[PHY1 Index]]"
 | 垂直 | $W = 0$ |
 | 有分量和運動方向相反 | $W < 0$ |
 
+![EUP Figure 6.4|520](../Attachments/PHY1%20Ch06%20Fig%206.4.png)
+
 > [!example] Example 6.1　計算功：推車
 > 圖 6.3a 的人以 $650\ \mathrm{N}$ 的力推車，車移動 $4.3\ \mathrm{m}$。他作了多少功？
 
-> [!solution] 解
+> [!solution] 答案
 > 力和位移同方向，$650\ \mathrm{N}$ 就是要用的分量。由 (6.1)，
 > $$
 > W = F_{x}\Delta x = (650\ \mathrm{N})(4.3\ \mathrm{m}) = 2.8\ \mathrm{kJ}
@@ -87,12 +97,14 @@ up: "[[PHY1 Index]]"
 > [!example] Example 6.2　計算功：拉行李
 > 圖 6.3b 的旅客以 $60\ \mathrm{N}$、與水平夾 $35^{\circ}$ 的力拉行李，在水平地面上走 $45\ \mathrm{m}$。她作了多少功？
 
-> [!solution] 解
+> [!solution] 答案
 > 位移水平，力不水平，只取水平分量 $F_{x} = F\cos 35^{\circ}$（圖 6.5）：
 > $$
 > W = F_{x}\Delta x = [(60\ \mathrm{N})(\cos 35^{\circ})](45\ \mathrm{m}) = 2.2\ \mathrm{kJ}
 > $$
 > 小於 $(60\ \mathrm{N})(45\ \mathrm{m})$，因為只有 $x$ 分量對功有貢獻。
+>
+> ![EUP Figure 6.5|280](../Attachments/PHY1%20Ch06%20Fig%206.5.png)
 
 ### 功與純量積
 
@@ -111,6 +123,8 @@ $x$ 軸取沿 $\Delta\vec{r}$ 時，$\Delta r = \Delta x$、$F\cos\theta = F_{x}
 > $A$、$B$ 是兩向量的大小，$\theta$ 是兩者的夾角。結果是純量；中間的點叫 dot，所以也叫**點積**（dot product）。
 
 幾何意義（圖 6.6）：$B\cos\theta$ 是 $\vec{B}$ 沿 $\vec{A}$ 方向的分量，$\vec{A} \cdot \vec{B}$ 是 $\vec{A}$ 的大小乘上這個分量。
+
+![EUP Figure 6.6|260](../Attachments/PHY1%20Ch06%20Fig%206.6.png)
 
 純量積滿足交換律 $\vec{A} \cdot \vec{B} = \vec{B} \cdot \vec{A}$ 與分配律 $\vec{A} \cdot (\vec{B} + \vec{C}) = \vec{A} \cdot \vec{B} + \vec{A} \cdot \vec{C}$。用單位向量表示 $\vec{A} = A_{x}\hat{\imath} + A_{y}\hat{\jmath} + A_{z}\hat{k}$、$\vec{B} = B_{x}\hat{\imath} + B_{y}\hat{\jmath} + B_{z}\hat{k}$ 時，由分配律（Problem 52）得
 
@@ -132,7 +146,7 @@ $$
 > [!example] Example 6.3　功與純量積：拖船
 > 拖船以力 $\vec{F} = 1.2\hat{\imath} + 2.3\hat{\jmath}\ \mathrm{MN}$ 推郵輪，郵輪沿直線位移 $\Delta\vec{r} = 380\hat{\imath} + 460\hat{\jmath}\ \mathrm{m}$。求 (a) 拖船作的功、(b) 力與位移的夾角。
 
-> [!solution] 解
+> [!solution] 答案
 > **(a)** 由 (6.5) 與 (6.4)，
 > $$
 > \begin{aligned}
@@ -145,6 +159,8 @@ $$
 > \theta = \cos^{-1}\left(\frac{W}{F\,\Delta r}\right) = \cos^{-1}\left(\frac{1510\ \mathrm{MJ}}{(2.59\ \mathrm{MN})(597\ \mathrm{m})}\right) = 12^{\circ}
 > $$
 > 夾角小：拖船沿船要走的方向推最有效率。$1\ \mathrm{N \cdot m} = 1\ \mathrm{J}$，所以分子分母都是 MJ，$\cos\theta$ 無因次。
+>
+> ![EUP Figure 6.7|340](../Attachments/PHY1%20Ch06%20Fig%206.7.png)
 
 > [!question] GOT IT? 6.1
 > 兩個物體各被推動相同的距離：一個受沿運動方向的力 $F$，另一個受與運動方向夾 $45^{\circ}$ 的力 $2F$。哪個力作的功多？(a) $F$；(b) $2F$；(c) 一樣多
@@ -155,6 +171,8 @@ $$
 ## 6.3 變力
 
 力常隨位置改變：電力和重力隨物體間距離變，彈簧越拉力越大。物體從 $x_{1}$ 移到 $x_{2}$ 時，力 $F(x)$ 沒有單一的值（圖 6.8），不能寫 $F(x_{2} - x_{1})$。
+
+![EUP Figure 6.8|300](../Attachments/PHY1%20Ch06%20Fig%206.8.png)
 
 把區間切成寬 $\Delta x$ 的矩形（圖 6.9a）：$\Delta x$ 夠小時，每個矩形內的力幾乎不變，移過一個矩形作的功約為 $F(x)\Delta x$（$x$ 取矩形中點），正好是矩形面積（單位 $\mathrm{N \cdot m}$，即 J）。$N$ 個矩形、第 $i$ 個的中點 $x_{i}$：
 
@@ -167,6 +185,8 @@ $$
 $$
 W = \lim_{\Delta x \to 0}\sum_{i}F(x_{i})\,\Delta x \qquad (6.7)
 $$
+
+![EUP Figure 6.9|260](../Attachments/PHY1%20Ch06%20Fig%206.9.png)
 
 右邊就是 $F(x)$ 從 $x_{1}$ 到 $x_{2}$ 的**定積分**（definite integral）：
 
@@ -200,12 +220,16 @@ $$
 > $$
 > 壓縮 $x$ 也一樣。$x$ 是施力點（彈簧末端）的位移，不是整條彈簧的位移。
 
+![EUP Figure 6.10|320](../Attachments/PHY1%20Ch06%20Fig%206.10.png)
+
 拉得越長，要施的力越大，多拉一段要作的功也越多；圖 6.11：功是 $F$–$x$ 圖下的三角形面積，$\tfrac{1}{2}(kx)(x) = \tfrac{1}{2}kx^{2}$，所以功和位移的平方成正比。
+
+![EUP Figure 6.11|480](../Attachments/PHY1%20Ch06%20Fig%206.11.png)
 
 > [!example] Example 6.4　彈簧力：高空彈跳
 > 彈跳用的彈性繩原長 $11\ \mathrm{m}$，彈簧常數 $k = 250\ \mathrm{N/m}$。跳到最低點時繩長變成兩倍。繩被作了多少功？
 
-> [!solution] 解
+> [!solution] 答案
 > 繩長加倍，所以伸長了 $x = 11\ \mathrm{m}$。由 (6.10)，
 > $$
 > W = \tfrac{1}{2}kx^{2} = \left(\tfrac{1}{2}\right)(250\ \mathrm{N/m})(11\ \mathrm{m})^{2} = 15\ \mathrm{kN \cdot m} = 15\ \mathrm{kJ}
@@ -217,8 +241,10 @@ $$
 >
 > **Making the Connection**：算出最初與最後一公尺的功並比較。
 
-> [!solution] 解
+> [!solution] 答案
 > 功是力–距離曲線下的面積（圖 6.12）：最後一公尺時繩的力已經很大，面積大得多，所以功較多；最初一公尺時繩幾乎不出力。
+>
+> ![EUP Figure 6.12|400](../Attachments/PHY1%20Ch06%20Fig%206.12.png)
 >
 > **Making the Connection**：用 (6.10) 的形式，但上下限改成 $0$ 到 $1\ \mathrm{m}$ 和 $10$ 到 $11\ \mathrm{m}$：
 > $$
@@ -232,7 +258,7 @@ $$
 > [!example] Example 6.5　變化的摩擦力：粗糙地面
 > 工人推 $180$-kg 的大箱子橫越水平地面上一段長 $10\ \mathrm{m}$、越來越粗糙的區域。這裡的動摩擦係數 $\mu_{\mathrm{k}} = \mu_{0} + ax^{2}$，$\mu_{0} = 0.17$，$a = 0.0062\ \mathrm{m^{-2}}$，$x$ 是從粗糙區起點量的距離。把箱子推過這一區要作多少功？
 
-> [!solution] 解
+> [!solution] 答案
 > 箱子等速移動，工人施的力等於摩擦力 $f_{\mathrm{k}} = \mu_{\mathrm{k}}n$（5.3）；水平地面上 $n = mg$。這是變力（圖 6.13），用 (6.8)：
 > $$
 > W = \int_{x_{1}}^{x_{2}}\mu_{\mathrm{k}}mg\,dx = \int_{x_{1}}^{x_{2}}mg(\mu_{0} + ax^{2})\,dx = \left.mg\left(\mu_{0}x + \tfrac{1}{3}ax^{3}\right)\right|_{x_{1}}^{x_{2}}
@@ -240,6 +266,8 @@ $$
 > 代 $x_{1} = 0$、$x_{2} = 10\ \mathrm{m}$、$m = 180\ \mathrm{kg}$、$g = 9.8\ \mathrm{m/s^2}$：$W = 6.6\ \mathrm{kJ}$。
 >
 > 檢查：最大力約 $1.4\ \mathrm{kN}$，若整段都是這個力，功約 $13\ \mathrm{kJ}$；但摩擦係數一開始很小，曲線下面積約是整個矩形的一半，$6.6\ \mathrm{kJ}$ 合理。
+>
+> ![EUP Figure 6.13|300](../Attachments/PHY1%20Ch06%20Fig%206.13.png)
 
 > [!warning] 不能直接相乘
 > 力隨位置變時沒有單一的力值，不能「力乘距離」。要積分（Example 6.5），或用由積分推得的結果（Example 6.4 的 $W = \tfrac{1}{2}kx^{2}$）。
@@ -254,6 +282,8 @@ $$
 > $$
 > 沿著從 $\vec{r}_{1}$ 到 $\vec{r}_{2}$ 的特定路徑積分；$d\vec{r}$ 是沿路徑的無限小向量，$\vec{F} \cdot d\vec{r}$ 是走過它的無限小功（圖 6.14）。力不變、路徑是直線時化簡成 (6.5)。
 
+![EUP Figure 6.14|420](../Attachments/PHY1%20Ch06%20Fig%206.14.png)
+
 本章不再深入線積分，後面的章節會用到。
 
 ### 對抗重力作功
@@ -265,6 +295,8 @@ W = mgh
 $$
 
 $h$ 是物體上升的總高度，**與路徑無關**。（只在地表附近、重力隨高度的變化可忽略時成立。）
+
+![EUP Figure 6.15|340](../Attachments/PHY1%20Ch06%20Fig%206.15.png)
 
 > [!question] GOT IT? 6.2
 > 三個力的大小（N）在數值上分別等於 (a) $x$、(b) $x^{2}$、(c) $\sqrt{x}$（$x$ 是以 m 計的位置）。每個力都作用在從 $x = 0$ 移到 $x = 1\ \mathrm{m}$ 的物體上；三個力在兩端點的值都一樣（$0\ \mathrm{N}$ 與 $1\ \mathrm{N}$）。哪個力作的功最多？哪個最少？
@@ -311,7 +343,7 @@ $$
 > [!example] Example 6.6　功與動能：超車區
 > $1400$-kg 的車進入超車區，從 $70\ \mathrm{km/h}$ 加速到 $95\ \mathrm{km/h}$。(a) 對車作了多少功？(b) 之後車煞車到停下，對它作了多少功？
 
-> [!solution] 解
+> [!solution] 答案
 > 只給速率、沒給力，用功–動能定理 (6.12)。先換成 SI：$v_{1} = 19.4\ \mathrm{m/s}$，$v_{2} = 26.4\ \mathrm{m/s}$。
 >
 > **(a)**
@@ -368,7 +400,7 @@ $$
 > [!example] Example 6.7　功率：爬 Mount Washington
 > $55$-kg 的登山客爬上 Mount Washington，鉛直上升 $1300\ \mathrm{m}$，花 $2\ \mathrm{h}$。$1500$-kg 的車沿登山公路開上去，花半小時。忽略摩擦損失的能量，兩者的平均輸出功率各是多少？
 
-> [!solution] 解
+> [!solution] 答案
 > 對抗重力作的功與路徑無關（6.3 節），$\Delta W = mgh$。由 (6.15)，
 > $$
 > \bar{P}_{\mathrm{hiker}} = \frac{\Delta W}{\Delta t} = \frac{(55\ \mathrm{kg})(9.8\ \mathrm{m/s^2})(1300\ \mathrm{m})}{(2.0\ \mathrm{h})(3600\ \mathrm{s/h})} = 97\ \mathrm{W}
@@ -389,7 +421,7 @@ $t_{1}$、$t_{2}$ 是時間區間的起點與終點。
 > [!example] Example 6.8　能量與功率：洋基球場
 > 洋基球場的 884 盞照明燈每盞以 $1650\ \mathrm{W}$ 的速率使用電能。電價每 $\mathrm{kW \cdot h}$ 21 美分，5 小時的夜間比賽開燈要花多少錢？
 
-> [!solution] 解
+> [!solution] 答案
 > 功率固定，用 (6.17)。總功率 $(884)(1.65\ \mathrm{kW}) = 1459\ \mathrm{kW}$，
 > $$
 > W = P\,\Delta t = (1459\ \mathrm{kW})(5\ \mathrm{h}) = 7295\ \mathrm{kW \cdot h}
@@ -398,6 +430,8 @@ $t_{1}$、$t_{2}$ 是時間區間的起點與終點。
 
 > [!info] Application：能量與社會
 > 人體平均輸出功率約 $100\ \mathrm{W}$（Example 6.7），在人類用火、馴養動物之前，這就是每個人能用的全部功率。21 世紀初的美國人，平均能量使用率約 $11\ \mathrm{kW}$，相當於一百多個人體；其他工業國較低，但仍是幾十個人體。美國的能量用途：工業 $32\%$、交通 $28\%$、住宅 $21\%$、商業 $19\%$。來源：石油 $37\%$、天然氣 $29\%$、煤 $15\%$、核能 $8.6\%$、生質 $4.9\%$、風能／太陽能／地熱 $3.0\%$、水力 $2.5\%$；約 $81\%$ 來自化石燃料。化石燃料有限、燃燒又帶來氣候變遷，這個組成在未來幾十年勢必要改變。
+>
+> ![EUP Application Energy and Society|520](../Attachments/PHY1%20Ch06%20Application%20Energy%20and%20Society.png)
 
 > [!warning] 不要混淆能量與功率
 > 「人均 $11\ \mathrm{kW}$」是每年、每天，還是什麼？這個問題本身就是混淆。功率已經是能量使用的**速率**，不需要再加「每單位時間」。就是 $11\ \mathrm{kW}$。
@@ -420,7 +454,7 @@ $d\vec{r}/dt$ 就是速度 $\vec{v}$：
 > [!example] Example 6.9　功率與速度：騎單車
 > 你騎 $9.0$-kg 的單車，以穩定的 $16\ \mathrm{km/h}$（$4.4\ \mathrm{m/s}$）前進，受 $8.2\ \mathrm{N}$ 的空氣阻力。你的質量 $66\ \mathrm{kg}$。在平地上和爬 $5^{\circ}$ 的坡時，各要提供多少功率？
 
-> [!solution] 解
+> [!solution] 答案
 > 你推動單車的力和運動同方向，(6.19) 成為 $P = Fv$；等速時這個力等於要克服的力的大小。
 >
 > 平地：$P = Fv = (8.2\ \mathrm{N})(4.4\ \mathrm{m/s}) = 36\ \mathrm{W}$。
@@ -459,7 +493,11 @@ $d\vec{r}/dt$ 就是速度 $\vec{v}$：
 | 瞬時功率 | $P = dW/dt$ (6.16) | 功率固定時 $W = P\,\Delta t$ (6.17)；一般 $W = \int P\,dt$ (6.18) |
 | 功率與速度 | $P = \vec{F} \cdot \vec{v}$ (6.19) | 等速時 $\vec{F}$ 等於要克服的阻力 |
 
+![EUP Summary Work-Kinetic Energy|360](../Attachments/PHY1%20Ch06%20Summary%20Work-Kinetic%20Energy.png)
+
 **應用**：把質量 $m$ 抬高 $h$ 對抗重力要作功 $mgh$，與路徑無關（只在地表附近）；把彈簧常數 $k$ 的彈簧從原長拉長或壓縮 $x$ 要作功 $\tfrac{1}{2}kx^{2}$。
+
+![EUP Summary Applications|480](../Attachments/PHY1%20Ch06%20Summary%20Applications.png)
 
 ## 習題
 
@@ -587,6 +625,9 @@ $d\vec{r}/dt$ 就是速度 $\vec{v}$：
 - **87.**（CH）質點沿曲線 $y = ax^{2} - bx$（$a = 2\ \mathrm{m^{-1}}$，$b = 4$）從原點移到 $x = 3\ \mathrm{m}$、$y = 6\ \mathrm{m}$，受力 $cxy\hat{\imath} + d\hat{\jmath}$，$c = 10\ \mathrm{N/m^2}$，$d = 15\ \mathrm{N}$。求這個力作的功。
 - **88.** 重做 Problem 87，但路徑改成：(a) 先沿 $x$ 軸從原點到 $(3\ \mathrm{m}, 0)$，再平行 $y$ 軸到 $(3\ \mathrm{m}, 6\ \mathrm{m})$；(b) 先沿 $y$ 軸從原點到 $(0, 6\ \mathrm{m})$，再平行 $x$ 軸到 $(3\ \mathrm{m}, 6\ \mathrm{m})$。
 - **89.** 台北 101 的電梯（圖 6.19，世界最快）上升速率 $1010\ \mathrm{m/min}$。配重平衡了車廂重量，所以馬達不必抬車廂。馬達功率 $330\ \mathrm{kW}$，最多能載幾個 $67$-kg 的人？（答案會比實際額定的 24 人略多。）
+
+  ![EUP Figure 6.19|400](../Attachments/PHY1%20Ch06%20Fig%206.19.png)
+
 - **90.**（DATA）下表是拉彈弓所需的力。畫出力–距離圖，用圖解積分求把彈弓拉滿 $40\ \mathrm{cm}$ 所作的功。
 
 | 伸長量 $x$ ($\mathrm{cm}$) | $0$ | $5.00$ | $10.0$ | $15.0$ | $20.0$ | $25.0$ | $30.0$ | $35.0$ | $40.0$ |
