@@ -47,8 +47,8 @@ created: 2026-10-05
 | Tag | Covers |
 | --- | --- |
 | `measurement` | Units, unit conversion, scientific notation, significant figures, estimation (EUP Ch. 1) |
-| `kinematics` | Position, velocity, acceleration; constant acceleration and free fall (EUP Ch. 2 and 3) |
-| `dynamics` | Newton's second law in two dimensions, connected objects, circular-motion dynamics, friction, drag (EUP Ch. 5) |
+| `kinematics` | Position, velocity, acceleration; constant acceleration and free fall (EUP Ch. 2); vectors, relative motion, projectile motion, circular motion (EUP Ch. 3) |
+| `dynamics` | Newton's three laws, weight and apparent weight, Hooke's law (EUP Ch. 4); Newton's second law in two dimensions, connected objects, circular-motion dynamics, friction, drag (EUP Ch. 5) |
 | `energy` | Work, kinetic energy, power (EUP Ch. 6); potential energy, conservation of mechanical energy, friction and internal energy, potential-energy curves (EUP Ch. 7) |
 | `gravitation` | Universal gravitation, circular orbits, gravitational potential energy, escape speed, gravitational field (EUP Ch. 8) |
 | `momentum` | Center of mass, momentum, impulse, collisions (EUP Ch. 9) |
@@ -57,6 +57,8 @@ created: 2026-10-05
 
 - [[PHY1 HW Ch01 Questions]] and [[PHY1 HW Ch01 Solutions]]: EUP Ch. 1 Doing Physics
 - [[PHY1 HW Ch02 Questions]] and [[PHY1 HW Ch02 Solutions]]: EUP Ch. 2 Motion in a Straight Line
+- [[PHY1 HW Ch03 Questions]] and [[PHY1 HW Ch03 Solutions]]: EUP Ch. 3 Motion in Two and Three Dimensions
+- [[PHY1 HW Ch04 Questions]] and [[PHY1 HW Ch04 Solutions]]: EUP Ch. 4 Force and Motion
 - [[PHY1 HW Ch05 Questions]] and [[PHY1 HW Ch05 Solutions]]: EUP Ch. 5 Using Newton's Laws
 - [[PHY1 HW Ch06 Questions]] and [[PHY1 HW Ch06 Solutions]]: EUP Ch. 6 Energy, Work, and Power
 - [[PHY1 HW Ch07 Questions]] and [[PHY1 HW Ch07 Solutions]]: EUP Ch. 7 Conservation of Energy
@@ -66,6 +68,8 @@ created: 2026-10-05
 ## Summaries
 
 - [[PHY1 Ch1-2 Summary]]: EUP Ch. 1 and 2
+- [[PHY1 Ch3 中文課本]]: EUP Ch. 3 Motion in Two and Three Dimensions, condensed Chinese translation
+- [[PHY1 Ch4 中文課本]]: EUP Ch. 4 Force and Motion, condensed Chinese translation
 - [[PHY1 Ch5 中文課本]]: EUP Ch. 5 Using Newton's Laws, condensed Chinese translation
 - [[PHY1 Ch6 中文課本]]: EUP Ch. 6 Energy, Work, and Power, condensed Chinese translation
 - [[PHY1 Ch7 中文課本]]: EUP Ch. 7 Conservation of Energy, condensed Chinese translation
