@@ -6,9 +6,5 @@
   "modifier": "ctrl",
   "passThroughViews": true,
   "showStatusBar": true,
-<<<<<<< HEAD
-  "zoomFactor": 1.4773
-=======
-  "zoomFactor": 1.0567
->>>>>>> origin/main
+  "zoomFactor": 1.3641
 }
