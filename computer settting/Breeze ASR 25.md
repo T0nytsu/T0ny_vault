@@ -22,7 +22,7 @@ python transcribe.py "E:\錄音\微積分 第3週.m4a"
 ```
 
 ```powershell
-python transcribe.py "E:\錄音\10_21"
+python transcribe.py "E:\錄音\10_28"
 ```
 
 
