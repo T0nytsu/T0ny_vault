@@ -19,220 +19,218 @@ solutions: "[[PHY1 HW Ch09 Solutions]]"
 up: "[[PHY1 Index]]"
 format: "physics-notes 1.1"
 ---
-> [!info] Coverage
-> EUP = Wolfson, *Essential University Physics*, 4th ed., Global Edition, Vol. 1. For midterm preparation, not for the quizzes. The teacher checked no Chapter 9 problems (T0ny, 2026-10-21), so the file starts with 30 selected exercises and problems and the passage problems 9.94 to 9.97, grouped by problem type: 9.11, 9.20, 9.22, 9.24, 9.26, 9.29, 9.41, 9.43, 9.45, 9.49, 9.54, 9.57, 9.59, 9.60, 9.63, 9.65, 9.68, 9.69, 9.71, 9.72, 9.74, 9.76, 9.78, 9.80, 9.81, 9.82, 9.86, 9.88, 9.91, 9.92. Statements are copied verbatim from the textbook.
+> [!info] 範圍
+> EUP = Wolfson, *Essential University Physics*, 4th ed., Global Edition, Vol. 1。期中考準備用，和小考無關。題目是課本原題的完整中文翻譯，數字、單位照課本。
 >
-> Problems from other universities' exams come last, copied verbatim from the exam PDFs. KSU 3.n is problem n of Kansas State University, Engineering Physics I, Exam 3 (Oct. 22, 2021); KSU 4.n is problem n of Exam 4 of the same course (Apr. 1, 2022); both say "Use g = 9.80 m/s²". SIU 3.n is problem n of Southern Illinois University Carbondale, PHYS 205A University Physics, Midterm Exam No. 03 (Nov. 6, 2023). Point values are in parentheses, as printed.
+> 老師沒有勾選 Ch. 9 的題目（T0ny, 2026-10-21），所以從另外挑的 30 題與 passage problems 9.94 到 9.97 開始，依題型分組：9.11, 9.20, 9.22, 9.24, 9.26, 9.29, 9.41, 9.43, 9.45, 9.49, 9.54, 9.57, 9.59, 9.60, 9.63, 9.65, 9.68, 9.69, 9.71, 9.72, 9.74, 9.76, 9.78, 9.80, 9.81, 9.82, 9.86, 9.88, 9.91, 9.92。
+>
+> 最後是外校考題，由考卷 PDF 翻譯，括號內是原卷配分。KSUF 3.n 是 Kansas State University, Engineering Physics I, Exam 3 (Oct. 22, 2021, Fall) 第 n 題，同一份考卷的 KSUF 3.1, 3.2, 3.5 在 [[PHY1 HW Ch07 Questions]]；KSUS 4.n 是同一課程 Exam 4 (Apr. 1, 2022, Spring) 第 n 題；兩份都規定 $g = 9.80\ \mathrm{m/s^2}$。SIUF 3.n 是 Southern Illinois University Carbondale, PHYS 205A University Physics, Midterm Exam No. 03 (2023 Nov. 6, Fall) 第 n 題（Ch. 7 的 SIU 3.n 是另一份考卷）。
 
-## Center of Mass of Discrete Particles
+## 加選：離散質點的質心
 
 ### EUP 9.11
-Two particles of equal mass $m$ are at the vertices of the base of an equilateral triangle. The triangle's center of mass is midway between the base and the third vertex. What's the mass at the third vertex?
+兩個質量都是 $m$ 的質點位於正三角形底邊的兩個頂點。三角形的質心在底邊與第三個頂點的正中間。第三個頂點的質量是多少？
 
 ### EUP 9.41
-Find the center of mass of a pentagon with five equal sides of length $a$, but with one triangle missing (Fig. 9.24). (*Hint*: See Example 9.3, and treat the pentagon as a group of triangles.)
+求五邊等長 $a$、但少了一個三角形的五邊形的質心（圖 9.24）。（*提示*：參考 Example 9.3，把五邊形看成一組三角形。）
 
 ![EUP Figure 9.24|300](../Attachments/PHY1%20Ch09%20Fig%209.24.png)
 
-## Center of Mass by Integration
+## 加選：用積分求質心
 
 ### EUP 9.86
-In Figure 9.6, the uniform semicircular wire has radius $R$. How far above the center of the semicircle is its center of mass?
+圖 9.6 中的均勻半圓形線，半徑為 $R$。它的質心在半圓圓心上方多遠？
 
-![EUP Figure 9.6|400](../Attachments/PHY1%20Ch09%20Fig%209.6.png)
+![EUP Figure 9.6|300](../Attachments/PHY1%20Ch09%20Fig%209.6.png)
 
 ### EUP 9.91
-A thin rod extends from $x = 0$ to $x = L$. It carries a nonuniform mass per unit length $\mu = Mx^{a}/L^{1+a}$, where $M$ is a constant with units of mass, and $a$ is a non-negative dimensionless constant. Find expressions for (a) the rod's mass and (b) the location of its center of mass. (c) Are your results what you expect when $a = 0$?
+一根細棒從 $x = 0$ 延伸到 $x = L$，每單位長度的質量不均勻，為 $\mu = Mx^{a}/L^{1+a}$，其中 $M$ 是具有質量單位的常數，$a$ 是非負的無因次常數。求 (a) 細棒的質量與 (b) 質心位置的表示式。(c) $a = 0$ 時，你的結果符合預期嗎？
 
-## Center of Mass That Stays Put
+## 加選：質心不動
 
 ### EUP 9.45
-A hemispherical bowl is at rest on a frictionless counter. A mouse drops onto the bowl's rim from a cabinet directly overhead. The mouse climbs down inside the bowl to eat crumbs at the bottom. If the bowl moves along the counter a distance equal to one-tenth of its diameter, how does the mouse's mass compare with the bowl's mass?
+半球形的碗靜止在無摩擦的流理台上。一隻老鼠從正上方的櫥櫃掉到碗緣，接著爬下碗內去吃碗底的碎屑。若碗沿流理台移動的距離等於碗直徑的十分之一，老鼠的質量和碗的質量相比如何？
 
-## Momentum Conservation in One Dimension
+## 加選：一維動量守恆
 
 ### EUP 9.59
-A $55$-kg sprinter stands on the left end of a $180$-kg cart moving leftward at $6.9\ \mathrm{m/s}$. She runs to the right end and continues horizontally off the cart. What should be her speed relative to the cart so that once she's off the cart she has no horizontal velocity relative to the ground?
+$55$-kg 的短跑選手站在 $180$-kg 推車的左端，推車以 $6.9\ \mathrm{m/s}$ 向左運動。她跑到右端，繼續水平地跑離推車。她相對推車的速率應為多少，才能在離開推車後相對地面沒有水平速度？
 
 ### EUP 9.63
-While standing on frictionless ice, you (mass $65.0\ \mathrm{kg}$) toss a $4.50$-kg rock with initial speed $12.0\ \mathrm{m/s}$. If the rock is $15.2\ \mathrm{m}$ from you when it lands, (a) at what angle did you toss it? (b) How fast are you moving?
+你（質量 $65.0\ \mathrm{kg}$）站在無摩擦的冰上，以初速率 $12.0\ \mathrm{m/s}$ 丟出一塊 $4.50$-kg 的石頭。若石頭落地時離你 $15.2\ \mathrm{m}$，(a) 你是以多大的角度丟出的？(b) 你的移動速率多快？
 
 ### EUP 9.65
-A fireworks rocket is launched vertically upward at $40\ \mathrm{m/s}$. At the peak of its trajectory, it explodes into two equal-mass fragments. One reaches the ground $2.75\ \mathrm{s}$ after the explosion. When does the second reach the ground?
+煙火火箭以 $40\ \mathrm{m/s}$ 垂直向上發射。在軌跡最高點，它爆炸成兩塊等質量的碎片。其中一塊在爆炸後 $2.75\ \mathrm{s}$ 落地。另一塊何時落地？
 
-## Momentum Conservation in Two Dimensions
+## 加選：二維動量守恆
 
 ### EUP 9.54
-A $\mathrm{^{238}U}$ nucleus is moving in the $x$-direction at $4.1 \times 10^{5}\ \mathrm{m/s}$ when it decays into an alpha particle ($\mathrm{^{4}He}$) and a $\mathrm{^{234}Th}$ nucleus. The alpha moves at $1.5 \times 10^{7}\ \mathrm{m/s}$ at $36^{\circ}$ above the $x$-axis. Find the recoil velocity of the thorium.
+$\mathrm{^{238}U}$ 原子核以 $4.1 \times 10^{5}\ \mathrm{m/s}$ 沿 $x$ 方向運動時，衰變成一個 $\alpha$ 粒子（$\mathrm{^{4}He}$）和一個 $\mathrm{^{234}Th}$ 原子核。$\alpha$ 粒子以 $1.5 \times 10^{7}\ \mathrm{m/s}$、在 $x$ 軸上方 $36^{\circ}$ 的方向運動。求釷的反衝速度。
 
 ### EUP 9.57
-A $67$-kg astronaut floating in space simultaneously tosses away an $18$-kg oxygen tank and a $5.4$-kg camera. The tank moves in the $x$-direction at $1.1\ \mathrm{m/s}$, and the astronaut recoils at $0.66\ \mathrm{m/s}$ in a direction $200^{\circ}$ counterclockwise from the $x$-axis. Find the camera's velocity.
+漂浮在太空中的 $67$-kg 太空人同時丟出一個 $18$-kg 的氧氣瓶和一台 $5.4$-kg 的相機。氧氣瓶以 $1.1\ \mathrm{m/s}$ 沿 $x$ 方向運動，太空人以 $0.66\ \mathrm{m/s}$ 往從 $x$ 軸逆時針轉 $200^{\circ}$ 的方向反衝。求相機的速度。
 
-## Kinetic Energy of a System
+## 加選：系統的動能
 
 ### EUP 9.20
-An object with kinetic energy $K$ explodes into two pieces, each of which moves with twice the speed of the original object. Find the ratio of the internal kinetic energy to the center-of-mass energy after the explosion.
+動能為 $K$ 的物體爆炸成兩塊，每塊的速率都是原物體的兩倍。求爆炸後內動能與質心動能之比。
 
 ### EUP 9.43
-Three $200$-g objects have velocities given by $\vec{v}_{1} = 15.0\hat{\jmath}\ \mathrm{m/s}$, $\vec{v}_{2} = 6.7\hat{\imath} - 3.45\hat{\jmath}\ \mathrm{m/s}$, and $\vec{v}_{3} = -6.7\hat{\imath} - 4.32\hat{\jmath}\ \mathrm{m/s}$. Find the kinetic energy of the center of mass and the internal kinetic energy of this system.
+三個 $200$-g 物體的速度分別為 $\vec{v}_{1} = 15.0\hat{\jmath}\ \mathrm{m/s}$、$\vec{v}_{2} = 6.7\hat{\imath} - 3.45\hat{\jmath}\ \mathrm{m/s}$、$\vec{v}_{3} = -6.7\hat{\imath} - 4.32\hat{\jmath}\ \mathrm{m/s}$。求這個系統的質心動能與內動能。
 
-## Impulse and Average Force
+## 加選：衝量與平均力
 
 ### EUP 9.22
-High-speed photos of a $220$-μg flea jumping vertically show that the jump lasts $1.2\ \mathrm{ms}$ and involves an average vertical acceleration of $100g$. What (a) average force and (b) impulse does the ground exert on the flea during its jump? (c) What's the change in the flea's momentum during its jump?
+高速攝影顯示，一隻 $220$-μg 的跳蚤垂直起跳，跳躍歷時 $1.2\ \mathrm{ms}$，平均垂直加速度為 $100g$。跳躍期間，地面對跳蚤施加的 (a) 平均力與 (b) 衝量是多少？(c) 跳躍期間，跳蚤的動量變化是多少？
 
 ### EUP 9.60
-You're a production engineer in a cookie factory, where mounds of dough drop vertically onto a conveyor belt at the rate of one $11$-g mound every $2$ seconds. You're asked to design a mechanism that will keep the conveyor belt moving at a constant $52\ \mathrm{cm/s}$. What average force must the mechanism exert on the belt?
+你是餅乾工廠的生產工程師，工廠裡一團團麵團垂直落到輸送帶上，每 $2$ 秒落下一團 $11$-g 的麵團。你奉命設計一個機構，讓輸送帶保持 $52\ \mathrm{cm/s}$ 的等速運動。這個機構必須對輸送帶施加多大的平均力？
 
 ### EUP 9.68
-You're working in quality control for a model rocket manufacturer, testing a class-D rocket whose specifications call for an impulse between $10$ and $20\ \mathrm{N \cdot s}$. The rocket's burn time is $\Delta t = 2.8\ \mathrm{s}$, and its thrust during that time is $F(t) = at(t - \Delta t)$, where $a = -4.6\ \mathrm{N/s^2}$. Does the rocket meet its specs?
+你在模型火箭製造商負責品管，正在測試一枚 D 級火箭，它的規格要求衝量介於 $10$ 到 $20\ \mathrm{N \cdot s}$ 之間。火箭的燃燒時間為 $\Delta t = 2.8\ \mathrm{s}$，期間的推力為 $F(t) = at(t - \Delta t)$，其中 $a = -4.6\ \mathrm{N/s^2}$。這枚火箭符合規格嗎？
+
+## 加選：數據題
 
 ### EUP 9.92
-Model rocket motors are specified by giving the impulse they provide, in $\mathrm{N \cdot s}$, over the entire time the rocket is firing. The table below shows the results of rocket-motor tests with different motors used to launch rockets of different masses. Determine two data-based quantities that, when plotted against each other, should give a straight line and whose slope should allow you to determine $g$. Plot the data, establish a best-fit line, and determine $g$. Assume that the maximum height is much greater than the distance over which the rocket motor is firing, so you can neglect the latter. You're also neglecting air resistance—but explain how that affects your experimentally determined value for $g$.
+模型火箭馬達的規格，是以它在火箭點火的整段時間內提供的衝量（單位 $\mathrm{N \cdot s}$）標示。下表是馬達測試的結果：用不同的馬達發射不同質量的火箭。找出兩個由數據算出的量，使它們互相作圖時應為直線，而且由斜率可以求出 $g$。畫出數據、建立最佳擬合直線，並求出 $g$。假設最大高度遠大於火箭馬達點火期間經過的距離，因此可以忽略後者。你也忽略了空氣阻力，但請說明它如何影響你由實驗求出的 $g$ 值。
 
-| Impulse, $J$ ($\mathrm{N \cdot s}$) | 4.5 | 7.8 | 4.5 | 7.8 | 11 |
+| 衝量 $J$ ($\mathrm{N \cdot s}$) | $4.5$ | $7.8$ | $4.5$ | $7.8$ | $11$ |
 | --- | --- | --- | --- | --- | --- |
-| Rocket mass ($\mathrm{g}$) (including motor) | 180 | 485 | 234 | 234 | 485 |
-| Maximum height achieved ($\mathrm{m}$) | 22 | 13 | 19 | 51 | 23 |
+| 火箭質量（含馬達）($\mathrm{g}$) | $180$ | $485$ | $234$ | $234$ | $485$ |
+| 達到的最大高度 ($\mathrm{m}$) | $22$ | $13$ | $19$ | $51$ | $23$ |
 
-## Totally Inelastic Collisions
+## 加選：完全非彈性碰撞
 
 ### EUP 9.24
-In a railroad switchyard, a $56$-ton freight car is sent at $7.0\ \mathrm{mi/h}$ toward a $31$-ton car moving in the same direction at $2.6\ \mathrm{mi/h}$. (a) What's the speed of the cars after they couple? (b) What fraction of the initial kinetic energy was lost in the collision?
+在鐵路調車場，一節 $56$-ton 的貨車以 $7.0\ \mathrm{mi/h}$ 駛向一節同方向以 $2.6\ \mathrm{mi/h}$ 運動的 $31$-ton 貨車。(a) 兩車連結後的速率是多少？(b) 碰撞中損失了初動能的多少比例？
 
 ### EUP 9.26
-A neutron (mass $1.01\ \mathrm{u}$) strikes a deuteron (mass $2.01\ \mathrm{u}$), and they combine to form a tritium nucleus (mass $3.02\ \mathrm{u}$). If the neutron's initial velocity was $23.5\hat{\imath} + 14.4\hat{\jmath}\ \mathrm{Mm/s}$ and if the tritium leaves the reaction with velocity $15.1\hat{\imath} + 22.6\hat{\jmath}\ \mathrm{Mm/s}$, what was the deuteron's velocity?
+中子（質量 $1.01\ \mathrm{u}$）撞擊氘核（質量 $2.01\ \mathrm{u}$），兩者結合成氚核（質量 $3.02\ \mathrm{u}$）。若中子的初速度為 $23.5\hat{\imath} + 14.4\hat{\jmath}\ \mathrm{Mm/s}$，而氚核以 $15.1\hat{\imath} + 22.6\hat{\jmath}\ \mathrm{Mm/s}$ 的速度離開反應，氘核的速度是多少？
 
 ### EUP 9.71
-Two identical objects with the same initial speed collide and stick together. If the composite object moves with half the initial speed of either object, what was the angle between the initial velocities?
+兩個相同的物體以相同的初速率碰撞並黏在一起。若合體的速率是任一物體初速率的一半，兩個初速度之間的夾角是多少？
 
-## Collision Followed by Another Process
+## 加選：碰撞之後接另一個過程
 
 ### EUP 9.49
-An $11{,}000$-kg freight car rests against a spring bumper at the end of a railroad track. The spring has constant $k = 0.32\ \mathrm{MN/m}$. The car is hit by a second car of $9400$-kg mass moving at $8.5\ \mathrm{m/s}$, and the two couple together. Find (a) the maximum compression of the spring and (b) the speed of the two cars when they rebound together from the spring.
+一節 $11{,}000$-kg 的貨車靠在鐵軌末端的彈簧緩衝器上，彈簧常數 $k = 0.32\ \mathrm{MN/m}$。第二節質量 $9400\ \mathrm{kg}$、以 $8.5\ \mathrm{m/s}$ 運動的貨車撞上它，兩車連結在一起。求 (a) 彈簧的最大壓縮量，以及 (b) 兩車一起從彈簧反彈時的速率。
 
 ### EUP 9.69
-You're investigating a crash in which a $1640$-kg Nissan Leaf electric car and a $3220$-kg Toyota Land Cruiser SUV collided at right angles in an intersection. The combined wreckage skidded $17.6\ \mathrm{m}$ before stopping. You measure the coefficient of friction between tires and road and find it to be $0.697$. Show that at least one car must have exceeded the $70$-km/h speed limit at the intersection. You'll need to consider each car separately, assuming that it was at the speed limit and finding the other car's speed, which you should report in your answer.
+你在調查一起車禍：一輛 $1640$-kg 的 Nissan Leaf 電動車和一輛 $3220$-kg 的 Toyota Land Cruiser 休旅車在路口以直角相撞。合在一起的殘骸滑行 $17.6\ \mathrm{m}$ 後停下。你量得輪胎與路面之間的摩擦係數為 $0.697$。證明至少有一輛車在路口超過了 $70$-km/h 的速限。你必須分別考慮兩輛車：假設其中一輛在速限，求另一輛的速率，並在答案中報告這個速率。
 
 ### EUP 9.88
-In a ballistic pendulum demonstration gone bad, a $0.52$-g pellet, fired horizontally with kinetic energy $3.25\ \mathrm{J}$, passes straight through a $400$-g Styrofoam pendulum block. If the pendulum rises a maximum height of $0.52\ \mathrm{mm}$, how much kinetic energy did the pellet have after emerging from the Styrofoam?
+一場出了差錯的彈道擺示範中，一顆 $0.52$-g 的彈丸以動能 $3.25\ \mathrm{J}$ 水平射出，直接穿過一塊 $400$-g 的保麗龍擺錘。若擺錘上升的最大高度為 $0.52\ \mathrm{mm}$，彈丸從保麗龍穿出後的動能是多少？
 
-## One-Dimensional Elastic Collisions
+## 加選：一維彈性碰撞
 
 ### EUP 9.29
-Playing in the street, a child accidentally tosses a ball at $18\ \mathrm{m/s}$ toward the front of a car moving toward him at $15\ \mathrm{m/s}$. What's the ball's speed after it rebounds elastically from the car?
+小孩在街上玩，不小心把球以 $18\ \mathrm{m/s}$ 丟向一輛以 $15\ \mathrm{m/s}$ 朝他開來的車的車頭。球從車上彈性反彈後的速率是多少？
 
 ### EUP 9.72
-A proton (mass $1\ \mathrm{u}$) moving at $6.90\ \mathrm{Mm/s}$ collides elastically head-on with a second particle moving in the opposite direction at $2.80\ \mathrm{Mm/s}$. After the collision, the proton is moving opposite its initial direction at $8.62\ \mathrm{Mm/s}$. Find the mass and final velocity of the second particle.
+一個質子（質量 $1\ \mathrm{u}$）以 $6.90\ \mathrm{Mm/s}$ 運動，與一個以 $2.80\ \mathrm{Mm/s}$ 反向運動的第二個粒子發生正面彈性碰撞。碰撞後，質子以 $8.62\ \mathrm{Mm/s}$ 往與原方向相反的方向運動。求第二個粒子的質量與末速度。
 
 ### EUP 9.81
-A car moving at speed $v$ undergoes a one-dimensional collision with an identical car initially at rest. The collision is neither elastic nor fully inelastic; $7/32$ of the initial kinetic energy is lost. Find the velocities of the two cars after the collision.
+一輛以速率 $v$ 行駛的車，與一輛原本靜止的相同車輛發生一維碰撞。碰撞既非彈性、也非完全非彈性：損失了初動能的 $7/32$。求碰撞後兩車的速度。
 
-## Successive Collisions
+## 加選：連續碰撞
 
 ### EUP 9.74
-Blocks $B$ and $C$ have masses $2m$ and $m$, respectively, and are at rest on a frictionless surface. Block $A$, also of mass $m$, is heading at speed $v$ toward block $B$ as shown in Fig. 9.26. Determine the final velocity of each block after all subsequent collisions are over. Assume all collisions are elastic.
+木塊 $B$ 和 $C$ 的質量分別為 $2m$ 和 $m$，靜止在無摩擦的表面上。質量同樣為 $m$ 的木塊 $A$ 以速率 $v$ 朝木塊 $B$ 前進，如圖 9.26。求所有後續碰撞結束後各木塊的末速度。假設所有碰撞都是彈性的。
 
-![EUP Figure 9.26|400](../Attachments/PHY1%20Ch09%20Fig%209.26.png)
+![EUP Figure 9.26|300](../Attachments/PHY1%20Ch09%20Fig%209.26.png)
 
 ### EUP 9.80
-You set a small ball of mass $m$ atop a large ball of mass $M \gg m$ and drop the pair from height $h$. Assuming the balls are perfectly elastic, show that the smaller ball rebounds to height $9h$.
+你把質量 $m$ 的小球放在質量 $M \gg m$ 的大球上，讓兩球一起從高度 $h$ 落下。假設兩球都是完全彈性的，證明小球會反彈到高度 $9h$。
 
 ### EUP 9.82
-A $200$-g block is released from rest at a height of $25\ \mathrm{cm}$ on a frictionless $30^{\circ}$ incline. It slides down the incline and then along a frictionless surface until it collides elastically with an $800$-g block at rest $1.4\ \mathrm{m}$ from the bottom of the incline (Fig. 9.28). How much later do the two blocks collide again?
+一塊 $200$-g 的木塊從無摩擦的 $30^{\circ}$ 斜面上高 $25\ \mathrm{cm}$ 處由靜止釋放。它滑下斜面，接著沿無摩擦的表面滑行，直到與一塊靜止在離斜面底端 $1.4\ \mathrm{m}$ 處的 $800$-g 木塊發生彈性碰撞（圖 9.28）。兩木塊多久之後會再次碰撞？
 
-![EUP Figure 9.28|420](../Attachments/PHY1%20Ch09%20Fig%209.28.png)
+![EUP Figure 9.28|400](../Attachments/PHY1%20Ch09%20Fig%209.28.png)
 
-## Two-Dimensional Elastic Collisions
+## 加選：二維彈性碰撞
 
 ### EUP 9.76
-An object collides elastically with an equal-mass object initially at rest. If the collision isn't head-on, show that the final velocity vectors are perpendicular.
+一個物體與一個原本靜止、質量相同的物體發生彈性碰撞。若碰撞不是正面碰撞，證明兩個末速度向量互相垂直。
 
 ### EUP 9.78
-Two identical billiard balls are initially at rest when they're struck symmetrically by a third identical ball moving with velocity $\vec{v}_{0} = v_{0}\hat{\imath}$ (Fig. 9.27). Find the velocities of all three balls after this elastic collision.
+兩顆相同的撞球原本靜止，被第三顆相同、以速度 $\vec{v}_{0} = v_{0}\hat{\imath}$ 運動的球對稱地撞擊（圖 9.27）。求這次彈性碰撞之後三顆球的速度。
 
-![EUP Figure 9.27|330](../Attachments/PHY1%20Ch09%20Fig%209.27.png)
+![EUP Figure 9.27|300](../Attachments/PHY1%20Ch09%20Fig%209.27.png)
 
-## Passage Problems
+## 加選：頻閃照片中的碰撞
 
 ### EUP 9.94 to 9.97
-You're interested in the intersection of physics and sports, and you recognize that many sporting events involve collisions—bat and baseball, foot and football, hockey stick and puck, basketball and floor. Using strobe photography, you embark on a study of such collisions. Figure 9.30 is your strobe photo of a ball bouncing off the floor. The ball is launched from a point near the top left of the photo, and your camera then captures it undergoing three subsequent collisions with the floor.
+你對物理與運動的交集有興趣，注意到許多運動項目都牽涉碰撞：球棒與棒球、腳與足球、球桿與冰球、籃球與地板。你開始用頻閃攝影研究這類碰撞。圖 9.30 是你拍下的一顆球在地板上反彈的頻閃照片。球從照片左上角附近的一點發射，相機接著拍到它與地板碰撞三次。
 
-![EUP Figure 9.30|480](../Attachments/PHY1%20Ch09%20Fig%209.30.png)
+![EUP Figure 9.30|400](../Attachments/PHY1%20Ch09%20Fig%209.30.png)
 
-**94.** The collisions between ball and floor are
-- a. totally elastic.
-- b. totally inelastic.
-- c. neither totally elastic nor totally inelastic.
+**94.** 球與地板之間的碰撞是
+- a. 完全彈性
+- b. 完全非彈性
+- c. 既非完全彈性，也非完全非彈性
 
-**95.** The fraction of the ball's mechanical energy that's lost in the second collision is
-- a. about 10%.
-- b. a little less than half.
-- c. a little more than half.
-- d. about 90%.
+**95.** 第二次碰撞中，球損失的力學能比例是
+- a. 約 $10\%$
+- b. 略少於一半
+- c. 略多於一半
+- d. 約 $90\%$
 
-**96.** The component of the ball's velocity whose magnitude is most affected by the collisions is
-- a. horizontal.
-- b. vertical.
-- c. Both are affected equally.
+**96.** 球的速度分量中，大小受碰撞影響最大的是
+- a. 水平分量
+- b. 鉛直分量
+- c. 兩者受影響一樣
 
-**97.** Compared with the time between bounces, the duration of each collision is
-- a. a tiny fraction of the time between bounces.
-- b. a significant fraction of the time between bounces.
-- c. much longer than the time between bounces.
+**97.** 和兩次反彈之間的時間相比，每次碰撞持續的時間
+- a. 只占兩次反彈之間時間的極小部分
+- b. 占兩次反彈之間時間的相當大部分
+- c. 比兩次反彈之間的時間長得多
 
-## Problems from Other Universities' Exams
+## 外校考題：觀念題
 
-### KSU 3.6 to 3.8
-**6.** (2) T F The impulse experienced by a mass in some process is exactly the same as its change in momentum.
+### KSUF 3.6 to 3.8
+**6.** (2) 是非題：質量在某個過程中受到的衝量，正好等於它的動量變化。
 
-**7.** (2) T F An impulse involves smaller average force when the time interval is larger.
+**7.** (2) 是非題：時間間隔較長時，一個衝量涉及的平均力較小。
 
-**8.** (2) T F In an inelastic collision, the total momentum is not conserved.
+**8.** (2) 是非題：在非彈性碰撞中，總動量不守恆。
 
-### KSU 3.9
-(12) In a billiard game the balls' masses are all $160$ grams. After the cue ball is shot into the rack to start the game, the 1-ball traveling at $12.0\ \mathrm{m/s}$ east makes an elastic head-on collision with the 2-ball traveling at $4.5\ \mathrm{m/s}$ west. They are in contact for $2.5\ \mathrm{ms}$.
+### KSUS 4.1
+(3) 在一段時間間隔 $\Delta t$ 內，深太空（零重力）中的火箭噴出一些熱氣體。哪一個的動量變化量值較大？
+- a. 火箭。
+- b. 噴出的氣體。
+- c. 一樣大。
+- d. 資訊不足，無法回答。
 
-a) (6) Determine the velocity of the 2-ball after the collision (magnitude and direction).
+### KSUS 4.4 to 4.6
+**4.** (2) 是非題：衝量是作用在質量上的平均力與它的速度的內積。
 
-b) (6) Find the average force exerted by the 1-ball on the 2-ball (magnitude and direction).
+**5.** (2) 是非題：運動物體在較短的距離內停下時，所需的平均力較小。
 
-### KSU 3.10
-(16) A $1800$-kg car moving east at $18.0\ \mathrm{m/s}$ collides in an intersection with a $3200$-kg truck moving north at $24\ \mathrm{m/s}$. They crumple and stick together, and slide until kinetic friction with $\mu_{\mathrm{k}} = 0.80$ brings them to rest.
+**6.** (2) 是非題：兩個質量的完全非彈性碰撞，不守恆它們的總動量。
 
-a) (8) Immediately after they stick together, how fast are they moving?
+## 外校考題：計算題
 
-b) (8) How far from the intersection do they come to rest?
+### KSUF 3.9
+(12) 撞球遊戲中，所有球的質量都是 $160$ 公克。母球打進球堆開局之後，以 $12.0\ \mathrm{m/s}$ 向東運動的 1 號球，與以 $4.5\ \mathrm{m/s}$ 向西運動的 2 號球發生正面彈性碰撞。兩球接觸 $2.5\ \mathrm{ms}$。
+- a) (6) 求碰撞後 2 號球的速度（大小與方向）。
+- b) (6) 求 1 號球施在 2 號球上的平均力（大小與方向）。
 
-### KSU 4.1
-(3) In a time interval $\Delta t$, some amount of hot gas is ejected from a rocket in deep space (zero gravity). Which has the larger magnitude change in momentum?
-- a. The rocket.
-- b. The ejected gas.
-- c. Its a tie.
-- d. Not enough information to answer.
+### KSUF 3.10
+(16) 一輛以 $18.0\ \mathrm{m/s}$ 向東行駛的 $1800$-kg 汽車，在路口與一輛以 $24\ \mathrm{m/s}$ 向北行駛的 $3200$-kg 卡車相撞。兩車撞凹、黏在一起，一起滑行，直到 $\mu_{\mathrm{k}} = 0.80$ 的動摩擦力使它們停下。
+- a) (8) 兩車剛黏在一起時，速率多快？
+- b) (8) 它們停在離路口多遠處？
 
-### KSU 4.4 to 4.6
-**4.** (2) T F Impulse is the dot product of average force acting on a mass and its velocity.
+### KSUS 4.7
+(12) 一顆 $5.0$-kg 的藥球在無摩擦的表面上以 $16.0\ \mathrm{m/s}$ 運動，正面撞上一顆原本靜止的 $0.62$-kg 籃球。碰撞是彈性的，兩球接觸 $38\ \mathrm{ms}$。
+- a) (6) 碰撞剛結束時，籃球的速率多快？
+- b) (6) 求藥球施在籃球上的平均力的大小。
 
-**5.** (2) T F When a moving object is brought to rest over a shorter distance, the average force required is less.
+### SIUF 3.6
+(10 分) 質量 $m_{1} = 30.00\ \mathrm{g}$ 的子彈射入一塊像擺一樣懸掛著、質量 $m_{2} = 3.000\ \mathrm{kg}$ 的木塊。子彈嵌在木塊中（完全非彈性碰撞）。碰撞後，木塊（連同嵌在裡面的子彈）上升 $h = 30.0\ \mathrm{cm}$。計算子彈撞擊木塊之前的速率。
 
-**6.** (2) T F A completely inelastic collision of two masses does not conserve their total momentum.
-
-### KSU 4.7
-(12) A $5.0$-kg medicine ball traveling on a frictionless surface at $16.0\ \mathrm{m/s}$ crashes head-on into a $0.62$-kg basketball initially at rest. The collision is elastic and the balls are in contact for $38\ \mathrm{ms}$.
-
-a) (6) How fast is the basketball moving just after the collision?
-
-b) (6) Find the magnitude of the average force exerted by the medicine ball on the basketball.
-
-### SIU 3.6
-(10 points.) A bullet of mass $m_{1} = 30.00\ \mathrm{g}$ is fired into a wooden block of mass $m_{2} = 3.000\ \mathrm{kg}$ that is hanging like a pendulum. The bullet is embedded in the block (complete inelastic collision). The block (with the bullet embedded in it) goes $h = 30.0\ \mathrm{cm}$ high after collision. Calculate the speed of the bullet before it hit the block.
-
-### SIU 3.7
-(10 points.) Consider a thin rod of length $L = 1.0\ \mathrm{m}$ placed on the positive $x$-axis with one end at the origin. It has mass per unit length, $dm/dx$, described by
-
+### SIUF 3.7
+(10 分) 一根長 $L = 1.0\ \mathrm{m}$ 的細棒放在正 $x$ 軸上，一端在原點。它的每單位長度質量 $dm/dx$ 為
 $$
 \rho(x) = bx, \qquad b = 1.0\ \frac{\mathrm{kg}}{\mathrm{m^2}}, \qquad (1)
 $$
-
-where $x$ is the distance from end placed at the origin. At what distance from the end placed at the origin is the center of of mass of the rod?
+其中 $x$ 是到原點那一端的距離。棒的質心離原點那一端多遠？
