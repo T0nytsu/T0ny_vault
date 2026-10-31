@@ -23,7 +23,7 @@ $$
 $$
 so that the matrix is symmetric.
 
-### FB 1.3.22
+### FB 1.3.**22**
 - a. Prove that, if $A$ is a matrix and $\mathbf{x}$ is a row vector, then $\mathbf{x}A$ (if defined) is again a row vector.
 - b. Prove that, if $A$ is a matrix and $\mathbf{y}$ is a column vector, then $A\mathbf{y}$ (if defined) is again a column vector.
 
