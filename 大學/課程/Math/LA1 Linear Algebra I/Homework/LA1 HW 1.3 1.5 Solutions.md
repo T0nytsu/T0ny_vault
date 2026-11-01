@@ -5,7 +5,7 @@ chapter: ["1.3", "1.5"]
 tags: [linear-algebra, homework, solutions, matrix-algebra, matrix-inverse]
 source:
   - "Own solutions; computations checked with sympy"
-created: 2026-09-29
+created: 2026-10-31
 questions: "[[LA1 HW 1.3 1.5 Questions]]"
 up: "[[LA1 Index]]"
 format: "math-notes 2.3"
@@ -18,7 +18,7 @@ format: "math-notes 2.3"
 | [[LA1 HW 1.3 1.5 Questions#FB 1.3.22\|FB 1.3.22]] | Proof |
 | [[LA1 HW 1.3 1.5 Questions#FB 1.3.24\|FB 1.3.24]] | $\mathbf{c}A = c_1\mathbf{r}_1 + \cdots + c_m\mathbf{r}_m$, a combination of the rows of $A$ |
 | [[LA1 HW 1.3 1.5 Questions#FB 1.3.37\|FB 1.3.37]] | Proof |
-| [[LA1 HW 1.3 1.5 Questions#FB 1.3.40\|FB 1.3.40]] | a. Proof; b. $(A^n)^T = (A^T)^n$ for every positive integer $n$ |
+| [[LA1 HW 1.3 1.5 Questions#FB 1.3.40\|FB 1.3.40]] | a. Proof; b. $(A^k)^T = (A^T)^k$ for every $k \in \mathbb{N}$ |
 | [[LA1 HW 1.3 1.5 Questions#FB 1.3.41\|FB 1.3.41]] | Proof |
 | [[LA1 HW 1.3 1.5 Questions#FB 1.3.44\|FB 1.3.44]] | Proof; $B = \tfrac{1}{2}(A + A^T)$, $C = \tfrac{1}{2}(A - A^T)$ |
 | [[LA1 HW 1.3 1.5 Questions#FB 1.5.9\|FB 1.5.9]] | $\operatorname{diag}\left(1, -1, \tfrac{1}{2}, \tfrac{1}{3}, \tfrac{1}{4}, \tfrac{1}{5}\right)$ |
@@ -35,359 +35,319 @@ format: "math-notes 2.3"
 ## FB §1.3 Matrices and Their Algebra
 
 > [!note] Note
-> Facts about the [[Transpose|transpose]] and products used below (FB §1.3, Exercises 29–34):
-> - Size rule: if $A$ is $m \times n$ and $B$ is $n \times s$, then $AB$ is $m \times s$. The product is defined only when the inner sizes match.
-> - $(A^T)^T = A$ (Exercise 30).
-> - $(A+B)^T = A^T + B^T$ (Exercise 31).
-> - $(rA)^T = rA^T$, because the $(i, j)$-entry of both sides is $r\,a_{ji}$.
-> - $(AB)^T = B^TA^T$ (Exercise 32).
-> - $A(B+C) = AB + AC$ (Exercise 29) and $(AB)C = A(BC)$ (Exercise 33).
+> The facts that the answers use.
+> - $(A)_{ij}$ is the $(i, j)$-entry of $A$, as in lecture. $A = B$ $\iff$ same size and $(A)_{ij} = (B)_{ij}$ $\forall\, i, j$.
+> - **Product**: $A$: $m \times n$, $B$: $n \times p$ $\implies$ $AB$: $m \times p$, $(AB)_{ij} = \sum_{k=1}^{n} (A)_{ik}(B)_{kj}$. $A\mathbf{b} = b_1\mathbf{a}_1 + \cdots + b_n\mathbf{a}_n$, where $\mathbf{a}_j$ is column $j$ of $A$.
+> - **[[Transpose]]**: $(A^T)_{ij} = (A)_{ji}$; $(A^T)^T = A$, $(A + B)^T = A^T + B^T$, $(rA)^T = rA^T$, $(AB)^T = B^TA^T$.
+> - $A$ is [[Symmetric Matrix|symmetric]] if $A^T = A$, [[Skew-Symmetric Matrix|skew symmetric]] if $A^T = -A$.
+> - Each answer is written as on an exam paper. A paragraph that starts with \# is a remark and is not part of the answer.
 
 ### FB 1.3.20
 Question: [[LA1 HW 1.3 1.5 Questions#FB 1.3.20|FB 1.3.20]]
 
 > [!solution] Solution
-> A matrix is [[Symmetric Matrix|symmetric]] when $A^T = A$, that is, when $a_{ij} = a_{ji}$ for all $i$ and $j$: each entry equals its mirror image across the main diagonal. Every missing entry has a given mirror entry.
->
-> | Missing entry | Must equal | Value |
-> | --- | --- | --- |
-> | $a_{13}$ | $a_{31}$ | $2$ |
-> | $a_{21}$ | $a_{12}$ | $-1$ |
-> | $a_{23}$ | $a_{32}$ | $-7$ |
-> | $a_{34}$ | $a_{43}$ | $6$ |
-> | $a_{41}$ | $a_{14}$ | $5$ |
-> | $a_{42}$ | $a_{24}$ | $8$ |
->
 > $$
-> \begin{bmatrix} 1 & -1 & 2 & 5 \\ -1 & 4 & -7 & 8 \\ 2 & -7 & -1 & 6 \\ 5 & 8 & 6 & 3 \end{bmatrix}
+> \begin{aligned}
+> &\text{Let } A = [a_{ij}] \text{ be the matrix.} \\
+> &A \text{ is symmetric} \iff A^T = A \iff a_{ij} = a_{ji}\ \ \forall\, i, j \\
+> &\implies a_{13} = a_{31} = 2,\ \ a_{21} = a_{12} = -1,\ \ a_{23} = a_{32} = -7, \\
+> &\hphantom{\implies}\ \ a_{34} = a_{43} = 6,\ \ a_{41} = a_{14} = 5,\ \ a_{42} = a_{24} = 8 \\
+> &\text{Hence } A = \begin{bmatrix} 1 & -1 & 2 & 5 \\ -1 & 4 & -7 & 8 \\ 2 & -7 & -1 & 6 \\ 5 & 8 & 6 & 3 \end{bmatrix}.
+> \end{aligned}
 > $$
+>
+> \# Every missing entry has its mirror entry across the main diagonal given; the diagonal entries are free. Check: row $i$ of the answer equals its column $i$.
 
 ### FB 1.3.22
 Question: [[LA1 HW 1.3 1.5 Questions#FB 1.3.22|FB 1.3.22]]
 
 > [!proof] Proof
-> Both parts follow from the size rule for products.
->
-> **a.** A row vector with $m$ components is a $1 \times m$ matrix. For $\mathbf{x}A$ to be defined, $A$ must have $m$ rows, so $A$ is $m \times n$ for some $n$. Then $\mathbf{x}A$ has size $(1 \times m)(m \times n) = 1 \times n$. A matrix with a single row is a row vector with $n$ components:
+> **a.**
 > $$
-> \mathbf{x}A = \left[\ \sum_{k=1}^{m} x_k a_{k1},\ \ \sum_{k=1}^{m} x_k a_{k2},\ \ \dots,\ \ \sum_{k=1}^{m} x_k a_{kn}\ \right]. \qquad \blacksquare
+> \begin{aligned}
+> &\text{Let } \mathbf{x}: 1 \times m. \\
+> &\mathbf{x}A \text{ is defined} \implies A \text{ has } m \text{ rows} \implies A: m \times n \text{ for some } n \\
+> &\implies \mathbf{x}A: 1 \times n \quad \text{(definition of the product)} \\
+> &\text{Hence } \mathbf{x}A \text{ has one row, so it is a row vector.} \qquad \blacksquare
+> \end{aligned}
+> $$
+> **b.**
+> $$
+> \begin{aligned}
+> &\text{Let } \mathbf{y}: n \times 1. \\
+> &A\mathbf{y} \text{ is defined} \implies A \text{ has } n \text{ columns} \implies A: m \times n \text{ for some } m \\
+> &\implies A\mathbf{y}: m \times 1 \quad \text{(definition of the product)} \\
+> &\text{Hence } A\mathbf{y} \text{ has one column, so it is a column vector.} \qquad \blacksquare
+> \end{aligned}
 > $$
 >
-> **b.** A column vector with $n$ components is an $n \times 1$ matrix. For $A\mathbf{y}$ to be defined, $A$ must have $n$ columns, so $A$ is $m \times n$ for some $m$. Then $A\mathbf{y}$ has size $(m \times n)(n \times 1) = m \times 1$. A matrix with a single column is a column vector with $m$ components; its $i$th component is $\sum_{k=1}^{n} a_{ik}y_k$. $\blacksquare$
-
-> [!proof] Alternative proof of b.
-> $(A\mathbf{y})^T = \mathbf{y}^TA^T$ is a row vector times a matrix, so it is a row vector by part a. Transposing it back gives a column vector. $\blacksquare$
+> \# A vector is a matrix with one row or one column, so only the sizes matter: $(1 \times m)(m \times n) = 1 \times n$ and $(m \times n)(n \times 1) = m \times 1$. For b. one can also transpose: $(A\mathbf{y})^T = \mathbf{y}^TA^T$ is a row vector by a.
 
 ### FB 1.3.24
 Question: [[LA1 HW 1.3 1.5 Questions#FB 1.3.24|FB 1.3.24]]
 
 > [!solution] Solution
-> Let $\mathbf{c} = [c_1, c_2, \dots, c_m]$ and let $A$ be $m \times n$ with row vectors $\mathbf{r}_1, \dots, \mathbf{r}_m$. Then
 > $$
-> \boxed{\mathbf{c}A = c_1\mathbf{r}_1 + c_2\mathbf{r}_2 + \cdots + c_m\mathbf{r}_m}.
-> $$
-> So $\mathbf{c}A$ is a [[Linear Combination|linear combination]] of the **row vectors** of $A$, and the coefficient of the $i$th row of $A$ is $c_i$.
->
-> **Justification, following the hint.** By Exercise 32,
-> $$
-> (\mathbf{c}A)^T = A^T\mathbf{c}^T.
-> $$
-> Here $\mathbf{c}^T$ is the column vector with components $c_1, \dots, c_m$, and the $i$th column of $A^T$ is $\mathbf{r}_i^{\,T}$. By the column-combination rule for a matrix times a column vector,
-> $$
-> (\mathbf{c}A)^T = A^T\mathbf{c}^T = c_1\mathbf{r}_1^{\,T} + c_2\mathbf{r}_2^{\,T} + \cdots + c_m\mathbf{r}_m^{\,T}.
-> $$
-> Transposing both sides, using $(X+Y)^T = X^T + Y^T$, $(rX)^T = rX^T$ and $(X^T)^T = X$, gives
-> $$
-> \mathbf{c}A = \big((\mathbf{c}A)^T\big)^T = c_1\mathbf{r}_1 + c_2\mathbf{r}_2 + \cdots + c_m\mathbf{r}_m.
+> \begin{aligned}
+> &\text{Let } \mathbf{c} = [c_1, \dots, c_m],\ A: m \times n \text{ with row vectors } \mathbf{r}_1, \dots, \mathbf{r}_m. \\
+> &\implies \text{the columns of } A^T \text{ are } \mathbf{r}_1^T, \dots, \mathbf{r}_m^T, \text{ and } \mathbf{c}^T \text{ is a column vector.} \\
+> &(\mathbf{c}A)^T = A^T\mathbf{c}^T = c_1\mathbf{r}_1^T + \cdots + c_m\mathbf{r}_m^T \\
+> &\implies \mathbf{c}A = \big((\mathbf{c}A)^T\big)^T = \big(c_1\mathbf{r}_1^T + \cdots + c_m\mathbf{r}_m^T\big)^T = c_1\mathbf{r}_1 + \cdots + c_m\mathbf{r}_m \\
+> &\text{Hence } \mathbf{c}A \text{ is a linear combination of the rows of } A, \text{ with coefficient } c_i \text{ for row } i.
+> \end{aligned}
 > $$
 >
-> **Direct check.** The $j$th entry of $\mathbf{c}A$ is $\sum_{i=1}^{m} c_i a_{ij}$, which is also the $j$th entry of $\sum_{i=1}^{m} c_i\mathbf{r}_i$.
-
-> [!example] Example
-> $$
-> [\,2,\ -1\,]\begin{bmatrix} 1 & 2 & 3 \\ 4 & 5 & 6 \end{bmatrix} = 2\,[1, 2, 3] + (-1)\,[4, 5, 6] = [-2, -1, 0].
-> $$
+> \# Line 3 uses $(XY)^T = Y^TX^T$ and then the column rule for $A^T\mathbf{c}^T$; line 4 uses the transpose of a sum and of a scalar multiple, and $(X^T)^T = X$. In short, $\mathbf{c}A$ combines the rows of $A$, $A\mathbf{b}$ the columns. Check: $[\,2,\ -1\,]\begin{bmatrix} 1 & 2 & 3 \\ 4 & 5 & 6 \end{bmatrix} = 2[1, 2, 3] - [4, 5, 6] = [-2, -1, 0]$.
 
 ### FB 1.3.37
 Question: [[LA1 HW 1.3 1.5 Questions#FB 1.3.37|FB 1.3.37]]
 
 > [!proof] Proof
-> Both $H_n^T$ and $H_n$ are $n \times n$. For all $i, j \in \{1, \dots, n\}$,
 > $$
-> (H_n^T)_{ij} = h_{ji} = \frac{1}{j+i-1} = \frac{1}{i+j-1} = h_{ij},
+> \begin{aligned}
+> &H_n = [h_{ij}]: n \times n,\ \ h_{ij} = \frac{1}{i + j - 1} \implies H_n^T: n \times n \\
+> &(H_n^T)_{ij} = h_{ji} = \frac{1}{j + i - 1} = \frac{1}{i + j - 1} = h_{ij} \quad \forall\, i, j \\
+> &\implies H_n^T = H_n \\
+> &\text{Hence } H_n \text{ is symmetric.} \qquad \blacksquare
+> \end{aligned}
 > $$
-> by the definition of the transpose and because $j + i = i + j$. Every entry of $H_n^T$ equals the matching entry of $H_n$, so $H_n^T = H_n$. $\blacksquare$
-
-> [!example] Example
-> $$
-> H_3 = \begin{bmatrix} 1 & \tfrac{1}{2} & \tfrac{1}{3} \\[2pt] \tfrac{1}{2} & \tfrac{1}{3} & \tfrac{1}{4} \\[2pt] \tfrac{1}{3} & \tfrac{1}{4} & \tfrac{1}{5} \end{bmatrix}
-> $$
-> The entry $h_{ij}$ depends only on $i + j$, so the entries are constant along each anti-diagonal.
+>
+> \# The middle step is $j + i = i + j$ in $\mathbb{R}$: $h_{ij}$ depends only on $i + j$, so interchanging $i$ and $j$ does not change it.
 
 ### FB 1.3.40
 Question: [[LA1 HW 1.3 1.5 Questions#FB 1.3.40|FB 1.3.40]]
 
 > [!proof] Proof
-> $A$ is square, so every power of $A$ is defined. We use Exercise 32: $(XY)^T = Y^TX^T$.
->
 > **a.**
 > $$
 > \begin{aligned}
-> (A^2)^T &= (AA)^T = A^TA^T = (A^T)^2, \\
-> (A^3)^T &= (A^2A)^T = A^T(A^2)^T = A^T(A^T)^2 = (A^T)^3. \qquad \blacksquare
+> &\text{Let } A: n \times n. \text{ Using } (XY)^T = Y^TX^T: \\
+> &(A^2)^T = (AA)^T = A^TA^T = (A^T)^2 \\
+> &(A^3)^T = (A^2A)^T = A^T(A^2)^T = A^T(A^T)^2 = (A^T)^3 \qquad \blacksquare
+> \end{aligned}
+> $$
+> **b.** If $A$ is a square matrix, then $(A^k)^T = (A^T)^k$ for every $k \in \mathbb{N}$.
+> $$
+> \begin{aligned}
+> &k = 1:\ (A^1)^T = A^T = (A^T)^1. \\
+> &\text{Suppose } (A^k)^T = (A^T)^k \text{ for some } k \in \mathbb{N}. \\
+> &\implies (A^{k+1})^T = (A^kA)^T = A^T(A^k)^T = A^T(A^T)^k = (A^T)^{k+1} \\
+> &\text{Hence, by induction, } (A^k)^T = (A^T)^k\ \ \forall\, k \in \mathbb{N}. \qquad \blacksquare
 > \end{aligned}
 > $$
 >
-> **b.** *Generalization:* if $A$ is a square matrix, then $(A^n)^T = (A^T)^n$ for every positive integer $n$. We prove it by induction on $n$. Let $P(n)$ be the statement $(A^n)^T = (A^T)^n$.
->
-> *Base case* ($n = 1$): $(A^1)^T = A^T = (A^T)^1$.
->
-> *Inductive step:* assume that $P(k)$ holds for some $k \ge 1$, that is, $(A^k)^T = (A^T)^k$. Then
-> $$
-> (A^{k+1})^T \overset{(1)}{=} (A^kA)^T \overset{(2)}{=} A^T(A^k)^T \overset{(3)}{=} A^T(A^T)^k \overset{(4)}{=} (A^T)^{k+1}.
-> $$
-> 1. $A^{k+1} = A^kA$ by associativity.
-> 2. Exercise 32.
-> 3. The inductive hypothesis.
-> 4. Associativity again.
->
-> So $P(k+1)$ holds, and by induction $P(n)$ is true for every positive integer $n$. $\blacksquare$
+> \# Comparing entries would need the sums $(A^2)_{ij} = \sum_{l} (A)_{il}(A)_{lj}$; the rule $(XY)^T = Y^TX^T$ avoids them, as the hint says. The inductive step is the second line of a. with $2$ replaced by $k$; the third equality there is the induction hypothesis.
 
 ### FB 1.3.41
 Question: [[LA1 HW 1.3 1.5 Questions#FB 1.3.41|FB 1.3.41]]
 
 > [!proof] Proof
-> **a.** Let $\mathbf{a}_1, \dots, \mathbf{a}_n$ be the column vectors of $A$. By the column-combination rule (FB §1.3, Summary item 3), $A\mathbf{e}_j$ is the linear combination of the columns of $A$ whose coefficients are the components of $\mathbf{e}_j$:
+> **a.**
 > $$
-> A\mathbf{e}_j = 0\,\mathbf{a}_1 + \cdots + 0\,\mathbf{a}_{j-1} + 1\,\mathbf{a}_j + 0\,\mathbf{a}_{j+1} + \cdots + 0\,\mathbf{a}_n = \mathbf{a}_j.
+> \begin{aligned}
+> &A: m \times n,\ \mathbf{e}_j: n \times 1 \implies A\mathbf{e}_j: m \times 1 \\
+> &(A\mathbf{e}_j)_{i} = \sum_{k=1}^{n} (A)_{ik}(\mathbf{e}_j)_{k} = (A)_{ij} \cdot 1 = (A)_{ij},\ \ i = 1, \dots, m \quad \big((\mathbf{e}_j)_{k} = 0 \text{ for } k \ne j\big) \\
+> &\text{Hence } A\mathbf{e}_j = \begin{bmatrix} (A)_{1j} \\ \vdots \\ (A)_{mj} \end{bmatrix} \text{ is the } j\text{th column vector of } A. \qquad \blacksquare
+> \end{aligned}
 > $$
-> Entry by entry: the $i$th component of $A\mathbf{e}_j$ is $\sum_{k=1}^{n} a_{ik}(\mathbf{e}_j)_k = a_{ij}$, because $(\mathbf{e}_j)_k = 0$ for $k \ne j$ and $(\mathbf{e}_j)_j = 1$. So $A\mathbf{e}_j = [a_{1j}, a_{2j}, \dots, a_{mj}]^T$, the $j$th column of $A$. $\blacksquare$
+> **b. i.**
+> $$
+> \begin{aligned}
+> &A: m \times n,\ A\mathbf{x} = \mathbf{0}\ \ \forall\, \mathbf{x} \in \mathbb{R}^n \\
+> &\text{Take } \mathbf{x} = \mathbf{e}_j:\ j\text{th column of } A = A\mathbf{e}_j = \mathbf{0},\ \ j = 1, \dots, n \quad \text{(by a.)} \\
+> &\implies (A)_{ij} = 0\ \ \forall\, i, j \\
+> &\text{Hence } A = O. \qquad \blacksquare
+> \end{aligned}
+> $$
+> **b. ii.**
+> $$
+> \begin{aligned}
+> &A\mathbf{x} = B\mathbf{x}\ \ \forall\, \mathbf{x} \implies (A - B)\mathbf{x} = A\mathbf{x} - B\mathbf{x} = \mathbf{0}\ \ \forall\, \mathbf{x} \\
+> &\implies A - B = O \quad \text{(by i. for } A - B) \\
+> &\text{Hence } A = B. \qquad \blacksquare
+> \end{aligned}
+> $$
 >
-> **b. i.** Let $A$ be $m \times n$ with $A\mathbf{x} = \mathbf{0}$ for every $\mathbf{x} \in \mathbb{R}^n$. In particular, this holds for $\mathbf{x} = \mathbf{e}_1, \dots, \mathbf{e}_n$. By part a,
-> $$
-> j\text{th column of } A = A\mathbf{e}_j = \mathbf{0}, \qquad j = 1, \dots, n.
-> $$
-> Every column of $A$ is the zero vector, so $A = O$. $\blacksquare$
->
-> **b. ii.** Suppose $A\mathbf{x} = B\mathbf{x}$ for every $\mathbf{x}$. By the distributive law,
-> $$
-> (A - B)\mathbf{x} = A\mathbf{x} - B\mathbf{x} = \mathbf{0} \quad \text{for every } \mathbf{x}.
-> $$
-> Part i applied to the matrix $A - B$ gives $A - B = O$, so $A = B$. $\blacksquare$
-
-> [!warning] "For all $\mathbf{x}$" is essential
-> A single vector is not enough. For example, $\begin{bmatrix} 1 & 0 \\ 0 & 0 \end{bmatrix}\begin{bmatrix} 0 \\ 1 \end{bmatrix} = \mathbf{0}$, but the matrix is not $O$.
+> \# In b. "for all $\mathbf{x}$" is what lets us take $\mathbf{x} = \mathbf{e}_1, \dots, \mathbf{e}_n$; one vector is not enough: $\begin{bmatrix} 1 & 0 \\ 0 & 0 \end{bmatrix}\begin{bmatrix} 0 \\ 1 \end{bmatrix} = \mathbf{0}$, but the matrix is not $O$. ii. is i. applied to $A - B$, through the distributive law $(A - B)\mathbf{x} = A\mathbf{x} - B\mathbf{x}$.
 
 ### FB 1.3.44
 Question: [[LA1 HW 1.3 1.5 Questions#FB 1.3.44|FB 1.3.44]]
 
 > [!proof] Proof
-> **Existence.** Define
-> $$
-> B = \tfrac{1}{2}\left(A + A^T\right), \qquad C = \tfrac{1}{2}\left(A - A^T\right).
-> $$
-> Then $B + C = \tfrac{1}{2}A + \tfrac{1}{2}A^T + \tfrac{1}{2}A - \tfrac{1}{2}A^T = A$. By the transpose properties,
 > $$
 > \begin{aligned}
-> B^T &= \tfrac{1}{2}\left(A^T + (A^T)^T\right) = \tfrac{1}{2}\left(A^T + A\right) = B, \\
-> C^T &= \tfrac{1}{2}\left(A^T - (A^T)^T\right) = \tfrac{1}{2}\left(A^T - A\right) = -\tfrac{1}{2}\left(A - A^T\right) = -C.
+> &\text{Let } A: n \times n. \\[4pt]
+> &\text{Existence: let } B = \tfrac{1}{2}(A + A^T),\ C = \tfrac{1}{2}(A - A^T). \\
+> &B + C = \tfrac{1}{2}A + \tfrac{1}{2}A^T + \tfrac{1}{2}A - \tfrac{1}{2}A^T = A \\
+> &B^T = \tfrac{1}{2}\big(A^T + (A^T)^T\big) = \tfrac{1}{2}(A^T + A) = B \implies B \text{ is symmetric} \\
+> &C^T = \tfrac{1}{2}\big(A^T - (A^T)^T\big) = \tfrac{1}{2}(A^T - A) = -C \implies C \text{ is skew symmetric} \\[4pt]
+> &\text{Uniqueness: suppose } A = B' + C',\ B' \text{ symmetric},\ C' \text{ skew symmetric.} \\
+> &\implies A^T = (B')^T + (C')^T = B' - C' \\
+> &\implies A + A^T = 2B',\ \ A - A^T = 2C' \\
+> &\implies B' = \tfrac{1}{2}(A + A^T) = B,\ \ C' = \tfrac{1}{2}(A - A^T) = C \\
+> &\text{Hence } A = B + C \text{ with } B \text{ symmetric and } C \text{ skew symmetric, uniquely.} \qquad \blacksquare
 > \end{aligned}
 > $$
-> So $B$ is symmetric and $C$ is [[Skew-Symmetric Matrix|skew symmetric]].
 >
-> **Uniqueness.** Suppose $A = B + C$, where $B$ is any symmetric matrix and $C$ is any skew-symmetric matrix. Taking the transpose gives
-> $$
-> A^T = B^T + C^T = B - C.
-> $$
-> Adding and subtracting the equations $A = B + C$ and $A^T = B - C$ gives $A + A^T = 2B$ and $A - A^T = 2C$, so $B = \tfrac{1}{2}(A + A^T)$ and $C = \tfrac{1}{2}(A - A^T)$. Any such decomposition is therefore the one constructed above, and the decomposition is unique. $\blacksquare$
-
-> [!proof] Alternative proof of uniqueness
-> If $B + C = B' + C'$ with $B$, $B'$ symmetric and $C$, $C'$ skew symmetric, then $M := B - B' = C' - C$ is both symmetric and skew symmetric. So $M = M^T = -M$, which gives $2M = O$ and $M = O$. $\blacksquare$
-
-> [!example] Example
-> $$
-> \begin{bmatrix} 1 & 2 \\ 3 & 4 \end{bmatrix} = \underbrace{\begin{bmatrix} 1 & \tfrac{5}{2} \\[2pt] \tfrac{5}{2} & 4 \end{bmatrix}}_{\text{symmetric}} + \underbrace{\begin{bmatrix} 0 & -\tfrac{1}{2} \\[2pt] \tfrac{1}{2} & 0 \end{bmatrix}}_{\text{skew symmetric}}
-> $$
+> \# $C$ is the matrix of [[LA1 Quiz 03#Q1 Proof|Quiz 03 Q1]] times $\tfrac{1}{2}$. For uniqueness, start from any such decomposition and solve for its parts: adding and subtracting $A = B' + C'$ and $A^T = B' - C'$ leaves no choice. Example: $\begin{bmatrix} 1 & 2 \\ 3 & 4 \end{bmatrix} = \begin{bmatrix} 1 & \tfrac{5}{2} \\ \tfrac{5}{2} & 4 \end{bmatrix} + \begin{bmatrix} 0 & -\tfrac{1}{2} \\ \tfrac{1}{2} & 0 \end{bmatrix}$.
 
 ## FB §1.5 Inverses of Square Matrices
+
+> [!note] Note
+> The facts that the answers use.
+> - **[[Invertible Matrix|Invertible]]**: $A$: $n \times n$ and $\exists\, C$ s.t. $AC = CA = I$; then $A^{-1} = C$, and it is unique. *Singular* means not invertible.
+> - $A$ is invertible $\iff$ $A \sim I$ $\iff$ an echelon form of $A$ has $n$ pivots.
+> - $A(rB) = r(AB)$, $A(B + C) = AB + AC$, $(AB)C = A(BC)$.
+> - $\operatorname{diag}(d_1, \dots, d_n)$ is the [[Diagonal Matrix|diagonal matrix]] with diagonal entries $d_1, \dots, d_n$.
 
 ### FB 1.5.9
 Question: [[LA1 HW 1.3 1.5 Questions#FB 1.5.9|FB 1.5.9]]
 
 > [!solution] Solution
-> The matrix is the [[Diagonal Matrix|diagonal matrix]] $D = \operatorname{diag}(1, -1, 2, 3, 4, 5)$. Every diagonal entry is nonzero.
->
-> **Gauss–Jordan.** Start from $[D \mid I]$. Multiply row 2 by $-1$, row 3 by $\tfrac{1}{2}$, row 4 by $\tfrac{1}{3}$, row 5 by $\tfrac{1}{4}$ and row 6 by $\tfrac{1}{5}$. This turns the left block into $I$, and the same operations turn the right block into
 > $$
-> D^{-1} = \begin{bmatrix} 1 & 0 & 0 & 0 & 0 & 0 \\ 0 & -1 & 0 & 0 & 0 & 0 \\ 0 & 0 & \tfrac{1}{2} & 0 & 0 & 0 \\ 0 & 0 & 0 & \tfrac{1}{3} & 0 & 0 \\ 0 & 0 & 0 & 0 & \tfrac{1}{4} & 0 \\ 0 & 0 & 0 & 0 & 0 & \tfrac{1}{5} \end{bmatrix}.
+> \begin{aligned}
+> &D = \operatorname{diag}(1, -1, 2, 3, 4, 5),\ \ C := \operatorname{diag}\left(1, -1, \tfrac{1}{2}, \tfrac{1}{3}, \tfrac{1}{4}, \tfrac{1}{5}\right) \\
+> &(DC)_{ij} = \sum_{k=1}^{6} (D)_{ik}(C)_{kj} = (D)_{ii}(C)_{ij} = \begin{cases} (D)_{ii}(C)_{ii} = 1, & i = j \\ 0, & i \ne j \end{cases} \implies DC = I \\
+> &\text{Similarly } CD = I. \\
+> &\text{Hence } D \text{ is invertible and } D^{-1} = C = \begin{bmatrix} 1 & 0 & 0 & 0 & 0 & 0 \\ 0 & -1 & 0 & 0 & 0 & 0 \\ 0 & 0 & \tfrac{1}{2} & 0 & 0 & 0 \\ 0 & 0 & 0 & \tfrac{1}{3} & 0 & 0 \\ 0 & 0 & 0 & 0 & \tfrac{1}{4} & 0 \\ 0 & 0 & 0 & 0 & 0 & \tfrac{1}{5} \end{bmatrix}.
+> \end{aligned}
 > $$
 >
-> **Check.** Diagonal matrices multiply entry by entry along the diagonal: $\operatorname{diag}(d_1, \dots, d_n)\operatorname{diag}(e_1, \dots, e_n) = \operatorname{diag}(d_1e_1, \dots, d_ne_n)$. So $DD^{-1} = \operatorname{diag}(1, 1, 1, 1, 1, 1) = I$, and $D^{-1}D = I$ in the same way.
-
-> [!note] Note
-> A diagonal matrix is [[Invertible Matrix|invertible]] if and only if every diagonal entry is nonzero. In that case its inverse is the diagonal matrix of the reciprocals.
+> \# $(D)_{ik} = 0$ for $k \ne i$, so only $k = i$ is left in the sum; then $(C)_{ij} = 0$ for $j \ne i$. A diagonal matrix is invertible exactly when no diagonal entry is $0$, and its inverse takes the reciprocals. Row reduction gives the same: multiply rows $2, \dots, 6$ of $[D \mid I]$ by $-1, \tfrac{1}{2}, \tfrac{1}{3}, \tfrac{1}{4}, \tfrac{1}{5}$ to reach $[I \mid C]$.
 
 ### FB 1.5.16
 Question: [[LA1 HW 1.3 1.5 Questions#FB 1.5.16|FB 1.5.16]]
 
 > [!solution] Solution
-> Call the right-hand matrix $M$. Since $A^{-1}$ exists, multiply $AC = M$ on the **left** by $A^{-1}$:
 > $$
-> A^{-1}(AC) = (A^{-1}A)C = IC = C \implies C = A^{-1}M.
+> \begin{aligned}
+> &\text{Let } M = \begin{bmatrix} 1 & 2 \\ 0 & 1 \\ 4 & 1 \end{bmatrix}. \\
+> &\because A^{-1} \text{ exists} \\
+> &\therefore AC = M \implies C = (A^{-1}A)C = A^{-1}(AC) = A^{-1}M, \\
+> &\hphantom{\therefore}\ \text{and } A(A^{-1}M) = (AA^{-1})M = M. \\
+> &C = A^{-1}M = \begin{bmatrix} 1 & 2 & 1 \\ 0 & 3 & 1 \\ 4 & 1 & 2 \end{bmatrix}\begin{bmatrix} 1 & 2 \\ 0 & 1 \\ 4 & 1 \end{bmatrix} = \begin{bmatrix} 1 + 0 + 4 & 2 + 2 + 1 \\ 0 + 0 + 4 & 0 + 3 + 1 \\ 4 + 0 + 8 & 8 + 1 + 2 \end{bmatrix} \\
+> &\text{Hence } C = \begin{bmatrix} 5 & 5 \\ 4 & 4 \\ 12 & 11 \end{bmatrix}.
+> \end{aligned}
 > $$
-> Conversely, $A(A^{-1}M) = M$, so this $C$ works, and it is the only one. We never need to find $A$ itself.
-> $$
-> C = \begin{bmatrix} 1 & 2 & 1 \\ 0 & 3 & 1 \\ 4 & 1 & 2 \end{bmatrix} \begin{bmatrix} 1 & 2 \\ 0 & 1 \\ 4 & 1 \end{bmatrix} = \begin{bmatrix} 1 + 0 + 4 & 2 + 2 + 1 \\ 0 + 0 + 4 & 0 + 3 + 1 \\ 4 + 0 + 8 & 8 + 1 + 2 \end{bmatrix} = \boxed{\begin{bmatrix} 5 & 5 \\ 4 & 4 \\ 12 & 11 \end{bmatrix}}
-> $$
+>
+> \# Multiply by $A^{-1}$ on the left, the side where $A$ stands; $A$ itself is never needed. Line 4 shows that this $C$ really works, and line 3 that it is the only one.
 
 ### FB 1.5.17
 Question: [[LA1 HW 1.3 1.5 Questions#FB 1.5.17|FB 1.5.17]]
 
 > [!solution] Solution
-> Call the right-hand matrix $M$. Multiply $ACA = M$ on the **left** and on the **right** by $A^{-1}$:
 > $$
-> A^{-1}(ACA)A^{-1} = (A^{-1}A)\,C\,(AA^{-1}) = C \implies C = A^{-1}MA^{-1}.
+> \begin{aligned}
+> &\text{Let } M = \begin{bmatrix} 2 & 1 & 3 \\ -1 & 2 & 2 \\ 2 & 1 & 4 \end{bmatrix}. \\
+> &\because A^{-1} \text{ exists} \\
+> &\therefore ACA = M \implies C = (A^{-1}A)C(AA^{-1}) = A^{-1}(ACA)A^{-1} = A^{-1}MA^{-1}, \\
+> &\hphantom{\therefore}\ \text{and } A(A^{-1}MA^{-1})A = M. \\
+> &A^{-1}M = \begin{bmatrix} 1 & 2 & 1 \\ 0 & 3 & 1 \\ 4 & 1 & 2 \end{bmatrix}\begin{bmatrix} 2 & 1 & 3 \\ -1 & 2 & 2 \\ 2 & 1 & 4 \end{bmatrix} = \begin{bmatrix} 2 & 6 & 11 \\ -1 & 7 & 10 \\ 11 & 8 & 22 \end{bmatrix} \\
+> &C = (A^{-1}M)A^{-1} = \begin{bmatrix} 2 & 6 & 11 \\ -1 & 7 & 10 \\ 11 & 8 & 22 \end{bmatrix}\begin{bmatrix} 1 & 2 & 1 \\ 0 & 3 & 1 \\ 4 & 1 & 2 \end{bmatrix} \\
+> &\hphantom{C} = \begin{bmatrix} 2 + 0 + 44 & 4 + 18 + 11 & 2 + 6 + 22 \\ -1 + 0 + 40 & -2 + 21 + 10 & -1 + 7 + 20 \\ 11 + 0 + 88 & 22 + 24 + 22 & 11 + 8 + 44 \end{bmatrix} \\
+> &\text{Hence } C = \begin{bmatrix} 46 & 33 & 30 \\ 39 & 29 & 26 \\ 99 & 68 & 63 \end{bmatrix}.
+> \end{aligned}
 > $$
-> Conversely, $A(A^{-1}MA^{-1})A = M$, so $C$ exists and is unique.
 >
-> **Step 1:** $A^{-1}M$.
-> $$
-> \begin{bmatrix} 1 & 2 & 1 \\ 0 & 3 & 1 \\ 4 & 1 & 2 \end{bmatrix} \begin{bmatrix} 2 & 1 & 3 \\ -1 & 2 & 2 \\ 2 & 1 & 4 \end{bmatrix} = \begin{bmatrix} 2 - 2 + 2 & 1 + 4 + 1 & 3 + 4 + 4 \\ 0 - 3 + 2 & 0 + 6 + 1 & 0 + 6 + 4 \\ 8 - 1 + 4 & 4 + 2 + 2 & 12 + 2 + 8 \end{bmatrix} = \begin{bmatrix} 2 & 6 & 11 \\ -1 & 7 & 10 \\ 11 & 8 & 22 \end{bmatrix}
-> $$
->
-> **Step 2:** $(A^{-1}M)A^{-1}$.
-> $$
-> \begin{bmatrix} 2 & 6 & 11 \\ -1 & 7 & 10 \\ 11 & 8 & 22 \end{bmatrix} \begin{bmatrix} 1 & 2 & 1 \\ 0 & 3 & 1 \\ 4 & 1 & 2 \end{bmatrix} = \begin{bmatrix} 2 + 0 + 44 & 4 + 18 + 11 & 2 + 6 + 22 \\ -1 + 0 + 40 & -2 + 21 + 10 & -1 + 7 + 20 \\ 11 + 0 + 88 & 22 + 24 + 22 & 11 + 8 + 44 \end{bmatrix}
-> $$
-> $$
-> C = \boxed{\begin{bmatrix} 46 & 33 & 30 \\ 39 & 29 & 26 \\ 99 & 68 & 63 \end{bmatrix}}
-> $$
-
-> [!warning] Order matters
-> $C = A^{-1}MA^{-1}$, **not** $(A^{-1})^2M$, because matrix multiplication is not commutative.
+> \# $A$ stands on both sides of $C$, so $A^{-1}$ goes on both sides: $C = A^{-1}MA^{-1}$, not $(A^{-1})^2M$, because matrix multiplication is not commutative.
 
 ### FB 1.5.18
 Question: [[LA1 HW 1.3 1.5 Questions#FB 1.5.18|FB 1.5.18]]
 
 > [!solution] Solution
-> Take $B = 2I_3$. Then
 > $$
-> A(2I) = 2(AI) = 2A, \qquad B = \boxed{\begin{bmatrix} 2 & 0 & 0 \\ 0 & 2 & 0 \\ 0 & 0 & 2 \end{bmatrix}}.
+> \begin{aligned}
+> &\text{Let } B = 2I_3. \\
+> &AB = A(2I) = 2(AI) = 2A \\
+> &\text{Hence } B = \begin{bmatrix} 2 & 0 & 0 \\ 0 & 2 & 0 \\ 0 & 0 & 2 \end{bmatrix}.
+> \end{aligned}
 > $$
-> This choice works for any square matrix $A$.
 >
-> **Uniqueness.** Row-reduce $A$:
-> $$
-> \begin{bmatrix} 4 & 2 & 2 \\ 0 & 3 & 1 \\ 2 & 0 & 1 \end{bmatrix} \xrightarrow{R_3 - \frac{1}{2}R_1} \begin{bmatrix} 4 & 2 & 2 \\ 0 & 3 & 1 \\ 0 & -1 & 0 \end{bmatrix} \xrightarrow{R_3 + \frac{1}{3}R_2} \begin{bmatrix} 4 & 2 & 2 \\ 0 & 3 & 1 \\ 0 & 0 & \tfrac{1}{3} \end{bmatrix}
-> $$
-> There are three nonzero pivots, so $A$ is row equivalent to $I$ and $A$ is invertible. From $AB = 2A$ we get $B = A^{-1}(2A) = 2I$. So $B = 2I$ is the **only** solution.
+> \# $B = 2I$ works for every square $A$. Here it is also the only one: row reduction of $A$ gives the pivots $4, 3, \tfrac{1}{3}$, so $A \sim I$ and $A$ is invertible, and $AB = 2A \implies B = A^{-1}(2A) = 2I$.
 
 ### FB 1.5.19
 Question: [[LA1 HW 1.3 1.5 Questions#FB 1.5.19|FB 1.5.19]]
 
 > [!solution] Solution
-> Factor out $A$ on the left using the distributive law:
 > $$
-> A^2 + 2A = AA + A(2I) = A(A + 2I).
-> $$
-> So $B = A + 2I$ works:
-> $$
-> B = \begin{bmatrix} 1 & 2 & 1 \\ 0 & 1 & 2 \\ 1 & 3 & 2 \end{bmatrix} + \begin{bmatrix} 2 & 0 & 0 \\ 0 & 2 & 0 \\ 0 & 0 & 2 \end{bmatrix} = \boxed{\begin{bmatrix} 3 & 2 & 1 \\ 0 & 3 & 2 \\ 1 & 3 & 4 \end{bmatrix}}
+> \begin{aligned}
+> &A^2 + 2A = AA + A(2I) = A(A + 2I) \\
+> &\implies B = A + 2I \text{ satisfies } AB = A^2 + 2A. \\
+> &\text{Hence } B = \begin{bmatrix} 1 & 2 & 1 \\ 0 & 1 & 2 \\ 1 & 3 & 2 \end{bmatrix} + \begin{bmatrix} 2 & 0 & 0 \\ 0 & 2 & 0 \\ 0 & 0 & 2 \end{bmatrix} = \begin{bmatrix} 3 & 2 & 1 \\ 0 & 3 & 2 \\ 1 & 3 & 4 \end{bmatrix}.
+> \end{aligned}
 > $$
 >
-> **Uniqueness.** Row-reduce $A$:
-> $$
-> \begin{bmatrix} 1 & 2 & 1 \\ 0 & 1 & 2 \\ 1 & 3 & 2 \end{bmatrix} \xrightarrow{R_3 - R_1} \begin{bmatrix} 1 & 2 & 1 \\ 0 & 1 & 2 \\ 0 & 1 & 1 \end{bmatrix} \xrightarrow{R_3 - R_2} \begin{bmatrix} 1 & 2 & 1 \\ 0 & 1 & 2 \\ 0 & 0 & -1 \end{bmatrix}
-> $$
-> There are three nonzero pivots, so $A$ is invertible. Then $B = A^{-1}(A^2 + 2A) = A + 2I$ is the only solution.
-
-> [!warning] Common mistake
-> Writing $A^2 + 2A = A(A + 2)$ is meaningless, because "matrix $+$ scalar" is not defined. The identity matrix is needed: $A(A + 2I)$.
+> \# Write $2A = A(2I)$, never $A(A + 2)$: a matrix plus a number is not defined. $A$ is invertible (pivots $1, 1, -1$), so $B = A^{-1}(A^2 + 2A) = A + 2I$ is the only one.
 
 ### FB 1.5.33
 Question: [[LA1 HW 1.3 1.5 Questions#FB 1.5.33|FB 1.5.33]]
 
 > [!solution] Solution
-> Take $A = I_4$ and $B = -I_4$.
-> - $A$ is invertible, with $I^{-1} = I$.
-> - $B$ is invertible: $(-I)(-I) = I$, so $(-I)^{-1} = -I$.
-> - $A + B = O_{4 \times 4}$ is singular: for every $4 \times 4$ matrix $X$, $OX = O \ne I$, so $O$ has no inverse.
+> $$
+> \begin{aligned}
+> &\text{Let } A = I_4,\ B = -I_4. \\
+> &I_4I_4 = I_4,\ (-I_4)(-I_4) = I_4 \implies A, B \text{ are invertible} \\
+> &A + B = O,\ \ OX = O \ne I_4\ \ \forall\, X: 4 \times 4 \implies A + B \text{ is singular} \\
+> &\text{Hence } A = I_4 \text{ and } B = -I_4 \text{ are such matrices.}
+> \end{aligned}
+> $$
 >
-> So a sum of invertible matrices does not have to be invertible.
-
-> [!example] Example
-> A less trivial pair: let $A = I_4$ and $B = \operatorname{diag}(-1, 1, 1, 1)$. $B$ is invertible because $B^2 = I$. But
-> $$
-> A + B = \operatorname{diag}(0, 2, 2, 2).
-> $$
-> Its first row is zero, so the first row of $(A+B)X$ is zero for every $X$, and $(A+B)X$ can never equal $I$. So $A + B$ is singular.
+> \# Same as [[LA1 Quiz 04#Q1 True or False|Quiz 04 Q1]] (a). A less trivial pair: $I_4$ and $\operatorname{diag}(-1, 1, 1, 1)$, whose sum $\operatorname{diag}(0, 2, 2, 2)$ has a zero first row, so the first row of $(A + B)X$ is zero for every $X$.
 
 ## FIS §1.3 Subspaces
 
 > [!note] Notation
-> This section follows FIS: the transpose of $A$ is $A^t$, the $(i, j)$-entry of $A$ is $A_{ij}$, and matrices use parentheses.
+> FIS writes the transpose of $A$ as $A^t$, the $(i, j)$-entry of $A$ as $A_{ij}$, and matrices with parentheses.
 
 > [!note] Note
-> Definitions used (FIS §1.3):
-> - Transpose: $(A^t)_{ij} = A_{ji}$.
-> - $A$ is **symmetric** if $A^t = A$.
-> - An $n \times n$ matrix $M$ is **diagonal** if $M_{ij} = 0$ whenever $i \ne j$.
-> - [[Trace]]: $\operatorname{tr}(M) = M_{11} + M_{22} + \cdots + M_{nn}$.
+> The facts that the answers use.
+> - $(A^t)_{ij} = A_{ji}$; $A$ is symmetric if $A^t = A$.
+> - An $n \times n$ matrix $A$ is diagonal if $A_{ij} = 0$ whenever $i \ne j$.
+> - [[Trace]]: $\operatorname{tr}(A) = \sum_{i=1}^{n} A_{ii}$.
 
 ### FIS 1.3.2 (a)(d)(h)
 Question: [[LA1 HW 1.3 1.5 Questions#FIS 1.3.2 (a)(d)(h)|FIS 1.3.2 (a)(d)(h)]]
 
 > [!solution] Solution
-> The rows of $A$ become the columns of $A^t$. All three matrices are square, so each has a trace.
->
-> **(a)**
 > $$
-> A^t = \begin{pmatrix} -4 & 5 \\ 2 & -1 \end{pmatrix}, \qquad \operatorname{tr}(A) = -4 + (-1) = \boxed{-5}
-> $$
->
-> **(d)**
-> $$
-> A^t = \begin{pmatrix} 10 & 2 & -5 \\ 0 & -4 & 7 \\ -8 & 3 & 6 \end{pmatrix}, \qquad \operatorname{tr}(A) = 10 + (-4) + 6 = \boxed{12}
+> \begin{aligned}
+> &\text{(a)}\ \ A^t = \begin{pmatrix} -4 & 5 \\ 2 & -1 \end{pmatrix}, \quad \operatorname{tr}(A) = -4 + (-1) = -5 \\[6pt]
+> &\text{(d)}\ \ A^t = \begin{pmatrix} 10 & 2 & -5 \\ 0 & -4 & 7 \\ -8 & 3 & 6 \end{pmatrix}, \quad \operatorname{tr}(A) = 10 + (-4) + 6 = 12 \\[6pt]
+> &\text{(h)}\ \ A^t = \begin{pmatrix} -4 & 0 & 6 \\ 0 & 1 & -3 \\ 6 & -3 & 5 \end{pmatrix} = A, \quad \operatorname{tr}(A) = -4 + 1 + 5 = 2
+> \end{aligned}
 > $$
 >
-> **(h)**
-> $$
-> A^t = \begin{pmatrix} -4 & 0 & 6 \\ 0 & 1 & -3 \\ 6 & -3 & 5 \end{pmatrix} = A \quad (\text{the matrix is symmetric}), \qquad \operatorname{tr}(A) = -4 + 1 + 5 = \boxed{2}
-> $$
-
-> [!note] Note
-> Transposing does not move the diagonal entries, so $\operatorname{tr}(A^t) = \operatorname{tr}(A)$. See FIS 2.3.13.
+> \# Row $i$ of $A$ becomes column $i$ of $A^t$. The diagonal does not move, so $\operatorname{tr}(A^t) = \operatorname{tr}(A)$; (h) is symmetric.
 
 ### FIS 1.3.6
 Question: [[LA1 HW 1.3 1.5 Questions#FIS 1.3.6|FIS 1.3.6]]
 
 > [!proof] Proof
-> Let $A, B \in \mathsf{M}_{n \times n}(F)$ and $a, b \in F$. By the definitions of matrix addition and scalar multiplication,
-> $$
-> (aA + bB)_{ii} = aA_{ii} + bB_{ii} \qquad (1 \le i \le n).
-> $$
-> Therefore
+> Let $A, B \in \mathsf{M}_{n \times n}(F)$ and $a, b \in F$.
 > $$
 > \begin{aligned}
-> \operatorname{tr}(aA + bB) &= \sum_{i=1}^{n} (aA + bB)_{ii} && \text{(definition of the trace)} \\
-> &= \sum_{i=1}^{n} \left(aA_{ii} + bB_{ii}\right) && \text{(entries of \(aA + bB\))} \\
-> &= a\sum_{i=1}^{n} A_{ii} + b\sum_{i=1}^{n} B_{ii} && \text{(commutativity, associativity and distributivity in \(F\))} \\
-> &= a\operatorname{tr}(A) + b\operatorname{tr}(B). && \text{(definition of the trace)} \qquad \blacksquare
+> \operatorname{tr}(aA + bB) &= \sum_{i=1}^{n} (aA + bB)_{ii} = \sum_{i=1}^{n} (aA_{ii} + bB_{ii}) \\
+> &= a\sum_{i=1}^{n} A_{ii} + b\sum_{i=1}^{n} B_{ii} = a\operatorname{tr}(A) + b\operatorname{tr}(B). \qquad \blacksquare
 > \end{aligned}
 > $$
-
-> [!tip] Intuition
-> This says that $\operatorname{tr}\colon \mathsf{M}_{n \times n}(F) \to F$ is a **linear** map, in the language of Chapter 2.
+>
+> \# The second equality is the definition of the sum and of the scalar multiple, entry $(i, i)$; the third uses commutativity, associativity and distributivity in $F$. So $\operatorname{tr}\colon \mathsf{M}_{n \times n}(F) \to F$ is linear.
 
 ### FIS 1.3.7
 Question: [[LA1 HW 1.3 1.5 Questions#FIS 1.3.7|FIS 1.3.7]]
 
 > [!proof] Proof
-> Let $A \in \mathsf{M}_{n \times n}(F)$ be diagonal, so $A_{ij} = 0$ whenever $i \ne j$. We must show $A^t = A$, that is, $(A^t)_{ij} = A_{ij}$ for all $i$ and $j$. By definition, $(A^t)_{ij} = A_{ji}$.
-> - **Case $i = j$:** $(A^t)_{ii} = A_{ii}$.
-> - **Case $i \ne j$:** then $j \ne i$ too, so $A_{ji} = 0$ because $A$ is diagonal, and also $A_{ij} = 0$. Hence $(A^t)_{ij} = A_{ji} = 0 = A_{ij}$.
+> $$
+> \begin{aligned}
+> &\text{Let } A \in \mathsf{M}_{n \times n}(F) \text{ be diagonal: } A_{ij} = 0 \text{ for } i \ne j. \\
+> &i = j:\ (A^t)_{ii} = A_{ii} \\
+> &i \ne j:\ (A^t)_{ij} = A_{ji} = 0 = A_{ij} \\
+> &\implies (A^t)_{ij} = A_{ij}\ \ \forall\, i, j \implies A^t = A \\
+> &\text{Hence } A \text{ is symmetric.} \qquad \blacksquare
+> \end{aligned}
+> $$
 >
-> Every entry agrees, so $A^t = A$ and $A$ is symmetric. $\blacksquare$
+> \# Off the diagonal both $A_{ij}$ and $A_{ji}$ are $0$, because $i \ne j$ also means $j \ne i$; on the diagonal the transpose moves nothing.
 
 ## FIS §2.3 Composition of Linear Transformations and Matrix Multiplication
 
@@ -395,29 +355,12 @@ Question: [[LA1 HW 1.3 1.5 Questions#FIS 1.3.7|FIS 1.3.7]]
 Question: [[LA1 HW 1.3 1.5 Questions#FIS 2.3.13|FIS 2.3.13]]
 
 > [!proof] Proof
-> **(1) $\operatorname{tr}(AB) = \operatorname{tr}(BA)$.** By the definition of the matrix product, $(AB)_{ij} = \sum_{k=1}^{n} A_{ik}B_{kj}$. So
 > $$
-> \operatorname{tr}(AB) = \sum_{i=1}^{n} (AB)_{ii} = \sum_{i=1}^{n}\sum_{k=1}^{n} A_{ik}B_{ki}.
-> $$
-> In the same way, $(BA)_{kk} = \sum_{i=1}^{n} B_{ki}A_{ik}$, so
-> $$
-> \operatorname{tr}(BA) = \sum_{k=1}^{n} (BA)_{kk} = \sum_{k=1}^{n}\sum_{i=1}^{n} B_{ki}A_{ik}.
-> $$
-> Multiplication in the field $F$ is commutative, so $B_{ki}A_{ik} = A_{ik}B_{ki}$, and a finite double sum can be added in either order. Therefore
-> $$
-> \operatorname{tr}(BA) = \sum_{k=1}^{n}\sum_{i=1}^{n} A_{ik}B_{ki} = \sum_{i=1}^{n}\sum_{k=1}^{n} A_{ik}B_{ki} = \operatorname{tr}(AB).
+> \begin{aligned}
+> \operatorname{tr}(AB) &= \sum_{i=1}^{n} (AB)_{ii} = \sum_{i=1}^{n}\sum_{k=1}^{n} A_{ik}B_{ki} \\
+> &= \sum_{k=1}^{n}\sum_{i=1}^{n} B_{ki}A_{ik} = \sum_{k=1}^{n} (BA)_{kk} = \operatorname{tr}(BA) \\[6pt]
+> \operatorname{tr}(A^t) &= \sum_{i=1}^{n} (A^t)_{ii} = \sum_{i=1}^{n} A_{ii} = \operatorname{tr}(A). \qquad \blacksquare
+> \end{aligned}
 > $$
 >
-> **(2) $\operatorname{tr}(A) = \operatorname{tr}(A^t)$.** For each $i$, $(A^t)_{ii} = A_{ii}$, since transposition does not change the diagonal. So
-> $$
-> \operatorname{tr}(A^t) = \sum_{i=1}^{n} (A^t)_{ii} = \sum_{i=1}^{n} A_{ii} = \operatorname{tr}(A). \qquad \blacksquare
-> $$
-
-> [!example] Example
-> Here $\operatorname{tr}(XY) = \operatorname{tr}(YX)$ even though $XY \ne YX$. Let $X = \begin{pmatrix} 1 & 2 \\ 3 & 4 \end{pmatrix}$ and $Y = \begin{pmatrix} 0 & 1 \\ 1 & 1 \end{pmatrix}$. Then
-> $$
-> XY = \begin{pmatrix} 2 & 3 \\ 4 & 7 \end{pmatrix} \ne \begin{pmatrix} 3 & 4 \\ 4 & 6 \end{pmatrix} = YX, \qquad \text{but } \operatorname{tr}(XY) = 9 = \operatorname{tr}(YX).
-> $$
-
-> [!note] Note
-> The same proof works when $A$ is $m \times n$ and $B$ is $n \times m$. Then $AB$ is $m \times m$ and $BA$ is $n \times n$, but $\operatorname{tr}(AB) = \operatorname{tr}(BA)$ still holds.
+> \# Line 2 adds the same $n^2$ products in another order, with $A_{ik}B_{ki} = B_{ki}A_{ik}$ in $F$. The traces agree even when $AB \ne BA$: for $X = \begin{pmatrix} 1 & 2 \\ 3 & 4 \end{pmatrix}$, $Y = \begin{pmatrix} 0 & 1 \\ 1 & 1 \end{pmatrix}$, $XY = \begin{pmatrix} 2 & 3 \\ 4 & 7 \end{pmatrix} \ne \begin{pmatrix} 3 & 4 \\ 4 & 6 \end{pmatrix} = YX$, but both traces are $9$.
