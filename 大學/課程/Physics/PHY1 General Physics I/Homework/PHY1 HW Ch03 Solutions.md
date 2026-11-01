@@ -25,53 +25,53 @@ format: "physics-notes 1.1"
 
 ## 答案總表
 
-| 題目 | 答案 |
-| --- | --- |
-| [[PHY1 HW Ch03 Questions#EUP 3.14\|EUP 3.14]] | $5.0\ \mathrm{m}$，左方偏下 $37^{\circ}$（從 $+x$ 軸量起 $217^{\circ}$） |
-| [[PHY1 HW Ch03 Questions#EUP 3.16\|EUP 3.16]] | $64\ \mathrm{m}$；$61^{\circ}$ |
-| [[PHY1 HW Ch03 Questions#EUP 3.17\|EUP 3.17]] | (a) $\sqrt{2} = 1.41$；(b) $45^{\circ}$ |
-| [[PHY1 HW Ch03 Questions#EUP 3.19\|EUP 3.19]] | $135^{\circ}$ 或 $-45^{\circ}$（$315^{\circ}$） |
-| [[PHY1 HW Ch03 Questions#EUP 3.21\|EUP 3.21]] | $+x$ 方向（$\vec{a} = 3ct^{2}\hat{\imath}$） |
-| [[PHY1 HW Ch03 Questions#EUP 3.23\|EUP 3.23]] | (a) $-2.2 \times 10^{-6}\hat{\jmath}\ \mathrm{m/s}$；(b) $-3.2 \times 10^{-10}\hat{\imath}\ \mathrm{m/s^2}$ |
-| [[PHY1 HW Ch03 Questions#EUP 3.55\|EUP 3.55]] | (a) $t = \dfrac{4c}{3d}$；(b) $t = \dfrac{c}{3d}$ |
-| [[PHY1 HW Ch03 Questions#EUP 3.27\|EUP 3.27]] | (a) 偏上游 $26^{\circ}$；(b) $54\ \mathrm{s}$ |
-| [[PHY1 HW Ch03 Questions#EUP 3.31\|EUP 3.31]] | $45\ \mathrm{m}$，與原方向夾 $6.5^{\circ}$ |
-| [[PHY1 HW Ch03 Questions#EUP 3.63\|EUP 3.63]] | $0.50\ \mathrm{m/s^2}$ |
-| [[PHY1 HW Ch03 Questions#EUP 3.64\|EUP 3.64]] | (a) $16\ \mathrm{s}$；(b) $3.2 \times 10^{2}\ \mathrm{m}$；(c) $25\ \mathrm{m/s}$，從 $+x$ 軸量起 $116^{\circ}$ |
-| [[PHY1 HW Ch03 Questions#EUP 3.35\|EUP 3.35]] | $3.4 \times 10^{-8}\ \mathrm{m}$（$34\ \mathrm{nm}$） |
-| [[PHY1 HW Ch03 Questions#EUP 3.37\|EUP 3.37]] | $1.0\ \mathrm{km}$ |
-| [[PHY1 HW Ch03 Questions#EUP 3.66\|EUP 3.66]] | $v_{0} = \sqrt{\dfrac{g(R^{2} + 16h^{2})}{8h}}$ |
-| [[PHY1 HW Ch03 Questions#EUP 3.72\|EUP 3.72]] | $\vec{v}_{0} = 6.4\hat{\imath} + 10\hat{\jmath}\ \mathrm{m/s}$（$12\ \mathrm{m/s}$，仰角 $58^{\circ}$） |
-| [[PHY1 HW Ch03 Questions#EUP 3.77\|EUP 3.77]] | $30^{\circ}$ 或 $67^{\circ}$ |
-| [[PHY1 HW Ch03 Questions#EUP 3.83\|EUP 3.83]] | $2h$ |
-| [[PHY1 HW Ch03 Questions#EUP 3.39\|EUP 3.39]] | $2.59 \times 10^{-7}\ \mathrm{m/s^2}$ |
-| [[PHY1 HW Ch03 Questions#EUP 3.54\|EUP 3.54]] | $233\ \mathrm{km/h}$，吹向東偏北 $44^{\circ}$ |
-| [[PHY1 HW Ch03 Questions#EUP 3.60\|EUP 3.60]] | (a) 偏上游 $\sin^{-1}(V/v')$；(b) 無解，到不了正對岸 |
-| [[PHY1 HW Ch03 Questions#EUP 3.58\|EUP 3.58]] | (a) $10\hat{\imath} - 21\hat{\jmath}\ \mathrm{m/s}$；(b) $13\ \mathrm{m/s}$；(c) $89^{\circ}$；(d) $at = 43\ \mathrm{m/s}$ |
-| [[PHY1 HW Ch03 Questions#EUP 3.59\|EUP 3.59]] | (a) $0.249\ \mathrm{m/s}$；(b) $7.00 \times 10^{-4}\ \mathrm{m/s^2}$；(c) 瞬時 $7.21 \times 10^{-4}\ \mathrm{m/s^2}$ |
-| [[PHY1 HW Ch03 Questions#EUP 3.75\|EUP 3.75]] | 至少 $45\ \mathrm{km/h}$，不能斷定超速 |
-| [[PHY1 HW Ch03 Questions#EUP 3.84\|EUP 3.84]] | $110\ \mathrm{km}$ |
-| [[PHY1 HW Ch03 Questions#EUP 3.78\|EUP 3.78]] | (a) $2\sqrt{(2 - \sqrt{2})gh}$；(b) $67.5^{\circ}$ |
-| [[PHY1 HW Ch03 Questions#EUP 3.86\|EUP 3.86]] | $7.2\ \mathrm{m/s}$，仰角 $77^{\circ}$ |
-| [[PHY1 HW Ch03 Questions#EUP 3.82\|EUP 3.82]] | $89\ \mathrm{m/s}$ |
-| [[PHY1 HW Ch03 Questions#EUP 3.94\|EUP 3.94]] | $26.6^{\circ}$ |
-| [[PHY1 HW Ch03 Questions#EUP 3.85\|EUP 3.85]] | $20\ \mathrm{m}$ |
-| [[PHY1 HW Ch03 Questions#EUP 3.88\|EUP 3.88]] | 水平以下 $38^{\circ}$ |
-| [[PHY1 HW Ch03 Questions#EUP 3.90\|EUP 3.90]] | $34^{\circ}$ |
-| [[PHY1 HW Ch03 Questions#EUP 3.81\|EUP 3.81]] | $63.4\ \mathrm{m}$ |
-| [[PHY1 HW Ch03 Questions#EUP 3.93\|EUP 3.93]] | (a) $a_{t}\sqrt{1 + \pi^{2}} = 3.30a_{t}$；(b) $252^{\circ}$ |
-| [[PHY1 HW Ch03 Questions#EUP 3.73\|EUP 3.73]] | 半徑 $2.50\ \mathrm{m}$ 的半圓；$6.54\ \mathrm{m/s}$；$17.1\ \mathrm{m/s^2}$ |
-| [[PHY1 HW Ch03 Questions#EUP 3.95 to 3.98\|EUP 3.95 to 3.98]] | c, a, c, d |
-| [[PHY1 HW Ch03 Questions#KSUS 2.1 to 2.3\|KSUS 2.1 to 2.3]] | b, b, b |
-| [[PHY1 HW Ch03 Questions#KSUS 2.9\|KSUS 2.9]] | d |
-| [[PHY1 HW Ch03 Questions#SIU 1.4\|SIU 1.4]] | $25\ \mathrm{m/s}$，水平 |
-| [[PHY1 HW Ch03 Questions#SIU 2.1\|SIU 2.1]] | 垂直指向地軸（與指向地心的方向夾 $38^{\circ}$）；$0.027\ \mathrm{m/s^2}$ |
-| [[PHY1 HW Ch03 Questions#KSUS 2.8\|KSUS 2.8]] | a) 東偏南 $36.9^{\circ}$；b) $75\ \mathrm{s}$ |
-| [[PHY1 HW Ch03 Questions#KSUS 2.10\|KSUS 2.10]] | a) $(6.12, 13.1)\ \mathrm{m/s}$；b) $8.80\ \mathrm{m}$ |
-| [[PHY1 HW Ch03 Questions#KSUF 1.5\|KSUF 1.5]] | a) $(12.0\hat{\imath} + 17.8\hat{\jmath})\ \mathrm{m/s}$；b) $43.6\ \mathrm{m}$ |
-| [[PHY1 HW Ch03 Questions#KSUF 1.6\|KSUF 1.6]] | $126\ \mathrm{km/h}$ |
-| [[PHY1 HW Ch03 Questions#SIU 1.6\|SIU 1.6]] | $5.00\ \mathrm{m}$，從 $+x$ 軸逆時針 $120^{\circ}$ |
-| [[PHY1 HW Ch03 Questions#SIU 1.7\|SIU 1.7]] | $1.4 \times 10^{2}\ \mathrm{m}$ |
+| 題目                                                            | 答案                                                                                                                      |
+| ------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- |
+| [[PHY1 HW Ch03 Questions#EUP 3.14\|EUP 3.14]]                 | $5.0\ \mathrm{m}$，左方偏下 $37^{\circ}$（從 $+x$ 軸量起 $217^{\circ}$）                                                           |
+| [[PHY1 HW Ch03 Questions#EUP 3.16\|EUP 3.16]]                 | $64\ \mathrm{m}$；$61^{\circ}$                                                                                           |
+| [[PHY1 HW Ch03 Questions#EUP 3.17\|EUP 3.17]]                 | (a) $\sqrt{2} = 1.41$；(b) $45^{\circ}$                                                                                  |
+| [[PHY1 HW Ch03 Questions#EUP 3.19\|EUP 3.19]]                 | $135^{\circ}$ 或 $-45^{\circ}$（$315^{\circ}$）                                                                            |
+| [[PHY1 HW Ch03 Questions#EUP 3.21\|EUP 3.21]]                 | $+x$ 方向（$\vec{a} = 3ct^{2}\hat{\imath}$）                                                                                |
+| [[PHY1 HW Ch03 Questions#EUP 3.23\|EUP 3.23]]                 | (a) $-2.2 \times 10^{-6}\hat{\jmath}\ \mathrm{m/s}$；(b) $-3.2 \times 10^{-10}\hat{\imath}\ \mathrm{m/s^2}$              |
+| [[PHY1 HW Ch03 Questions#EUP 3.55\|EUP 3.55]]                 | (a) $t = \dfrac{4c}{3d}$；(b) $t = \dfrac{c}{3d}$                                                                        |
+| [[PHY1 HW Ch03 Questions#EUP 3.27\|EUP 3.27]]                 | (a) 偏上游 $26^{\circ}$；(b) $54\ \mathrm{s}$                                                                               |
+| [[PHY1 HW Ch03 Questions#EUP 3.31\|EUP 3.31]]                 | $45\ \mathrm{m}$，與原方向夾 $6.5^{\circ}$                                                                                    |
+| [[PHY1 HW Ch03 Questions#EUP 3.63\|EUP 3.63]]                 | $0.50\ \mathrm{m/s^2}$                                                                                                  |
+| [[PHY1 HW Ch03 Questions#EUP 3.64\|EUP 3.64]]                 | (a) $16\ \mathrm{s}$；(b) $3.2 \times 10^{2}\ \mathrm{m}$；(c) $25\ \mathrm{m/s}$，從 $+x$ 軸量起 $116^{\circ}$                |
+| [[PHY1 HW Ch03 Questions#EUP 3.35\|EUP 3.35]]                 | $3.4 \times 10^{-8}\ \mathrm{m}$（$34\ \mathrm{nm}$）                                                                     |
+| [[PHY1 HW Ch03 Questions#EUP 3.37\|EUP 3.37]]                 | $1.0\ \mathrm{km}$                                                                                                      |
+| [[PHY1 HW Ch03 Questions#EUP 3.66\|EUP 3.66]]                 | $v_{0} = \sqrt{\dfrac{g(R^{2} + 16h^{2})}{8h}}$                                                                         |
+| [[PHY1 HW Ch03 Questions#EUP 3.72\|EUP 3.72]]                 | $\vec{v}_{0} = 6.4\hat{\imath} + 10\hat{\jmath}\ \mathrm{m/s}$（$12\ \mathrm{m/s}$，仰角 $58^{\circ}$）                      |
+| [[PHY1 HW Ch03 Questions#EUP 3.77\|EUP 3.77]]                 | $30^{\circ}$ 或 $67^{\circ}$                                                                                             |
+| [[PHY1 HW Ch03 Questions#EUP 3.83\|EUP 3.83]]                 | $2h$                                                                                                                    |
+| [[PHY1 HW Ch03 Questions#EUP 3.39\|EUP 3.39]]                 | $2.59 \times 10^{-7}\ \mathrm{m/s^2}$                                                                                   |
+| [[PHY1 HW Ch03 Questions#EUP 3.54\|EUP 3.54]]                 | $233\ \mathrm{km/h}$，吹向東偏北 $44^{\circ}$                                                                                 |
+| [[PHY1 HW Ch03 Questions#EUP 3.60\|EUP 3.60]]                 | (a) 偏上游 $\sin^{-1}(V/v')$；(b) 無解，到不了正對岸                                                                                 |
+| [[PHY1 HW Ch03 Questions#EUP 3.58\|EUP 3.58]]                 | (a) $10\hat{\imath} - 21\hat{\jmath}\ \mathrm{m/s}$；(b) $13\ \mathrm{m/s}$；(c) $89^{\circ}$；(d) $at = 43\ \mathrm{m/s}$ |
+| [[PHY1 HW Ch03 Questions#EUP 3.59\|EUP 3.59]]                 | (a) $0.249\ \mathrm{m/s}$；(b) $7.00 \times 10^{-4}\ \mathrm{m/s^2}$；(c) 瞬時 $7.21 \times 10^{-4}\ \mathrm{m/s^2}$        |
+| [[PHY1 HW Ch03 Questions#EUP 3.75\|EUP 3.75]]                 | 至少 $45\ \mathrm{km/h}$，不能斷定超速                                                                                           |
+| [[PHY1 HW Ch03 Questions#EUP 3.84\|EUP 3.84]]                 | $110\ \mathrm{km}$                                                                                                      |
+| [[PHY1 HW Ch03 Questions#EUP 3.78\|EUP 3.78]]                 | (a) $2\sqrt{(2 - \sqrt{2})gh}$；(b) $67.5^{\circ}$                                                                       |
+| [[PHY1 HW Ch03 Questions#EUP 3.86\|EUP 3.86]]                 | $7.2\ \mathrm{m/s}$，仰角 $77^{\circ}$                                                                                     |
+| [[PHY1 HW Ch03 Questions#EUP 3.82\|EUP 3.82]]                 | $89\ \mathrm{m/s}$                                                                                                      |
+| [[PHY1 HW Ch03 Questions#EUP 3.94\|EUP 3.94]]                 | $26.6^{\circ}$                                                                                                          |
+| [[PHY1 HW Ch03 Questions#EUP 3.85\|EUP 3.85]]                 | $20\ \mathrm{m}$                                                                                                        |
+| [[PHY1 HW Ch03 Questions#EUP 3.88\|EUP 3.88]]                 | 水平以下 $38^{\circ}$                                                                                                       |
+| [[PHY1 HW Ch03 Questions#EUP 3.90\|EUP 3.90]]                 | $34^{\circ}$                                                                                                            |
+| [[PHY1 HW Ch03 Questions#EUP 3.81\|EUP 3.81]]                 | $63.4\ \mathrm{m}$                                                                                                      |
+| [[PHY1 HW Ch03 Questions#EUP 3.93\|EUP 3.93]]                 | (a) $a_{t}\sqrt{1 + \pi^{2}} = 3.30a_{t}$；(b) $252^{\circ}$                                                             |
+| [[PHY1 HW Ch03 Questions#EUP 3.73\|EUP 3.73]]                 | 半徑 $2.50\ \mathrm{m}$ 的半圓；$6.54\ \mathrm{m/s}$；$17.1\ \mathrm{m/s^2}$                                                   |
+| [[PHY1 HW Ch03 Questions#EUP 3.95 to 3.98\|EUP 3.95 to 3.98]] | c, a, c, d                                                                                                              |
+| [[PHY1 HW Ch03 Questions#KSUS 2.1 to 2.3\|KSUS 2.1 to 2.3]]   | b, b, b                                                                                                                 |
+| [[PHY1 HW Ch03 Questions#KSUS 2.9\|KSUS 2.9]]                 | d                                                                                                                       |
+| [[PHY1 HW Ch03 Questions#SIU 1.4\|SIU 1.4]]                   | $25\ \mathrm{m/s}$，水平                                                                                                   |
+| [[PHY1 HW Ch03 Questions#SIU 2.1\|SIU 2.1]]                   | 垂直指向地軸（與指向地心的方向夾 $38^{\circ}$）；$0.027\ \mathrm{m/s^2}$                                                                  |
+| [[PHY1 HW Ch03 Questions#KSUS 2.8\|KSUS 2.8]]                 | a) 東偏南 $36.9^{\circ}$；b) $75\ \mathrm{s}$                                                                               |
+| [[PHY1 HW Ch03 Questions#KSUS 2.10\|KSUS 2.10]]               | a) $(6.12, 13.1)\ \mathrm{m/s}$；b) $8.80\ \mathrm{m}$                                                                   |
+| [[PHY1 HW Ch03 Questions#KSUF 1.5\|KSUF 1.5]]                 | a) $(12.0\hat{\imath} + 17.8\hat{\jmath})\ \mathrm{m/s}$；b) $43.6\ \mathrm{m}$                                          |
+| [[PHY1 HW Ch03 Questions#KSUF 1.6\|KSUF 1.6]]                 | $126\ \mathrm{km/h}$                                                                                                    |
+| [[PHY1 HW Ch03 Questions#SIU 1.6\|SIU 1.6]]                   | $5.00\ \mathrm{m}$，從 $+x$ 軸逆時針 $120^{\circ}$                                                                            |
+| [[PHY1 HW Ch03 Questions#SIU 1.7\|SIU 1.7]]                   | $1.4 \times 10^{2}\ \mathrm{m}$                                                                                         |
 
 ## 老師勾選：向量運算
 
