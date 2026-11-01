@@ -55,8 +55,8 @@ created: 2026-10-05
 
 ## Homework
 
-- [[../_to_delete/PHY1 HW Ch01 Questions]] and [[../_to_delete/PHY1 HW Ch01 Solutions]]: EUP Ch. 1 Doing Physics
-- [[../_to_delete/PHY1 HW Ch02 Questions]] and [[../_to_delete/PHY1 HW Ch02 Solutions]]: EUP Ch. 2 Motion in a Straight Line
+- [[PHY1 HW Ch01 Questions]] and [[PHY1 HW Ch01 Solutions]]: EUP Ch. 1 Doing Physics
+- [[PHY1 HW Ch02 Questions]] and [[PHY1 HW Ch02 Solutions]]: EUP Ch. 2 Motion in a Straight Line
 - [[PHY1 HW Ch03 Questions]] and [[PHY1 HW Ch03 Solutions]]: EUP Ch. 3 Motion in Two and Three Dimensions
 - [[PHY1 HW Ch04 Questions]] and [[PHY1 HW Ch04 Solutions]]: EUP Ch. 4 Force and Motion
 - [[PHY1 HW Ch05 Questions]] and [[PHY1 HW Ch05 Solutions]]: EUP Ch. 5 Using Newton's Laws
@@ -68,6 +68,8 @@ created: 2026-10-05
 ## Summaries
 
 - [[PHY1 Ch1-2 Summary]]: EUP Ch. 1 and 2
+- [[PHY1 Ch1 中文課本]]: EUP Ch. 1 Doing Physics, condensed Chinese translation
+- [[PHY1 Ch2 中文課本]]: EUP Ch. 2 Motion in a Straight Line, condensed Chinese translation
 - [[PHY1 Ch3 中文課本]]: EUP Ch. 3 Motion in Two and Three Dimensions, condensed Chinese translation
 - [[PHY1 Ch4 中文課本]]: EUP Ch. 4 Force and Motion, condensed Chinese translation
 - [[PHY1 Ch5 中文課本]]: EUP Ch. 5 Using Newton's Laws, condensed Chinese translation
