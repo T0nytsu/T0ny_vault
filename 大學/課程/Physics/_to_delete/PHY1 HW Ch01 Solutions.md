@@ -1,9 +1,17 @@
 ---
-course: [PHY1]
-chapter: ["1.2", "1.3", "1.4"]
-tags: [physics, homework, solutions, measurement]
+course:
+  - PHY1
+chapter:
+  - "1.2"
+  - "1.3"
+  - "1.4"
+tags:
+  - physics
+  - homework
+  - solutions
+  - measurement
 source:
-  - "Own solutions; every number recomputed with Python"
+  - Own solutions; every number recomputed with Python
   - "EUP Ch. 1 (pp. 17-30), scanned PDF: worked examples"
 created: 2026-10-05
 questions: "[[PHY1 HW Ch01 Questions]]"
@@ -80,7 +88,7 @@ Question: [[PHY1 HW Ch01 Questions#EUP Example 1.4|EUP Example 1.4]]
 >
 > The best-fit line has slope $\approx 5.0\ \mathrm{m/s^2}$, so $g = 2 \times \text{slope} \approx 10\ \mathrm{m/s^2}$.
 >
-> ![[PHY1 Ch01 Example 1.4 fit.png]]
+> ![[../Attachments/PHY1 Ch01 Example 1.4 fit.png]]
 
 ### EUP Example 1.5
 Question: [[PHY1 HW Ch01 Questions#EUP Example 1.5|EUP Example 1.5]]
@@ -237,4 +245,4 @@ Question: [[PHY1 HW Ch01 Questions#EUP 1.69|EUP 1.69]]
 >
 > **(b)** The best-fit line has slope $\approx 4.1\ \mathrm{g/cm^3}$, so $\rho = \dfrac{6}{\pi} \times \text{slope} \approx 7.8\ \mathrm{g/cm^3}$.
 >
-> ![[PHY1 Ch01 Problem 1.69 fit.png]]
+> ![[../Attachments/PHY1 Ch01 Problem 1.69 fit.png]]

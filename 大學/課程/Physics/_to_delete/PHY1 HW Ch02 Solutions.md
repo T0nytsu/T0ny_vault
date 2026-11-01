@@ -1,11 +1,22 @@
 ---
-course: [PHY1]
-chapter: ["2.1", "2.2", "2.3", "2.4", "2.5", "2.6"]
-tags: [physics, homework, solutions, kinematics]
+course:
+  - PHY1
+chapter:
+  - "2.1"
+  - "2.2"
+  - "2.3"
+  - "2.4"
+  - "2.5"
+  - "2.6"
+tags:
+  - physics
+  - homework
+  - solutions
+  - kinematics
 source:
-  - "Own solutions; every number recomputed with Python, symbolic results with sympy"
+  - Own solutions; every number recomputed with Python, symbolic results with sympy
   - "EUP Ch. 2 (pp. 32-49), scanned PDF: worked examples and answers to GOT IT? questions"
-  - "[[PHY1 Ch02 Fig 2.16.png]]"
+  - "[[../Attachments/PHY1 Ch02 Fig 2.16.png]]"
 created: 2026-10-05
 questions: "[[PHY1 HW Ch02 Questions]]"
 ---
@@ -310,7 +321,7 @@ Question: [[PHY1 HW Ch02 Questions#EUP 2.68|EUP 2.68]]
 >
 > Graph: with $x = 0$ at car 1 and car 2 at $85\ \mathrm{m}$ when they brake, $x_{1} = v_{0}t - \tfrac{1}{2}\lvert a \rvert t^{2}$ and $x_{2} = 85\ \mathrm{m} - v_{0}t + \tfrac{1}{2}\lvert a \rvert t^{2}$ until both stop at $t = v_{0}/\lvert a \rvert = 3.1\ \mathrm{s}$.
 >
-> ![[PHY1 Ch02 Problem 2.68 graph.png]]
+> ![[../Attachments/PHY1 Ch02 Problem 2.68 graph.png]]
 
 ### EUP 2.70
 Question: [[PHY1 HW Ch02 Questions#EUP 2.70|EUP 2.70]]
@@ -534,7 +545,7 @@ Question: [[PHY1 HW Ch02 Questions#EUP 2.96|EUP 2.96]]
 ### EUP 2.98 to 2.102
 Question: [[PHY1 HW Ch02 Questions#EUP 2.98 to 2.102|EUP 2.98 to 2.102]]
 
-![[PHY1 Ch02 Fig 2.16.png]]
+![[../Attachments/PHY1 Ch02 Fig 2.16.png]]
 
 > [!solution] Solution
 > On a $v$–$t$ graph the height of the curve is $v$ and its slope is $a$.
@@ -558,4 +569,4 @@ Question: [[PHY1 HW Ch02 Questions#EUP 2.58|EUP 2.58]]
 >
 > The best-fit line has slope $\approx 1.6\ \mathrm{m/s^2}$, so $a = 2 \times \text{slope} \approx 3.2\ \mathrm{m/s^2}$.
 >
-> ![[PHY1 Ch02 Problem 2.58 fit.png]]
+> ![[../Attachments/PHY1 Ch02 Problem 2.58 fit.png]]

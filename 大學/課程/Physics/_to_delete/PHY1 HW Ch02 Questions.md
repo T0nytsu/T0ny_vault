@@ -1,10 +1,21 @@
 ---
-course: [PHY1]
-chapter: ["2.1", "2.2", "2.3", "2.4", "2.5", "2.6"]
-tags: [physics, homework, questions, kinematics]
+course:
+  - PHY1
+chapter:
+  - "2.1"
+  - "2.2"
+  - "2.3"
+  - "2.4"
+  - "2.5"
+  - "2.6"
+tags:
+  - physics
+  - homework
+  - questions
+  - kinematics
 source:
   - "EUP Ch. 2 (pp. 32-49): examples, exercises and problems, scanned PDF"
-  - "[[PHY1 Ch02 Fig 2.16.png]]"
+  - "[[../Attachments/PHY1 Ch02 Fig 2.16.png]]"
 created: 2026-10-05
 solutions: "[[PHY1 HW Ch02 Solutions]]"
 ---
@@ -152,7 +163,7 @@ An object's acceleration decreases exponentially with time: $a(t) = a_{0}e^{-bt}
 ### EUP 2.98 to 2.102
 A wildlife biologist is studying the hunting patterns of tigers. She anesthetizes a tiger and attaches a GPS collar to track its movements. The collar transmits data on the tiger's position and velocity. Figure 2.16 shows the tiger's velocity as a function of time as it moves on a one-dimensional path.
 
-![[PHY1 Ch02 Fig 2.16.png]]
+![[../Attachments/PHY1 Ch02 Fig 2.16.png]]
 
 **98.** At which marked point(s) is the tiger not moving?
 - a. E only

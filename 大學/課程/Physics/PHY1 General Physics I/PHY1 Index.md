@@ -55,8 +55,8 @@ created: 2026-10-05
 
 ## Homework
 
-- [[PHY1 HW Ch01 Questions]] and [[PHY1 HW Ch01 Solutions]]: EUP Ch. 1 Doing Physics
-- [[PHY1 HW Ch02 Questions]] and [[PHY1 HW Ch02 Solutions]]: EUP Ch. 2 Motion in a Straight Line
+- [[../_to_delete/PHY1 HW Ch01 Questions]] and [[../_to_delete/PHY1 HW Ch01 Solutions]]: EUP Ch. 1 Doing Physics
+- [[../_to_delete/PHY1 HW Ch02 Questions]] and [[../_to_delete/PHY1 HW Ch02 Solutions]]: EUP Ch. 2 Motion in a Straight Line
 - [[PHY1 HW Ch03 Questions]] and [[PHY1 HW Ch03 Solutions]]: EUP Ch. 3 Motion in Two and Three Dimensions
 - [[PHY1 HW Ch04 Questions]] and [[PHY1 HW Ch04 Solutions]]: EUP Ch. 4 Force and Motion
 - [[PHY1 HW Ch05 Questions]] and [[PHY1 HW Ch05 Solutions]]: EUP Ch. 5 Using Newton's Laws

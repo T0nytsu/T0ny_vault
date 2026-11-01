@@ -1,7 +1,15 @@
 ---
-course: [PHY1]
-chapter: ["1.2", "1.3", "1.4"]
-tags: [physics, homework, questions, measurement]
+course:
+  - PHY1
+chapter:
+  - "1.2"
+  - "1.3"
+  - "1.4"
+tags:
+  - physics
+  - homework
+  - questions
+  - measurement
 source:
   - "EUP Ch. 1 (pp. 17-30): examples, exercises and problems, scanned PDF"
 created: 2026-10-05
