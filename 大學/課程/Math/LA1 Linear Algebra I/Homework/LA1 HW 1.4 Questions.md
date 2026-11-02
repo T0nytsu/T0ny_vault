@@ -81,7 +81,7 @@ Mark each of the following True or False.
 - f. Every matrix is row equivalent to a unique matrix in reduced row-echelon form.
 - g. If $[A \mid \mathbf{b}]$ and $[B \mid \mathbf{c}]$ are row-equivalent partitioned matrices, the linear systems $A\mathbf{x} = \mathbf{b}$ and $B\mathbf{x} = \mathbf{c}$ have the same solution set.
 - h. A linear system with a square coefficient matrix $A$ has a unique solution if and only if $A$ is row equivalent to the identity matrix.
-- i. A linear system with coefficient matrix $A$ has an infinite number of solutions if and only if $A$ can be row-reduced to an echelon matrix that includes some column containing no pivot.
+- **i.** A linear system with coefficient matrix $A$ has an infinite number of solutions if and only if $A$ can be row-reduced to an echelon matrix that includes some column containing no pivot.
 - j. A consistent linear system with coefficient matrix $A$ has an infinite number of solutions if and only if $A$ can be row-reduced to an echelon matrix that includes some column containing no pivot.
 
 ### FB 1.4.35
