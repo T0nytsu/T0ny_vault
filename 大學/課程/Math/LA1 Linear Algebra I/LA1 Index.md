@@ -61,6 +61,7 @@ format: "math-notes 2.3"
 ## Homework
 
 - [[LA1 HW 1.1 1.2 Questions]] and [[../_to_delete/LA1 HW 1.1 1.2 Solutions]]
+- [[LA1 HW 1.3 Questions]] and [[LA1 HW 1.3 Solutions]]
 - [[LA1 HW 1.3 1.5 Questions]] and [[LA1 HW 1.3 1.5 Solutions]]
 - [[LA1 HW 1.4 1.5 Questions]] and [[LA1 HW 1.4 1.5 Solutions]]
 - [[LA1 HW 1.4 Questions]] and [[LA1 HW 1.4 Solutions]]
@@ -85,6 +86,7 @@ Fraleigh & Beauregard, _Linear Algebra_ :
 ## Concepts
 
 - [[Augmented Matrix]]
+- [[Commuting Matrices]]
 - [[Cross Product]]
 - [[Determinant]]
 - [[Diagonal Matrix]]
