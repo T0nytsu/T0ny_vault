@@ -22,8 +22,8 @@ format: "math-notes 2.3"
 
 ## Q1 True or False
 
-True or False. ==(?)==
-- (a) $\operatorname{tr}(AB) = \operatorname{tr}(BA)$ ==(?)==
+True or False.
+- (a) $\operatorname{tr}(AB) = \operatorname{tr}(BA)$
 - (b) If $A^2 = I$, then $A^n = I$ for all even integers $n \ge 2$.
 - (c) If $A$ is invertible and skew-symmetric, then $A^{-1}$ is skew-symmetric.
 - (d) If $A^2$ is invertible, then $A$, $A^{\top}$, and $A^3$ are invertible.
