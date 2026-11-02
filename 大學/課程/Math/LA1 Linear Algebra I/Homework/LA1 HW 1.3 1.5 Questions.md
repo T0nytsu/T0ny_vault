@@ -27,23 +27,23 @@ so that the matrix is symmetric.
 - a. Prove that, if $A$ is a matrix and $\mathbf{x}$ is a row vector, then $\mathbf{x}A$ (if defined) is again a row vector.
 - b. Prove that, if $A$ is a matrix and $\mathbf{y}$ is a column vector, then $A\mathbf{y}$ (if defined) is again a column vector.
 
-### FB 1.3.24
+### FB 1.3.**24**
 The product $A\mathbf{b}$ of a matrix and a column vector is equal to a linear combination of columns of $A$ where the scalar coefficient of the $j$th column of $A$ is $b_j$. In a similar fashion, describe the product $\mathbf{c}A$ of a row vector $\mathbf{c}$ and a matrix $A$ as a linear combination of vectors. [HINT: Consider $((\mathbf{c}A)^T)^T$.]
 
 ### FB 1.3.37
 The Hilbert matrix $H_n$ is the $n \times n$ matrix $[h_{ij}]$, where $h_{ij} = 1/(i + j - 1)$. Prove that the matrix $H_n$ is symmetric.
 
-### FB 1.3.40
+### FB 1.3.**40**
 - a. Prove that, if $A$ is a square matrix, then $(A^2)^T = (A^T)^2$ and $(A^3)^T = (A^T)^3$. [HINT: Don't try to show that the matrices have equal entries; instead use Exercise 32.]
 - b. State the generalization of part (a), and give a proof using mathematical induction (see Appendix A).
 
-### FB 1.3.41
+### FB 1.3.**41**
 - a. Let $A$ be an $m \times n$ matrix, and let $\mathbf{e}_j$ be the $n \times 1$ column vector whose $j$th component is $1$ and whose other components are $0$. Show that $A\mathbf{e}_j$ is the $j$th column vector of $A$.
 - b. Let $A$ and $B$ be matrices of the same size.
     - i. Prove that, if $A\mathbf{x} = \mathbf{0}$ (the zero vector) for all $\mathbf{x}$, then $A = O$, the zero matrix. [HINT: Use part (a).]
     - ii. Prove that, if $A\mathbf{x} = B\mathbf{x}$ for all $\mathbf{x}$, then $A = B$. [HINT: Consider $A - B$.]
 
-### FB 1.3.44
+### FB 1.3.**44**
 An $n \times n$ matrix $C$ is **skew symmetric** if $C^T = -C$. Prove that every square matrix $A$ can be written *uniquely* as $A = B + C$ where $B$ is symmetric and $C$ is skew symmetric.
 
 ## FB §1.5 Inverses of Square Matrices
