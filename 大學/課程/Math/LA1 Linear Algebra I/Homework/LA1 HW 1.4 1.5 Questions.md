@@ -81,8 +81,8 @@ Prove that row equivalence $\sim$ is an equivalence relation by verifying the fo
 Mark each of the following True or False. The statements involve matrices $A$, $B$, and $C$, which are assumed to be of appropriate size.
 - a. If $AC = BC$ and $C$ is invertible, then $A = B$.
 - b. If $AB = O$ and $B$ is invertible, then $A = O$.
-- c. If $AB = C$ and two of the matrices are invertible, then so is the third.
-- d. If $AB = C$ and two of the matrices are singular, then so is the third.
+- **c.** If $AB = C$ and two of the matrices are invertible, then so is the third.
+- **d.** If $AB = C$ and two of the matrices are singular, then so is the third.
 - e. If $A^2$ is invertible, then $A^3$ is invertible.
 - f. If $A^3$ is invertible, then $A^2$ is invertible.
 - g. Every elementary matrix is invertible.
