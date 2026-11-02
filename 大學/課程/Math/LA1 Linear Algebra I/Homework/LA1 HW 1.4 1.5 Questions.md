@@ -11,7 +11,7 @@ solutions: "[[LA1 HW 1.4 1.5 Solutions]]"
 up: "[[LA1 Index]]"
 format: "math-notes 2.3"
 ---
-> [!info] Coverage
+-> [!info] Coverage
 > FB §1.4: 3, 5, 42, 44, 45, 49, 52, 53, 54, 55. FB §1.5: 23, 24, 25, 36, 37, 38. FB is Fraleigh & Beauregard, *Linear Algebra*.
 >
 > Additional exercises, not assigned: FB §1.4: 9, 16, 24, 25, 29, 40, 58. FB §1.5: 5, 13, 21, 22, 26, 30, 35. They are at the bottom of this note and cover types of problems that the assigned exercises leave out.
