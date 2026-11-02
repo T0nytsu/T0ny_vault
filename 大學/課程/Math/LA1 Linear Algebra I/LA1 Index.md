@@ -58,6 +58,12 @@ format: "math-notes 2.3"
 - [[LA1 Quiz 05]], score 10/10
 - [[LA1 Quiz 06]], score 3/5
 
+## Past Exams
+
+- [[LA1 Midterm 112-1 Questions]] and [[LA1 Midterm 112-1 Solutions]]
+- [[LA1 Midterm 113-1 Questions]] and [[LA1 Midterm 113-1 Solutions]]
+- [[LA1 Midterm 114-1 Questions]] and [[LA1 Midterm 114-1 Solutions]]
+
 ## Homework
 
 - [[LA1 HW 1.1 1.2 Questions]] and [[../_to_delete/LA1 HW 1.1 1.2 Solutions]]
@@ -86,6 +92,7 @@ Fraleigh & Beauregard, _Linear Algebra_ :
 ## Concepts
 
 - [[Augmented Matrix]]
+- [[Block Matrix]]
 - [[Commuting Matrices]]
 - [[Cross Product]]
 - [[Determinant]]
@@ -102,6 +109,7 @@ Fraleigh & Beauregard, _Linear Algebra_ :
 - [[Linear Combination]]
 - [[Linear System]]
 - [[LU-Factorization]]
+- [[Nilpotent Matrix]]
 - [[Norm]]
 - [[Orthogonal Vectors]]
 - [[Parallel Vectors]]
@@ -114,4 +122,5 @@ Fraleigh & Beauregard, _Linear Algebra_ :
 - [[Symmetric Matrix]]
 - [[Trace]]
 - [[Transpose]]
+- [[Triangular Matrix]]
 - [[Unit Vector]]
