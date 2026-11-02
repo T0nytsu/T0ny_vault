@@ -83,8 +83,8 @@ Mark each of the following True or False. The statements involve matrices $A$, $
 - b. If $AB = O$ and $B$ is invertible, then $A = O$.
 - **c.** If $AB = C$ and two of the matrices are invertible, then so is the third.
 - **d.** If $AB = C$ and two of the matrices are singular, then so is the third.
-- e. If $A^2$ is invertible, then $A^3$ is invertible.
-- f. If $A^3$ is invertible, then $A^2$ is invertible.
+- **e.** If $A^2$ is invertible, then $A^3$ is invertible.
+- **f.** If $A^3$ is invertible, then $A^2$ is invertible.
 - g. Every elementary matrix is invertible.
 - h. Every invertible matrix is an elementary matrix.
 - i. If $A$ and $B$ are invertible matrices, then so is $A + B$, and $(A + B)^{-1} = A^{-1} + B^{-1}$.
