@@ -402,12 +402,12 @@ A small list bridge：count items, then select an item（Only `len()` and indexi
 
 **A simple delimiter is not a complete CSV grammar**（Our core format deliberately rejects double quotes and extra fields）：
 
-| 輸入 | What it means under v0.5（第一個結果） |
-| --- | --- |
-| `Campus,,45` | 三欄位，但空距離無法轉成 float → conversion error。 |
-| `Campus,1,45,` | 四欄位 → shape error。 |
+| 輸入                    | What it means under v0.5（第一個結果）           |
+| --------------------- | ----------------------------------------- |
+| `Campus,,45`          | 三欄位，但空距離無法轉成 float → conversion error。    |
+| `Campus,1,45,`        | 四欄位 → shape error。                        |
 | `"Campus, East",1,45` | 含雙引號 → unsupported-format error（依本版規則拒絕）。 |
-| `Campus East,1,45` | 正常三欄位 → ordinary valid record。 |
+| `Campus East,1,45`    | 正常三欄位 → ordinary valid record。            |
 
 真正 CSV 可把引號內的逗號視為資料，但單純 `split(",")` 不理解那套規則。本版刻意拒絕雙引號，而不是假裝支援後把資料切壞（A limitation stated and tested is safer than accidental support that corrupts records）。未來要支援 CSV，必須明確更改文法與測試。**不要用 `eval` 去執行使用者輸入的文字。**
 
