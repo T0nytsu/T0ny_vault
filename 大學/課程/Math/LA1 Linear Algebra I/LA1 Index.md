@@ -58,9 +58,16 @@ format: "math-notes 2.3"
 - [[LA1 Quiz 05]], score 10/10
 - [[LA1 Quiz 06]], score 3/5
 
+## Past Exams
+
+- [[LA1 Midterm 112-1 Questions]] and [[LA1 Midterm 112-1 Solutions]]
+- [[LA1 Midterm 113-1 Questions]] and [[LA1 Midterm 113-1 Solutions]]
+- [[LA1 Midterm 114-1 Questions]] and [[LA1 Midterm 114-1 Solutions]]
+
 ## Homework
 
-- [[LA1 HW 1.1 1.2 Questions]] and [[LA1 HW 1.1 1.2 Solutions]]
+- [[LA1 HW 1.1 1.2 Questions]] and [[../_to_delete/LA1 HW 1.1 1.2 Solutions]]
+- [[LA1 HW 1.3 Questions]] and [[LA1 HW 1.3 Solutions]]
 - [[LA1 HW 1.3 1.5 Questions]] and [[LA1 HW 1.3 1.5 Solutions]]
 - [[LA1 HW 1.4 1.5 Questions]] and [[LA1 HW 1.4 1.5 Solutions]]
 - [[LA1 HW 1.4 Questions]] and [[LA1 HW 1.4 Solutions]]
@@ -75,6 +82,9 @@ format: "math-notes 2.3"
 ## Assigned Exercises
 
 Fraleigh & Beauregard, _Linear Algebra_ :
+- **section 1.1**: 21, 23, 30, 35, 37, 38, 39, 40, 41, 42
+- **section 1.2**: 4, 7, 9, 11, 13, 14, 17, 26, 27, 31, 33, 40
+- **section 1.3**: 13, 15, 17, 19, 21, 26, 28, 30, 31, 32, 42, 43
 - **section 1.5**: 11, 12, 13, 21, 22, 27, 29
 - **section 4.1**: 6, 12, 13, 21, 23, 25
 - **section 10.2**: 4, 5, 6, 7
@@ -82,6 +92,8 @@ Fraleigh & Beauregard, _Linear Algebra_ :
 ## Concepts
 
 - [[Augmented Matrix]]
+- [[Block Matrix]]
+- [[Commuting Matrices]]
 - [[Cross Product]]
 - [[Determinant]]
 - [[Diagonal Matrix]]
@@ -97,6 +109,7 @@ Fraleigh & Beauregard, _Linear Algebra_ :
 - [[Linear Combination]]
 - [[Linear System]]
 - [[LU-Factorization]]
+- [[Nilpotent Matrix]]
 - [[Norm]]
 - [[Orthogonal Vectors]]
 - [[Parallel Vectors]]
@@ -109,4 +122,5 @@ Fraleigh & Beauregard, _Linear Algebra_ :
 - [[Symmetric Matrix]]
 - [[Trace]]
 - [[Transpose]]
+- [[Triangular Matrix]]
 - [[Unit Vector]]

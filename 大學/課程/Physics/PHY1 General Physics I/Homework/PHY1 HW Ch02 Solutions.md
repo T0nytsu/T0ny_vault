@@ -1,561 +1,573 @@
 ---
 course: [PHY1]
+semester: "115-1"
 chapter: ["2.1", "2.2", "2.3", "2.4", "2.5", "2.6"]
 tags: [physics, homework, solutions, kinematics]
 source:
   - "Own solutions; every number recomputed with Python, symbolic results with sympy"
-  - "EUP Ch. 2 (pp. 32-49), scanned PDF: worked examples and answers to GOT IT? questions"
+  - "EUP Ch. 2 (pp. 32-49), scanned PDF: equations and answers to GOT IT? questions"
   - "[[PHY1 Ch02 Fig 2.16.png]]"
-created: 2026-10-05
+  - "[[PHY1 Ch02 Problem 2.58 fit.png]]"
+  - "[[PHY1 Ch02 KSUF 1.1 acceleration.png]]"
+created: 2026-11-01
 questions: "[[PHY1 HW Ch02 Questions]]"
+up: "[[PHY1 Index]]"
+format: "physics-notes 1.1"
 ---
-> [!note] Notation
-> - Equation numbers are the book's, for constant acceleration only: $v = v_{0} + at$ (2.7), $x = x_{0} + \tfrac{1}{2}(v_{0} + v)t$ (2.9), $x = x_{0} + v_{0}t + \tfrac{1}{2}at^{2}$ (2.10), $v^{2} = v_{0}^{2} + 2a(x - x_{0})$ (2.11).
-> - In free fall $y$ points upward unless the solution says otherwise, so $a = -g$ with $g = 9.8\ \mathrm{m/s^2}$.
-> - Intermediate values keep one extra figure.
+> [!note] 符號與公式
+> - 式號照課本：平均速度 $\bar{v} = \Delta x/\Delta t$ (2.1)；瞬時速度 $v = dx/dt$ (2.2b)；$\dfrac{d(bt^{n})}{dt} = nbt^{n-1}$ (2.3)；平均加速度 $\bar{a} = \Delta v/\Delta t$ (2.4)；$a = dv/dt$ (2.5)；$v(t) = \int a\,dt$ (2.12)、$x(t) = \int v\,dt$ (2.13)，要配初始條件。
+> - **只限等加速度**：$v = v_{0} + at$ (2.7)，$x = x_{0} + \tfrac{1}{2}(v_{0} + v)t$ (2.9)，$x = x_{0} + v_{0}t + \tfrac{1}{2}at^{2}$ (2.10)，$v^{2} = v_{0}^{2} + 2a(x - x_{0})$ (2.11)。
+> - 自由落體取 $y$ **向上**，$a = -g$，除非解答另外用粗體註明。$g = 9.8\ \mathrm{m/s^2}$；KSU、SIU 的題目用 $9.80\ \mathrm{m/s^2}$。
+> - $v$–$t$ 圖：曲線下的面積是位移，斜率是加速度。中間值多留一位有效數字。
 
-## Answer Key
+## 答案總表
 
-| Problem | Answer |
+| 題目 | 答案 |
 | --- | --- |
-| [[PHY1 HW Ch02 Questions#EUP Example 2.1\|EUP Example 2.1]] | $\bar{v} = 250\ \mathrm{km/h}$ north; average speed $600\ \mathrm{km/h}$ |
-| [[PHY1 HW Ch02 Questions#EUP Example 2.2\|EUP Example 2.2]] | $v = 2bt = 116\ \mathrm{m/s}$; $\bar{v} = bt = \tfrac{1}{2}v$ |
-| [[PHY1 HW Ch02 Questions#EUP Conceptual Example 2.1\|EUP Conceptual Example 2.1]] | Yes; $\bar{a} = -9.8\ \mathrm{m/s^2}$ |
-| [[PHY1 HW Ch02 Questions#EUP Example 2.3\|EUP Example 2.3]] | $625\ \mathrm{m}$ |
-| [[PHY1 HW Ch02 Questions#EUP Example 2.4\|EUP Example 2.4]] | $350\ \mathrm{m}$; $150\ \mathrm{km/h}$ |
-| [[PHY1 HW Ch02 Questions#EUP Example 2.5\|EUP Example 2.5]] | $14\ \mathrm{m/s}$; $1.4\ \mathrm{s}$ |
-| [[PHY1 HW Ch02 Questions#EUP Example 2.6\|EUP Example 2.6]] | $1.7\ \mathrm{s}$; $4.2\ \mathrm{m}$; $7.3\ \mathrm{m/s}$ |
-| [[PHY1 HW Ch02 Questions#EUP 2.13\|EUP 2.13]] | (a) $24\ \mathrm{km}$ north; (b) $9.6\ \mathrm{km/h}$ north; (c) $16\ \mathrm{km/h}$ south; (d) $0$; (e) $0$ |
-| [[PHY1 HW Ch02 Questions#EUP 2.52\|EUP 2.52]] | after $6.03\ \mathrm{h}$, $6.27 \times 10^{3}\ \mathrm{km}$ from London |
-| [[PHY1 HW Ch02 Questions#EUP 2.83\|EUP 2.83]] | (a) $\tfrac{1}{2}(v_{1} + v_{2})$; (b) $\dfrac{2v_{1}v_{2}}{v_{1} + v_{2}}$; (c) case (a) |
-| [[PHY1 HW Ch02 Questions#EUP 2.53\|EUP 2.53]] | (a) $9.82\ \mathrm{m/s}$; (b) $9.34\ \mathrm{m/s}$; (c) $9.18\ \mathrm{m/s}$; (d) $v = b + 3ct^{2}$, $9.18\ \mathrm{m/s}$ |
-| [[PHY1 HW Ch02 Questions#EUP 2.84\|EUP 2.84]] | (a) $0.282\ \mathrm{m/s^4}$; (b) $9.25\ \mathrm{m/s}$; (c) $-18.2\ \mathrm{m/s^2}$ |
+| [[PHY1 HW Ch02 Questions#EUP 2.12\|EUP 2.12]] | 約 $1.7 \times 10^{3}\ \mathrm{km/h}$（約 $460\ \mathrm{m/s}$） |
+| [[PHY1 HW Ch02 Questions#EUP 2.50\|EUP 2.50]] | $\tfrac{6}{5}v = 1.2v$ |
+| [[PHY1 HW Ch02 Questions#EUP 2.19\|EUP 2.19]] | (a) $v = b - 2ct$；(b) $8.2\ \mathrm{s}$ |
+| [[PHY1 HW Ch02 Questions#EUP 2.53\|EUP 2.53]] | (a) $9.82\ \mathrm{m/s}$；(b) $9.34\ \mathrm{m/s}$；(c) $9.18\ \mathrm{m/s}$；(d) $v = b + 3ct^{2}$，$9.18\ \mathrm{m/s}$ |
 | [[PHY1 HW Ch02 Questions#EUP 2.21\|EUP 2.21]] | $0.38\ \mathrm{m/s^2}$ |
-| [[PHY1 HW Ch02 Questions#EUP 2.29\|EUP 2.29]] | (a) $\dfrac{v^{2}}{2h}$; (b) $\dfrac{2h}{v}$ |
-| [[PHY1 HW Ch02 Questions#EUP 2.62\|EUP 2.62]] | (a) $\dfrac{2v_{0}}{a}$; (b) $v_{0}$ |
-| [[PHY1 HW Ch02 Questions#EUP 2.66\|EUP 2.66]] | (a) $21\ \mathrm{m/s}$ ($77\ \mathrm{km/h}$); (b) $2.6\ \mathrm{s}$ |
-| [[PHY1 HW Ch02 Questions#EUP 2.67\|EUP 2.67]] | (a) $25\ \mathrm{m/s}$; (b) $1.8 \times 10^{2}\ \mathrm{m}$ |
-| [[PHY1 HW Ch02 Questions#EUP 2.55\|EUP 2.55]] | $14.1\ \mathrm{m}$ |
-| [[PHY1 HW Ch02 Questions#EUP 2.68\|EUP 2.68]] | No collision; about $10\ \mathrm{m}$ apart |
-| [[PHY1 HW Ch02 Questions#EUP 2.70\|EUP 2.70]] | No collision; closest approach $4.3\ \mathrm{m}$ |
-| [[PHY1 HW Ch02 Questions#EUP 2.37\|EUP 2.37]] | (a) $\dfrac{v^{2}}{2g}$; (b) $\dfrac{v}{\sqrt{2}}$ |
-| [[PHY1 HW Ch02 Questions#EUP 2.59\|EUP 2.59]] | from $3.38\ \mathrm{s}$ to $6.14\ \mathrm{s}$ after the explosion |
-| [[PHY1 HW Ch02 Questions#EUP 2.73\|EUP 2.73]] | $2.7 \times 10^{2}\ \mathrm{m}$ |
-| [[PHY1 HW Ch02 Questions#EUP 2.85\|EUP 2.85]] | $\dfrac{1}{\sqrt{2}} \approx 71\%$ |
-| [[PHY1 HW Ch02 Questions#EUP 2.86\|EUP 2.86]] | $1.2\ \mathrm{m}$ above the top of the window |
-| [[PHY1 HW Ch02 Questions#EUP 2.90\|EUP 2.90]] | (a) $-9.1\ \mathrm{m/s}$; (b) $-9.1\ \mathrm{m/s}$; (c) $0.18\ \mathrm{s}$ |
-| [[PHY1 HW Ch02 Questions#EUP 2.91\|EUP 2.91]] | $15$ drops per second |
-| [[PHY1 HW Ch02 Questions#EUP 2.77\|EUP 2.77]] | (a) $7.88\ \mathrm{m/s}$ and $7.67\ \mathrm{m/s}$; (b) the first diver, by $0.16\ \mathrm{s}$ |
+| [[PHY1 HW Ch02 Questions#EUP 2.24\|EUP 2.24]] | $31\ \mathrm{s}$ |
+| [[PHY1 HW Ch02 Questions#EUP 2.29\|EUP 2.29]] | (a) $\dfrac{v^{2}}{2h}$；(b) $\dfrac{2h}{v}$ |
+| [[PHY1 HW Ch02 Questions#EUP 2.34\|EUP 2.34]] | $\dfrac{v_{0}^{2}}{2d}$ |
+| [[PHY1 HW Ch02 Questions#EUP 2.63\|EUP 2.63]] | (a) $16\ \mathrm{ms}$；(b) $59\ \mathrm{cm}$ |
+| [[PHY1 HW Ch02 Questions#EUP 2.67\|EUP 2.67]] | (a) $25\ \mathrm{m/s}$；(b) $1.8 \times 10^{2}\ \mathrm{m}$ |
+| [[PHY1 HW Ch02 Questions#EUP 2.36\|EUP 2.36]] | $10\ \mathrm{m/s}$ |
+| [[PHY1 HW Ch02 Questions#EUP 2.37\|EUP 2.37]] | (a) $\dfrac{v^{2}}{2g}$；(b) $\dfrac{v}{\sqrt{2}}$ |
+| [[PHY1 HW Ch02 Questions#EUP 2.75\|EUP 2.75]] | $\tfrac{1}{2}\sqrt{gh}$ |
 | [[PHY1 HW Ch02 Questions#EUP 2.78\|EUP 2.78]] | $2.4\ \mathrm{s}$ |
-| [[PHY1 HW Ch02 Questions#EUP 2.97\|EUP 2.97]] | (a) $v_{0} > \sqrt{\dfrac{gh_{0}}{2}}$; (b) $h_{0} - \dfrac{gh_{0}^{2}}{2v_{0}^{2}}$ |
-| [[PHY1 HW Ch02 Questions#EUP 2.88\|EUP 2.88]] | (a) $v_{0} + a_{0}t + \tfrac{1}{2}bt^{2}$; (b) $x_{0} + v_{0}t + \tfrac{1}{2}a_{0}t^{2} + \tfrac{1}{6}bt^{3}$ |
-| [[PHY1 HW Ch02 Questions#EUP 2.94\|EUP 2.94]] | $5.4\ \mathrm{m}$ |
-| [[PHY1 HW Ch02 Questions#EUP 2.95\|EUP 2.95]] | (a) $\sqrt{\dfrac{2b}{c}}$; (b) $-5b$ |
-| [[PHY1 HW Ch02 Questions#EUP 2.96\|EUP 2.96]] | (a) $\dfrac{a_{0}}{b}\left(1 - e^{-bt}\right)$; (b) no; (c) yes |
+| [[PHY1 HW Ch02 Questions#EUP 2.95\|EUP 2.95]] | (a) $\sqrt{\dfrac{2b}{c}}$；(b) $-5b$ |
+| [[PHY1 HW Ch02 Questions#EUP 2.13\|EUP 2.13]] | (a) $24\ \mathrm{km}$ 向北；(b) $9.6\ \mathrm{km/h}$ 向北；(c) $16\ \mathrm{km/h}$ 向南；(d) $0$；(e) $0$ |
+| [[PHY1 HW Ch02 Questions#EUP 2.83\|EUP 2.83]] | (a) $\tfrac{1}{2}(v_{1} + v_{2})$；(b) $\dfrac{2v_{1}v_{2}}{v_{1} + v_{2}}$；(c) 情況 (a) |
+| [[PHY1 HW Ch02 Questions#EUP 2.84\|EUP 2.84]] | (a) $0.282\ \mathrm{m/s^4}$；(b) $9.25\ \mathrm{m/s}$；(c) $-18.2\ \mathrm{m/s^2}$ |
+| [[PHY1 HW Ch02 Questions#EUP 2.23\|EUP 2.23]] | (a) $9.82\ \mathrm{m/s^2}$；(b) $82.7\ \mathrm{m/s^2}$ |
+| [[PHY1 HW Ch02 Questions#EUP 2.66\|EUP 2.66]] | (a) $21\ \mathrm{m/s}$（$77\ \mathrm{km/h}$）；(b) $2.6\ \mathrm{s}$ |
+| [[PHY1 HW Ch02 Questions#EUP 2.55\|EUP 2.55]] | $14.1\ \mathrm{m}$ |
+| [[PHY1 HW Ch02 Questions#EUP 2.70\|EUP 2.70]] | 不會相撞；最接近時相距 $4.3\ \mathrm{m}$ |
+| [[PHY1 HW Ch02 Questions#EUP 2.81\|EUP 2.81]] | 會相撞，相對速率 $4.8\ \mathrm{m/s}$（$17\ \mathrm{km/h}$） |
+| [[PHY1 HW Ch02 Questions#EUP 2.59\|EUP 2.59]] | $2.75\ \mathrm{s}$（爆炸後 $3.38\ \mathrm{s}$ 到 $6.14\ \mathrm{s}$） |
+| [[PHY1 HW Ch02 Questions#EUP 2.73\|EUP 2.73]] | $2.7 \times 10^{2}\ \mathrm{m}$ |
+| [[PHY1 HW Ch02 Questions#EUP 2.86\|EUP 2.86]] | 窗戶上緣上方 $1.2\ \mathrm{m}$ |
+| [[PHY1 HW Ch02 Questions#EUP 2.90\|EUP 2.90]] | (a) $-9.1\ \mathrm{m/s}$；(b) $-9.1\ \mathrm{m/s}$；(c) $0.18\ \mathrm{s}$ |
+| [[PHY1 HW Ch02 Questions#EUP 2.77\|EUP 2.77]] | (a) $7.88\ \mathrm{m/s}$ 與 $7.67\ \mathrm{m/s}$；(b) 往上跳的人先入水，早 $0.16\ \mathrm{s}$ |
+| [[PHY1 HW Ch02 Questions#EUP 2.97\|EUP 2.97]] | (a) $v_{0} > \sqrt{\dfrac{gh_{0}}{2}}$；(b) $h_{0} - \dfrac{gh_{0}^{2}}{2v_{0}^{2}}$ |
+| [[PHY1 HW Ch02 Questions#EUP 2.88\|EUP 2.88]] | (a) $v_{0} + a_{0}t + \tfrac{1}{2}bt^{2}$；(b) $x_{0} + v_{0}t + \tfrac{1}{2}a_{0}t^{2} + \tfrac{1}{6}bt^{3}$ |
+| [[PHY1 HW Ch02 Questions#EUP 2.96\|EUP 2.96]] | (a) $\dfrac{a_{0}}{b}\left(1 - e^{-bt}\right)$；(b) 不會；(c) 會 |
+| [[PHY1 HW Ch02 Questions#EUP 2.58\|EUP 2.58]] | $x$ 對 $t^{2}$；斜率約 $1.6\ \mathrm{m/s^2}$，$a \approx 3.2\ \mathrm{m/s^2}$ |
 | [[PHY1 HW Ch02 Questions#EUP 2.98 to 2.102\|EUP 2.98 to 2.102]] | b, c, b, c, b |
-| [[PHY1 HW Ch02 Questions#EUP 2.58\|EUP 2.58]] | $x$ versus $t^{2}$; slope $\approx 1.6\ \mathrm{m/s^2}$; $a \approx 3.2\ \mathrm{m/s^2}$ |
+| [[PHY1 HW Ch02 Questions#SIU 1.2\|SIU 1.2]] | 減慢 |
+| [[PHY1 HW Ch02 Questions#KSUS 1.8\|KSUS 1.8]] | a) $200\ \mathrm{m}$；b) $12.5\ \mathrm{m/s}$；c) $0$ |
+| [[PHY1 HW Ch02 Questions#KSUS 1.9\|KSUS 1.9]] | a) $3.5 \times 10^{2}\ \mathrm{m/s^2}$；b) $0.82\ \mathrm{m}$ |
+| [[PHY1 HW Ch02 Questions#KSUS 1.10\|KSUS 1.10]] | $19.2\ \mathrm{m/s^2} = 1.96g$ |
+| [[PHY1 HW Ch02 Questions#KSUS 1.11\|KSUS 1.11]] | a) $145\ \mathrm{m}$；b) $54.6\ \mathrm{m/s}$ |
+| [[PHY1 HW Ch02 Questions#KSUF 1.1\|KSUF 1.1]] | a) $18.8\ \mathrm{m}$；b) $1.8\ \mathrm{m/s}$；c) $0$、$10\ \mathrm{m/s^2}$、$0$ |
+| [[PHY1 HW Ch02 Questions#KSUF 1.3\|KSUF 1.3]] | a) $3.2 \times 10^{4}\ \mathrm{m/s^2}$，向北；b) $2.1\ \mathrm{cm}$，向北 |
+| [[PHY1 HW Ch02 Questions#KSUF 1.4\|KSUF 1.4]] | a) $49.0\ \mathrm{m/s}$；b) $123\ \mathrm{m}$ |
+| [[PHY1 HW Ch02 Questions#SIU 1.5\|SIU 1.5]] | $11\ \mathrm{m}$ |
 
-## Textbook Examples
+## 老師勾選：平均速度與平均速率
 
-### EUP Example 2.1
-Question: [[PHY1 HW Ch02 Questions#EUP Example 2.1|EUP Example 2.1]]
+### EUP 2.12
+題目：[[PHY1 HW Ch02 Questions#EUP 2.12|EUP 2.12]]
 
-> [!solution] Solution
-> Take north as positive. $\Delta x = 1000\ \mathrm{km}$ and $\Delta t = 2.2\ \mathrm{h} + 0.50\ \mathrm{h} + 1.3\ \mathrm{h} = 4.0\ \mathrm{h}$:
+> [!solution] 答案
+> 赤道上一點每 $24\ \mathrm{h}$ 繞一圈，走過周長 $\pi D$：
 > $$
-> \bar{v} = \frac{\Delta x}{\Delta t} = \frac{1000\ \mathrm{km}}{4.0\ \mathrm{h}} = 250\ \mathrm{km/h}.
-> $$
-> Distance traveled: $1000\ \mathrm{km} + 2(700\ \mathrm{km}) = 2400\ \mathrm{km}$:
-> $$
-> \text{average speed} = \frac{2400\ \mathrm{km}}{4.0\ \mathrm{h}} = 600\ \mathrm{km/h}.
-> $$
-
-### EUP Example 2.2
-Question: [[PHY1 HW Ch02 Questions#EUP Example 2.2|EUP Example 2.2]]
-
-> [!solution] Solution
-> $$
-> v = \frac{dx}{dt} = \frac{d(bt^{2})}{dt} = 2bt, \qquad v(20\ \mathrm{s}) = 2(2.90\ \mathrm{m/s^2})(20\ \mathrm{s}) = 116\ \mathrm{m/s}.
-> $$
-> From liftoff ($x = 0$ at $t = 0$) to time $t$:
-> $$
-> \bar{v} = \frac{\Delta x}{\Delta t} = \frac{bt^{2}}{t} = bt = \tfrac{1}{2}v.
+> v = \frac{\pi D}{T} = \frac{\pi(12{,}700\ \mathrm{km})}{24\ \mathrm{h}} = 1.66 \times 10^{3}\ \mathrm{km/h} \approx 1.7 \times 10^{3}\ \mathrm{km/h} \approx 460\ \mathrm{m/s}
 > $$
 
-### EUP Conceptual Example 2.1
-Question: [[PHY1 HW Ch02 Questions#EUP Conceptual Example 2.1|EUP Conceptual Example 2.1]]
+### EUP 2.50
+題目：[[PHY1 HW Ch02 Questions#EUP 2.50|EUP 2.50]]
 
-> [!solution] Solution
-> Yes. Acceleration is the rate of change of velocity and does not depend on the value of the velocity. At the peak of its flight a ball has $v = 0$, but $v$ is changing from positive to negative, so $a \ne 0$.
->
-> Making the connection, with upward positive:
+> [!solution] 答案
+> 總距離 $D$，總時間
 > $$
-> \bar{a} = \frac{\Delta v}{\Delta t} = \frac{-0.098\ \mathrm{m/s} - 0.098\ \mathrm{m/s}}{0.020\ \mathrm{s}} = -9.8\ \mathrm{m/s^2}.
+> t = \frac{D/3}{2v} + \frac{2D/3}{v} = \frac{5D}{6v} \implies \bar{v} = \frac{D}{t} = \frac{6}{5}v = 1.2v
 > $$
 
-### EUP Example 2.3
-Question: [[PHY1 HW Ch02 Questions#EUP Example 2.3|EUP Example 2.3]]
+> [!warning] 不是速率的平均
+> 不是 $\tfrac{1}{2}(2v + v) = 1.5v$：平均速率是總距離除以總時間，慢的那段花的時間較多。
 
-> [!solution] Solution
-> Take $+x$ in the direction of motion: $v_{0} = 270\ \mathrm{km/h} = 75\ \mathrm{m/s}$, $v = 0$, $a = -4.5\ \mathrm{m/s^2}$. By (2.11) with $v = 0$,
-> $$
-> \Delta x = \frac{-v_{0}^{2}}{2a} = \frac{-(75\ \mathrm{m/s})^{2}}{2(-4.5\ \mathrm{m/s^2})} = 625\ \mathrm{m}.
-> $$
+## 老師勾選：由位置函數求速度
 
-### EUP Example 2.4
-Question: [[PHY1 HW Ch02 Questions#EUP Example 2.4|EUP Example 2.4]]
+### EUP 2.19
+題目：[[PHY1 HW Ch02 Questions#EUP 2.19|EUP 2.19]]
 
-> [!solution] Solution
-> Take $x = 0$ and $t = 0$ where the speeder passes the police car. By (2.10),
+> [!solution] 答案
+> (a) 由 (2.2b) 與 (2.3)：
 > $$
-> x_{\mathrm{s}} = v_{\mathrm{s0}}t, \qquad x_{\mathrm{p}} = \tfrac{1}{2}a_{\mathrm{p}}t^{2}.
+> v = \frac{dy}{dt} = b - 2ct = 80\ \mathrm{m/s} - (9.8\ \mathrm{m/s^2})t
 > $$
-> $x_{\mathrm{s}} = x_{\mathrm{p}}$ gives $t = 0$ (the start) or $t = \dfrac{2v_{\mathrm{s0}}}{a_{\mathrm{p}}}$. With $v_{\mathrm{s0}} = 21\ \mathrm{m/s}$,
-> $$
-> x_{\mathrm{s}} = v_{\mathrm{s0}}t = \frac{2v_{\mathrm{s0}}^{2}}{a_{\mathrm{p}}} = \frac{2(21\ \mathrm{m/s})^{2}}{2.5\ \mathrm{m/s^2}} = 350\ \mathrm{m}, \qquad v_{\mathrm{p}} = a_{\mathrm{p}}t = 2v_{\mathrm{s0}} = 150\ \mathrm{km/h}.
-> $$
-
-### EUP Example 2.5
-Question: [[PHY1 HW Ch02 Questions#EUP Example 2.5|EUP Example 2.5]]
-
-> [!solution] Solution
-> $y = 0$ at the water: $y_{0} = 10\ \mathrm{m}$, $v_{0} = 0$. By (2.11),
-> $$
-> \lvert v \rvert = \sqrt{-2g(y - y_{0})} = \sqrt{(-2)(9.8\ \mathrm{m/s^2})(0\ \mathrm{m} - 10\ \mathrm{m})} = 14\ \mathrm{m/s},
-> $$
-> and $v = -14\ \mathrm{m/s}$ (downward). By (2.7),
-> $$
-> t = \frac{v_{0} - v}{g} = \frac{0 - (-14\ \mathrm{m/s})}{9.8\ \mathrm{m/s^2}} = 1.4\ \mathrm{s}.
-> $$
-
-### EUP Example 2.6
-Question: [[PHY1 HW Ch02 Questions#EUP Example 2.6|EUP Example 2.6]]
-
-> [!solution] Solution
-> $y = 0$ at the floor: $y_{0} = 1.5\ \mathrm{m}$, $v_{0} = +7.3\ \mathrm{m/s}$. At the floor, (2.10) gives $0 = y_{0} + v_{0}t - \tfrac{1}{2}gt^{2}$:
-> $$
-> t = \frac{v_{0} \pm \sqrt{v_{0}^{2} + 2y_{0}g}}{g} = 1.7\ \mathrm{s} \ \text{ or } \ -0.18\ \mathrm{s}.
-> $$
-> The ball hits the floor at $1.7\ \mathrm{s}$ (the negative root is before the toss). At the peak $v = 0$, so by (2.11)
-> $$
-> y = y_{0} + \frac{v_{0}^{2}}{2g} = 1.5\ \mathrm{m} + \frac{(7.3\ \mathrm{m/s})^{2}}{2(9.8\ \mathrm{m/s^2})} = 4.2\ \mathrm{m}.
-> $$
-> At $y = y_{0}$, (2.11) gives $v^{2} = v_{0}^{2}$: the speed on the way down is $7.3\ \mathrm{m/s}$.
-
-## Average Velocity and Average Speed
-
-### EUP 2.13
-Question: [[PHY1 HW Ch02 Questions#EUP 2.13|EUP 2.13]]
-
-> [!solution] Solution
-> Take north as positive, origin at home.
-> - (a) $\Delta x = +24\ \mathrm{km}$ ($24\ \mathrm{km}$ north)
-> - (b) $\bar{v} = \dfrac{+24\ \mathrm{km}}{2.5\ \mathrm{h}} = +9.6\ \mathrm{km/h}$ (north)
-> - (c) $\bar{v} = \dfrac{-24\ \mathrm{km}}{1.5\ \mathrm{h}} = -16\ \mathrm{km/h}$ (south)
-> - (d) $\Delta x = 0$
-> - (e) $\bar{v} = \dfrac{0}{4.0\ \mathrm{h}} = 0$
-
-### EUP 2.52
-Question: [[PHY1 HW Ch02 Questions#EUP 2.52|EUP 2.52]]
-
-> [!solution] Solution
-> Origin at London, $+x$ toward Singapore, $L = 10{,}886\ \mathrm{km}$: $x_{1} = v_{1}t$ and $x_{2} = L - v_{2}t$. Setting $x_{1} = x_{2}$,
-> $$
-> \begin{aligned}
-> t &= \frac{L}{v_{1} + v_{2}} = \frac{10{,}886\ \mathrm{km}}{1040\ \mathrm{km/h} + 765\ \mathrm{km/h}} = 6.03\ \mathrm{h}, \\
-> x_{1} &= v_{1}t = (1040\ \mathrm{km/h})(6.031\ \mathrm{h}) = 6.27 \times 10^{3}\ \mathrm{km}.
-> \end{aligned}
-> $$
-> They pass $6.03\ \mathrm{h}$ after departure, $6.27 \times 10^{3}\ \mathrm{km}$ from London.
-
-### EUP 2.83
-Question: [[PHY1 HW Ch02 Questions#EUP 2.83|EUP 2.83]]
-
-> [!solution] Solution
-> Let $T$ be the total time; the average speed is $L/T$.
->
-> **(a)** $L = v_{1}\dfrac{T}{2} + v_{2}\dfrac{T}{2}$, so $\dfrac{L}{T} = \tfrac{1}{2}(v_{1} + v_{2})$.
->
-> **(b)** $T = \dfrac{L/2}{v_{1}} + \dfrac{L/2}{v_{2}} = \dfrac{L(v_{1} + v_{2})}{2v_{1}v_{2}}$, so $\dfrac{L}{T} = \dfrac{2v_{1}v_{2}}{v_{1} + v_{2}}$.
->
-> **(c)** Case (a), since
-> $$
-> \tfrac{1}{2}(v_{1} + v_{2}) - \frac{2v_{1}v_{2}}{v_{1} + v_{2}} = \frac{(v_{1} - v_{2})^{2}}{2(v_{1} + v_{2})} \ge 0.
-> $$
-
-## Velocity from Position
+> (b) $v = 0$ 時 $t = \dfrac{b}{2c} = \dfrac{80\ \mathrm{m/s}}{2(4.9\ \mathrm{m/s^2})} = 8.2\ \mathrm{s}$。
 
 ### EUP 2.53
-Question: [[PHY1 HW Ch02 Questions#EUP 2.53|EUP 2.53]]
+題目：[[PHY1 HW Ch02 Questions#EUP 2.53|EUP 2.53]]
 
-> [!solution] Solution
-> | $t$ ($\mathrm{s}$) | 1.00 | 1.50 | 1.95 | 2.05 | 2.50 | 3.00 |
-> | --- | --- | --- | --- | --- | --- | --- |
-> | $x = bt + ct^{3}$ ($\mathrm{m}$) | 2.140 | 4.410 | 7.6705 | 8.5887 | 13.750 | 21.780 |
->
-> - (a) $\bar{v} = \dfrac{21.780\ \mathrm{m} - 2.140\ \mathrm{m}}{2.00\ \mathrm{s}} = 9.82\ \mathrm{m/s}$
-> - (b) $\bar{v} = \dfrac{13.750\ \mathrm{m} - 4.410\ \mathrm{m}}{1.00\ \mathrm{s}} = 9.34\ \mathrm{m/s}$
-> - (c) $\bar{v} = \dfrac{8.5887\ \mathrm{m} - 7.6705\ \mathrm{m}}{0.10\ \mathrm{s}} = 9.18\ \mathrm{m/s}$
-> - (d) $v = \dfrac{dx}{dt} = b + 3ct^{2}$; $v(2\ \mathrm{s}) = 1.50\ \mathrm{m/s} + 3(0.640\ \mathrm{m/s^3})(2\ \mathrm{s})^{2} = 9.18\ \mathrm{m/s}$. The average velocities approach this value as the interval shrinks.
-
-### EUP 2.84
-Question: [[PHY1 HW Ch02 Questions#EUP 2.84|EUP 2.84]]
-
-> [!solution] Solution
-> Let $t_{1} = 2.54\ \mathrm{s}$.
->
-> **(a)** $x = t^{2}(b - ct^{2}) = 0$ at $t_{1}$ requires $ct_{1}^{2} = b$:
+> [!solution] 答案
+> 由 (2.1)，用 $t_{2}^{3} - t_{1}^{3} = (t_{2} - t_{1})(t_{1}^{2} + t_{1}t_{2} + t_{2}^{2})$：
 > $$
-> c = \frac{b}{t_{1}^{2}} = \frac{1.82\ \mathrm{m/s^2}}{(2.54\ \mathrm{s})^{2}} = 0.282\ \mathrm{m/s^4}.
+> \bar{v} = \frac{x(t_{2}) - x(t_{1})}{t_{2} - t_{1}} = b + c\left(t_{1}^{2} + t_{1}t_{2} + t_{2}^{2}\right)
 > $$
->
-> **(b)** $v = \dfrac{dx}{dt} = 2bt - 4ct^{3}$; at $t_{1}$, $v = 2bt_{1} - 4bt_{1} = -2bt_{1} = -9.25\ \mathrm{m/s}$. The speed is $9.25\ \mathrm{m/s}$.
->
-> **(c)** $a = \dfrac{dv}{dt} = 2b - 12ct^{2}$; at $t_{1}$, $a = 2b - 12b = -10b = -18.2\ \mathrm{m/s^2}$.
+> - (a) $1.50 + 0.640(1 + 3 + 9) = 9.82\ \mathrm{m/s}$。
+> - (b) $1.50 + 0.640(2.25 + 3.75 + 6.25) = 9.34\ \mathrm{m/s}$。
+> - (c) $1.50 + 0.640(3.8025 + 3.9975 + 4.2025) = 9.18\ \mathrm{m/s}$。
+> - (d) $v = \dfrac{dx}{dt} = b + 3ct^{2}$，$v(2\ \mathrm{s}) = 1.50 + 3(0.640)(4) = 9.18\ \mathrm{m/s}$。區間越短，平均速度越接近瞬時速度。
 
-## Average Acceleration
+## 老師勾選：平均加速度
 
 ### EUP 2.21
-Question: [[PHY1 HW Ch02 Questions#EUP 2.21|EUP 2.21]]
+題目：[[PHY1 HW Ch02 Questions#EUP 2.21|EUP 2.21]]
 
-> [!solution] Solution
-> Only the initial and final velocities matter:
+> [!solution] 答案
+> 由 (2.4)，只看起點和終點的速度：
 > $$
-> \bar{a} = \frac{\Delta v}{\Delta t} = \frac{18\ \mathrm{m/s} - 0}{48\ \mathrm{s}} = 0.38\ \mathrm{m/s^2}.
+> \bar{a} = \frac{\Delta v}{\Delta t} = \frac{18\ \mathrm{m/s} - 0}{48\ \mathrm{s}} = 0.38\ \mathrm{m/s^2}
 > $$
 
-## Constant Acceleration with One Object
+> [!warning] 多餘的數據
+> 中間的最高速率 $25\ \mathrm{m/s}$ 用不到。
+
+### EUP 2.24
+題目：[[PHY1 HW Ch02 Questions#EUP 2.24|EUP 2.24]]
+
+> [!solution] 答案
+> $v = 320\ \mathrm{km/h} = 88.9\ \mathrm{m/s}$，由靜止加速，由 (2.4)：
+> $$
+> \Delta t = \frac{\Delta v}{\bar{a}} = \frac{88.9\ \mathrm{m/s}}{2.9\ \mathrm{m/s^2}} = 31\ \mathrm{s}
+> $$
+
+## 老師勾選：等加速度（一個物體）
 
 ### EUP 2.29
-Question: [[PHY1 HW Ch02 Questions#EUP 2.29|EUP 2.29]]
+題目：[[PHY1 HW Ch02 Questions#EUP 2.29|EUP 2.29]]
 
-> [!solution] Solution
-> $v_{0} = 0$ and $x - x_{0} = h$.
->
-> **(a)** By (2.11), $v^{2} = 2ah$, so $a = \dfrac{v^{2}}{2h}$.
->
-> **(b)** By (2.9), $h = \tfrac{1}{2}(0 + v)t$, so $t = \dfrac{2h}{v}$.
+> [!solution] 答案
+> $v_{0} = 0$。(a) 由 (2.11)：$v^{2} = 2ah \implies a = \dfrac{v^{2}}{2h}$。(b) 由 (2.9)：$h = \tfrac{1}{2}(0 + v)t \implies t = \dfrac{2h}{v}$。
 
-### EUP 2.62
-Question: [[PHY1 HW Ch02 Questions#EUP 2.62|EUP 2.62]]
+### EUP 2.34
+題目：[[PHY1 HW Ch02 Questions#EUP 2.34|EUP 2.34]]
 
-> [!solution] Solution
-> The acceleration is $-a$.
->
-> **(a)** By (2.10), $x = x_{0} + v_{0}t - \tfrac{1}{2}at^{2}$. Setting $x = x_{0}$: $t = 0$ (the start) or $t = \dfrac{2v_{0}}{a}$.
->
-> **(b)** By (2.7), $v = v_{0} - a\dfrac{2v_{0}}{a} = -v_{0}$: the speed is $v_{0}$.
-
-### EUP 2.66
-Question: [[PHY1 HW Ch02 Questions#EUP 2.66|EUP 2.66]]
-
-> [!solution] Solution
-> Take $+x$ in the direction of motion: $a = -6.3\ \mathrm{m/s^2}$, $\Delta x = 34\ \mathrm{m}$, $v = 18\ \mathrm{km/h} = 5.0\ \mathrm{m/s}$.
->
-> **(a)** By (2.11),
+> [!solution] 答案
+> 取行駛方向為 $+x$，最遲在 $\Delta x = d$ 處停下（$v = 0$）。由 (2.11)：
 > $$
-> \begin{aligned}
-> v_{0} = \sqrt{v^{2} - 2a\,\Delta x} &= \sqrt{(5.0\ \mathrm{m/s})^{2} - 2(-6.3\ \mathrm{m/s^2})(34\ \mathrm{m})} \\
-> &= 21.3\ \mathrm{m/s} \approx 21\ \mathrm{m/s} \quad (77\ \mathrm{km/h}).
-> \end{aligned}
+> 0 = v_{0}^{2} + 2ad \implies \lvert a \rvert = \frac{v_{0}^{2}}{2d}
 > $$
->
-> **(b)** By (2.7),
+> 加速度大小至少要這麼大。
+
+### EUP 2.63
+題目：[[PHY1 HW Ch02 Questions#EUP 2.63|EUP 2.63]]
+
+> [!solution] 答案
+> $v_{0} = 30\ \mathrm{m/s}$，$v = 18\ \mathrm{m/s}$，$\Delta x = 0.38\ \mathrm{m}$。(a) 由 (2.9)：
 > $$
-> t = \frac{v - v_{0}}{a} = \frac{5.0\ \mathrm{m/s} - 21.3\ \mathrm{m/s}}{-6.3\ \mathrm{m/s^2}} = 2.6\ \mathrm{s}.
+> t = \frac{2\Delta x}{v_{0} + v} = \frac{2(0.38\ \mathrm{m})}{48\ \mathrm{m/s}} = 0.016\ \mathrm{s} = 16\ \mathrm{ms}
+> $$
+> (b) 由 (2.11)，$a = \dfrac{v^{2} - v_{0}^{2}}{2\Delta x} = -758\ \mathrm{m/s^2}$。停下所需厚度：
+> $$
+> d = \frac{v_{0}^{2}}{2\lvert a \rvert} = \Delta x\,\frac{v_{0}^{2}}{v_{0}^{2} - v^{2}} = (0.38\ \mathrm{m})\frac{900}{576} = 0.59\ \mathrm{m} = 59\ \mathrm{cm}
 > $$
 
 ### EUP 2.67
-Question: [[PHY1 HW Ch02 Questions#EUP 2.67|EUP 2.67]]
+題目：[[PHY1 HW Ch02 Questions#EUP 2.67|EUP 2.67]]
 
-> [!solution] Solution
-> **(a)** By (2.9), $\Delta x = \tfrac{1}{2}(v_{0} + v)t$:
+> [!solution] 答案
+> (a) 由 (2.9)，$\Delta x = \tfrac{1}{2}(v_{0} + v)t$：
 > $$
-> v_{0} = \frac{2\,\Delta x}{t} - v = \frac{2(140\ \mathrm{m})}{3.6\ \mathrm{s}} - 53\ \mathrm{m/s} = 24.8\ \mathrm{m/s} \approx 25\ \mathrm{m/s}.
+> v_{0} = \frac{2\Delta x}{t} - v = \frac{2(140\ \mathrm{m})}{3.6\ \mathrm{s}} - 53\ \mathrm{m/s} = 24.8\ \mathrm{m/s} \approx 25\ \mathrm{m/s}
 > $$
->
-> **(b)** By (2.7), $a = \dfrac{v - v_{0}}{t} = \dfrac{53\ \mathrm{m/s} - 24.8\ \mathrm{m/s}}{3.6\ \mathrm{s}} = 7.84\ \mathrm{m/s^2}$. From rest to $v = 53\ \mathrm{m/s}$, (2.11) gives
+> (b) $a = \dfrac{v - v_{0}}{t} = \dfrac{53 - 24.8}{3.6} = 7.84\ \mathrm{m/s^2}$。從靜止到末速 $53\ \mathrm{m/s}$，由 (2.11)：
 > $$
-> d = \frac{v^{2}}{2a} = \frac{(53\ \mathrm{m/s})^{2}}{2(7.84\ \mathrm{m/s^2})} = 1.8 \times 10^{2}\ \mathrm{m}.
+> x = \frac{v^{2}}{2a} = \frac{(53\ \mathrm{m/s})^{2}}{2(7.84\ \mathrm{m/s^2})} = 1.8 \times 10^{2}\ \mathrm{m}
 > $$
 
-## Constant Acceleration with Two Objects
+> [!warning] 不是從靜止出發
+> 這 $140\ \mathrm{m}$ 開始時車已經在動，不能用 $140 = \tfrac{1}{2}at^{2}$。
 
-### EUP 2.55
-Question: [[PHY1 HW Ch02 Questions#EUP 2.55|EUP 2.55]]
+## 老師勾選：自由落體
 
-> [!solution] Solution
-> Both start from rest at $x = 0$, so $x = \tfrac{1}{2}at^{2}$, and a car with acceleration $a$ finishes $L = 400\ \mathrm{m}$ at $t = \sqrt{2L/a}$.
-> $$
-> \begin{aligned}
-> t_{\mathrm{w}} &= \sqrt{\frac{2(400\ \mathrm{m})}{4.25\ \mathrm{m/s^2}}} = 13.720\ \mathrm{s}, \\
-> t_{\ell} &= t_{\mathrm{w}} + 0.248\ \mathrm{s} = 13.968\ \mathrm{s}, \qquad a_{\ell} = \frac{2L}{t_{\ell}^{2}}.
-> \end{aligned}
-> $$
-> At $t_{\mathrm{w}}$ the loser is at
-> $$
-> x_{\ell} = \tfrac{1}{2}a_{\ell}t_{\mathrm{w}}^{2} = L\left(\frac{t_{\mathrm{w}}}{t_{\ell}}\right)^{2} = (400\ \mathrm{m})\left(\frac{13.720\ \mathrm{s}}{13.968\ \mathrm{s}}\right)^{2} = 385.9\ \mathrm{m},
-> $$
-> which is $400\ \mathrm{m} - 385.9\ \mathrm{m} = 14.1\ \mathrm{m}$ behind.
+### EUP 2.36
+題目：[[PHY1 HW Ch02 Questions#EUP 2.36|EUP 2.36]]
 
-### EUP 2.68
-Question: [[PHY1 HW Ch02 Questions#EUP 2.68|EUP 2.68]]
-
-> [!solution] Solution
-> Each car: $v_{0} = 88\ \mathrm{km/h} = 24.4\ \mathrm{m/s}$, $v = 0$, $a = -8\ \mathrm{m/s^2}$ along its own direction of motion. By (2.11), each needs
+> [!solution] 答案
+> 恰好到達表示到她那裡時 $v = 0$。由 (2.11)，$0 = v_{0}^{2} - 2gh$：
 > $$
-> d = \frac{-v_{0}^{2}}{2a} = \frac{-(24.4\ \mathrm{m/s})^{2}}{2(-8\ \mathrm{m/s^2})} = 37.3\ \mathrm{m}.
+> v_{0} = \sqrt{2gh} = \sqrt{2(9.8\ \mathrm{m/s^2})(5.1\ \mathrm{m})} = 10\ \mathrm{m/s}
 > $$
-> $2d = 74.7\ \mathrm{m} < 85\ \mathrm{m}$: they do not collide, and they stop $85\ \mathrm{m} - 74.7\ \mathrm{m} \approx 10\ \mathrm{m}$ apart.
->
-> Graph: with $x = 0$ at car 1 and car 2 at $85\ \mathrm{m}$ when they brake, $x_{1} = v_{0}t - \tfrac{1}{2}\lvert a \rvert t^{2}$ and $x_{2} = 85\ \mathrm{m} - v_{0}t + \tfrac{1}{2}\lvert a \rvert t^{2}$ until both stop at $t = v_{0}/\lvert a \rvert = 3.1\ \mathrm{s}$.
->
-> ![[PHY1 Ch02 Problem 2.68 graph.png]]
-
-### EUP 2.70
-Question: [[PHY1 HW Ch02 Questions#EUP 2.70|EUP 2.70]]
-
-> [!solution] Solution
-> Take $x = 0$ at your car and $t = 0$ when you brake: $v_{1} = 85\ \mathrm{km/h}$, $v_{2} = 60\ \mathrm{km/h}$, $v_{1} - v_{2} = 25\ \mathrm{km/h} = 6.94\ \mathrm{m/s}$, $a = 4.2\ \mathrm{m/s^2}$ (magnitude), $d = 10\ \mathrm{m}$. The gap is
-> $$
-> s(t) = x_{2} - x_{1} = (d + v_{2}t) - \left(v_{1}t - \tfrac{1}{2}at^{2}\right) = d - (v_{1} - v_{2})t + \tfrac{1}{2}at^{2}.
-> $$
-> It is smallest when $\dfrac{ds}{dt} = -(v_{1} - v_{2}) + at = 0$, at $t = \dfrac{v_{1} - v_{2}}{a} = 1.65\ \mathrm{s}$:
-> $$
-> s_{\min} = d - \frac{(v_{1} - v_{2})^{2}}{2a} = 10\ \mathrm{m} - \frac{(6.94\ \mathrm{m/s})^{2}}{2(4.2\ \mathrm{m/s^2})} = 4.3\ \mathrm{m} > 0.
-> $$
-> No collision; the closest approach is $4.3\ \mathrm{m}$.
-
-> [!warning] Closest approach
-> It comes when the two velocities are equal, not when your car stops.
-
-## Free Fall with One Object
 
 ### EUP 2.37
-Question: [[PHY1 HW Ch02 Questions#EUP 2.37|EUP 2.37]]
+題目：[[PHY1 HW Ch02 Questions#EUP 2.37|EUP 2.37]]
 
-> [!solution] Solution
-> By (2.11), the velocity $v_{y}$ at height $y$ satisfies $v_{y}^{2} = v^{2} - 2gy$.
->
-> **(a)** At the top $v_{y} = 0$: $h = \dfrac{v^{2}}{2g}$.
->
-> **(b)** At $y = \tfrac{1}{2}h = \dfrac{v^{2}}{4g}$: $v_{y}^{2} = v^{2} - \tfrac{1}{2}v^{2}$, so $\lvert v_{y} \rvert = \dfrac{v}{\sqrt{2}}$.
+> [!solution] 答案
+> 由 (2.11)，$v_{y}^{2} = v^{2} - 2gy$。
+> - (a) 最高點 $v_{y} = 0$：$y_{\max} = \dfrac{v^{2}}{2g}$。
+> - (b) $y = \tfrac{1}{2}y_{\max}$：$v_{y}^{2} = v^{2} - \tfrac{1}{2}v^{2}$，速率 $\dfrac{v}{\sqrt{2}}$。
 
-### EUP 2.59
-Question: [[PHY1 HW Ch02 Questions#EUP 2.59|EUP 2.59]]
+### EUP 2.75
+題目：[[PHY1 HW Ch02 Questions#EUP 2.75|EUP 2.75]]
 
-> [!solution] Solution
-> $y = 0$ at the ground, $y_{0} = 82.0\ \mathrm{m}$. By (2.10), $0 = y_{0} + v_{0}t - \tfrac{1}{2}gt^{2}$, whose positive root is
+> [!solution] 答案
+> 取 $y$ **向下**，$a = +g$。朋友的球由靜止落下 $h/2$：$\tfrac{h}{2} = \tfrac{1}{2}gt^{2}$，$t = \sqrt{h/g}$。你的球在同一時間落下 $h$，由 (2.10)：
 > $$
-> t = \frac{v_{0} + \sqrt{v_{0}^{2} + 2gy_{0}}}{g}, \qquad 2gy_{0} = 1607\ \mathrm{m^2/s^2}.
+> h = v_{0}t + \tfrac{1}{2}gt^{2} = v_{0}t + \tfrac{h}{2} \implies v_{0} = \frac{h/2}{\sqrt{h/g}} = \tfrac{1}{2}\sqrt{gh}
 > $$
-> $$
-> \begin{aligned}
-> v_{0} = -7.68\ \mathrm{m/s}: \quad t &= \frac{-7.68\ \mathrm{m/s} + \sqrt{(7.68\ \mathrm{m/s})^{2} + 1607\ \mathrm{m^2/s^2}}}{9.8\ \mathrm{m/s^2}} = 3.38\ \mathrm{s}, \\
-> v_{0} = +16.7\ \mathrm{m/s}: \quad t &= \frac{16.7\ \mathrm{m/s} + \sqrt{(16.7\ \mathrm{m/s})^{2} + 1607\ \mathrm{m^2/s^2}}}{9.8\ \mathrm{m/s^2}} = 6.14\ \mathrm{s}.
-> \end{aligned}
-> $$
-> Fragments hit the ground from $3.38\ \mathrm{s}$ to $6.14\ \mathrm{s}$ after the explosion.
-
-### EUP 2.73
-Question: [[PHY1 HW Ch02 Questions#EUP 2.73|EUP 2.73]]
-
-> [!solution] Solution
-> Let $T$ be the total time of fall from height $h$. From rest, $h = \tfrac{1}{2}gT^{2}$, and the first $\tfrac{3}{4}h$ takes $T - 1\ \mathrm{s}$: $\tfrac{3}{4}h = \tfrac{1}{2}g(T - 1\ \mathrm{s})^{2}$. Dividing,
-> $$
-> \frac{T - 1\ \mathrm{s}}{T} = \frac{\sqrt{3}}{2} \implies T = \frac{1\ \mathrm{s}}{1 - \sqrt{3}/2} = 7.46\ \mathrm{s},
-> $$
-> $$
-> h = \tfrac{1}{2}gT^{2} = \tfrac{1}{2}(9.8\ \mathrm{m/s^2})(7.46\ \mathrm{s})^{2} = 2.7 \times 10^{2}\ \mathrm{m}.
-> $$
-> (The root $-\tfrac{\sqrt{3}}{2}$ gives $T = 0.54\ \mathrm{s} < 1\ \mathrm{s}$ and is rejected.)
-
-### EUP 2.85
-Question: [[PHY1 HW Ch02 Questions#EUP 2.85|EUP 2.85]]
-
-> [!solution] Solution
-> The motion is symmetric about the peak. Falling from rest at the peak through a distance $d$ takes $t = \sqrt{2d/g}$:
-> $$
-> \frac{t_{\text{upper half}}}{t_{\text{total}}} = \frac{\sqrt{2(h/2)/g}}{\sqrt{2h/g}} = \frac{1}{\sqrt{2}} \approx 0.71.
-> $$
-
-### EUP 2.86
-Question: [[PHY1 HW Ch02 Questions#EUP 2.86|EUP 2.86]]
-
-> [!solution] Solution
-> Take $y$ **downward**, so $a = +g$. Let $v_{\mathrm{t}}$ be the velocity at the top of the window. Across the window, by (2.10),
-> $$
-> \Delta y = v_{\mathrm{t}}t + \tfrac{1}{2}gt^{2} \implies v_{\mathrm{t}} = \frac{1.3\ \mathrm{m} - \tfrac{1}{2}(9.8\ \mathrm{m/s^2})(0.22\ \mathrm{s})^{2}}{0.22\ \mathrm{s}} = 4.83\ \mathrm{m/s}.
-> $$
-> From rest down to the top of the window, by (2.11),
-> $$
-> H = \frac{v_{\mathrm{t}}^{2}}{2g} = \frac{(4.83\ \mathrm{m/s})^{2}}{2(9.8\ \mathrm{m/s^2})} = 1.2\ \mathrm{m}.
-> $$
-
-> [!warning] Not from rest
-> $1.3\ \mathrm{m} = \tfrac{1}{2}gt^{2}$ is wrong for the window: the balloon is already moving at its top.
-
-### EUP 2.90
-Question: [[PHY1 HW Ch02 Questions#EUP 2.90|EUP 2.90]]
-
-> [!solution] Solution
-> $y = 0$ at the floor, $y_{0} = 1.5\ \mathrm{m}$.
->
-> **(a)** By (2.11) with $v_{0} = +7.3\ \mathrm{m/s}$, moving downward at the floor:
-> $$
-> v = -\sqrt{v_{0}^{2} + 2gy_{0}} = -\sqrt{(7.3\ \mathrm{m/s})^{2} + 2(9.8\ \mathrm{m/s^2})(1.5\ \mathrm{m})} = -9.1\ \mathrm{m/s}.
-> $$
->
-> **(b)** With $v_{0} = -7.3\ \mathrm{m/s}$, $v_{0}^{2}$ is the same: $v = -9.1\ \mathrm{m/s}$.
->
-> **(c)** By (2.10), $0 = y_{0} + v_{0}t - \tfrac{1}{2}gt^{2}$ with $v_{0} = -7.3\ \mathrm{m/s}$:
-> $$
-> t = \frac{v_{0} \pm \sqrt{v_{0}^{2} + 2y_{0}g}}{g} = \frac{-7.3\ \mathrm{m/s} \pm 9.09\ \mathrm{m/s}}{9.8\ \mathrm{m/s^2}} = 0.18\ \mathrm{s} \ \text{ or } \ -1.7\ \mathrm{s}.
-> $$
-> It hits the floor after $0.18\ \mathrm{s}$. The root $-1.7\ \mathrm{s}$ is when a ball always in free fall would have left the floor moving upward.
-
-### EUP 2.91
-Question: [[PHY1 HW Ch02 Questions#EUP 2.91|EUP 2.91]]
-
-> [!solution] Solution
-> A drop falls $h = 0.196\ \mathrm{m}$ from rest in
-> $$
-> t = \sqrt{\frac{2h}{g}} = \sqrt{\frac{2(0.196\ \mathrm{m})}{9.8\ \mathrm{m/s^2}}} = 0.200\ \mathrm{s}.
-> $$
-> Four drops (one leaving, two in between, one landing) span three equal time intervals $\Delta t$: $\Delta t = \dfrac{0.200\ \mathrm{s}}{3} = 0.0667\ \mathrm{s}$, so there are $\dfrac{1}{\Delta t} = 15$ drops per second.
-
-## Free Fall with Two Objects
-
-### EUP 2.77
-Question: [[PHY1 HW Ch02 Questions#EUP 2.77|EUP 2.77]]
-
-> [!solution] Solution
-> $y = 0$ at the water, $y_{0} = 3.00\ \mathrm{m}$.
->
-> **(a)** By (2.11), $v^{2} = v_{0}^{2} + 2gy_{0}$:
-> $$
-> \begin{aligned}
-> v_{1} &= \sqrt{(1.80\ \mathrm{m/s})^{2} + 2(9.8\ \mathrm{m/s^2})(3.00\ \mathrm{m})} = 7.88\ \mathrm{m/s}, \\
-> v_{2} &= \sqrt{2(9.8\ \mathrm{m/s^2})(3.00\ \mathrm{m})} = 7.67\ \mathrm{m/s}.
-> \end{aligned}
-> $$
->
-> **(b)** The first diver passes the platform going down at $1.80\ \mathrm{m/s}$, at the instant the second steps off. From then on, by (2.7),
-> $$
-> t_{1} = \frac{7.877\ \mathrm{m/s} - 1.80\ \mathrm{m/s}}{9.8\ \mathrm{m/s^2}} = 0.620\ \mathrm{s}, \qquad t_{2} = \frac{7.668\ \mathrm{m/s}}{9.8\ \mathrm{m/s^2}} = 0.782\ \mathrm{s}.
-> $$
-> The first diver hits the water first, by $0.16\ \mathrm{s}$.
 
 ### EUP 2.78
-Question: [[PHY1 HW Ch02 Questions#EUP 2.78|EUP 2.78]]
+題目：[[PHY1 HW Ch02 Questions#EUP 2.78|EUP 2.78]]
 
-> [!solution] Solution
-> Take $y$ upward from the point of release, with $u = 10\ \mathrm{m/s}$ for the balloon and $w = 12\ \mathrm{m/s}$ for the ball relative to it:
+> [!solution] 答案
+> 取地面為原點、$y$ 向上。球的初速 $10 + 12 = 22\ \mathrm{m/s}$，乘客等速 $10\ \mathrm{m/s}$。由 (2.10)：
 > $$
-> y_{\text{ball}} = (u + w)t - \tfrac{1}{2}gt^{2}, \qquad y_{\text{hand}} = ut.
+> (22\ \mathrm{m/s})t - \tfrac{1}{2}gt^{2} = (10\ \mathrm{m/s})t \implies t = \frac{2(12\ \mathrm{m/s})}{9.8\ \mathrm{m/s^2}} = 2.4\ \mathrm{s}
 > $$
-> Equal when $wt - \tfrac{1}{2}gt^{2} = 0$: $t = 0$ (the throw) or
-> $$
-> t = \frac{2w}{g} = \frac{2(12\ \mathrm{m/s})}{9.8\ \mathrm{m/s^2}} = 2.4\ \mathrm{s}.
-> $$
+> （$t = 0$ 是丟出的瞬間。）
 
-### EUP 2.97
-Question: [[PHY1 HW Ch02 Questions#EUP 2.97|EUP 2.97]]
+> [!warning] 氣球的速度用不到
+> 答案只和相對速度 $12\ \mathrm{m/s}$ 有關：在等速上升的氣球上看，就是一般的上拋。
 
-> [!solution] Solution
-> $y = 0$ at the ground:
-> $$
-> y_{1} = h_{0} - \tfrac{1}{2}gt^{2}, \qquad y_{2} = v_{0}t - \tfrac{1}{2}gt^{2}.
-> $$
-> $y_{1} = y_{2}$ gives $t = \dfrac{h_{0}}{v_{0}}$.
->
-> **(b)** The height is $y = h_{0} - \tfrac{1}{2}g\left(\dfrac{h_{0}}{v_{0}}\right)^{2} = h_{0} - \dfrac{gh_{0}^{2}}{2v_{0}^{2}}$.
->
-> **(a)** Mid-air means $y > 0$: $v_{0} > \sqrt{\dfrac{gh_{0}}{2}}$.
-
-## Nonconstant Acceleration
-
-### EUP 2.88
-Question: [[PHY1 HW Ch02 Questions#EUP 2.88|EUP 2.88]]
-
-> [!solution] Solution
-> **(a)** $v(t) = \displaystyle\int (a_{0} + bt)\,dt = a_{0}t + \tfrac{1}{2}bt^{2} + C_{1}$, and $v(0) = v_{0}$ gives $C_{1} = v_{0}$:
-> $$
-> v(t) = v_{0} + a_{0}t + \tfrac{1}{2}bt^{2}.
-> $$
->
-> **(b)** $x(t) = \displaystyle\int v\,dt = v_{0}t + \tfrac{1}{2}a_{0}t^{2} + \tfrac{1}{6}bt^{3} + C_{2}$, and $x(0) = x_{0}$ gives $C_{2} = x_{0}$:
-> $$
-> x(t) = x_{0} + v_{0}t + \tfrac{1}{2}a_{0}t^{2} + \tfrac{1}{6}bt^{3}.
-> $$
-
-### EUP 2.94
-Question: [[PHY1 HW Ch02 Questions#EUP 2.94|EUP 2.94]]
-
-> [!solution] Solution
-> With $v(0) = 0$ and $x(0) = 0$,
-> $$
-> v(t) = \int_{0}^{t} bt'^{2}\,dt' = \tfrac{1}{3}bt^{3}, \qquad x(t) = \int_{0}^{t} \tfrac{1}{3}bt'^{3}\,dt' = \tfrac{1}{12}bt^{4},
-> $$
-> $$
-> x(6.3\ \mathrm{s}) = \tfrac{1}{12}(0.041\ \mathrm{m/s^4})(6.3\ \mathrm{s})^{4} = 5.4\ \mathrm{m}.
-> $$
+## 老師勾選：非等加速度
 
 ### EUP 2.95
-Question: [[PHY1 HW Ch02 Questions#EUP 2.95|EUP 2.95]]
+題目：[[PHY1 HW Ch02 Questions#EUP 2.95|EUP 2.95]]
 
-> [!solution] Solution
-> **(a)** With $x(0) = 0$,
+> [!solution] 答案
+> 由 (2.13)，$x(0) = 0$：
 > $$
-> x(t) = \int_{0}^{t} \left(bt' - ct'^{3}\right)dt' = \tfrac{1}{2}bt^{2} - \tfrac{1}{4}ct^{4} = \tfrac{1}{4}t^{2}\left(2b - ct^{2}\right),
+> x = \int_{0}^{t}(bt' - ct'^{3})\,dt' = \tfrac{1}{2}bt^{2} - \tfrac{1}{4}ct^{4} = t^{2}\left(\tfrac{1}{2}b - \tfrac{1}{4}ct^{2}\right)
 > $$
-> so $x = 0$ again at $t = \sqrt{\dfrac{2b}{c}}$.
+> - (a) $x = 0$ 且 $t > 0$：$t = \sqrt{\dfrac{2b}{c}}$。
+> - (b) $a = \dfrac{dv}{dt} = b - 3ct^{2} = b - 3c\left(\dfrac{2b}{c}\right) = -5b$。
+
+## 加選：平均速度與平均速率
+
+### EUP 2.13
+題目：[[PHY1 HW Ch02 Questions#EUP 2.13|EUP 2.13]]
+
+> [!solution] 答案
+> 取北為正、家為原點。
+> - (a) $\Delta x = +24\ \mathrm{km}$（向北）。
+> - (b) $\bar{v} = \dfrac{24\ \mathrm{km}}{2.5\ \mathrm{h}} = 9.6\ \mathrm{km/h}$，向北。
+> - (c) $\bar{v} = \dfrac{-24\ \mathrm{km}}{1.5\ \mathrm{h}} = -16\ \mathrm{km/h}$，即 $16\ \mathrm{km/h}$ 向南。
+> - (d) 回到家，$\Delta x = 0$。
+> - (e) $\bar{v} = 0/(4.0\ \mathrm{h}) = 0$（平均速率是 $48\ \mathrm{km}/4.0\ \mathrm{h} = 12\ \mathrm{km/h}$）。
+
+### EUP 2.83
+題目：[[PHY1 HW Ch02 Questions#EUP 2.83|EUP 2.83]]
+
+> [!solution] 答案
+> - (a) 總時間 $T$，各用 $T/2$：$L = v_{1}\tfrac{T}{2} + v_{2}\tfrac{T}{2}$，$\bar{v} = \dfrac{L}{T} = \tfrac{1}{2}(v_{1} + v_{2})$。
+> - (b) 各走 $L/2$：$T = \dfrac{L}{2v_{1}} + \dfrac{L}{2v_{2}}$，$\bar{v} = \dfrac{L}{T} = \dfrac{2v_{1}v_{2}}{v_{1} + v_{2}}$。
+> - (c) 兩者相減：
+> $$
+> \tfrac{1}{2}(v_{1} + v_{2}) - \frac{2v_{1}v_{2}}{v_{1} + v_{2}} = \frac{(v_{1} - v_{2})^{2}}{2(v_{1} + v_{2})} \geq 0
+> $$
+> 情況 (a) 較大（$v_{1} = v_{2}$ 時相等）。
+
+## 加選：由位置函數求速度與加速度
+
+### EUP 2.84
+題目：[[PHY1 HW Ch02 Questions#EUP 2.84|EUP 2.84]]
+
+> [!solution] 答案
+> (a) $0 = bt^{2} - ct^{4}$，$t \neq 0$：$c = \dfrac{b}{t^{2}} = \dfrac{1.82\ \mathrm{m/s^2}}{(2.54\ \mathrm{s})^{2}} = 0.282\ \mathrm{m/s^4}$。
 >
-> **(b)** $a = \dfrac{dv}{dt} = b - 3ct^{2}$; with $ct^{2} = 2b$, $a = b - 6b = -5b$.
+> 代入 $ct^{2} = b$：
+> - (b) $v = 2bt - 4ct^{3} = 2bt - 4bt = -2bt = -9.25\ \mathrm{m/s}$，速率 $9.25\ \mathrm{m/s}$。
+> - (c) $a = 2b - 12ct^{2} = -10b = -18.2\ \mathrm{m/s^2}$。
+
+## 加選：平均加速度
+
+### EUP 2.23
+題目：[[PHY1 HW Ch02 Questions#EUP 2.23|EUP 2.23]]
+
+> [!solution] 答案
+> 由 (2.4)：
+> - (a) $\lvert \bar{a} \rvert = \dfrac{11.0\ \mathrm{m/s}}{1.12\ \mathrm{s}} = 9.82\ \mathrm{m/s^2}$。
+> - (b) $\lvert \bar{a} \rvert = \dfrac{11.0\ \mathrm{m/s}}{0.133\ \mathrm{s}} = 82.7\ \mathrm{m/s^2}$。
+
+## 加選：等加速度（一個物體）
+
+### EUP 2.66
+題目：[[PHY1 HW Ch02 Questions#EUP 2.66|EUP 2.66]]
+
+> [!solution] 答案
+> 取行駛方向為正：$v = 18\ \mathrm{km/h} = 5.0\ \mathrm{m/s}$，$a = -6.3\ \mathrm{m/s^2}$，$\Delta x = 34\ \mathrm{m}$。(a) 由 (2.11)：
+> $$
+> v_{0} = \sqrt{v^{2} - 2a\Delta x} = \sqrt{(5.0\ \mathrm{m/s})^{2} + 2(6.3\ \mathrm{m/s^2})(34\ \mathrm{m})} = 21\ \mathrm{m/s} = 77\ \mathrm{km/h}
+> $$
+> (b) 由 (2.7)：$t = \dfrac{v - v_{0}}{a} = \dfrac{5.0 - 21.3}{-6.3}\ \mathrm{s} = 2.6\ \mathrm{s}$。
+
+> [!warning] 末速度不是零
+> 撞上時車速還有 $18\ \mathrm{km/h}$，不能令 $v = 0$。
+
+## 加選：等加速度（兩個物體）
+
+### EUP 2.55
+題目：[[PHY1 HW Ch02 Questions#EUP 2.55|EUP 2.55]]
+
+> [!solution] 答案
+> 兩車都由靜止出發，由 (2.10)，$L = 400\ \mathrm{m} = \tfrac{1}{2}at^{2}$。勝者 $t_{\mathrm{w}} = \sqrt{2L/a_{\mathrm{w}}} = 13.72\ \mathrm{s}$；敗者 $t_{\mathrm{L}} = t_{\mathrm{w}} + 0.248\ \mathrm{s} = 13.97\ \mathrm{s}$。勝者到終點時，敗者走了
+> $$
+> x_{\mathrm{L}} = \tfrac{1}{2}a_{\mathrm{L}}t_{\mathrm{w}}^{2} = L\left(\frac{t_{\mathrm{w}}}{t_{\mathrm{L}}}\right)^{2} = (400\ \mathrm{m})\left(\frac{13.72}{13.97}\right)^{2} = 385.9\ \mathrm{m}
+> $$
+> 落後 $400\ \mathrm{m} - 385.9\ \mathrm{m} = 14.1\ \mathrm{m}$。
+
+### EUP 2.70
+題目：[[PHY1 HW Ch02 Questions#EUP 2.70|EUP 2.70]]
+
+> [!solution] 答案
+> 取 $x = 0$ 在你的車、$t = 0$ 在開始煞車：$v_{1} - v_{2} = 25\ \mathrm{km/h} = 6.94\ \mathrm{m/s}$，$a = 4.2\ \mathrm{m/s^2}$（大小），$d = 10\ \mathrm{m}$。兩車間距
+> $$
+> s(t) = (d + v_{2}t) - \left(v_{1}t - \tfrac{1}{2}at^{2}\right) = d - (v_{1} - v_{2})t + \tfrac{1}{2}at^{2}
+> $$
+> 在 $\dfrac{ds}{dt} = 0$，即 $t = \dfrac{v_{1} - v_{2}}{a} = 1.65\ \mathrm{s}$ 時最小：
+> $$
+> s_{\min} = d - \frac{(v_{1} - v_{2})^{2}}{2a} = 10\ \mathrm{m} - \frac{(6.94\ \mathrm{m/s})^{2}}{2(4.2\ \mathrm{m/s^2})} = 4.3\ \mathrm{m} > 0
+> $$
+> 不會相撞；最接近時相距 $4.3\ \mathrm{m}$。
+
+> [!warning] 最接近的時刻
+> 最接近發生在兩車速度相等時，不是你的車停下時。
+
+### EUP 2.81
+題目：[[PHY1 HW Ch02 Questions#EUP 2.81|EUP 2.81]]
+
+> [!solution] 答案
+> 在慢車上看（慢車等速，這個參考系中加速度不變）：快車的相對初速 $u_{0} = 80 - 25 = 55\ \mathrm{km/h} = 15.3\ \mathrm{m/s}$，相對加速度 $-2.1\ \mathrm{m/s^2}$，要拉近 $50\ \mathrm{m}$。由 (2.11)：
+> $$
+> u^{2} = u_{0}^{2} - 2(2.1\ \mathrm{m/s^2})(50\ \mathrm{m}) = 233.4 - 210 = 23.4\ \mathrm{m^2/s^2} > 0
+> $$
+> 會相撞，相對速率 $u = 4.8\ \mathrm{m/s} = 17\ \mathrm{km/h}$。（撞擊時快車仍在前進，約 $12\ \mathrm{m/s}$。）
+
+## 加選：自由落體（一個物體）
+
+### EUP 2.59
+題目：[[PHY1 HW Ch02 Questions#EUP 2.59|EUP 2.59]]
+
+> [!solution] 答案
+> 地面 $y = 0$，$y_{0} = 82.0\ \mathrm{m}$。由 (2.10)，$0 = y_{0} + v_{0}t - \tfrac{1}{2}gt^{2}$，取正根：
+> $$
+> t = \frac{v_{0} + \sqrt{v_{0}^{2} + 2gy_{0}}}{g}
+> $$
+> - 最早落地（$v_{0} = -7.68\ \mathrm{m/s}$）：$t = 3.38\ \mathrm{s}$。
+> - 最晚落地（$v_{0} = +16.7\ \mathrm{m/s}$）：$t = 6.14\ \mathrm{s}$。
+>
+> 碎片在爆炸後 $3.38\ \mathrm{s}$ 到 $6.14\ \mathrm{s}$ 之間落地，區間長 $2.75\ \mathrm{s}$。
+
+### EUP 2.73
+題目：[[PHY1 HW Ch02 Questions#EUP 2.73|EUP 2.73]]
+
+> [!solution] 答案
+> 總時間 $T$，$h = \tfrac{1}{2}gT^{2}$。前 $T - 1\ \mathrm{s}$ 落下 $\tfrac{3}{4}h$：
+> $$
+> \begin{aligned}
+> \tfrac{1}{2}g(T - 1\ \mathrm{s})^{2} = \tfrac{3}{4}\cdot\tfrac{1}{2}gT^{2} &\implies \frac{T - 1\ \mathrm{s}}{T} = \frac{\sqrt{3}}{2} \\
+> &\implies T = \frac{1\ \mathrm{s}}{1 - \sqrt{3}/2} = 7.46\ \mathrm{s}
+> \end{aligned}
+> $$
+> （另一根 $T = 0.54\ \mathrm{s} < 1\ \mathrm{s}$，不合。）$h = \tfrac{1}{2}(9.8\ \mathrm{m/s^2})(7.46\ \mathrm{s})^{2} = 2.7 \times 10^{2}\ \mathrm{m}$。
+
+### EUP 2.86
+題目：[[PHY1 HW Ch02 Questions#EUP 2.86|EUP 2.86]]
+
+> [!solution] 答案
+> 取 $y$ **向下**，$a = +g$。設水球到窗戶上緣時速度 $v_{\mathrm{t}}$，通過窗戶，由 (2.10)：
+> $$
+> \Delta y = v_{\mathrm{t}}t + \tfrac{1}{2}gt^{2} \implies v_{\mathrm{t}} = \frac{1.3\ \mathrm{m} - \tfrac{1}{2}(9.8\ \mathrm{m/s^2})(0.22\ \mathrm{s})^{2}}{0.22\ \mathrm{s}} = 4.83\ \mathrm{m/s}
+> $$
+> 從靜止到窗戶上緣，由 (2.11)：
+> $$
+> H = \frac{v_{\mathrm{t}}^{2}}{2g} = \frac{(4.83\ \mathrm{m/s})^{2}}{2(9.8\ \mathrm{m/s^2})} = 1.2\ \mathrm{m}
+> $$
+
+> [!warning] 不是從靜止通過窗戶
+> 不能令 $1.3\ \mathrm{m} = \tfrac{1}{2}gt^{2}$：水球到窗戶上緣時已經在動。
+
+### EUP 2.90
+題目：[[PHY1 HW Ch02 Questions#EUP 2.90|EUP 2.90]]
+
+> [!solution] 答案
+> 地板 $y = 0$，$y_{0} = 1.5\ \mathrm{m}$。(a)、(b) 由 (2.11)，落到地板時 $v^{2} = v_{0}^{2} + 2gy_{0}$，只和 $v_{0}^{2}$ 有關，往上或往下丟都一樣：
+> $$
+> v = -\sqrt{(7.3\ \mathrm{m/s})^{2} + 2(9.8\ \mathrm{m/s^2})(1.5\ \mathrm{m})} = -9.1\ \mathrm{m/s}
+> $$
+> (c) 由 (2.10)，$0 = 1.5 - 7.3t - 4.9t^{2}$（SI 單位）：
+> $$
+> t = \frac{-7.3 \pm 9.09}{9.8}\ \mathrm{s} = 0.18\ \mathrm{s} \ \text{或} \ -1.67\ \mathrm{s}
+> $$
+> 第二顆球在 $0.18\ \mathrm{s}$ 落地。負根表示：若這顆球一直在自由落體，它會在 $1.67\ \mathrm{s}$ 前從地板往上出發，經過手時恰好以 $7.3\ \mathrm{m/s}$ 往下（與第一顆球的運動對稱）。
+
+## 加選：自由落體（兩個物體）
+
+### EUP 2.77
+題目：[[PHY1 HW Ch02 Questions#EUP 2.77|EUP 2.77]]
+
+> [!solution] 答案
+> 水面 $y = 0$，跳台 $y_{0} = 3.00\ \mathrm{m}$，從第一人往下經過跳台時計時：第一人 $v_{0} = -1.80\ \mathrm{m/s}$（回到跳台時速率不變），第二人 $v_{0} = 0$。
+>
+> (a) 由 (2.11)：
+> $$
+> \begin{aligned}
+> v_{1} &= \sqrt{(1.80\ \mathrm{m/s})^{2} + 2(9.8\ \mathrm{m/s^2})(3.00\ \mathrm{m})} = 7.88\ \mathrm{m/s} \\
+> v_{2} &= \sqrt{2(9.8\ \mathrm{m/s^2})(3.00\ \mathrm{m})} = 7.67\ \mathrm{m/s}
+> \end{aligned}
+> $$
+> (b) 由 (2.10)，$3.00 = 1.80t_{1} + 4.9t_{1}^{2}$ 得 $t_{1} = 0.620\ \mathrm{s}$；$t_{2} = \sqrt{2(3.00)/9.8}\ \mathrm{s} = 0.782\ \mathrm{s}$。往上跳的人先入水，早 $0.16\ \mathrm{s}$。
+
+### EUP 2.97
+題目：[[PHY1 HW Ch02 Questions#EUP 2.97|EUP 2.97]]
+
+> [!solution] 答案
+> 地面 $y = 0$。由 (2.10)：$y_{1} = h_{0} - \tfrac{1}{2}gt^{2}$，$y_{2} = v_{0}t - \tfrac{1}{2}gt^{2}$。令 $y_{1} = y_{2}$：$t = \dfrac{h_{0}}{v_{0}}$。
+>
+> (a) 要在第二顆球落回地面（$t = 2v_{0}/g$）之前相撞：
+> $$
+> \frac{h_{0}}{v_{0}} < \frac{2v_{0}}{g} \implies v_{0} > \sqrt{\frac{gh_{0}}{2}}
+> $$
+> （這也保證第一顆球還沒落地：$h_{0}/v_{0} < \sqrt{2h_{0}/g}$ 是同一個條件。）
+>
+> (b) $y = h_{0} - \tfrac{1}{2}g\left(\dfrac{h_{0}}{v_{0}}\right)^{2} = h_{0} - \dfrac{gh_{0}^{2}}{2v_{0}^{2}}$。
+
+## 加選：非等加速度
+
+### EUP 2.88
+題目：[[PHY1 HW Ch02 Questions#EUP 2.88|EUP 2.88]]
+
+> [!solution] 答案
+> 由 (2.12)、(2.13)，積分常數由 $v(0) = v_{0}$、$x(0) = x_{0}$ 決定：
+> $$
+> \begin{aligned}
+> v &= v_{0} + \int_{0}^{t}(a_{0} + bt')\,dt' = v_{0} + a_{0}t + \tfrac{1}{2}bt^{2} \\
+> x &= x_{0} + \int_{0}^{t}v\,dt' = x_{0} + v_{0}t + \tfrac{1}{2}a_{0}t^{2} + \tfrac{1}{6}bt^{3}
+> \end{aligned}
+> $$
 
 ### EUP 2.96
-Question: [[PHY1 HW Ch02 Questions#EUP 2.96|EUP 2.96]]
+題目：[[PHY1 HW Ch02 Questions#EUP 2.96|EUP 2.96]]
 
-> [!solution] Solution
-> **(a)** With $v(0) = 0$,
+> [!solution] 答案
+> (a) 由 (2.12)，$v(0) = 0$：
 > $$
-> v(t) = \int_{0}^{t} a_{0}e^{-bt'}\,dt' = \frac{a_{0}}{b}\left(1 - e^{-bt}\right).
+> v = \int_{0}^{t}a_{0}e^{-bt'}\,dt' = \frac{a_{0}}{b}\left(1 - e^{-bt}\right)
 > $$
->
-> **(b)** No: as $t \to \infty$, $v \to \dfrac{a_{0}}{b}$.
->
-> **(c)** Yes:
-> $$
-> x(t) = \int_{0}^{t} v\,dt' = \frac{a_{0}}{b}\left[t - \frac{1}{b}\left(1 - e^{-bt}\right)\right] \to \infty \quad \text{as } t \to \infty.
-> $$
+> - (b) 不會。$t \to \infty$ 時 $v \to a_{0}/b$，速率趨近這個上限。
+> - (c) 會。速度趨近定值 $a_{0}/b > 0$，$x = \dfrac{a_{0}}{b}t - \dfrac{a_{0}}{b^{2}}\left(1 - e^{-bt}\right)$ 隨時間無限增加。
 
-## Reading Graphs
-
-### EUP 2.98 to 2.102
-Question: [[PHY1 HW Ch02 Questions#EUP 2.98 to 2.102|EUP 2.98 to 2.102]]
-
-![[PHY1 Ch02 Fig 2.16.png]]
-
-> [!solution] Solution
-> On a $v$–$t$ graph the height of the curve is $v$ and its slope is $a$.
-> - **98.** b. $v = 0$ where the curve meets the time axis: A, E, and H.
-> - **99.** c. $a = 0$ where the slope is zero: C and F.
-> - **100.** b. $\lvert v \rvert$ is largest at C (F is closer to the axis).
-> - **101.** c. The curve is steepest at D.
-> - **102.** b. $v > 0$ from A to E and $v < 0$ after E, so the tiger is farthest from its start at E.
-
-## Data and Straight-Line Fits
+## 加選：數據題
 
 ### EUP 2.58
-Question: [[PHY1 HW Ch02 Questions#EUP 2.58|EUP 2.58]]
+題目：[[PHY1 HW Ch02 Questions#EUP 2.58|EUP 2.58]]
 
-> [!solution] Solution
-> From rest at $x = 0$, (2.10) gives $x = \tfrac{1}{2}at^{2}$: plot $x$ versus $t^{2}$; the slope is $\tfrac{1}{2}a$.
+> [!solution] 答案
+> 由靜止出發、等加速度，(2.10) 成為 $x = \tfrac{1}{2}at^{2}$，所以畫 $x$ 對 $t^{2}$：
 >
-> | $t^{2}$ ($\mathrm{s^2}$) | 0 | 1 | 4 | 9 | 16 | 25 |
+> | $t^{2}$ ($\mathrm{s^2}$) | $0$ | $1$ | $4$ | $9$ | $16$ | $25$ |
 > | --- | --- | --- | --- | --- | --- | --- |
-> | $x$ ($\mathrm{m}$) | 0 | 1.7 | 6.2 | 17 | 24 | 40 |
+> | $x$ ($\mathrm{m}$) | $0$ | $1.7$ | $6.2$ | $17$ | $24$ | $40$ |
 >
-> The best-fit line has slope $\approx 1.6\ \mathrm{m/s^2}$, so $a = 2 \times \text{slope} \approx 3.2\ \mathrm{m/s^2}$.
+> 過原點的最佳擬合直線斜率 $\approx 1.6\ \mathrm{m/s^2} = \tfrac{1}{2}a$，所以 $a \approx 3.2\ \mathrm{m/s^2}$。
 >
-> ![[PHY1 Ch02 Problem 2.58 fit.png]]
+> ![EUP 2.58 fit|480](../Attachments/PHY1%20Ch02%20Problem%202.58%20fit.png)
+
+## 加選：讀速度–時間圖
+
+### EUP 2.98 to 2.102
+題目：[[PHY1 HW Ch02 Questions#EUP 2.98 to 2.102|EUP 2.98 to 2.102]]
+
+![EUP Figure 2.16|400](../Attachments/PHY1%20Ch02%20Fig%202.16.png)
+
+> [!solution] 答案
+> $v$–$t$ 圖上，曲線的高度是 $v$，斜率是 $a$，曲線下的面積是位移。
+> - **98.** b. $v = 0$ 在曲線碰到時間軸處：A、E、H。
+> - **99.** c. $a = 0$ 在斜率為零處：C 和 F。
+> - **100.** b. $\lvert v \rvert$ 最大在 C（離時間軸最遠）。
+> - **101.** c. 斜率最陡在 D。
+> - **102.** b. A 到 E 之間 $v > 0$，老虎一直遠離起點；E 之後 $v < 0$ 往回走。所以 E 時最遠。
+
+## 外校考題：觀念題
+
+### SIU 1.2
+題目：[[PHY1 HW Ch02 Questions#SIU 1.2|SIU 1.2]]
+
+> [!solution] 答案
+> 減慢。$x$–$t$ 曲線的斜率是速度：$2.0\ \mathrm{h}$ 時斜率為正，但越來越平，到 $3.0\ \mathrm{h}$ 的最高點變成零，所以速率在減少（$v > 0$、$a < 0$）。
+
+## 外校考題：計算題
+
+### KSUS 1.8
+題目：[[PHY1 HW Ch02 Questions#KSUS 1.8|KSUS 1.8]]
+
+> [!solution] 答案
+> - a) 位移是 $v$–$t$ 曲線下的三角形面積：$\Delta x = \tfrac{1}{2}(12.0\ \mathrm{s})(25\ \mathrm{m/s}) = 150\ \mathrm{m}$，$x = 50.0\ \mathrm{m} + 150\ \mathrm{m} = 200\ \mathrm{m}$。
+> - b) $\bar{v} = \dfrac{150\ \mathrm{m}}{12.0\ \mathrm{s}} = 12.5\ \mathrm{m/s}$。
+> - c) 始末速度都是 $0$：$\bar{a} = \dfrac{0 - 0}{12.0\ \mathrm{s}} = 0$。
+
+### KSUS 1.9
+題目：[[PHY1 HW Ch02 Questions#KSUS 1.9|KSUS 1.9]]
+
+> [!solution] 答案
+> 取原方向為正：$v_{0} = 24\ \mathrm{m/s}$，$v = -18\ \mathrm{m/s}$。
+> - a) $\lvert \bar{a} \rvert = \dfrac{\lvert -18 - 24 \rvert\ \mathrm{m/s}}{0.120\ \mathrm{s}} = 350\ \mathrm{m/s^2} = 3.5 \times 10^{2}\ \mathrm{m/s^2}$。
+> - b) 由 (2.11)，$v = 0$：$\Delta x = \dfrac{v_{0}^{2}}{2\lvert a \rvert} = \dfrac{(24\ \mathrm{m/s})^{2}}{2(350\ \mathrm{m/s^2})} = 0.82\ \mathrm{m}$。
+
+> [!warning] 反轉方向
+> 速度改變量是 $24 + 18 = 42\ \mathrm{m/s}$，不是 $24 - 18$。
+
+### KSUS 1.10
+題目：[[PHY1 HW Ch02 Questions#KSUS 1.10|KSUS 1.10]]
+
+> [!solution] 答案
+> 取搶匪經過警車時 $x = 0$、$t = 0$。由 (2.10)，$x_{\mathrm{r}} = vt$，$x_{\mathrm{p}} = \tfrac{1}{2}at^{2}$；在 $t = 5.00\ \mathrm{s}$ 相等：
+> $$
+> a = \frac{2v}{t} = \frac{2(48.0\ \mathrm{m/s})}{5.00\ \mathrm{s}} = 19.2\ \mathrm{m/s^2} = \frac{19.2}{9.80}g = 1.96g
+> $$
+
+### KSUS 1.11
+題目：[[PHY1 HW Ch02 Questions#KSUS 1.11|KSUS 1.11]]
+
+> [!solution] 答案
+> 取拋出點 $y = 0$、向上為正，$v_{0} = 12.0\ \mathrm{m/s}$，$t = 6.80\ \mathrm{s}$。
+> - a) 由 (2.10)：$y = v_{0}t - \tfrac{1}{2}gt^{2} = (12.0)(6.80) - \tfrac{1}{2}(9.80)(6.80)^{2} = -145\ \mathrm{m}$，懸崖高 $145\ \mathrm{m}$。
+> - b) 由 (2.7)：$v = v_{0} - gt = 12.0 - (9.80)(6.80) = -54.6\ \mathrm{m/s}$，速率 $54.6\ \mathrm{m/s}$。
+
+### KSUF 1.1
+題目：[[PHY1 HW Ch02 Questions#KSUF 1.1|KSUF 1.1]]
+
+> [!solution] 答案
+> - a) 位移是曲線下的有號面積：
+> $$
+> \Delta x = (-5\ \mathrm{m/s})(2.0\ \mathrm{s}) + \tfrac{1}{2}(-5 + 10)\ \mathrm{m/s}\,(1.5\ \mathrm{s}) + (10\ \mathrm{m/s})(1.5\ \mathrm{s}) = 8.75\ \mathrm{m}
+> $$
+> $x = 10.0\ \mathrm{m} + 8.75\ \mathrm{m} = 18.8\ \mathrm{m}$。
+> - b) $\bar{v} = \dfrac{8.75\ \mathrm{m}}{5.0\ \mathrm{s}} = 1.8\ \mathrm{m/s}$。
+> - c) $a$ 是斜率：$0$ 到 $2.0\ \mathrm{s}$ 為 $0$；$2.0$ 到 $3.5\ \mathrm{s}$ 為 $\dfrac{15\ \mathrm{m/s}}{1.5\ \mathrm{s}} = 10\ \mathrm{m/s^2}$；$3.5$ 到 $5.0\ \mathrm{s}$ 為 $0$。
+>
+> ![KSUF 1.1 acceleration|420](../Attachments/PHY1%20Ch02%20KSUF%201.1%20acceleration.png)
+
+### KSUF 1.3
+題目：[[PHY1 HW Ch02 Questions#KSUF 1.3|KSUF 1.3]]
+
+> [!solution] 答案
+> 取北為正，$1\ \mathrm{mph} = 0.4470\ \mathrm{m/s}$：$v_{0} = -98\ \mathrm{mph} = -43.8\ \mathrm{m/s}$，$v = 128\ \mathrm{mph} = 57.2\ \mathrm{m/s}$，$t = 3.2 \times 10^{-3}\ \mathrm{s}$。
+> - a) 由 (2.4)：$\bar{a} = \dfrac{57.2 - (-43.8)}{3.2 \times 10^{-3}}\ \mathrm{m/s^2} = 3.2 \times 10^{4}\ \mathrm{m/s^2}$，向北。
+> - b) 由 (2.9)：$\Delta x = \tfrac{1}{2}(v_{0} + v)t = \tfrac{1}{2}(13.4\ \mathrm{m/s})(3.2 \times 10^{-3}\ \mathrm{s}) = 2.1 \times 10^{-2}\ \mathrm{m} = 2.1\ \mathrm{cm}$，向北。
+
+### KSUF 1.4
+題目：[[PHY1 HW Ch02 Questions#KSUF 1.4|KSUF 1.4]]
+
+> [!solution] 答案
+> - a) 上升與下降時間對稱，上升 $5.00\ \mathrm{s}$ 到 $v = 0$，由 (2.7)：$v_{0} = gt_{\mathrm{up}} = (9.80\ \mathrm{m/s^2})(5.00\ \mathrm{s}) = 49.0\ \mathrm{m/s}$。
+> - b) 由 (2.11)：$h = \dfrac{v_{0}^{2}}{2g} = \dfrac{(49.0\ \mathrm{m/s})^{2}}{2(9.80\ \mathrm{m/s^2})} = 123\ \mathrm{m}$。
+
+### SIU 1.5
+題目：[[PHY1 HW Ch02 Questions#SIU 1.5|SIU 1.5]]
+
+> [!solution] 答案
+> 最高點 $v = 0$，由 (2.11)：
+> $$
+> \Delta y = \frac{v_{0}^{2}}{2g} = \frac{(15\ \mathrm{m/s})^{2}}{2(9.80\ \mathrm{m/s^2})} = 11\ \mathrm{m}
+> $$
+
+> [!warning] 建築高度用不到
+> 問的是建築上方多高，$50.0\ \mathrm{m}$ 是多餘的數據。

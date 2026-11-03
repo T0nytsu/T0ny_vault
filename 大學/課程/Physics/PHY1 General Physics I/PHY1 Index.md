@@ -68,6 +68,8 @@ created: 2026-10-05
 ## Summaries
 
 - [[PHY1 Ch1-2 Summary]]: EUP Ch. 1 and 2
+- [[PHY1 Ch1 中文課本]]: EUP Ch. 1 Doing Physics, condensed Chinese translation
+- [[PHY1 Ch2 中文課本]]: EUP Ch. 2 Motion in a Straight Line, condensed Chinese translation
 - [[PHY1 Ch3 中文課本]]: EUP Ch. 3 Motion in Two and Three Dimensions, condensed Chinese translation
 - [[PHY1 Ch4 中文課本]]: EUP Ch. 4 Force and Motion, condensed Chinese translation
 - [[PHY1 Ch5 中文課本]]: EUP Ch. 5 Using Newton's Laws, condensed Chinese translation

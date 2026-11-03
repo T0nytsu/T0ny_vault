@@ -485,21 +485,21 @@ $$
 n \text{ bits} \implies 2^{n} \text{ patterns}; \qquad 0 \le x \le 2^{n} - 1 \ \ (\text{unsigned})
 $$
 
-| 寬度 | 圖樣數 | 無號範圍 |
-| --- | --- | --- |
-| 8 bits = 1 byte | $2^{8} = 256$ | 0 to 255 |
-| 16 bits = 2 bytes | $2^{16} = 65{,}536$ | 0 to 65,535 |
-| n bits | $2^{n}$ | 0 to $2^{n} - 1$ |
+| 寬度                | 圖樣數                 | 無號範圍             |
+| ----------------- | ------------------- | ---------------- |
+| 8 bits = 1 byte   | $2^{8} = 256$       | 0 to 255         |
+| 16 bits = 2 bytes | $2^{16} = 65{,}536$ | 0 to 65,535      |
+| n bits            | $2^{n}$             | 0 to $2^{n} - 1$ |
 
 8 位元有 256 種圖樣，但因為第一個值是零，最大值是 255；16 位元有 65,536 種圖樣，65,535 才是最大無號值。若某種檔案或硬體欄位要求固定寬度，超出範圍要如何處理必須另外指定，不能猜測一定會怎麼溢位。
 
 **二補數（two's complement）：同一組位元的有號解讀。** How do 8 bits encode −5? Invert the fixed-width representation of +5, then add 1：
 
-| Step | 8-bit pattern | Interpretation |
-| --- | --- | --- |
-| Start with +5 | `00000101` | 4 + 1 |
-| Invert each bit | `11111010` | Still working with exactly 8 bits |
-| Add 1 | `11111011` | The 8-bit two's-complement encoding of −5 |
+| Step            | 8-bit pattern | Interpretation                            |
+| --------------- | ------------- | ----------------------------------------- |
+| Start with +5   | `00000101`    | 4 + 1                                     |
+| Invert each bit | `11111010`    | Still working with exactly 8 bits         |
+| Add 1           | `11111011`    | The 8-bit two's-complement encoding of −5 |
 
 Signed check：$-128 + 64 + 32 + 16 + 8 + 2 + 1 = -5$。
 
@@ -509,11 +509,11 @@ $$
 -2^{n-1} \le x \le 2^{n-1} - 1 \quad (\text{two's complement})
 $$
 
-| `11111011` 用哪種規則讀 | 結果 | 範圍 |
-| --- | --- | --- |
-| 8-bit unsigned | 251 | 0 to 255 |
-| 8-bit two's complement | −5 | −128 to 127 |
-| Python int | `127 + 1` gives `128` | 不是固定 8 位元欄位 |
+| `11111011` 用哪種規則讀      | 結果                    | 範圍          |
+| ---------------------- | --------------------- | ----------- |
+| 8-bit unsigned         | 251                   | 0 to 255    |
+| 8-bit two's complement | −5                    | −128 to 127 |
+| Python int             | `127 + 1` gives `128` | 不是固定 8 位元欄位 |
 
 Python 的一般 int 具有受資源限制的任意精度（arbitrary precision, limited by resources）；不能把固定欄位的範圍直接套成 Python 整數的最大值，do not assume 8-bit wraparound。**Always name the width and the encoding.**
 
