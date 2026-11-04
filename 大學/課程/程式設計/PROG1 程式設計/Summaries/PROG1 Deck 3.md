@@ -34,3 +34,19 @@
 > ```
 > `and` 的優先序高於 `or`，所以第一行的最後一項可以繞過 `valid`；第二行要求 `valid` 成立後，括號裡的任何選項才有用。寫出括號並把句子讀出來（Read a complex condition aloud），確認它真的符合需求。
 
+
+> [!failure] 故意錯誤的範例：every option needs its own comparison
+> Prepared misconception example — this condition is not what it looks like.
+> ```python
+> duration_min = 45
+> print(duration_min == 30 or 60)
+> print((duration_min == 30) or (duration_min == 60))
+> ```
+
+> [!solution]- 輸出與分析
+> ```text
+> 60
+> False
+> ```
+> 第一行不是「時間等於 30 或等於 60」的縮寫，而是把比較結果與數字 60 做 `or`。比較為假時，運算式得到 `60`；60 在 `if` 中被視為真（The number 60 is truthy; it is not an abbreviation for `duration_min == 60`）。因此它放在 `if` 裡會總是選到真分支，但不能不精確地說它「永遠回傳布林值 True」。
+
