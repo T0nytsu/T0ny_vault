@@ -1,10 +1,10 @@
 {
-  "cssTheme": "Primary",
+  "cssTheme": "Typewriter",
   "enabledCssSnippets": [
     "math-callouts",
     "math-chalk-yellow",
     "canvas-colors-fix"
   ],
   "showRibbon": true,
-  "theme": "moonstone"
+  "theme": "obsidian"
 }
