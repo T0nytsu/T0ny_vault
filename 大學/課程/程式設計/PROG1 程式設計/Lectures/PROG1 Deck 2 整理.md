@@ -266,13 +266,13 @@ Typing 45 does not automatically create an int. `input()` reads a line and retur
 
 Conversion is an operation with rules — some inputs convert cleanly; others fail or lose information：
 
-| 轉型 | 結果 | 要記住的事 |
-| --- | --- | --- |
-| `int("45")` | `45` | 整數文字可以解析成 int。 |
-| `float("12.5")` | `12.5` | 距離可以保留小數。 |
-| `str(12.5)` | `"12.5"` | 產生文字表示。 |
-| `int(12.9)` | `12` | Float → int **向零截斷**，不是四捨五入。 |
-| `int("12.5")` | `ValueError` | 這段文字不是 int() 能解析的整數格式。 |
+| 轉型              | 結果           | 要記住的事                        |
+| --------------- | ------------ | ---------------------------- |
+| `int("45")`     | `45`         | 整數文字可以解析成 int。               |
+| `float("12.5")` | `12.5`       | 距離可以保留小數。                    |
+| `str(12.5)`     | `"12.5"`     | 產生文字表示。                      |
+| `int(12.9)`     | `12`         | Float → int **向零截斷**，不是四捨五入。 |
+| `int("12.5")`   | `ValueError` | 這段文字不是 int() 能解析的整數格式。       |
 
 最後兩列不同：`int(12.9)` 收到一個已存在的浮點數；`int("12.5")` 收到文字。不要為了讓後者不報錯，隨意改成 `int(float(text))`。如果規格要求整數分鐘，把 45.5 默默改成 45，等於改變資料，而不是單純修復語法。
 
@@ -297,9 +297,9 @@ Conversion is an operation with rules — some inputs convert cleanly; others fa
 
 **Conversion is not validation**（A successfully parsed number may still violate the problem specification）：
 
-| Text → numeric value | Value → valid input? |
-| --- | --- |
-| `int("0")` succeeds. | Zero duration is not allowed. |
+| Text → numeric value      | Value → valid input?              |
+| ------------------------- | --------------------------------- |
+| `int("0")` succeeds.      | Zero duration is not allowed.     |
 | `float("-3.5")` succeeds. | Negative distance is not allowed. |
 
 > [!note] 核心觀念
