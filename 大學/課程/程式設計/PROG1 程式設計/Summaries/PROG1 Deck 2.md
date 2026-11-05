@@ -5,4 +5,5 @@
 | `int("12.5")`            | `ValueError` | 這段文字不是 int() 能解析的整數格式。       |
 | `int(-1.7)`              | `-1`         | 向零截斷（truncate toward zero）。  |
 | `round(2.5), round(3.5)` | `2, 4`       | 精確中間值採靠偶數的捨入（tie to even）。   |
+| `-7 // 3`                | `-3`         | 地板除法                         |
 
