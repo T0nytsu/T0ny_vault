@@ -681,12 +681,12 @@ Human responsibility today: define the data model and verify that the code prese
 
 **Truncation, floor, ceiling, and round** — these operations express different policies. Pick the policy before the function.
 
-| 運算式 | 結果 | 規則 |
-| --- | --- | --- |
-| `int(-1.7)` | `-1` | 向零截斷（truncate toward zero）。 |
-| `math.floor(-1.7)` | `-2` | 不大於原值的最大整數。 |
-| `math.ceil(-1.7)` | `-1` | 不小於原值的最小整數。 |
-| `round(2.5), round(3.5)` | `2, 4` | 精確中間值採靠偶數的捨入（tie to even）。 |
+| 運算式                      | 結果     | 規則                          |
+| ------------------------ | ------ | --------------------------- |
+| `int(-1.7)`              | `-1`   | 向零截斷（truncate toward zero）。 |
+| `math.floor(-1.7)`       | `-2`   | 不大於原值的最大整數。                 |
+| `math.ceil(-1.7)`        | `-1`   | 不小於原值的最小整數。                 |
+| `round(2.5), round(3.5)` | `2, 4` | 精確中間值採靠偶數的捨入（tie to even）。  |
 
 使用 `floor`、`ceil` 前需 `import math`。`int("1.7")` is not the same as `int(1.7)`。floor 與截斷對負數不一樣，例如 `-7 // 3` 是 `-3`，而 `int(-7 / 3)` 是 `-2`：這是「往下」和「往零」的差異。
 
