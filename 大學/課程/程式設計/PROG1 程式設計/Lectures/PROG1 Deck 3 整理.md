@@ -482,12 +482,12 @@ Read each later condition under the earlier failures — the second branch inher
 
 **多個欄位錯誤時，誰優先？**「只回報第一個錯誤」需要明確定義第一個是什麼。版本 0.3 在數值解析成功後，按照下列順序處理；這是產品／課堂規格，不是 Python 自帶的驗證順序。
 
-| 順位 | 失敗條件 | 完整訊息 |
-| --- | --- | --- |
-| 1 | `route_name == ""` | `Error: route label must not be empty.` |
-| 2 | `not math.isfinite(distance_km)` | `Error: distance must be finite.` |
-| 3 | `distance_km < 0` | `Error: distance must be non-negative.` |
-| 4 | `duration_min <= 0` | `Error: duration must be positive.` |
+| 順位  | 失敗條件                             | 完整訊息                                    |
+| --- | -------------------------------- | --------------------------------------- |
+| 1   | `route_name == ""`               | `Error: route label must not be empty.` |
+| 2   | `not math.isfinite(distance_km)` | `Error: distance must be finite.`       |
+| 3   | `distance_km < 0`                | `Error: distance must be non-negative.` |
+| 4   | `duration_min <= 0`              | `Error: duration must be positive.`     |
 
 空標籤、負距離、零時間同時出現，仍只印標籤錯誤；非有限距離與零時間同時出現，印有限距離錯誤。每個拒絕案例都不應再出現 Route、Distance、Average speed 或 Trip band 報告——這些「不該發生的事」也是測試的一部分。"Report the first error" and "report all errors" are different product requirements.
 
