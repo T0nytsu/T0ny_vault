@@ -74,12 +74,12 @@ Draw the process before choosing syntax：Initialize state → Read next record 
 
 版本 0.4 的輸入協定（adds an input protocol; it does not silently change the earlier data rules）：
 
-| 情況 | 必須發生的事 |
-| --- | --- |
-| 路線標籤剛好是 `DONE` | 立即停止迴圈；不再詢問距離與時間；不計入總和。 |
-| 完整一筆資料無效 | 印第一個錯誤；總和不變；重新詢問下一筆路線。 |
-| 完整一筆資料有效 | 保留行程報告（Deck 3 report），筆數與兩個總和各更新一次。 |
-| 結束時沒有有效資料 | 明確說沒有可摘要的行程；不算平均（do not divide by zero）。 |
+| 情況                 | 必須發生的事                                                          |
+| ------------------ | --------------------------------------------------------------- |
+| 路線標籤剛好是 `DONE`     | 立即停止迴圈；不再詢問距離與時間；不計入總和。                                         |
+| 完整一筆資料無效           | 印第一個錯誤；總和不變；重新詢問下一筆路線。                                          |
+| 完整一筆資料有效           | 保留行程報告（Deck 3 report），筆數與兩個總和各更新一次。                             |
+| 結束時沒有有效資料          | 明確說沒有可摘要的行程；不算平均（do not divide by zero）。                        |
 | Other scope limits | Numeric conversion succeeds; values/totals are classroom-sized. |
 
 > [!note] 核心觀念
@@ -143,13 +143,13 @@ print(character)
 
 **range describes an integer sequence**：start is included; stop is excluded; step determines the direction.
 
-| 表示式 | 依序提供的值 | 重點 |
-| --- | --- | --- |
-| `range(4)` | 0, 1, 2, 3 | 預設從零開始，步長為 1。 |
-| `range(1, 4)` | 1, 2, 3 | 含起點，不含終點（stop 4 is excluded）。 |
-| `range(6, 0, -2)` | 6, 4, 2 | 負步長向下走。 |
-| `range(8, 3)` | 沒有值 | 正步長方向不合；合法的空序列。 |
-| `range(0, 5, 0)` | `ValueError` | 步長不能是零。 |
+| 表示式               | 依序提供的值       | 重點                            |
+| ----------------- | ------------ | ----------------------------- |
+| `range(4)`        | 0, 1, 2, 3   | 預設從零開始，步長為 1。                 |
+| `range(1, 4)`     | 1, 2, 3      | 含起點，不含終點（stop 4 is excluded）。 |
+| `range(6, 0, -2)` | 6, 4, 2      | 負步長向下走。                       |
+| `range(8, 3)`     | 沒有值          | 正步長方向不合；合法的空序列。               |
+| `range(0, 5, 0)`  | `ValueError` | 步長不能是零。                       |
 
 range 儲存起點、終點與步長等緊湊描述，不需要先建立每個整數的 list（A range stores a compact description; it does not build a list of all its integers）。請特別注意「stop 不包含」；這正是 `range(1, 4)` 只有三個值的原因。
 

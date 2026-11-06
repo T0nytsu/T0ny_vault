@@ -50,3 +50,15 @@
 > ```
 > 第一行不是「時間等於 30 或等於 60」的縮寫，而是把比較結果與數字 60 做 `or`。比較為假時，運算式得到 `60`；60 在 `if` 中被視為真（The number 60 is truthy; it is not an abbreviation for `duration_min == 60`）。因此它放在 `if` 裡會總是選到真分支，但不能不精確地說它「永遠回傳布林值 True」。
 
+
+> [!example] 範例：truth values are broader than bool objects
+> ```python
+> print("ok" and 5)
+> print(not "")
+> ```
+
+> [!solution]- 輸出
+> ```text
+> 5
+> True
+> ```
