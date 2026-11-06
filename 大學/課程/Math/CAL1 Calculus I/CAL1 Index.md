@@ -54,6 +54,7 @@ format: math-notes 2.3
 | `limits`     | Limits of functions and the precise ($\varepsilon$, $\delta$) definition of a limit |
 | `continuity` | Continuity, kinds of discontinuity, and the Intermediate Value Theorem              |
 | `derivatives` | Tangent lines, velocities, the derivative at a number, and rates of change         |
+| `exam-prep`  | Midterm 2 exam maps and exam notes (one per section)                                |
 
 ## Quizzes and Exams
 
@@ -70,6 +71,13 @@ format: math-notes 2.3
 - [[CAL1 HW 2.3 Questions]] and [[CAL1 HW 2.3 Solutions]]
 - [[CAL1 HW 2.4 Questions]] and [[CAL1 HW 2.4 Solutions]]
 - [[CAL1 HW 2.5 Questions]] and [[CAL1 HW 2.5 Solutions]]
+
+## Summaries
+
+- [[CAL1 2.6 Exam Notes]]
+- [[CAL1 2.6 Exam Map.excalidraw]]
+- [[CAL1 3.1 Exam Notes]]
+- [[CAL1 3.1 Exam Map.excalidraw]]
 
 ## Assigned Exercises
 
