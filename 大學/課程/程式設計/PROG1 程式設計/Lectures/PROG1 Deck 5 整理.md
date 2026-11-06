@@ -466,11 +466,11 @@ A string can contain more than English letters. How does that text travel to a f
 電腦可以用數字識別字元。**ASCII** 定義 128 個代碼；Python 的 `ord` 回傳單一字元的 Unicode code point，`chr` 做反向對應；Unicode 的前 128 個碼位與 ASCII 對齊。Selected entries are enough to explain the mapping; no full-table memorization.
 
 | Character | Decimal code | Python expression |
-| --- | --- | --- |
-| space | 32 | `ord(" ")` |
-| `"0"` | 48 | `ord("0")` |
-| `"A"` | 65 | `ord("A")` |
-| `"a"` | 97 | `ord("a")` |
+| --------- | ------------ | ----------------- |
+| space     | 32           | `ord(" ")`        |
+| `"0"`     | 48           | `ord("0")`        |
+| `"A"`     | 65           | `ord("A")`        |
+| `"a"`     | 97           | `ord("a")`        |
 
 `chr(65)` → `"A"`；`ord("A")` → `65`。
 
