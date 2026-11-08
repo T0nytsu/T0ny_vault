@@ -71,6 +71,7 @@ format: math-notes 2.3
 - [[CAL1 HW 2.3 Questions]] and [[CAL1 HW 2.3 Solutions]]
 - [[CAL1 HW 2.4 Questions]] and [[CAL1 HW 2.4 Solutions]]
 - [[CAL1 HW 2.5 Questions]] and [[CAL1 HW 2.5 Solutions]]
+- [[CAL1 HW 3.2 Questions]] and [[CAL1 HW 3.2 Solutions]]
 
 ## Summaries
 
@@ -121,6 +122,7 @@ Stewart, *Calculus*, Chapter 3:
 - [[Intermediate Value Theorem]]
 - [[Limit Laws]]
 - [[Limit of a Function]]
+- [[Mean Value Theorem]]
 - [[Normal Line]]
 - [[One-Sided Derivative]]
 - [[One-Sided Limit]]
@@ -128,6 +130,7 @@ Stewart, *Calculus*, Chapter 3:
 - [[Precise Definition of a Limit]]
 - [[Product Rule]]
 - [[Quotient Rule]]
+- [[Rolle's Theorem]]
 - [[Special Trigonometric Limits]]
 - [[Squeeze Theorem]]
 - [[Tangent Line]]
