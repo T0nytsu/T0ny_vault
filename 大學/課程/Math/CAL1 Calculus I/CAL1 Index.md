@@ -71,6 +71,13 @@ format: math-notes 2.3
 - [[CAL1 HW 2.3 Questions]] and [[CAL1 HW 2.3 Solutions]]
 - [[CAL1 HW 2.4 Questions]] and [[CAL1 HW 2.4 Solutions]]
 - [[CAL1 HW 2.5 Questions]] and [[CAL1 HW 2.5 Solutions]]
+- [[CAL1 HW 2.6 Questions]] and [[CAL1 HW 2.6 Solutions]]
+- [[CAL1 HW 2.8 Questions]] and [[CAL1 HW 2.8 Solutions]]
+- [[CAL1 HW 2.9 Questions]] and [[CAL1 HW 2.9 Solutions]]
+- [[CAL1 HW 3.1 Questions]] and [[CAL1 HW 3.1 Solutions]]
+- [[CAL1 HW 3.2 Questions]] and [[CAL1 HW 3.2 Solutions]]
+- [[CAL1 HW 3.4 Questions]] and [[CAL1 HW 3.4 Solutions]]
+- [[CAL1 HW 3.7 Questions]] and [[CAL1 HW 3.7 Solutions]]
 
 ## Summaries
 
@@ -98,27 +105,54 @@ Stewart, *Calculus*, Chapter 2:
 - **Section 2.8**: 1, 3, 5, 7, 9, 15, 17, 19, 20, 21, 27, 29, 31, 37, 39, 41, 43, 47, 49
 - **Section 2.9**: 3, 13, 17, 21, 23, 29, 31, 33, 38, 39, 41, 43, 45
 
+Stewart, *Calculus*, Chapter 3:
+- **Section 3.1:** 19, 21, 23, 25, 27, 33, 35, 39, 41, 45, 53, 55, 57, 59, 72
+- **Section 3.2**: 7, 9, 11, 13, 15, 17, 21, 25, 29, 31, 33, 35
+- **Section 3.3**: 5, 11, 13, 17, 19, 21, 23, 29, 31, 33, 35, 39, 41, 43, 49, 67, 73
+- **Section 3.4**: 3, 4, 11, 13, 17, 21, 25, 27, 29, 31, 37, 49, 51, 57, 58, 65, 71, 73
+- **Section 3.5**: 5, 9, 23, 29, 35, 51, 53, 55, 57, 59, 61
+- **Section 3.7**: 5, 11, 15, 21, 23, 26, 31, 37, 47, 63, 67, 71, 79, 81
+- **Section 3.8**: 7, 13, 17, 27, 35
+- **Section 3.9**: 1, 5, 9, 13, 15, 17, 19, 21, 23, 27, 31, 37, 41, 43, 49, 59, 61, 66, 69
+
 ## Concepts
 
+- [[Absolute Extreme Value]]
 - [[Chain Rule]]
+- [[Closed Interval Method]]
 - [[Continuity]]
+- [[Critical Number]]
 - [[Derivative]]
 - [[Derivatives of Trigonometric Functions]]
 - [[Differentiable Function]]
+- [[Differential]]
 - [[Discontinuity]]
+- [[Fermat's Theorem]]
+- [[First Derivative Test for Absolute Extreme Values]]
 - [[Higher Derivatives]]
+- [[Horizontal Asymptote]]
+- [[Implicit Differentiation]]
 - [[Infinite Limit]]
 - [[Intermediate Value Theorem]]
+- [[Limit at Infinity]]
 - [[Limit Laws]]
 - [[Limit of a Function]]
+- [[Linear Approximation]]
+- [[Linearization]]
+- [[Local Extreme Value]]
+- [[Mean Value Theorem]]
 - [[Normal Line]]
 - [[One-Sided Derivative]]
 - [[One-Sided Limit]]
+- [[Optimization Problems]]
 - [[Power Rule]]
 - [[Precise Definition of a Limit]]
 - [[Product Rule]]
 - [[Quotient Rule]]
+- [[Related Rates]]
+- [[Rolle's Theorem]]
 - [[Special Trigonometric Limits]]
 - [[Squeeze Theorem]]
 - [[Tangent Line]]
+- [[Vertical Asymptote]]
 - [[Vertical Tangent Line]]
