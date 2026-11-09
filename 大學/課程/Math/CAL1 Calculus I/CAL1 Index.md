@@ -76,8 +76,9 @@ format: math-notes 2.3
 - [[CAL1 HW 2.9 Questions]] and [[CAL1 HW 2.9 Solutions]]
 - [[CAL1 HW 3.1 Questions]] and [[CAL1 HW 3.1 Solutions]]
 - [[CAL1 HW 3.2 Questions]] and [[CAL1 HW 3.2 Solutions]]
-- [[CAL1 HW 3.3 3.5 Questions]] and [[CAL1 HW 3.3 3.5 Solutions]]
+- [[CAL1 HW 3.3 Questions]] and [[CAL1 HW 3.3 Solutions]]
 - [[CAL1 HW 3.4 Questions]] and [[CAL1 HW 3.4 Solutions]]
+- [[CAL1 HW 3.5 Questions]] and [[CAL1 HW 3.5 Solutions]]
 - [[CAL1 HW 3.7 Questions]] and [[CAL1 HW 3.7 Solutions]]
 
 ## Summaries
