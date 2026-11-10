@@ -87,6 +87,7 @@ format: math-notes 2.3
 - [[CAL1 2.6 Exam Map.excalidraw]]
 - [[CAL1 3.1 Exam Notes]]
 - [[CAL1 3.1 Exam Map.excalidraw]]
+- [[CAL1 Midterm 2 Exam Guide]]
 
 ## Assigned Exercises
 
