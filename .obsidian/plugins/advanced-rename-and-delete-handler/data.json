@@ -5,16 +5,12 @@
   "notePriorities": [],
   "rescueAttachmentUsedByMultipleNotesMode": "prompt",
   "shouldDeleteConflictingAttachments": false,
-  "shouldDeleteEmptyNoteFolders": true,
   "shouldHandleDeletions": false,
   "shouldHandleRenames": true,
   "shouldRenameAttachmentFiles": false,
   "shouldRenameAttachmentFolder": true,
   "shouldRescueSharedAttachments": false,
-  "shouldShowLinkUpdateNotice": true,
   "shouldUpdateFileNameAliases": true,
-  "shouldUpdateHtmlLinks": false,
-  "shouldWarnAboutPathsInSettings": false,
   "treatAsAttachmentExtensions": [
     ".excalidraw.md"
   ]
