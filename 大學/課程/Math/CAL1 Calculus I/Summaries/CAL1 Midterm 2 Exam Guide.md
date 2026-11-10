@@ -1211,21 +1211,22 @@ The full note for this section is [[CAL1 3.1 Exam Notes]].
 > $$
 
 > [!question]
-> **P5.** ★★★ (10 points) Use the Mean Value Theorem to prove the inequality $\lvert \sin a - \sin b \rvert \le \lvert a - b \rvert$ for all $a$ and $b$.
+> ==**P5.**== ★★★ (10 points) Use the Mean Value Theorem to prove the inequality $\lvert \sin a - \sin b \rvert \le \lvert a - b \rvert$ for all $a$ and $b$.
 
 > [!proof]- Proof of P5
 > Exercise 35, assigned: [[CAL1 HW 3.2 Solutions#ST 3.2.35|ST 3.2.35]].
-> $$
-> \begin{aligned}
-> &\text{If } a = b, \text{ both sides are } 0. \text{ Suppose } b < a \text{ (if } a < b, \text{ exchange the names).} \\
-> &f(x) = \sin x \text{ is continuous on } [b, a] \text{ and differentiable on } (b, a) \\
-> &\implies \exists\, c \text{ in } (b, a) \text{ s.t. } \sin a - \sin b = \cos c \cdot (a - b) && \text{(Mean Value Theorem)} \\
-> &\implies \lvert \sin a - \sin b \rvert = \lvert \cos c \rvert \lvert a - b \rvert \le \lvert a - b \rvert && (\lvert \cos c \rvert \le 1) \qquad \blacksquare
-> \end{aligned}
+> $$  
+> \begin{aligned}  
+> &\text{If } a = b, \text{ both sides are } 0. \\  
+> &\text{Suppose } b < a. \; f(x) = \sin x \text{ is continuous on } [b, a] \text{ and differentiable on } (b, a) \\  
+> &\implies \exists\, c \text{ in } (b, a) \text{ s.t. } \sin a - \sin b = \cos c \cdot (a - b) && \text{(Mean Value Theorem)} \\  
+> &\implies \lvert \sin a - \sin b \rvert = \lvert \cos c \rvert \lvert a - b \rvert \le \lvert a - b \rvert && (\lvert \cos c \rvert \le 1) \\  
+> &\text{If } a < b, \text{ then } \lvert \sin a - \sin b \rvert = \lvert \sin b - \sin a \rvert \le \lvert b - a \rvert = \lvert a - b \rvert && \text{(by the case above)} \qquad \blacksquare  
+> \end{aligned}  
 > $$
 
 > [!question]
-> **P6.** ★★★ (10 points) Show that the equation $2x + \cos x = 0$ has exactly one real solution.
+> ==**P6.**== ★★★ (10 points) Show that the equation $2x + \cos x = 0$ has exactly one real solution.
 
 > [!proof]- Proof of P6
 > Exercise 23; the method of Example 2. Let $f(x) = 2x + \cos x$, which is continuous and differentiable for all $x$.
