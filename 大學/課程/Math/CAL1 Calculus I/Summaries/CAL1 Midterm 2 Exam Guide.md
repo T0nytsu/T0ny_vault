@@ -1196,7 +1196,7 @@ The full note for this section is [[CAL1 3.1 Exam Notes]].
 > \# Corollary (p. 224): if $f'(x) = g'(x)$ on $(a, b)$, let $F = f - g$; then $F' = f' - g' = 0$, so $F$ is constant, that is, $f(x) = g(x) + c$.
 
 > [!question]
-> **P4.** ★★★ (10 points) Show that the equation $x^3 - 15x + c = 0$ has at most one solution in the interval $[-2, 2]$.
+> ==**P4.**== ★★★ (10 points) Show that the equation $x^3 - 15x + c = 0$ has at most one solution in the interval $[-2, 2]$.
 
 > [!proof]- Proof of P4
 > Exercise 25, assigned: [[CAL1 HW 3.2 Solutions#ST 3.2.25|ST 3.2.25]]. Let $f(x) = x^3 - 15x + c$.
