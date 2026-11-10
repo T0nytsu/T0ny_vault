@@ -1,7 +1,7 @@
 'use strict';
 
 /*
- * Mobile Pinch Zoom — Obsidian plugin (mobile only) — v0.6.1
+ * Mobile Pinch Zoom — Obsidian plugin (mobile only) — v0.8.0
  * Pinch with two fingers to zoom the note in/out on iPad / iPhone / Android.
  * Desktop uses the separate "Ctrl+Scroll Zoom" plugin, so this no-ops on desktop.
  *
@@ -24,6 +24,13 @@
  *   - the auto-fading indicator stays visible while zoom ≠ 100% (it is the
  *     only reset button on mobile) and fades only once back at 100%;
  *   - the indicator sits above more of the app chrome (z-index raised).
+ * v0.7.0: "Font size only" mode scales figures too —
+ *   - images, videos, Mermaid diagrams and Excalidraw embeds now zoom with
+ *     the text (each grows up to the pane width, same as in content mode).
+ * v0.8.0: figures grow past the pane edge —
+ *   - images carry max-width: 100%, so a figure that already filled the pane
+ *     could not get any bigger in either mode; now the cap scales with the
+ *     zoom and the part outside the pane pans inside the embed (toggleable).
  */
 
 const { Plugin, PluginSettingTab, Setting, Platform } = require('obsidian');
@@ -35,6 +42,7 @@ const DEFAULT_SETTINGS = {
   step: 0.2, // amount per Zoom in / Zoom out command
   zoom: 1.0,
   indicatorMode: 'auto', // auto (fade after zooming) | always | hidden
+  zoomFigures: true, // let images grow past the pane edge (pan to see the rest)
   indicatorPosition: 'bottom-right', // bottom-right | bottom-left | top-right | top-left
 };
 
@@ -211,9 +219,10 @@ module.exports = class MobilePinchZoomPlugin extends Plugin {
       offsetY: clientY - scroller.getBoundingClientRect().top,
       startZoom: this.settings.zoom,
       startScroll: scroller.scrollTop,
-      // In content mode the preview zooms the scroller itself, so its scroll
-      // coordinates live in the zoomed space; the editor zooms a child (.cm-sizer).
-      zoomedScroller: this.settings.mode === 'content' && scroller.classList.contains('markdown-preview-view'),
+      // In content mode both the preview and the editor (since the zoom moved
+      // from .cm-sizer to .cm-scroller) zoom the scroller itself, so scroll
+      // coordinates live in the zoomed space; font mode zooms neither.
+      zoomedScroller: this.settings.mode === 'content',
     };
   }
 
@@ -398,10 +407,41 @@ module.exports = class MobilePinchZoomPlugin extends Plugin {
 
   refreshStyle() {
     if (!this.styleEl) return;
+    // Font mode scales only the text, which leaves figures at 100%; zoom the
+    // embedded media by the same factor so images, videos, Mermaid diagrams
+    // and Excalidraw embeds follow the text. CSS zoom respects max-width, so
+    // a figure grows until it fills the pane and never overflows sideways.
+    const fontMediaRule =
+      ['img', 'video', '.mermaid', '.excalidraw-svg']
+        .map((m) => '.markdown-preview-view ' + m + ', .markdown-source-view.mod-cm6 .cm-content ' + m)
+        .join(', ') + ' { zoom: var(--mpz-zoom, 1); }';
     const zoomRule =
       this.settings.mode === 'font'
-        ? '.markdown-source-view.mod-cm6 .cm-content, .markdown-preview-view { font-size: calc(var(--font-text-size, 16px) * var(--mpz-zoom, 1)) !important; }'
-        : '.view-content .markdown-preview-view, .view-content .markdown-source-view .cm-sizer { zoom: var(--mpz-zoom, 1); }';
+        ? '.markdown-source-view.mod-cm6 .cm-content, .markdown-preview-view { font-size: calc(var(--font-text-size, 16px) * var(--mpz-zoom, 1)) !important; }\n' +
+          fontMediaRule
+        : // The editor is zoomed at its scroll container (.cm-scroller), not at
+          // the .cm-sizer inside it: CodeMirror detects a scale on the scroll
+          // container and compensates its caret/selection drawing, so taps and
+          // selections land where you touch (ctrl-scroll-zoom issue #1).
+          '.view-content .markdown-preview-view, .view-content .markdown-source-view .cm-scroller { zoom: var(--mpz-zoom, 1); }\n' +
+          // CSS zoom compounds when renderers nest (embeds, table-cell
+          // editors, Canvas cards), so neutralize the inner ones.
+          '.view-content .markdown-preview-view .markdown-preview-view, .view-content .markdown-preview-view .cm-scroller, ' +
+          '.view-content .cm-scroller .markdown-preview-view, .view-content .cm-scroller .cm-scroller, ' +
+          '.view-content .canvas-wrapper .markdown-preview-view, .view-content .canvas-wrapper .cm-scroller { zoom: 1; }';
+    // Figure breakout: images carry max-width: 100%, so a figure that already
+    // fills the pane cannot get any bigger when the note zooms in. Raise the
+    // cap by the zoom factor and pan the overflow inside the embed; at 100%
+    // the cap equals the normal one, so the layout is unchanged.
+    const figureRule = this.settings.zoomFigures
+      ? '.view-content .markdown-preview-view .image-embed, .view-content .markdown-source-view .image-embed { display: inline-block; max-width: 100%; overflow-x: auto; }\n' +
+        '.view-content .markdown-preview-view .image-embed img, .view-content .markdown-source-view .image-embed img { max-width: calc(100% * var(--mpz-zoom, 1)); }\n' +
+        // Live Preview (Obsidian 1.14+) wraps the image and pins it with
+        // width: 100%, which the raised max-width cannot exceed — the figure
+        // could shrink but never grow. width: auto restores natural sizing
+        // (identical at 100%) and lets the cap above take over when zoomed.
+        '.view-content .markdown-preview-view .image-embed .image-wrapper img:not([width]), .view-content .markdown-source-view .image-embed .image-wrapper img:not([width]) { width: auto; }'
+      : '';
     const indicatorCss = [
       '.mpz-indicator {',
       // Above app chrome (status bar 15, popovers 30) but below modals (50),
@@ -426,7 +466,7 @@ module.exports = class MobilePinchZoomPlugin extends Plugin {
       '.mpz-pos-top-left     { top: calc(env(safe-area-inset-top, 0px) + 12px); left:  calc(env(safe-area-inset-left, 0px) + 12px); }',
       '.mpz-hidden { display: none !important; }',
     ].join('\n');
-    this.styleEl.textContent = zoomRule + '\n' + indicatorCss;
+    this.styleEl.textContent = zoomRule + '\n' + figureRule + '\n' + indicatorCss;
   }
 
   // --- settings io ----------------------------------------------------------
@@ -466,7 +506,7 @@ class MPZSettingTab extends PluginSettingTab {
       .setName('Zoom mode')
       .setDesc(
         'content = scale everything (text + images), smoothest, best in Reading view. ' +
-          'font = scale text only, solid in the editor.'
+          'font = scale the text via font-size (figures zoom along with it), solid in the editor.'
       )
       .addDropdown((d) =>
         d
@@ -478,6 +518,19 @@ class MPZSettingTab extends PluginSettingTab {
             await this.plugin.saveSettings();
             this.plugin.refreshStyle();
           })
+      );
+
+    new Setting(containerEl)
+      .setName('Let figures grow past the pane edge')
+      .setDesc(
+        'Images normally stop growing once they fill the pane; with this on they keep scaling with the zoom and the part outside the pane can be swiped sideways inside the figure. At 100% nothing changes.'
+      )
+      .addToggle((tg) =>
+        tg.setValue(this.plugin.settings.zoomFigures).onChange(async (v) => {
+          this.plugin.settings.zoomFigures = v;
+          await this.plugin.saveSettings();
+          this.plugin.refreshStyle();
+        })
       );
 
     new Setting(containerEl)
