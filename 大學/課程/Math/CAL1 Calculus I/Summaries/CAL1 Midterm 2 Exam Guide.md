@@ -1097,8 +1097,8 @@ The full note for this section is [[CAL1 3.1 Exam Notes]].
 > - (a) ‡ If $f$ is differentiable and $f(-1) = f(1)$, then there is a number $c$ such that $\lvert c \rvert < 1$ and $f'(c) = 0$.
 > - (b) ‡ If $f'(x) = g'(x)$ for $0 < x < 1$, then $f(x) = g(x)$ for $0 < x < 1$.
 > - (c) ‡ There exists a function $f$ such that $f(1) = -2$, $f(3) = 0$, and $f'(x) > 1$ for all $x$.
-> - (d) ‡ If $f'(x)$ exists and is nonzero for all $x$, then $f(1) \ne f(0)$.
-> - (e) If $f'(x) = 0$ for all $x$ in the domain of $f$, then $f$ is a constant function.
+> - ==(d)== ‡ If $f'(x)$ exists and is nonzero for all $x$, then $f(1) \ne f(0)$.
+> - ==(e)== If $f'(x) = 0$ for all $x$ in the domain of $f$, then $f$ is a constant function.
 > - (f) If $f$ is continuous on $[a, b]$ and $f(a) = f(b)$, then there is a number $c$ in $(a, b)$ such that $f'(c) = 0$.
 
 > [!solution]- Answers
