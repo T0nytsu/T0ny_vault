@@ -966,10 +966,10 @@ The full note for this section is [[CAL1 3.1 Exam Notes]].
 > Respond with true (T) or false (F). Items (a)–(c) are from the True-False Quiz of the Chapter 3 Review ‡.
 > - (a) ‡ If $f'(c) = 0$, then $f$ has a local maximum or minimum at $c$.
 > - (b) ‡ If $f$ has an absolute minimum value at $c$, then $f'(c) = 0$.
-> - (c) ‡ If $f$ is continuous on $(a, b)$, then $f$ attains an absolute maximum value $f(c)$ and an absolute minimum value $f(d)$ at some numbers $c$ and $d$ in $(a, b)$.
+> - ==(c)== ‡ If $f$ is continuous on $(a, b)$, then $f$ attains an absolute maximum value $f(c)$ and an absolute minimum value $f(d)$ at some numbers $c$ and $d$ in $(a, b)$.
 > - (d) If $f$ has a local maximum or minimum at $c$, then $c$ is a critical number of $f$.
-> - (e) If $f'(c)$ does not exist, then $c$ is a critical number of $f$.
-> - (f) If $f$ is continuous on $[a, b]$, then the absolute maximum value of $f$ on $[a, b]$ is also a local maximum value of $f$.
+> - ==(e)== If $f'(c)$ does not exist, then $c$ is a critical number of $f$.
+> - ==(f)== If $f$ is continuous on $[a, b]$, then the absolute maximum value of $f$ on $[a, b]$ is also a local maximum value of $f$.
 
 > [!solution]- Answers
 > - (a) **F.** $f(x) = x^3$, $c = 0$: $f'(0) = 0$, but $f$ has no maximum or minimum at $0$ (Example 5).
