@@ -4,5 +4,6 @@
   "useMarkdownLinks": true,
   "newLinkFormat": "relative",
   "openBehavior": "file:待辦事項.md",
-  "alwaysUpdateLinks": true
+  "alwaysUpdateLinks": true,
+  "readableLineLength": false
 }
