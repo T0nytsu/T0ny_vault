@@ -44,7 +44,7 @@ $$
 $$
 f(x) = \begin{cases} x^2 & \text{if } -1 \le x \le 0 \\ 2 - 3x & \text{if } 0 < x \le 1 \end{cases}
 $$
-
+==The domain of \(f\) is \({x\in \mathbb{R}\mid x\ge 1,x\ge 2,x<5\}\).==
 ### ST 3.1.33
 **29–46** Find the critical numbers of the function.
 $$
