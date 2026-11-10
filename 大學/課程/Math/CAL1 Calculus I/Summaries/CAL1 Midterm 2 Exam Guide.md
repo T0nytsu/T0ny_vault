@@ -71,8 +71,8 @@ format: "math-notes 2.3"
 > - (c) If $f'(r)$ exists, then $\lim_{x \to r} f(x) = f(r)$.
 > - (d) If $g(x) = x^5$, then $\displaystyle\lim_{x \to 2} \frac{g(x) - g(2)}{x - 2} = 80$.
 > - (e) $\dfrac{d^2y}{dx^2} = \left(\dfrac{dy}{dx}\right)^2$
-> - (f) An equation of the tangent line to the parabola $y = x^2$ at $(-2, 4)$ is $y - 4 = 2x(x + 2)$.
-> - (g) The derivative of a polynomial is a polynomial.
+> - ==(f)== An equation of the tangent line to the parabola $y = x^2$ at $(-2, 4)$ is $y - 4 = 2x(x + 2)$.
+> - ==(g)== The derivative of a polynomial is a polynomial.
 > - (h) The derivative of a rational function is a rational function.
 > - (i) If $f(x) = (x^6 - x^4)^5$, then $f^{(31)}(x) = 0$.
 
@@ -142,7 +142,7 @@ format: "math-notes 2.3"
 > \# Two reasons to write beside the last step: $\lim_{h \to 0} g(x) = g(x)$ because $g(x)$ does not depend on $h$; $\lim_{h \to 0} f(x+h) = f(x)$ because $f$ is differentiable at $x$, hence continuous at $x$.
 
 > [!question]
-> **P2.** ★★★ (10 points) Prove the Power Rule: if $n$ is a positive integer, then $\dfrac{d}{dx}(x^n) = nx^{n-1}$.
+> ==**P2.**== ★★★ (10 points) Prove the Power Rule: if $n$ is a positive integer, then $\dfrac{d}{dx}(x^n) = nx^{n-1}$.
 
 > [!proof]- Proof of P2
 > Let $f(x) = x^n$ and let $a$ be any number.
@@ -228,12 +228,12 @@ format: "math-notes 2.3"
 
 > [!question]
 > Respond with true (T) or false (F). Item (a) is item 12 of the True-False Quiz of the Chapter 2 Review (p. 200).
-> - (a) $\dfrac{d}{dx}(\tan^2 x) = \dfrac{d}{dx}(\sec^2 x)$
+> - ==(a)== $\dfrac{d}{dx}(\tan^2 x) = \dfrac{d}{dx}(\sec^2 x)$
 > - (b) Since $\displaystyle\lim_{\theta \to 0} \frac{\cos\theta - 1}{\theta} = 0$, also $\displaystyle\lim_{\theta \to 0} \frac{\cos\theta - 1}{\theta^2} = 0$.
 > - (c) If $f(x) = \cos x$, then $f^{(27)}(x) = \sin x$.
-> - (d) If $\theta$ is measured in degrees, then $\dfrac{d}{d\theta}(\sin\theta) = \cos\theta$.
+> - ==(d)== If $\theta$ is measured in degrees, then $\dfrac{d}{d\theta}(\sin\theta) = \cos\theta$.
 > - (e) The graph of $f(x) = \dfrac{\sec x}{1 + \tan x}$ has a horizontal tangent wherever $\tan x = 1$.
-> - (f) $\displaystyle\lim_{x \to 0} x\cot x = 0$
+> - ==(f)== $\displaystyle\lim_{x \to 0} x\cot x = 0$
 
 > [!solution]- Answers
 > - (a) **T.** $\sec^2 x = \tan^2 x + 1$, so the two functions differ by a constant; both derivatives are $2\tan x\sec^2 x$.
@@ -247,7 +247,7 @@ format: "math-notes 2.3"
 
 > [!question]
 > **MC 1.** (5 points) Which of the following statements are true?
-> - A. $\displaystyle\lim_{x \to 0} \frac{\tan 2x}{x} = 2$
+> - ==A.== $\displaystyle\lim_{x \to 0} \frac{\tan 2x}{x} = 2$
 > - B. $\displaystyle\lim_{t \to 0} \frac{\sin 3t}{\sin t} = \frac{1}{3}$
 > - C. $\displaystyle\lim_{\theta \to 0} \frac{\sin\theta}{\theta + \tan\theta} = \frac{1}{2}$
 > - D. $\displaystyle\lim_{x \to 0} \frac{\sin x - \sin x\cos x}{x^2} = 0$
@@ -304,7 +304,7 @@ format: "math-notes 2.3"
 > \# $\cos\theta + 1 \ne 0$ for $\theta$ near $0$, and $\frac{\sin\theta}{\cos\theta + 1}$ is continuous at $0$, so its limit is found by direct substitution.
 
 > [!question]
-> **P3.** ★★ (10 points) Prove that $\displaystyle\lim_{\theta \to 0} \frac{\sin\theta}{\theta} = 1$.
+> ==**P3.**== ★★ (10 points) Prove that $\displaystyle\lim_{\theta \to 0} \frac{\sin\theta}{\theta} = 1$.
 
 > [!solution]- Key steps of P3
 > 1. Let $0 < \theta < \frac{\pi}{2}$, in a circle of radius $1$ with center $O$ and central angle $\theta$ (Figure 6, p. 151). $\lvert BC \rvert < \lvert AB \rvert < \text{arc } AB$ gives $\sin\theta < \theta$, so $\frac{\sin\theta}{\theta} < 1$.
@@ -328,8 +328,8 @@ format: "math-notes 2.3"
 
 > [!question]
 > **P5.** ★★★ (10 points) Find the limits.
-> - (a) $\displaystyle\lim_{x \to \pi/4} \frac{1 - \tan x}{\sin x - \cos x}$
-> - (b) $\displaystyle\lim_{x \to 1} \frac{\sin(x - 1)}{x^2 + x - 2}$
+> - ==(a)== $\displaystyle\lim_{x \to \pi/4} \frac{1 - \tan x}{\sin x - \cos x}$
+> - ==(b)== $\displaystyle\lim_{x \to 1} \frac{\sin(x - 1)}{x^2 + x - 2}$
 
 > [!solution]- Solution of P5
 > **(a)** Exercise 59, assigned: [[CAL1 HW 2.4 Solutions#ST 2.4.59|ST 2.4.59]].
@@ -344,7 +344,7 @@ format: "math-notes 2.3"
 > $$
 
 > [!question]
-> **P6.** ★★ (10 points) Find $\dfrac{d^{35}}{dx^{35}}(x\sin x)$.
+> ==**P6.**== ★★ (10 points) Find $\dfrac{d^{35}}{dx^{35}}(x\sin x)$.
 
 > [!solution]- Solution of P6
 > Exercise 62.
@@ -375,10 +375,10 @@ format: "math-notes 2.3"
 > - (a) If $f$ and $g$ are differentiable, then $\dfrac{d}{dx}\left[f(g(x))\right] = f'(g(x))g'(x)$.
 > - (b) If $f$ is differentiable, then $\dfrac{d}{dx}\sqrt{f(x)} = \dfrac{f'(x)}{2\sqrt{f(x)}}$.
 > - (c) If $f$ is differentiable, then $\dfrac{d}{dx}f(\sqrt{x}) = \dfrac{f'(x)}{2\sqrt{x}}$.
-> - (d) $\dfrac{d}{dx}\lvert x^2 + x \rvert = \lvert 2x + 1 \rvert$
+> - ==(d)== $\dfrac{d}{dx}\lvert x^2 + x \rvert = \lvert 2x + 1 \rvert$
 > - (e) If $f$ is differentiable at $a$, so is $\lvert f \rvert$.
-> - (f) The derivative of an even function is an even function.
-> - (g) The computation $\dfrac{dy}{dx} = \displaystyle\lim_{\Delta x \to 0} \frac{\Delta y}{\Delta u} \cdot \frac{\Delta u}{\Delta x} = \frac{dy}{du}\frac{du}{dx}$ is a complete proof of the Chain Rule.
+> - ==(f)== The derivative of an even function is an even function.
+> - ==(g)== The computation $\dfrac{dy}{dx} = \displaystyle\lim_{\Delta x \to 0} \frac{\Delta y}{\Delta u} \cdot \frac{\Delta u}{\Delta x} = \frac{dy}{du}\frac{du}{dx}$ is a complete proof of the Chain Rule.
 
 > [!solution]- Answers
 > - (a) **T.** The Chain Rule.
@@ -428,7 +428,7 @@ format: "math-notes 2.3"
 ### 2.5 Computation and Proof
 
 > [!question]
-> **P1.** ★★★ (10 points) Use the Chain Rule to prove the following.
+> ==**P1.**== ★★★ (10 points) Use the Chain Rule to prove the following.
 > - (a) The derivative of an even function is an odd function.
 > - (b) The derivative of an odd function is an even function.
 
@@ -446,7 +446,7 @@ format: "math-notes 2.3"
 > $$
 
 > [!question]
-> **P2.** ★★★ (10 points) State and prove the Chain Rule.
+> ==**P2.**== ★★★ (10 points) State and prove the Chain Rule.
 
 > [!solution]- Key steps of P2
 > **Statement.** If $g$ is differentiable at $x$ and $f$ is differentiable at $g(x)$, then $F = f \circ g$ is differentiable at $x$ and $F'(x) = f'(g(x)) \cdot g'(x)$.
@@ -500,7 +500,7 @@ format: "math-notes 2.3"
 > $$
 
 > [!question]
-> **P5.** ★★ (10 points)
+> ==**P5.**== ★★ (10 points)
 > - (a) Write $\lvert x \rvert = \sqrt{x^2}$ and use the Chain Rule to show that $\dfrac{d}{dx}\lvert x \rvert = \dfrac{x}{\lvert x \rvert}$.
 > - (b) If $f(x) = \lvert \sin x \rvert$, find $f'(x)$. Where is $f$ not differentiable?
 
@@ -542,11 +542,11 @@ The full note for this section is [[CAL1 2.6 Exam Notes]].
 
 > [!question]
 > Respond with true (T) or false (F).
-> - (a) If $x^2 + y^2 = 25$, then $\dfrac{dy}{dx} = -\dfrac{x}{y}$ on the upper semicircle and on the lower semicircle.
+> - ==(a)== If $x^2 + y^2 = 25$, then $\dfrac{dy}{dx} = -\dfrac{x}{y}$ on the upper semicircle and on the lower semicircle.
 > - (b) If $y$ is a differentiable function of $x$, then $\dfrac{d}{dx}(y^3) = 3y^2$.
 > - (c) The tangent line to the folium of Descartes $x^3 + y^3 = 6xy$ at the point $(3, 3)$ has slope $1$.
 > - (d) If $x^4 + y^4 = 16$, then $y'' = -\dfrac{48x^2}{y^7}$.
-> - (e) If $x^2 + y^2 = 25$, then $\dfrac{d^2y}{dx^2} = -\dfrac{25}{y^3}$.
+> - (e) If $x^2 + y^2 = 25$, then $\dfrac{d^2y}{d^2x} = -\dfrac{25}{y^3}$.
 
 > [!solution]- Answers
 > - (a) **T.** For $y = \sqrt{25 - x^2}$, $y' = -\frac{x}{\sqrt{25 - x^2}} = -\frac{x}{y}$; for $y = -\sqrt{25 - x^2}$, $y' = \frac{x}{\sqrt{25 - x^2}} = -\frac{x}{y}$ (NOTE 1, p. 166).
