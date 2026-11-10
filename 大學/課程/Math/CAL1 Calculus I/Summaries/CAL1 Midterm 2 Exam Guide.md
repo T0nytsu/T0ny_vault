@@ -1011,7 +1011,7 @@ The full note for this section is [[CAL1 3.1 Exam Notes]].
 ### 3.1 Computation and Proof
 
 > [!question]
-> **P1.** ★★★★ (10 points) State and prove Fermat's Theorem.
+> ==**P1.**== ★★★★ (10 points) State and prove Fermat's Theorem.
 
 > [!proof]- Proof of P1
 > **Fermat's Theorem.** If $f$ has a local maximum or minimum at $c$, and if $f'(c)$ exists, then $f'(c) = 0$.
@@ -1140,7 +1140,7 @@ The full note for this section is [[CAL1 3.1 Exam Notes]].
 ### 3.2 Computation and Proof
 
 > [!question]
-> **P1.** ★★★★ (10 points) State and prove Rolle's Theorem.
+> ==**P1.**== ★★★★ (10 points) State and prove Rolle's Theorem.
 
 > [!proof]- Proof of P1
 > **Rolle's Theorem.** Let $f$ be a function that satisfies the following three hypotheses: 1. $f$ is continuous on the closed interval $[a, b]$; 2. $f$ is differentiable on the open interval $(a, b)$; 3. $f(a) = f(b)$. Then there is a number $c$ in $(a, b)$ such that $f'(c) = 0$.
@@ -1162,7 +1162,7 @@ The full note for this section is [[CAL1 3.1 Exam Notes]].
 > $$
 
 > [!question]
-> **P2.** ★★★★ (10 points) State and prove the Mean Value Theorem.
+> ==**P2.**== ★★★★ (10 points) State and prove the Mean Value Theorem.
 
 > [!proof]- Proof of P2
 > **The Mean Value Theorem.** Let $f$ be a function that satisfies the following hypotheses: 1. $f$ is continuous on the closed interval $[a, b]$; 2. $f$ is differentiable on the open interval $(a, b)$. Then there is a number $c$ in $(a, b)$ such that $f'(c) = \dfrac{f(b) - f(a)}{b - a}$.
@@ -1179,7 +1179,7 @@ The full note for this section is [[CAL1 3.1 Exam Notes]].
 > \# $h(x)$ is the vertical distance between the graph of $f$ and the secant line through $(a, f(a))$ and $(b, f(b))$. All three hypotheses of Rolle's Theorem must be checked in writing.
 
 > [!question]
-> **P3.** ★★★ (10 points) Prove: if $f'(x) = 0$ for all $x$ in an interval $(a, b)$, then $f$ is constant on $(a, b)$.
+> ==**P3.**== ★★★ (10 points) Prove: if $f'(x) = 0$ for all $x$ in an interval $(a, b)$, then $f$ is constant on $(a, b)$.
 
 > [!proof]- Proof of P3
 > $$
