@@ -5,5 +5,5 @@
   "newLinkFormat": "relative",
   "openBehavior": "file:待辦事項.md",
   "alwaysUpdateLinks": true,
-  "readableLineLength": true
+  "readableLineLength": false
 }
