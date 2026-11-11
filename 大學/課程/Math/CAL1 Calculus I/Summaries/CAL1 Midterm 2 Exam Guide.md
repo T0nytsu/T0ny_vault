@@ -1260,8 +1260,8 @@ The full note for this section is [[CAL1 3.1 Exam Notes]].
 > Respond with true (T) or false (F). Items (a)–(k) are from the True-False Quiz of the Chapter 3 Review ‡.
 > - (a) ‡ If $f'(x) < 0$ for $1 < x < 6$, then $f$ is decreasing on $(1, 6)$.
 > - (b) ‡ If $f''(2) = 0$, then $(2, f(2))$ is an inflection point of the curve $y = f(x)$.
-> - (c) ‡ There exists a function $f$ such that $f(x) > 0$, $f'(x) < 0$, and $f''(x) > 0$ for all $x$.
-> - (d) ‡ There exists a function $f$ such that $f(x) < 0$, $f'(x) < 0$, and $f''(x) > 0$ for all $x$.
+> - ==(c)== ‡ There exists a function $f$ such that $f(x) > 0$, $f'(x) < 0$, and $f''(x) > 0$ for all $x$.
+> - ==(d)== ‡ There exists a function $f$ such that $f(x) < 0$, $f'(x) < 0$, and $f''(x) > 0$ for all $x$.
 > - (e) ‡ If $f$ and $g$ are increasing on an interval $I$, then $f + g$ is increasing on $I$.
 > - (f) ‡ If $f$ and $g$ are increasing on an interval $I$, then $f - g$ is increasing on $I$.
 > - (g) ‡ If $f$ and $g$ are increasing on an interval $I$, then $fg$ is increasing on $I$.
