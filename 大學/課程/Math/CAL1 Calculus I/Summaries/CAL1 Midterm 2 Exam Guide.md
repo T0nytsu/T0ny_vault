@@ -542,11 +542,11 @@ The full note for this section is [[CAL1 2.6 Exam Notes]].
 
 > [!question]
 > Respond with true (T) or false (F).
-> - ==(a)== If $x^2 + y^2 = 25$, then $\dfrac{dy}{dx} = -\dfrac{x}{y}$ on the upper semicircle and on the lower semicircle.
+> - (a) If $x^2 + y^2 = 25$, then $\dfrac{dy}{dx} = -\dfrac{x}{y}$ on the upper semicircle and on the lower semicircle.
 > - (b) If $y$ is a differentiable function of $x$, then $\dfrac{d}{dx}(y^3) = 3y^2$.
 > - (c) The tangent line to the folium of Descartes $x^3 + y^3 = 6xy$ at the point $(3, 3)$ has slope $1$.
 > - (d) If $x^4 + y^4 = 16$, then $y'' = -\dfrac{48x^2}{y^7}$.
-> - (e) If $x^2 + y^2 = 25$, then $\dfrac{d^2y}{d^2x} = -\dfrac{25}{y^3}$.
+> - (e) If $x^2 + y^2 = 25$, then $\dfrac{d^2y}{d^x} = -\dfrac{25}{y^3}$.
 
 > [!solution]- Answers
 > - (a) **T.** For $y = \sqrt{25 - x^2}$, $y' = -\frac{x}{\sqrt{25 - x^2}} = -\frac{x}{y}$; for $y = -\sqrt{25 - x^2}$, $y' = \frac{x}{\sqrt{25 - x^2}} = -\frac{x}{y}$ (NOTE 1, p. 166).
@@ -1260,8 +1260,8 @@ The full note for this section is [[CAL1 3.1 Exam Notes]].
 > Respond with true (T) or false (F). Items (a)–(k) are from the True-False Quiz of the Chapter 3 Review ‡.
 > - (a) ‡ If $f'(x) < 0$ for $1 < x < 6$, then $f$ is decreasing on $(1, 6)$.
 > - (b) ‡ If $f''(2) = 0$, then $(2, f(2))$ is an inflection point of the curve $y = f(x)$.
-> - (c) ‡ There exists a function $f$ such that $f(x) > 0$, $f'(x) < 0$, and $f''(x) > 0$ for all $x$.
-> - (d) ‡ There exists a function $f$ such that $f(x) < 0$, $f'(x) < 0$, and $f''(x) > 0$ for all $x$.
+> - ==(c)== ‡ There exists a function $f$ such that $f(x) > 0$, $f'(x) < 0$, and $f''(x) > 0$ for all $x$.
+> - ==(d)== ‡ There exists a function $f$ such that $f(x) < 0$, $f'(x) < 0$, and $f''(x) > 0$ for all $x$.
 > - (e) ‡ If $f$ and $g$ are increasing on an interval $I$, then $f + g$ is increasing on $I$.
 > - (f) ‡ If $f$ and $g$ are increasing on an interval $I$, then $f - g$ is increasing on $I$.
 > - (g) ‡ If $f$ and $g$ are increasing on an interval $I$, then $fg$ is increasing on $I$.
