@@ -542,11 +542,11 @@ The full note for this section is [[CAL1 2.6 Exam Notes]].
 
 > [!question]
 > Respond with true (T) or false (F).
-> - ==(a)== If $x^2 + y^2 = 25$, then $\dfrac{dy}{dx} = -\dfrac{x}{y}$ on the upper semicircle and on the lower semicircle.
+> - (a) If $x^2 + y^2 = 25$, then $\dfrac{dy}{dx} = -\dfrac{x}{y}$ on the upper semicircle and on the lower semicircle.
 > - (b) If $y$ is a differentiable function of $x$, then $\dfrac{d}{dx}(y^3) = 3y^2$.
 > - (c) The tangent line to the folium of Descartes $x^3 + y^3 = 6xy$ at the point $(3, 3)$ has slope $1$.
 > - (d) If $x^4 + y^4 = 16$, then $y'' = -\dfrac{48x^2}{y^7}$.
-> - (e) If $x^2 + y^2 = 25$, then $\dfrac{d^2y}{d^2x} = -\dfrac{25}{y^3}$.
+> - (e) If $x^2 + y^2 = 25$, then $\dfrac{d^2y}{d^x} = -\dfrac{25}{y^3}$.
 
 > [!solution]- Answers
 > - (a) **T.** For $y = \sqrt{25 - x^2}$, $y' = -\frac{x}{\sqrt{25 - x^2}} = -\frac{x}{y}$; for $y = -\sqrt{25 - x^2}$, $y' = \frac{x}{\sqrt{25 - x^2}} = -\frac{x}{y}$ (NOTE 1, p. 166).
