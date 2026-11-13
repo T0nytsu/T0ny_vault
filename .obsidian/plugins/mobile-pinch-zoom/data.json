@@ -3,7 +3,8 @@
   "minZoom": 0.5,
   "maxZoom": 4,
   "step": 0.2,
-  "zoom": 0.7650237725653217,
+  "zoom": 1.1277240805888369,
   "indicatorMode": "auto",
+  "zoomFigures": true,
   "indicatorPosition": "bottom-right"
 }

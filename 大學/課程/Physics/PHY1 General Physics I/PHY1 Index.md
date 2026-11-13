@@ -78,6 +78,7 @@ created: 2026-10-05
 - [[PHY1 Ch8 中文課本]]: EUP Ch. 8 Gravity, condensed Chinese translation
 - [[PHY1 Ch9 Summary]]: EUP Ch. 9 Systems of Particles
 - [[PHY1 Ch9 中文課本]]: EUP Ch. 9 Systems of Particles, condensed Chinese translation
+- [[PHY1 Ch10 Rotational Motion Map.excalidraw]]: EUP Ch. 10 Rotational Motion, Excalidraw mind map (concepts and problem types)
 
 ## Textbook
 - Ch01 18-32
