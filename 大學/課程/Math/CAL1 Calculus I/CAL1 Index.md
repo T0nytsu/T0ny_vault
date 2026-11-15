@@ -81,6 +81,7 @@ format: math-notes 2.3
 - [[CAL1 HW 3.4 Questions]] and [[CAL1 HW 3.4 Solutions]]
 - [[CAL1 HW 3.5 Questions]] and [[CAL1 HW 3.5 Solutions]]
 - [[CAL1 HW 3.7 Questions]] and [[CAL1 HW 3.7 Solutions]]
+- [[CAL1 HW 3.9 Questions]] and [[CAL1 HW 3.9 Solutions]]
 
 ## Summaries
 
@@ -121,6 +122,7 @@ Stewart, *Calculus*, Chapter 3:
 ## Concepts
 
 - [[Absolute Extreme Value]]
+- [[Antiderivative]]
 - [[Chain Rule]]
 - [[Closed Interval Method]]
 - [[Concavity]]
