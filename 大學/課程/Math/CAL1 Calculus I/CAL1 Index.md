@@ -64,6 +64,7 @@ format: math-notes 2.3
 
 ## Homework
 
+- [[CAL1 HW 1.6 Questions]] and [[CAL1 HW 1.6 Solutions]]
 - [[CAL1 HW 1.7 Questions]] and [[CAL1 HW 1.7 Solutions]]
 - [[CAL1 HW 1.8 Questions]] and [[CAL1 HW 1.8 Solutions]]
 - [[CAL1 HW 2.1 Questions]] and [[CAL1 HW 2.1 Solutions]]
