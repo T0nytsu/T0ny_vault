@@ -57,6 +57,7 @@ format: "math-notes 2.3"
 - [[LA1 Quiz 04]], 2026-10-06, score 10/10
 - [[LA1 Quiz 05]], score 10/10
 - [[LA1 Quiz 06]], score 3/5
+- [[LA1 Midterm 1]], score 80/100
 
 ## Past Exams
 
