@@ -1,10 +1,17 @@
 ---
-course: [LA1]
-semester: "115-1"
-chapter: ["4.1", "4.2"]
-tags: [linear-algebra, homework, questions, determinants, vectors]
+course:
+  - LA1
+semester: 115-1
+chapter:
+  - "4.1"
+  - "4.2"
+tags:
+  - homework
+  - questions
+  - determinants
+  - vectors
 source:
-  - "FB §4.1 exercises pp. 248-249 and §4.2 exercises pp. 261-262, scanned PDFs"
+  - FB §4.1 exercises pp. 248-249 and §4.2 exercises pp. 261-262, scanned PDFs
   - "[[LA1 HW 4.1 4.2 Questions p248.pdf]]"
   - "[[LA1 HW 4.1 4.2 Questions p249.pdf]]"
   - "[[LA1 HW 4.1 4.2 Questions p261.pdf]]"
@@ -12,7 +19,7 @@ source:
 created: 2026-11-17
 solutions: "[[LA1 HW 4.1 4.2 Solutions]]"
 up: "[[LA1 Index]]"
-format: "math-notes 2.3"
+format: math-notes 2.3
 ---
 > [!info] Coverage
 > FB §4.1: 19, 27, 31, 33, 37, 57, 58, 59. FB §4.2: 7, 8, 9, 10. FB is Fraleigh & Beauregard, *Linear Algebra*.
