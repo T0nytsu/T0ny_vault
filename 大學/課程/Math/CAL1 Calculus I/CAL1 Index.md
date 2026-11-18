@@ -55,7 +55,7 @@ format: math-notes 2.3
 | `continuity` | Continuity, kinds of discontinuity, and the Intermediate Value Theorem              |
 | `derivatives` | Tangent lines, velocities, the derivative at a number, and rates of change         |
 | `exam-prep`  | Midterm 2 exam maps and exam notes (one per section)                                |
-| `integrals`  | Riemann sums, the definite integral and its properties                              |
+| `integrals`  | Riemann sums, the definite integral and its properties, indefinite integrals and the Net Change Theorem |
 
 ## Quizzes and Exams
 
@@ -85,6 +85,7 @@ format: math-notes 2.3
 - [[CAL1 HW 3.7 Questions]] and [[CAL1 HW 3.7 Solutions]]
 - [[CAL1 HW 3.9 Questions]] and [[CAL1 HW 3.9 Solutions]]
 - [[CAL1 HW 4.2 Questions]] and [[CAL1 HW 4.2 Solutions]]
+- [[CAL1 HW 4.4 Questions]] and [[CAL1 HW 4.4 Solutions]]
 
 ## Summaries
 
@@ -180,10 +181,12 @@ Stewart, *Calculus*, Chapter 8:
 - [[Fermat's Theorem]]
 - [[First Derivative Test]]
 - [[First Derivative Test for Absolute Extreme Values]]
+- [[Fundamental Theorem of Calculus]]
 - [[Higher Derivatives]]
 - [[Horizontal Asymptote]]
 - [[Implicit Differentiation]]
 - [[Increasing and Decreasing Test]]
+- [[Indefinite Integral]]
 - [[Infinite Limit]]
 - [[Inflection Point]]
 - [[Intermediate Value Theorem]]
@@ -195,6 +198,7 @@ Stewart, *Calculus*, Chapter 8:
 - [[Local Extreme Value]]
 - [[Mean Value Theorem]]
 - [[Midpoint Rule]]
+- [[Net Change Theorem]]
 - [[Normal Line]]
 - [[One-Sided Derivative]]
 - [[One-Sided Limit]]
