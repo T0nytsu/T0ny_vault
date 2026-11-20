@@ -57,6 +57,7 @@ format: "math-notes 2.3"
 - [[LA1 Quiz 04]], 2026-10-06, score 10/10
 - [[LA1 Quiz 05]], score 10/10
 - [[LA1 Quiz 06]], score 3/5
+- [[LA1 Midterm 1]], score 80/100
 
 ## Past Exams
 
@@ -73,6 +74,8 @@ format: "math-notes 2.3"
 - [[LA1 HW 1.4 Questions]] and [[LA1 HW 1.4 Solutions]]
 - [[LA1 HW 1.5 Questions]] and [[LA1 HW 1.5 Solutions]]
 - [[LA1 HW 4.1 10.2 Questions]] and [[LA1 HW 4.1 10.2 Solutions]]
+- [[LA1 HW 4.1 4.2 Questions]] and [[LA1 HW 4.1 4.2 Solutions]]
+- [[LA1 HW 4.2 Questions]] and [[LA1 HW 4.2 Solutions]]
 
 ## Summaries
 
@@ -88,6 +91,13 @@ Fraleigh & Beauregard, _Linear Algebra_ :
 - **section 1.5**: 11, 12, 13, 21, 22, 27, 29
 - **section 4.1**: 6, 12, 13, 21, 23, 25
 - **section 10.2**: 4, 5, 6, 7
+
+Friedberg, Insel & Spence, _Linear Algebra_ :
+- **section 4.1**: 5, 6, 8
+- **section 4.2**: 1(a)–(f), 2, 3, 7, 8, 11, 15, 16, 17
+- **section 4.1**（第二批）: 19, 27, 31, 33, 37, 57, 58, 59
+- **section 4.2**: 7, 8, 9, 10
+- **section 4.2**: 17, 18（與下面 FIS 4.1、4.2 同一份作業）
 
 ## Concepts
 

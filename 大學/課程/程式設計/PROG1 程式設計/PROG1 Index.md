@@ -108,6 +108,7 @@ format: "global 1.0"
 - [[PROG1 Deck 3 整理]]：W6 Deck 3 How Can a Program Make Decisions?
 - [[PROG1 Deck 4 整理]]：W7 Deck 4 How Can a Program Repeat Work Without Repeating Code?
 - [[PROG1 Deck 5 整理]]：W8 Deck 5 How Can a Program Process and Interpret Text?
+- [[PROG1 Week 10 整理]]：W10 Functions（函式）
 
 ## 小考與考試
 
@@ -116,7 +117,7 @@ format: "global 1.0"
 
 ## 心智圖
 
-期中考 Midterm I 的 Excalidraw 心智圖，放在 `Summaries/`；要先安裝 Excalidraw 外掛才看得到圖。Deck 1–5 的藍色標籤是老師 Midterm Practice 例題題號（T＝是非、Q＝問答），灰色標籤是例題裡的 Extension 延伸題。
+Excalidraw 心智圖，放在 `Summaries/`；要先安裝 Excalidraw 外掛才看得到圖。心智圖 1–7 是期中考 Midterm I 的範圍。Deck 1–5 的藍色標籤是老師 Midterm Practice 例題題號（T＝是非、Q＝問答），灰色標籤是例題裡的 Extension 延伸題。
 
 - [[PROG1 心智圖 1 Deck 1.excalidraw|心智圖 1 Deck 1]]：電腦如何解決問題（W1）
 - [[PROG1 心智圖 2 Deck 2.excalidraw|心智圖 2 Deck 2]]：程式如何表示真實世界（W4）
@@ -125,6 +126,7 @@ format: "global 1.0"
 - [[PROG1 心智圖 5 Deck 5.excalidraw|心智圖 5 Deck 5]]：程式如何處理並解讀文字（W8）
 - [[PROG1 心智圖 6 考古題.excalidraw|心智圖 6 考古題]]：Midterm 題型與考點（不含新講義沒教的舊考點）
 - [[PROG1 心智圖 7 考前速查.excalidraw|心智圖 7 考前速查]]：易錯陷阱與必背輸出（Claude 整理）
+- [[PROG1 Week 10 心智圖.excalidraw|Week 10 心智圖]]：函式 Functions（W10）
 
 %% 課程網頁上的連結（Slides、ClassNotes、ClassroomPack、slido、影片）沒有跟著文字貼過來；需要的話把網址補進「課程進度」表或清單。W1–W8 的主題取自 Deck 1–5 的封面標題。 %%
 
