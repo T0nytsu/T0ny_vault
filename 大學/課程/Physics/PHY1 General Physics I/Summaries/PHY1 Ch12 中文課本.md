@@ -247,7 +247,8 @@ $$
 > $$
 > \frac{d^{2}U}{dx^{2}} > 0 \qquad \text{(stable equilibrium)} \qquad (12.4)
 > $$
-> 亞穩定平衡也滿足 (12.4)，因為它們是**局部**穩定的。不穩定平衡發生在位能的局部極大：
+> 亞穩定平衡也滿足 (12.4)，因為它們是**局部**穩定的。
+不穩定平衡發生在位能的局部極大：
 > $$
 > \frac{d^{2}U}{dx^{2}} < 0 \qquad \text{(unstable equilibrium)} \qquad (12.5)
 > $$
