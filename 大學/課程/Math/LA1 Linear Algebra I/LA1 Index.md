@@ -76,6 +76,7 @@ format: "math-notes 2.3"
 - [[LA1 HW 4.1 10.2 Questions]] and [[LA1 HW 4.1 10.2 Solutions]]
 - [[LA1 HW 4.1 4.2 Questions]] and [[LA1 HW 4.1 4.2 Solutions]]
 - [[LA1 HW 4.2 Questions]] and [[LA1 HW 4.2 Solutions]]
+- [[LA1 HW 4.2(2) Questions]] and [[LA1 HW 4.2(2) Solutions]]
 
 ## Summaries
 
@@ -91,6 +92,7 @@ Fraleigh & Beauregard, _Linear Algebra_ :
 - **section 1.5**: 11, 12, 13, 21, 22, 27, 29
 - **section 4.1**: 6, 12, 13, 21, 23, 25
 - **section 10.2**: 4, 5, 6, 7
+- **section 4.2**（第三批）: 21, 26, 29, 30, 31, 32, 33（與 FIS 4.2 第二批同一份作業，見 LA1 HW 4.2(2)）
 
 Friedberg, Insel & Spence, _Linear Algebra_ :
 - **section 4.1**: 5, 6, 8
@@ -98,6 +100,7 @@ Friedberg, Insel & Spence, _Linear Algebra_ :
 - **section 4.1**（第二批）: 19, 27, 31, 33, 37, 57, 58, 59
 - **section 4.2**: 7, 8, 9, 10
 - **section 4.2**: 17, 18（與下面 FIS 4.1、4.2 同一份作業）
+- **section 4.2**（第二批）: 25, 26, 27, 29
 
 ## Concepts
 
