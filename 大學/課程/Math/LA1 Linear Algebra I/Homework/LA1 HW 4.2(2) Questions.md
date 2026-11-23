@@ -22,7 +22,7 @@ format: "math-notes 2.3"
 
 ### FB 4.2.21
 Mark each of the following True or False.
-- ==a.== The determinant $\det(A)$ is defined for any matrix $A$.
+- ==a==. The determinant $\det(A)$ is defined for any matrix $A$.
 - b. The determinant $\det(A)$ is defined for each square matrix $A$.
 - c. The determinant of a square matrix is a scalar.
 - d. If a matrix $A$ is multiplied by a scalar $c$, the determinant of the resulting matrix is $c \cdot \det(A)$.
