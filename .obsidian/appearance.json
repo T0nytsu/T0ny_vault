@@ -1,11 +1,5 @@
 {
   "cssTheme": "Primary",
-  "enabledCssSnippets": [
-    "math-callouts",
-    "math-chalk-yellow",
-    "canvas-colors-fix",
-    "primary-colored-highlights"
-  ],
-  "showRibbon": true,
-  "theme": "moonstone"
+  "theme": "moonstone",
+  "showRibbon": true
 }
