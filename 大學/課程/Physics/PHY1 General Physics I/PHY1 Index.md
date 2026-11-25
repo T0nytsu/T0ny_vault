@@ -82,6 +82,8 @@ created: 2026-10-05
 - [[PHY1 Ch10 Rotational Motion Map.excalidraw]]: EUP Ch. 10 Rotational Motion, Excalidraw mind map (concepts and problem types)
 - [[PHY1 Ch11 中文課本]]: EUP Ch. 11 Rotational Vectors and Angular Momentum, condensed Chinese translation
 - [[PHY1 Ch12 中文課本]]: EUP Ch. 12 Static Equilibrium, condensed Chinese translation
+- [[PHY1 Ch13 中文課本]]: EUP Ch. 13 Oscillatory Motion, condensed Chinese translation
+- [[PHY1 Ch14 中文課本]]: EUP Ch. 14 Wave Motion, condensed Chinese translation
 
 ## Textbook
 - Ch01 18-32

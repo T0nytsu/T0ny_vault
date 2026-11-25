@@ -56,6 +56,7 @@ format: math-notes 2.3
 | `derivatives` | Tangent lines, velocities, the derivative at a number, and rates of change         |
 | `exam-prep`  | Midterm 2 exam maps and exam notes (one per section)                                |
 | `integrals`  | Riemann sums, the definite integral and its properties, indefinite integrals and the Net Change Theorem |
+| `volumes`    | Volumes of solids: cross-sectional areas, solids of revolution by disks, washers, and cylindrical shells |
 
 ## Quizzes and Exams
 
@@ -85,7 +86,11 @@ format: math-notes 2.3
 - [[CAL1 HW 3.7 Questions]] and [[CAL1 HW 3.7 Solutions]]
 - [[CAL1 HW 3.9 Questions]] and [[CAL1 HW 3.9 Solutions]]
 - [[CAL1 HW 4.2 Questions]] and [[CAL1 HW 4.2 Solutions]]
+- [[CAL1 HW 4.3 Questions]] and [[CAL1 HW 4.3 Solutions]]
 - [[CAL1 HW 4.4 Questions]] and [[CAL1 HW 4.4 Solutions]]
+- [[CAL1 HW 4.5 Questions]] and [[CAL1 HW 4.5 Solutions]]
+- [[CAL1 HW 5.2 Questions]] and [[CAL1 HW 5.2 Solutions]]
+- [[CAL1 HW 5.3 Questions]] and [[CAL1 HW 5.3 Solutions]]
 
 ## Summaries
 
@@ -165,6 +170,7 @@ Stewart, *Calculus*, Chapter 8:
 
 - [[Absolute Extreme Value]]
 - [[Antiderivative]]
+- [[Cavalieri's Principle]]
 - [[Chain Rule]]
 - [[Closed Interval Method]]
 - [[Comparison Properties of the Integral]]
@@ -178,9 +184,10 @@ Stewart, *Calculus*, Chapter 8:
 - [[Differentiable Function]]
 - [[Differential]]
 - [[Discontinuity]]
+- [[Disk Method]]
 - [[Fermat's Theorem]]
-- [[First Derivative Test]]
 - [[First Derivative Test for Absolute Extreme Values]]
+- [[First Derivative Test]]
 - [[Fundamental Theorem of Calculus]]
 - [[Higher Derivatives]]
 - [[Horizontal Asymptote]]
@@ -189,6 +196,7 @@ Stewart, *Calculus*, Chapter 8:
 - [[Indefinite Integral]]
 - [[Infinite Limit]]
 - [[Inflection Point]]
+- [[Integrals of Symmetric Functions]]
 - [[Intermediate Value Theorem]]
 - [[Limit at Infinity]]
 - [[Limit Laws]]
@@ -197,6 +205,7 @@ Stewart, *Calculus*, Chapter 8:
 - [[Linearization]]
 - [[Local Extreme Value]]
 - [[Mean Value Theorem]]
+- [[Method of Cylindrical Shells]]
 - [[Midpoint Rule]]
 - [[Net Change Theorem]]
 - [[Normal Line]]
@@ -213,8 +222,12 @@ Stewart, *Calculus*, Chapter 8:
 - [[Rolle's Theorem]]
 - [[Second Derivative Test]]
 - [[Slant Asymptote]]
+- [[Solid of Revolution]]
 - [[Special Trigonometric Limits]]
 - [[Squeeze Theorem]]
+- [[Substitution Rule]]
 - [[Tangent Line]]
 - [[Vertical Asymptote]]
 - [[Vertical Tangent Line]]
+- [[Volume]]
+- [[Washer Method]]
