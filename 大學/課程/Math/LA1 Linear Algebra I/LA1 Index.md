@@ -77,6 +77,7 @@ format: "math-notes 2.3"
 - [[LA1 HW 4.1 4.2 Questions]] and [[LA1 HW 4.1 4.2 Solutions]]
 - [[LA1 HW 4.2 Questions]] and [[LA1 HW 4.2 Solutions]]
 - [[LA1 HW 4.2(2) Questions]] and [[LA1 HW 4.2(2) Solutions]]
+- [[LA1 HW 4.3 Questions]] and [[LA1 HW 4.3 Solutions]]
 
 ## Summaries
 
@@ -93,6 +94,7 @@ Fraleigh & Beauregard, _Linear Algebra_ :
 - **section 4.1**: 6, 12, 13, 21, 23, 25
 - **section 10.2**: 4, 5, 6, 7
 - **section 4.2**（第三批）: 21, 26, 29, 30, 31, 32, 33（與 FIS 4.2 第二批同一份作業，見 LA1 HW 4.2(2)）
+- **section 4.3**: 17, 21, 22, 28, 35, 37, 38, 39（與 FIS 4.3 同一份作業，見 LA1 HW 4.3）
 
 Friedberg, Insel & Spence, _Linear Algebra_ :
 - **section 4.1**: 5, 6, 8
@@ -101,12 +103,16 @@ Friedberg, Insel & Spence, _Linear Algebra_ :
 - **section 4.2**: 7, 8, 9, 10
 - **section 4.2**: 17, 18（與下面 FIS 4.1、4.2 同一份作業）
 - **section 4.2**（第二批）: 25, 26, 27, 29
+- **section 4.3**: 1, 10, 12, 16, 20, 21, 22
 
 ## Concepts
 
 - [[Augmented Matrix]]
 - [[Block Matrix]]
+- [[Classical Adjoint]]
+- [[Cofactor]]
 - [[Commuting Matrices]]
+- [[Cramer's Rule]]
 - [[Cross Product]]
 - [[Determinant]]
 - [[Diagonal Matrix]]
