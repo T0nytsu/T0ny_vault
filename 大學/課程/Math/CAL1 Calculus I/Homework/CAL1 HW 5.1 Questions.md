@@ -71,7 +71,7 @@ $$
 y = \sqrt{x}, \quad y = \tfrac{1}{3}x, \quad 0 \le x \le 16
 $$
 
-
+### ST 5.1.27
 **19–34** Sketch the region enclosed by the given curves and find its area.
 $$
 y = \cos x, \quad y = \sin 2x, \quad 0 \le x \le \pi/2
