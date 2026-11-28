@@ -1,0 +1,17 @@
+/* Primary 主題 × Obsidian 1.14 彩色螢光筆
+   Primary 用 `body .markdown-rendered mark` 把閱讀模式的螢光筆一律塗成自己的預設色，
+   蓋掉了 Obsidian 的顏色。這裡用更高的優先權，把選了顏色的螢光筆
+   （閱讀模式裡是 mark[data-highlight="red"] 這類）改回 Obsidian 的顏色。
+   預設色（data-highlight=""）不動，維持 Primary 原本的樣子。 */
+
+body .markdown-rendered mark[data-highlight="red"]    { background-color: var(--highlight-background-red); }
+body .markdown-rendered mark[data-highlight="orange"] { background-color: var(--highlight-background-orange); }
+body .markdown-rendered mark[data-highlight="yellow"] { background-color: var(--highlight-background-yellow); }
+body .markdown-rendered mark[data-highlight="green"]  { background-color: var(--highlight-background-green); }
+body .markdown-rendered mark[data-highlight="blue"]   { background-color: var(--highlight-background-blue); }
+body .markdown-rendered mark[data-highlight="purple"] { background-color: var(--highlight-background-purple); }
+
+/* 彩色螢光筆裡的粗體／斜體，不要再疊上 Primary 為粗斜體螢光筆加的底色 */
+body .markdown-rendered mark[data-highlight]:not([data-highlight=""]) :is(strong, em) {
+  background-color: transparent;
+}
